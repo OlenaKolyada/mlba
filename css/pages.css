@@ -1,0 +1,436 @@
+section:nth-of-type(2) {
+    padding-top: 3rem;
+}
+
+section:nth-child(even) {
+    background: white;
+}
+
+section:nth-child(odd) {
+    background: var(--grey-extra-light);
+}
+
+section:nth-of-type(1) {
+    background: white;
+}
+
+/* Academy */
+.our-story .section-text {
+    width: 90%;
+}
+
+#studio .section-text {
+    width: 60%;
+}
+
+/* Reglement */
+.school-rules .section-first .section-wrap {
+    position: relative;
+}
+
+.school-rules #top-dl-link {
+    position: absolute;
+    top: 6rem;
+    right: 40rem;
+}
+
+.school-rules .download-link {
+    display: inline-block;
+    margin: 2rem 0 0 3rem;
+    font-size: 1.2rem;
+    color: var(--blue);
+    transition: color 0.3s;
+    text-decoration: underline;
+}
+
+.download-link:hover {
+    color: var(--blue-extra-light);
+}
+
+/*Enfants-Ado Classique*/
+.enfants-ado-classique .section-text {
+    width: 100%;
+}
+
+.enfants-ado-classique  .five-card-row-item:nth-child(1) {
+    background-image: url('../images/loisir/loisir-card1.jpg');
+}
+
+.enfants-ado-classique .five-card-row-item:nth-child(2) {
+    background-image: url('../images/loisir/loisir-card2.jpg');
+}
+
+.enfants-ado-classique .five-card-row-item:nth-child(3) {
+    background-image: url('../images/loisir/loisir-card3.jpg');
+}
+
+.enfants-ado-classique .five-card-row-item:nth-child(4) {
+    background-image: url('../images/loisir/loisir-card4.jpg');
+}
+
+.enfants-ado-classique .five-card-row-item:nth-child(5) {
+    background-image: url('../images/loisir/loisir-card5.png');
+}
+
+/* Profs */
+.profs-classic  ul li {
+    text-indent: -0.65rem;
+    padding-left: 0.65rem;
+}
+
+/* Ado Contemporain*/
+.ado-contemporain .section-text,
+.ado-contemporain .planning-and-tarif {
+    width: 90%
+}
+
+
+/* Adultes Classique*/
+.adultes-classique .section-text,
+.adultes-classique .planning-and-tarif {
+    width: 90%;
+}
+
+
+/* Adultes Contemporain */
+.adultes-contemporain .section-text,
+.adultes-contemporain .planning-and-tarif {
+    width: 90%;
+}
+
+
+/*Planning*/
+.horaire-ballet {
+     width: 100%;
+     border-collapse: collapse;
+     font-family: 'Montserrat', sans-serif;
+     box-shadow: var(--shadow);
+     border-radius: 3px;
+     overflow: hidden;
+     margin-bottom: 3rem;
+ }
+
+.horaire-ballet thead {
+    background-color: var(--grey-light);
+}
+
+.horaire-ballet th {
+    padding: 2rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.horaire-ballet td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.horaire-ballet tbody tr:nth-child(even) {
+    background-color: var(--grey-extra-light);
+}
+
+.horaire-ballet tbody tr:hover {
+    background-color: var(--grey-light);
+    transition: all 0.3s ease;
+}
+
+.horaire-ballet td:first-child {
+    font-weight: 600;
+    background-color: var(--grey-extra-light);
+    border-bottom: 1px solid var(--white);
+}
+
+/*Tarifs*/
+.tarifs .section-first {
+    position: relative;
+}
+
+.tarifs h2:first-of-type {
+    margin-top: 2rem;
+}
+
+.tarifs h2:last-of-type {
+    margin-bottom: 0;
+}
+
+.tarifs .family-discount {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 20rem;
+    color: var(--mint);
+    padding: 1.2rem;
+    border-radius: 3px;
+    z-index: 2;
+    top: 2rem;
+    right: 0;
+    text-align: center;
+    font-size: var(--text-normal);
+    font-weight: 600;
+}
+
+.tarifs .section-row {
+    margin-bottom: 3rem;
+}
+
+.tarif-inscription {
+    margin: 0 0 4rem 1rem;
+}
+
+#tarifs-init {
+    padding-bottom: 2rem;
+}
+
+.tarif-table {
+    width: 75rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    font-size: var(--text-large);
+    text-align: center;
+}
+
+.tarif-header {
+    display: contents;
+    font-weight: 100;
+    font-size: var(--text-normal);
+}
+
+.tarif-row {
+    display: contents;
+}
+
+.first-cell {
+    font-weight: 100;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.discount {
+    color: #666;
+}
+
+.note {
+    font-size: var(--text-extra-small);
+    margin: 0 0 0 1rem;
+}
+
+/* Contacts */
+.contacts-page .section-text p {
+    font-size: var(--text-large);
+    font-weight: 100;
+}
+
+.contacts-page img {
+    filter: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg">\
+        <filter id="recolor" color-interpolation-filters="sRGB">\
+          <feColorMatrix type="matrix" values="\
+            0 0 0 0 0.078\
+            0 0 0 0 0.373\
+            0 0 0 0 0.914\
+            0 0 0 1 0"\
+          />\
+        </filter>\
+      </svg>#recolor');
+    width: 1rem;
+}
+
+
+.contacts-page .section-content,
+.contacts-page .section-text {
+    width: 34rem;
+}
+
+.contacts-page .three-items-item {
+    text-align: center;
+    font-size: var(--text-normal);
+}
+
+.contacts-page .google-map,
+.contacts-page .google-map iframe {
+    width: 34rem;
+    height: 16.2rem;
+    box-shadow: var(--shadow);
+}
+
+/*Contacts Form*/
+.contacts-page form {
+    background-color: var(--grey-light);
+    padding: 3rem;
+    width: 30rem;
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+}
+
+.contacts-page form input,
+.contacts-page form select,
+.contacts-page form textarea {
+    background-color: var(--white);
+}
+
+.contacts-page form input:hover,
+.contacts-page form select:hover,
+.contacts-page form textarea:hover {
+    background-color: white;
+}
+
+.contacts-page a {
+    color: var(--black);
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.contacts-page a:hover {
+    color: var(--blue);
+
+}
+
+.contacts-page form button {
+    margin: 1rem auto 0;
+}
+
+/* Presentation */
+.section-pro .apprentissage ul {
+    list-style: disc;
+    margin-left: 1rem;
+}
+
+.section-pro ul li {
+    margin-bottom: 0.5rem;
+}
+
+.section-pro .gallery {
+    background: var(--grey-light);
+}
+
+.section-pro .swiper-main-gallery {
+    width: 60rem !important;
+}
+
+.section-pro .gallery .section-row {
+    justify-content: center;
+}
+
+.section-pro .gallery .swiper {
+    width: 75rem;
+}
+
+.section-pro .btn {
+    margin-top: 2rem;
+}
+
+#modal-form-audition .modal-form-wrap {
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+#modal-form-audition form h4,
+#modal-form-audition label,
+#modal-form-audition a {
+    color: var(--white);
+}
+
+#modal-form-audition a:hover {
+    color: white;
+}
+#modal-form-audition form input,
+#modal-form-audition form select,
+#modal-form-audition form textarea {
+    background-color: var(--white);
+}
+
+#modal-form-audition form input:hover,
+#modal-form-audition form select:hover,
+#modal-form-audition form textarea:hover {
+    background-color: white;
+}
+
+#modal-form-audition .modal-icon {
+    filter: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg">\
+    <filter id="recolor" color-interpolation-filters="sRGB">\
+      <feColorMatrix type="matrix" values="\
+        0 0 0 0 0.973\
+        0 0 0 0 0.973\
+        0 0 0 0 0.973\
+        0 0 0 1 0"\
+      />\
+    </filter>\
+  </svg>#recolor');
+}
+
+/* Admission */
+#admission .section-text p {
+    font-size: var(--text-large);
+    font-weight: 100;
+}
+#admission .section-row {
+    justify-content: left;
+    gap: 1rem;
+}
+
+#admission .section-content:last-of-type,
+#admission .section-text {
+    width: 20rem;
+}
+
+#admission .section-content,
+#admission .section-text {
+    width: 34rem;
+}
+
+#admission form {
+    background-color: var(--grey-light);
+    padding: 3rem;
+    width: 30rem;
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+}
+
+#admission form input,
+#admission form select,
+#admission form textarea {
+    background-color: var(--white);
+}
+
+#admission form input:hover,
+#admission form select:hover,
+#admission form textarea:hover {
+    background-color: white;
+}
+
+#admission a {
+    color: var(--black);
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+#admission a:hover {
+    color: var(--blue);
+
+}
+
+#admission form button {
+    margin: 1rem auto 0;
+}
+
+section .section-second {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.studio .photo-wrapper-medium {
+    margin-top: 0 !important;
+}
+
+main section:nth-of-type(2) {
+    padding-top: 1rem !important;
+}
+
+.breadcrumb ul {
+    margin-bottom: 1rem !important;
+}

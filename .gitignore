@@ -1,0 +1,11 @@
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# PhpStorm/IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
