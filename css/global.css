@@ -18,7 +18,7 @@
     --secondary-color-gradient: linear-gradient(to bottom, var(--secondary-color-light), var(--secondary-color), var(--secondary-color-dark));
     --secondary-color-gradient-h1: linear-gradient(to bottom, var(--secondary-color-extra-light), var(--secondary-color), var(--secondary-color-dark));
     --primary-color-gradient: linear-gradient(to bottom, var(--primary-color-light), var(--primary-color), var(--primary-color-dark));
-     --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+     --shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
 }
 
 * {
@@ -43,6 +43,7 @@ body {
 	position: relative;
 	font-weight: 400;
 	background: var(--white);
+    padding: 0 0 100vh 0;
 }
 
 input, label, textarea, button {
