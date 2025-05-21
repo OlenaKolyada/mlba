@@ -1,3 +1,19 @@
+/* Section START */
+section {
+    height: 70vh;
+}
+
+.section-padding {
+    padding: 4rem 0;
+}
+
+.section-row {
+    display: flex;
+    gap: min(4rem, 5vw);
+    justify-content: space-between;
+}
+/* Section END */
+
 /* Buttons */
 .btn {
     display: flex;
@@ -67,20 +83,114 @@
     justify-content: center;
     align-items: center;
 }
+/* Buttons END */
 
-/* Tablet */
+/* Frame START */
+.frame {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid var(--grey);
+    border-radius: 3px;
+    max-width: fit-content;
+}
+
+.frame img {
+    border-radius: 3px;
+    display: block;
+}
+/* Frame END */
+
+/* Photo START */
+.section-photo {
+    width: min(34vw, 450px);
+}
+/* Photo END */
+
+/* Three Items Row START */
+.three-items-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+.three-items-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.three-items-item {
+    font-size: 0.8rem;
+    text-align: center;
+    max-width: 28%;
+}
+
+.three-items-item .icon {
+    width: 24px;
+}
+
+.three-items-item h4 {
+    margin-bottom: 0;
+}
+/* Three Items Row END */
+
+/* Responsive */
 @media screen and (max-width: 1023px) {
     .btn {
         width: 10rem;
     }
+
+    section {
+        height: 54vh;
+    }
 }
 
-/* Mobile Large */
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 992px) {
+    .section-row {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .section-photo {
+        width: 100%;
+    }
 }
 
-/* Mobile Small */
+@media screen and (max-width: 767px) {
+    section {
+        height: 70vh;
+    }
+
+    .section-padding {
+        padding: 3rem 0;
+    }
+
+    .three-items-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .three-items-item {
+        max-width: 50%;
+        margin-top: 2rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
+    .section-padding {
+        padding: 2rem 0;
+    }
 
+    .three-items-item {
+        max-width: 70%;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .three-items-item {
+        max-width: 80%;
+    }
 }

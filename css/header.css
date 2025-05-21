@@ -208,7 +208,7 @@ header {
     display: none;
 }
 
-/* Tablet */
+/* Responsive */
 @media screen and (max-width: 1023px) {
     .header-social {
         gap: 1.5rem;
@@ -237,17 +237,8 @@ header {
     .header-mobile {
         display: block;
     }
-
-
 }
 
-/* Mobile Large */
-@media screen and (max-width: 757px) {
-
-
-}
-
-/* Mobile Small */
 @media screen and (max-width: 480px) {
     .header-bottom-row {
         padding: 0.5rem 0;

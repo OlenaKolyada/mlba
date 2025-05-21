@@ -30,7 +30,7 @@ html, body {
 }
 
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 body {
@@ -104,20 +104,27 @@ ul, ol {
     padding: 0 2rem;
 }
 
-/* Tablet */
+/* Responsive */
 @media screen and (max-width: 1023px) {
-    html {
-        font-size: 16px;
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
     }
 }
 
-/* Mobile Large */
-@media screen and (max-width: 757px) {
-
-
-}
-
-/* Mobile Small */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 424px) {
 
 }

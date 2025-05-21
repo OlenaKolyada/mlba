@@ -1,15 +1,15 @@
 @import url('global.css');
 
-/* Hero */
+/* Hero START */
 section.hero {
-    height: clamp(60vh, calc(80vw * 0.5), 80vh);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .hero-content {
-    padding: 10vh 0 5vh 0;
+    padding: 5rem 0;
+    max-width: 100%;
 }
 
 .hero-title {
@@ -36,21 +36,73 @@ section.hero {
     display: flex;
     gap: 1rem;
 }
+/* Hero END */
 
-/* Tablet */
+/* About START */
+#about .section-right {
+    width: 80%;
+}
+/* About END */
+
+/* Ballet START */
+
+/* Ballet END */
+
+/* Section Loisir START */
+
+/* Section Loisir END */
+
+/* Section Pro START */
+
+/* Section Pro END */
+
+/* Stages START */
+
+/* Stages END */
+
+/* Gallery START */
+
+/* Gallery END */
+
+/* Contacts START */
+
+/* Contacts END */
+
+/* Contacts Form START */
+
+/* Contacts Form END */
+
+/* Responsive */
 @media screen and (max-width: 1023px) {
-    /* Hero */
+
+    #about .section-right {
+        width: 100%;
+    }
 }
 
-/* Mobile Large */
-@media screen and (max-width: 757px) {
-    /* Hero */
+@media screen and (max-width: 992px) {
+
+    #about .section-right {
+        width: 80%;
+        order: 1;
+    }
+
+    #about .section-left {
+        display: flex;
+        order: 2;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
 
 }
 
-/* Mobile Small */
 @media screen and (max-width: 480px) {
-    /* Hero */
 
+}
+
+@media screen and (max-width: 424px) {
 
 }
