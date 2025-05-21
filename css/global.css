@@ -115,13 +115,19 @@ ul, ol {
 
 
 @media screen and (max-width: 767px) {
-
+    h2 {
+        font-size: 1.8rem;
+    }
 }
 
 
 @media screen and (max-width: 480px) {
     .container {
         padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
     }
 }
 
