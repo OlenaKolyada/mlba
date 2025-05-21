@@ -1,23 +1,27 @@
 /* Section START */
 section {
-    height: 70vh;
-}
-
-.section-padding {
     padding: 4rem 0;
 }
+
 
 .section-row {
     display: flex;
     gap: min(4rem, 5vw);
     justify-content: space-between;
+    align-items: center;
+}
+
+.section-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* Section END */
 
 /* Buttons */
 .btn {
     display: flex;
-    width: clamp(9rem, 11vw, 11rem);
+    width: 13rem;
     height: 3rem;
     border-radius: 3px;
     cursor: pointer;
@@ -26,6 +30,10 @@ section {
     align-items: center;
     justify-content: center;
     font-size: inherit;
+}
+
+.btn-header {
+    width: clamp(9rem, 11vw, 11rem);
 }
 
 .btn-ghost {
@@ -110,7 +118,7 @@ section {
 .three-items-wrap {
     display: flex;
     justify-content: center;
-    margin-top: 4vw;
+    margin-top: 2.5rem;
 }
 
 .three-items-row {
@@ -137,13 +145,14 @@ section {
 
 /* Responsive */
 @media screen and (max-width: 1023px) {
-    .btn {
+    .btn-header {
         width: 10rem;
     }
 
-    section {
-        height: 54vh;
+    .three-items-wrap {
+        margin-top: 2rem;
     }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -158,11 +167,8 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-    section {
-        height: 70vh;
-    }
 
-    .section-padding {
+    section {
         padding: 3rem 0;
     }
 
@@ -173,24 +179,25 @@ section {
     }
 
     .three-items-item {
-        max-width: 50%;
+        max-width: 40vw;
         margin-top: 2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .section-padding {
+    section {
         padding: 2rem 0;
     }
 
     .three-items-item {
-        max-width: 70%;
+        max-width: 60vw;
         margin-top: 2rem;
     }
 }
 
 @media screen and (max-width: 424px) {
     .three-items-item {
-        max-width: 80%;
+        max-width: 70vw;
     }
+
 }
