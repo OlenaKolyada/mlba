@@ -2,7 +2,7 @@
 
 /* Hero START */
 section.hero {
-    height: 70vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -41,7 +41,7 @@ section.hero {
 
 /* About START */
 #about {
-    background: var(--grey-extra-light);
+    background: var(--white);
 }
 
 #about .section-right {
@@ -64,7 +64,79 @@ section.hero {
 /* Ballet END */
 
 /* Section Loisir START */
+#loisir {
+    background: var(--grey-extra-light);
+}
 
+#loisir .section-center {
+    width: 50%;
+}
+#loisir .title-side-decorated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#loisir .title-side-decorated img {
+    margin-bottom: 1rem;
+}
+
+#loisir .square-card-grid {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50rem;
+    margin: 1rem auto 0;
+}
+
+#loisir .square-card-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 16rem;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    aspect-ratio: 1 / 1;
+}
+
+#loisir .square-card-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    box-shadow: none;
+}
+
+#loisir .square-card-item h4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    margin: 0;
+}
+
+#loisir .square-card-item:nth-child(1) {
+    background-image: url('../images/main/enfants-classique.jpg');
+}
+
+#loisir .square-card-item:nth-child(2) {
+    background-image: url('../images/main/adultes-classique.jpg');
+}
+
+#loisir .square-card-item:nth-child(3) {
+    background-image: url('../images/main/enfants-contemporain.jpg');
+}
+
+#loisir .square-card-item:nth-child(4) {
+    background-image: url('../images/main/adultes-contemporain.jpg');
+}
 /* Section Loisir END */
 
 /* Section Pro START */
@@ -88,7 +160,8 @@ section.hero {
 /* Contacts Form END */
 
 /* Responsive */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
+
 
     #about .section-right {
         width: 100%;
@@ -118,7 +191,11 @@ section.hero {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    section.hero {
+        height: 70vh;
+    }
+
     #ballet .section-left {
         width: 90%;
     }
@@ -132,7 +209,9 @@ section.hero {
 }
 
 @media screen and (max-width: 480px) {
-
+    section.hero {
+        height: 60vh;
+    }
 }
 
 @media screen and (max-width: 424px) {
