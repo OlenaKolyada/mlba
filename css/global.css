@@ -36,7 +36,7 @@ html {
 body {
 	font-family: 'Roboto Flex', sans-serif;
 	color: var(--black);
-	line-height: 1.6;
+	line-height: 1.5;
 	margin: 0;
 	min-width: 320px;
 	position: relative;
@@ -52,12 +52,12 @@ input, label, textarea, button {
 
 
 h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
+	margin: 0 0 1rem 0;
 }
 
 h1 {
     font-family: 'Lora', serif;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -104,13 +104,20 @@ ul, ol {
     padding: 0 2rem;
 }
 
-/* Responsive */
+/* Tablet */
 @media screen and (max-width: 1023px) {
     html {
         font-size: 16px;
     }
 }
 
+/* Mobile Large */
 @media screen and (max-width: 757px) {
+
+
+}
+
+/* Mobile Small */
+@media screen and (max-width: 480px) {
 
 }

@@ -1,10 +1,56 @@
 @import url('global.css');
 
-/* Responsive */
+/* Hero */
+section.hero {
+    height: clamp(60vh, calc(80vw * 0.5), 80vh);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-content {
+    padding: 10vh 0 5vh 0;
+}
+
+.hero-title {
+    max-width: 40vw;
+}
+
+.hero-title h1 {
+    font-size: clamp(1.8rem, 8vw, 3.5rem);
+    font-weight: 600;
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.hero-slogan {
+    max-width: 30vw;
+    margin-bottom: 2rem;
+}
+
+.hero-slogan p {
+    font-family: 'Oooh Baby', serif;
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Tablet */
 @media screen and (max-width: 1023px) {
+    /* Hero */
+}
+
+/* Mobile Large */
+@media screen and (max-width: 757px) {
+    /* Hero */
 
 }
 
-@media screen and (max-width: 757px) {
+/* Mobile Small */
+@media screen and (max-width: 480px) {
+    /* Hero */
+
 
 }
