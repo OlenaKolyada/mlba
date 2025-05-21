@@ -42,19 +42,19 @@
 							<a href="https://www.google.com/maps/place/152+Av.+Jean+Jaur%C3%A8s,+33600+Pessac/@44.8116391,-0.6146461,16z/data=!3m1!4b1!4m6!3m5!1s0xd54d8620ba5c94b:0xaf353211b9bbb9cf!8m2!3d44.8116391!4d-0.6146461!16s%2Fg%2F11c4ppsyn4?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
 							   target="_blank" rel="noopener noreferrer">
 								<img class="header-icon location" src="icons/location.svg" alt="Adresse de MLBA">
-								152 Av. Jean Jaurès 33600 Pessac
+								<span class="header-contacts-text">152 Av. Jean Jaurès 33600 Pessac</span>
 							</a>
 						</div>
 						<div class="header-contacts-item">
 							<a href="tel:+ 33 6 09 75 62 30" target="_blank" rel="noopener noreferrer">
 								<img class="header-icon" src="icons/phone.svg" alt="Téléphone de MLBA">
-								+ 33 6 09 75 62 30
+								<span class="header-contacts-text">+ 33 6 09 75 62 30</span>
 							</a>
 						</div>
 						<div class="header-contacts-item">
 							<a href="mailto:contact@mlba.fr" target="_blank" rel="noopener noreferrer">
 								<img class="header-icon" src="icons/envelope.svg" alt="Email de MLBA">
-								contact@mlba.fr
+								<span class="header-contacts-text">contact@mlba.fr</span>
 							</a>
 						</div>
 					</div>
@@ -68,6 +68,14 @@
 						<a href="/">
 							<img src="images/logo-header.png"
 								 class="header-logo"
+								 alt="Logo de Mikhalev Lanssens Ballet Academy"
+								 title="Logo de Mikhalev Lanssens Ballet Academy" />
+						</a>
+					</div>
+					<div class="header-logo-mobile">
+						<a href="/">
+							<img src="images/logo-header-mobile.svg"
+								 class="header-logo-mobile"
 								 alt="Logo de Mikhalev Lanssens Ballet Academy"
 								 title="Logo de Mikhalev Lanssens Ballet Academy" />
 						</a>
@@ -110,13 +118,68 @@
 					<div class="btn btn-ghost">
 						<a href="inscription.html">Inscription</a>
 					</div>
+					<div class="burger">
+						<img src="icons/burger.svg" alt="" />
+					</div>
 				</div>
 			</div>
 		</div>
+
+<!--		Header Mobile START-->
+		<div class="header-mobile">
+			<div class="header-mobile-wrap">
+				<div class="header-mobile-close">
+					<img src="icons/xmark.svg" alt="" />
+				</div>
+				<nav class="menu-mobile-nav">
+					<ul>
+						<li class="menu-item-has-children">
+							<a href="#" class="open-submenu" onclick="return false;">Academy</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="notre-histoire.html">Notre histoire</a></li>
+								<li class="menu-item"><a href="professeurs.html">Professeurs</a></li>
+								<li class="menu-item"><a href="reglement.html">Règlement Intérieur</a></li>
+							</ul>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#" class="open-submenu" onclick="return false;">Section Loisir</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="enfants-classique.html">Enfants-Ado Classique</a></li>
+								<li class="menu-item"><a href="ado-contemporain.html">Ado Contemporain</a></li>
+								<li class="menu-item"><a href="adultes-classique.html">Adultes Classique</a></li>
+								<li class="menu-item"><a href="adultes-contemporain.html">Adultes Contemporain</a></li>
+								<li class="menu-item"><a href="planning.html">Planning</a></li>
+								<li class="menu-item"><a href="tarifs.html">Tarifs</a></li>
+								<li class="menu-item"><a href="inscription.html">Inscription</a></li>
+							</ul>
+						</li>
+
+						<li class="menu-item-has-children">
+							<a href="#" class="open-submenu" onclick="return false;">Section Pro</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="presentation.html">Presentation</a></li>
+								<li class="menu-item"><a href="enseignants.html">Enseignants</a></li>
+								<li class="menu-item"><a href="admission.html">Admission</a></li>
+							</ul>
+						</li>
+
+						<li class="menu-item"><a href="contacts.html">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="btn btn-primary-color">
+					<a href="inscription.html">Inscription</a>
+				</div>
+
+			</div>
+		</div>
+<!--		Header Mobile END-->
 	</header>
 <main class="main">
 
 </main>
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--<script src="js/swiper-bundle.min.js"></script>-->
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
