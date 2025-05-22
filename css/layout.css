@@ -120,6 +120,20 @@ section {
     border-radius: 3px;
 }
 
+.swiper-frame {
+    display: block;
+    padding: 5px;
+    border: 1px solid var(--grey);
+    border-radius: 3px;
+    width: 100%;
+}
+
+.swiper-frame .swiper {
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+}
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -144,6 +158,7 @@ section {
 .swiper-button-prev,
 .swiper-button-next {
     color: var(--primary-color);
+    background: transparent;
 }
 /* Swiper END */
 
@@ -235,6 +250,15 @@ section {
     .three-items-item {
         margin-top: 2rem;
         width: 50%;
+    }
+
+    .swiper {
+        aspect-ratio: 1/1;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        display: none;
     }
 }
 

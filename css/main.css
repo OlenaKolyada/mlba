@@ -217,9 +217,7 @@ section.hero {
     justify-content: center;
 }
 
-#main-gallery .swiper {
-    width: 75rem;
-}
+
 /* Gallery END */
 
 /* Contacts START */
@@ -231,6 +229,7 @@ section.hero {
 /* Contacts Form END */
 
 /* Responsive */
+
 @media screen and (max-width: 1024px) {
 
     #about .section-right {
