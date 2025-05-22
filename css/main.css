@@ -209,7 +209,17 @@ section.hero {
 /* Stages END */
 
 /* Gallery START */
+#main-gallery {
+    background-color: var(--grey-light);
+}
 
+#main-gallery .section-row {
+    justify-content: center;
+}
+
+#main-gallery .swiper {
+    width: 75rem;
+}
 /* Gallery END */
 
 /* Contacts START */

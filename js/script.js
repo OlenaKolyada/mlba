@@ -20,4 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
         mobilemenu.removeClass('is-active');
     });
 
+    // Swiper
+    const swiperMainGallery = new Swiper('.swiper', {
+        speed: 1000,
+        spaceBetween: 0,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper .swiper-button-next',
+            prevEl: '.swiper .swiper-button-prev',
+        },
+    });
+
+
 }, false);
