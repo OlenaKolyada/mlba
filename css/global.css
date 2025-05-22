@@ -102,6 +102,7 @@ ul, ol {
     max-width: calc(1200px + 4rem);
     margin: 0 auto;
     padding: 0 2rem;
+    position: relative;
 }
 
 /* Responsive */

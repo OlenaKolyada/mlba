@@ -141,6 +141,48 @@ section.hero {
 /* Section Loisir END */
 
 /* Section Pro START */
+#pro .section-row {
+    align-items: flex-start;
+}
+
+#pro .section-left {
+    width: 50%;
+}
+
+#pro .title-top-decorated h2 {
+    margin-top: 0.625rem;
+    margin-bottom: 2rem;
+}
+
+#pro .btn {
+    width: 17.5rem;
+    height: 3.75rem;
+    margin-top: 3rem;
+}
+
+#pro .decor-quote {
+    position: absolute;
+    font-family: 'Oooh Baby', serif;
+    font-size: 2rem;
+    z-index: 1;
+    top: 79%;
+    left: 39.4%;
+    line-height: 1.4;
+}
+
+#pro .decor-quote-row:last-child {
+    transform: translateX(13.3rem);
+}
+
+#pro .decor-quote-white:nth-child(1) {
+    color: var(--white);
+    margin-left: 1.1rem;
+}
+
+#pro .decor-quote-white:nth-child(2) {
+    color: var(--white);
+}
+
 
 /* Section Pro END */
 
