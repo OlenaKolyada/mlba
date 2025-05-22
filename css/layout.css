@@ -6,7 +6,7 @@ section {
 
 .section-row {
     display: flex;
-    gap: min(4rem, 5vw);
+    gap: 4rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -116,7 +116,7 @@ section {
 
 /* Photo START */
 .section-photo {
-    width: min(34vw, 450px);
+    width: 450px;
 }
 /* Photo END */
 
@@ -137,7 +137,7 @@ section {
 .three-items-item {
     font-size: 0.8rem;
     text-align: center;
-    max-width: 28%;
+    width: 28%;
 }
 
 .three-items-item .icon {
@@ -150,13 +150,28 @@ section {
 /* Three Items Row END */
 
 /* Responsive */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
+    .section-photo {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .btn-header {
         width: 10rem;
     }
 
     .three-items-wrap {
         margin-top: 2rem;
+    }
+
+
+    .section-row {
+        gap: 2rem;
+    }
+
+    .section-photo {
+        width: 360px;
     }
 
 }
@@ -172,7 +187,7 @@ section {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     section {
         padding: 3rem 0;
@@ -185,8 +200,8 @@ section {
     }
 
     .three-items-item {
-        max-width: 40vw;
         margin-top: 2rem;
+        width: 50%;
     }
 }
 
@@ -196,14 +211,12 @@ section {
     }
 
     .three-items-item {
-        max-width: 60vw;
-        margin-top: 2rem;
+        margin-top: 1rem;
+        width: 70%;
     }
 }
 
-@media screen and (max-width: 424px) {
-    .three-items-item {
-        max-width: 70vw;
-    }
+@media screen and (max-width: 425px) {
+
 
 }

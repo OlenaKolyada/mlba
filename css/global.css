@@ -102,11 +102,10 @@ ul, ol {
     max-width: calc(1200px + 4rem);
     margin: 0 auto;
     padding: 0 2rem;
-    position: relative;
 }
 
 /* Responsive */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
 
 }
 
@@ -115,7 +114,7 @@ ul, ol {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     h2 {
         font-size: 1.8rem;
     }
@@ -132,6 +131,6 @@ ul, ol {
     }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 425px) {
 
 }
