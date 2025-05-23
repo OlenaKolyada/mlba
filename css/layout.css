@@ -3,11 +3,22 @@ section {
     padding: 4rem 0;
 }
 
+.section-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: calc(1200px + 4rem);
+    padding: 0 2rem;
+    margin: 0 auto;
+}
 
 .section-row {
     display: flex;
-    gap: 4rem;
     justify-content: space-between;
+    gap: 4rem;
+
     align-items: center;
 }
 
@@ -36,11 +47,11 @@ section {
     align-items: center;
     justify-content: center;
     font-size: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.btn-header {
-    width: clamp(9rem, 11vw, 11rem);
-}
+
 
 .btn-ghost {
     border: 1px solid var(--grey);
@@ -115,17 +126,18 @@ section {
 /* Frame END */
 
 /* Swiper START */
-.swiper {
-    width: 100%;
-    border-radius: 3px;
-}
-
 .swiper-frame {
     display: block;
     padding: 5px;
     border: 1px solid var(--grey);
     border-radius: 3px;
-    width: 100%;
+    max-width: 1200px;
+    width: 94vw;
+}
+
+.swiper {
+    width: calc(100% - 2rem);
+    border-radius: 3px;
 }
 
 .swiper-frame .swiper {
@@ -196,6 +208,8 @@ section {
     margin-bottom: 0;
 }
 /* Three Items Row END */
+
+
 
 /* Responsive */
 @media screen and (max-width: 1200px) {

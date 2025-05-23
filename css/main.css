@@ -164,6 +164,10 @@ section.hero {
     margin-top: 3rem;
 }
 
+#pro .section-photo {
+    width: 450px;
+}
+
 #pro .quote-container {
     position: relative;
 }
@@ -221,14 +225,90 @@ section.hero {
 /* Gallery END */
 
 /* Contacts START */
+#main-contacts {
+    background-image: url('../images/main/bg-contacts.jpg');
+}
+
+#main-contacts .container {
+    background-color: var(--secondary-color-extra-dark);
+    color: var(--white);
+    border-radius: 3px;
+    margin: 0 2rem;
+}
+
+#main-contacts .section-row {
+    padding: 3rem 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#main-contacts a {
+    color: var(--white);
+}
+
+#main-contacts .three-items-wrap {
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+
+#main-contacts .google-map,
+#main-contacts .google-map iframe {
+    width: 32rem;
+    height: 16rem;
+}
+
+
+
 
 /* Contacts END */
 
 /* Contacts Form START */
+#main-contacts form h2 {
+    margin-left: 1rem;
+}
 
+
+#main-contacts form label {
+    color: var(--white);
+}
+
+#main-contacts form a {
+    text-decoration: underline;
+}
+
+#main-contacts form a:hover {
+    opacity: 0.8;
+}
+
+#main-contacts button {
+    margin: 1rem auto 0;
+}
 /* Contacts Form END */
 
 /* Responsive */
+@media screen and (max-width: 1200px) {
+
+    #main-contacts .section-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-contacts .section-row {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-contacts .section-left {
+        width: 60%;
+    }
+
+    #main-contacts .section-right {
+        width: 60%;
+        margin-top: 2rem;
+    }
+
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -245,9 +325,7 @@ section.hero {
         margin: 2rem 0;
     }
 
-    #pro .section-photo {
-        width: 450px;
-    }
+
 
 }
 
@@ -265,7 +343,7 @@ section.hero {
     }
 
     #ballet .btn {
-        margin: 2rem 0 0 0;
+        margin: 2rem 0;
     }
 
     #loisir .section-center {
@@ -306,7 +384,7 @@ section.hero {
     }
 
     #pro .btn {
-        margin: 2rem 0 0 0;
+        margin: 2rem 0;
     }
 
     #pro .section-photo {
@@ -332,6 +410,14 @@ section.hero {
         display: flex;
         order: 2;
         justify-content: center;
+    }
+
+    #main-contacts .section-left {
+        width: 80%;
+    }
+
+    #main-contacts .section-right {
+        width: 80%;
     }
 }
 
@@ -375,6 +461,73 @@ section.hero {
         margin: 2rem 0 1rem 0;
     }
 
+    #stages .section-right {
+        width: 90%;
+    }
+
+    #main-contacts .section-left {
+        width: 90%;
+    }
+
+
+
+    #main-contacts .section-right {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+
+
+    #main-contacts .main-contacts-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+
+    #main-contacts .three-items-wrap {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    #main-contacts .three-items-row {
+        width: auto;
+        gap: 1rem;
+    }
+
+    #main-contacts .three-items-item {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    #main-contacts .google-map,
+    #main-contacts .google-map iframe {
+        width: 40vw;
+        height: 50vw;
+    }
+
+
+}
+
+@media (max-width: 624px) {
+    #main-contacts .main-contacts-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    #main-contacts .google-map,
+    #main-contacts .google-map iframe {
+        width: 100%;
+        height: 40vw;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -382,26 +535,25 @@ section.hero {
         height: 60vh;
     }
 
-    #about .section-right {
-        width: 90%;
+    #main-contacts .section-left {
+        width: 95%;
     }
 
-    #ballet .section-left {
-        width: 90%;
+
+    #main-contacts .section-right {
+        width: 95%;
+        margin-top: 2rem;
     }
 
-    #loisir .section-center {
-        width: 90%;
+    #main-contacts .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    #pro .section-left {
-        width: 90%;
+    #main-contacts .half-width {
+        width: 100%;
     }
-
-    #stages .section-right {
-        width: 90%;
-    }
-
 }
 
 @media screen and (max-width: 425px) {

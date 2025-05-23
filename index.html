@@ -13,7 +13,6 @@
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="css/global.css">
 	<link rel="stylesheet" href="css/magnific-popup.min.css">
 	<link rel="stylesheet" href="css/magnific-popup-effects.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -453,36 +452,181 @@
 <!--	Gallery END-->
 
 <!--	Contacts START-->
-	<section class="section-wrap">
+	<section class="section-wrap" id="main-contacts">
 		<div class="container">
 			<div class="section-row">
-				<div class="section-right">
-
-				</div>
 				<div class="section-left">
+					<div class="section-text">
+						<h2>Besoin d'aide pour choisir&nbsp;?</h2>
+						<p>Venez nous rencontrer : nous serons ravis de vous accueillir et de vous aider à choisir votre parcours.
+						</p>
+					</div>
+					<div class="main-contacts-wrap">
+						<div class="three-items-wrap">
+							<div class="three-items-row">
+								<div class="three-items-item">
+									<img class="main-contacts-icon" src="icons/location-mint.svg" alt="">
+									<p class="three-items-text">
+										<a href="https://maps.app.goo.gl/9wLLnVA6TqUdcupN6" target="_blank"
+										   rel="noopener noreferrer">
+											152 Av. Jean Jaurès<br>33600 Pessac
+										</a>
+									</p>
 
+								</div>
+								<div class="three-items-item">
+									<img class="main-contacts-icon" src="icons/phone-mint.svg" alt="">
+									<p class="three-items-text">
+										<a href="tel:+33609756230" target="_blank" rel="noopener noreferrer">
+											+ 33 6 09 75 62 30</a><br>
+										<a href="mailto:contact@mlba.fr">contact@mlba.fr</a>
+									</p>
+								</div>
+								<div class="three-items-item">
+									<img class="main-contacts-icon" src="icons/clock-mint.svg" alt="">
+									<p class="three-items-text">Du lundi au vendredi<br>
+										de 9h00 à 21h00<br>
+										Samedi 9h00 à 13h00</p>
+								</div>
+							</div>
+						</div>
+						<div class="google-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.486978541365!2d-0.6172210233234816!3d44.81164287674065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d8620ba5c94b%3A0xaf353211b9bbb9cf!2s152%20Av.%20Jean%20Jaur%C3%A8s%2C%2033600%20Pessac!5e0!3m2!1sen!2sfr!4v1745945878811!5m2!1sen!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="section-right">
+					<form class="form-container" action="" method="post">
+						<h2>S'inscrire au cours d'essai</h2>
+						<fieldset class="form-group">
+							<label for="first_name" class="sr-only"></label>
+							<input type="text" class="half-width" id="first_name"
+								   placeholder="Prénom *" name="first_name" required>
+							<label for="last_name" class="sr-only"></label>
+							<input type="text" class="half-width" id="last_name"
+								   placeholder="Nom *" name="last_name" required>
+						</fieldset>
+
+						<fieldset class="form-group">
+							<label for="phone"  class="sr-only"></label>
+							<input type="tel" class="half-width" id="phone"
+								   placeholder="Numéro de téléphone *" name="phone" required>
+							<label for="email"  class="sr-only"></label>
+							<input type="email" class="half-width" id="email"
+								   placeholder="Email" name="email">
+						</fieldset>
+
+						<fieldset class="form-single-input full-width">
+							<label for="dance-class"  class="sr-only"></label>
+							<select id="dance-class" name="dance-class" required>
+								<option value="" disabled selected hidden>Choisissez un cours pour essayer *</option>
+								<option value="enfants_classique">Cours d'essai Enfants-Ado Classique</option>
+								<option value="enfants_contemporain">Cours d'essai Enfants-Ado Contemporain</option>
+								<option value="adultes_classique">Cours d'essai Adultes Classique</option>
+								<option value="adultes_contemporain">Cours d'essai Adultes Contemporain</option>
+							</select>
+						</fieldset>
+
+						<fieldset class="form-single-input full-width">
+							<label for="comment"  class="sr-only"></label>
+							<textarea id="comment" placeholder="Commentaire" name="comment" rows="4"></textarea>
+						</fieldset>
+
+						<fieldset class="form-single-input">
+							<label class="checkbox-label">
+								<input class="checkbox" type="checkbox" name="consent" required>
+								J’accepte la&nbsp;<a href="politique.html" target="_blank">politique de confidentialité</a>
+							</label>
+						</fieldset>
+
+						<fieldset class="form-single-input">
+							<label class="checkbox-label-paragraph">
+								<input class="checkbox text-small" type="checkbox" name="consent-cour-essai" required>
+								J'ai compris que le cours d’essai permet à un élève désireux de pratiquer la danse,
+								de venir découvrir l’ambiance du cours et la pédagogie du professeur.
+								Il est offert UNE seule fois sur UNE discipline. Au delà il sera facturé
+								au prix unitaire de 18€.
+							</label>
+						</fieldset>
+
+						<fieldset class="form-btn">
+							<button class="btn btn-primary-color" type="submit">Envoyer</button>
+						</fieldset>
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
 <!--	Contacts END-->
 
-<!--	Contacts Form START-->
-<section class="section-wrap">
-	<div class="container">
-		<div class="section-row">
-			<div class="section-right">
+</main>
 
+<!--Footer-->
+<footer class="footer">
+	<div class="footer-container">
+		<div class="footer-row">
+			<nav class="footer-col">
+				<h4>Academy</h4>
+				<ul>
+					<li class="menu-item"><a href="presentation.html">Section Pro</a></li>
+					<li class="menu-item"><a href="planning.html">Planning</a></li>
+					<li class="menu-item"><a href="tarifs.html">Tarifs</a></li>
+					<li class="menu-item"><a href="inscription.html">Formulaire d'inscription</a></li>
+					<li class="menu-item"><a href="contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+			<nav class="footer-col">
+				<h4>Section Loisir</h4>
+				<ul>
+					<li class="menu-item"><a href="enfants-classique.html">Enfants-Ado Classique</a></li>
+					<li class="menu-item"><a href="ado-contemporain.html">Ado Contemporain</a></li>
+					<li class="menu-item"><a href="adultes-classique.html">Adultes Classique</a></li>
+					<li class="menu-item"><a href="adultes-contemporain.html">Adultes Contemporain</a></li>
+				</ul>
+			</nav>
+			<nav class="footer-col">
+				<h4>Info</h4>
+				<ul>
+					<li class="menu-item"><a href="reglement.html">Règlement intérieur</a></li>
+					<li class="menu-item"><a href="mentions.html">Mentions légales</a></li>
+					<li class="menu-item"><a href="politique.html">Politique de confidentialité</a></li>
+				</ul>
+			</nav>
+			<div class="footer-col footer-contacts">
+				<h4>Contacts</h4>
+				<a class="footer-address no-decoration" href="https://maps.app.goo.gl/9wLLnVA6TqUdcupN6" target="_blank" rel="noopener noreferrer">
+					152 Av. Jean Jaurès<br>33600 Pessac</a><br>
+				<a class="no-decoration" href="tel:+33609756230" target="_blank" rel="noopener noreferrer">
+					+ 33 6 09 75 62 30</a><br>
+				<a href="mailto:contact@mlba.fr">contact@mlba.fr</a>
 			</div>
-			<div class="section-left">
 
+			<div class="footer-menu-col footer-schedule">
+				<h4>Horaires</h4>
+				<p>Du lundi au vendredi<br>
+					de 9h00 à 21h00<br>
+					Samedi 9h00 à 13h00</p>
+			</div>
+
+			<div class="footer-col footer-socials">
+				<h4>Reseaux</h4>
+				<div class="footer-social-icons">
+					<a href="https://www.instagram.com/jude_mikhalev_ballet_academy/" target="_blank">
+						<img class="footer-icon" src="icons/instagram-mint.svg" alt="">
+					</a>
+					<a href="https://www.facebook.com/Jude-Mikhalev-Ballet-Academy-110031874670706/" target="_blank">
+						<img class="footer-icon" src="icons/facebook-mint.svg" alt="">
+					</a>
+				</div>
 			</div>
 		</div>
+		<div class="footer-row">
+			<p class="footer-copyright">© 2025 Mikhalev Lanssens Ballet Academy</p>
+		</div>
 	</div>
-</section>
-<!--	Contacts Form END-->
-
-</main>
+</footer>
+<!--Scroll to Top-->
+<div class="scroll-to-top"><img class="scroll-icon" src="icons/arrow-up.svg" alt=""></div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
