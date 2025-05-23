@@ -172,19 +172,39 @@ section.hero {
     position: relative;
 }
 
+#pro .mobile-only {
+    display: none;
+}
+
+#pro .mobile-only .frame {
+    position: relative;
+}
+
+.decor-quote-mobile {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-family: 'Oooh Baby', serif;
+    font-size: 2rem;
+    z-index: 10;
+    line-height: 1.4;
+    color: var(--white);
+    width: 40%;
+}
+
 #pro .decor-quote {
     position: absolute;
     font-family: 'Oooh Baby', serif;
     font-size: 2rem;
-    z-index: 1;
+    z-index: 10;
     top: 79%;
-    left: 0;
-    transform: translateX(-67%);
+    left: -10%;
+    transform: translateX(-60%);
     line-height: 1.4;
 }
 
 #pro .decor-quote-row:last-child {
-    transform: translateX(13.3rem);
+    transform: translateX(8rem);
 }
 
 #pro .decor-quote-white:nth-child(1) {
@@ -220,13 +240,17 @@ section.hero {
 #main-gallery .section-row {
     justify-content: center;
 }
-
+#main-gallery .swiper-frame {
+    width: 95vw;
+}
 
 /* Gallery END */
 
 /* Contacts START */
 #main-contacts {
     background-image: url('../images/main/bg-contacts.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main-contacts .container {
@@ -379,8 +403,12 @@ section.hero {
         margin-top: 0;
     }
 
-    #pro .decor-quote {
+    #pro .quote-container {
         display: none;
+    }
+
+    #pro .mobile-only {
+        display: block;
     }
 
     #pro .btn {
@@ -396,6 +424,7 @@ section.hero {
         flex-direction: column;
         width: 70%;
         order: 1;
+        justify-content: center;
         align-items: center;
     }
 
@@ -410,6 +439,11 @@ section.hero {
         display: flex;
         order: 2;
         justify-content: center;
+    }
+
+
+    #main-gallery .swiper-frame {
+        width: 90vw;
     }
 
     #main-contacts .section-left {
@@ -465,6 +499,7 @@ section.hero {
         width: 90%;
     }
 
+
     #main-contacts .section-left {
         width: 90%;
     }
@@ -512,6 +547,12 @@ section.hero {
 }
 
 @media (max-width: 624px) {
+
+    #main-gallery .section-row {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
     #main-contacts .main-contacts-wrap {
         display: flex;
         flex-direction: column;
@@ -533,6 +574,10 @@ section.hero {
 @media screen and (max-width: 480px) {
     section.hero {
         height: 60vh;
+    }
+
+    #main-gallery .swiper-frame {
+        width: 85vw;
     }
 
     #main-contacts .section-left {
@@ -557,9 +602,22 @@ section.hero {
 }
 
 @media screen and (max-width: 425px) {
+    section.hero {
+        height: 70vh;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
     #ballet .btn,
     #pro .btn {
         width: 100%;
         margin: 1rem 0 0.5rem 0;
+    }
+
+    #pro .decor-quote-mobile {
+        font-size: 1.5rem;
+        line-height: 1.3;
     }
 }

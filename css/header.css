@@ -113,7 +113,7 @@ header {
 }
 
 .menu-nav .sub-menu li a {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
 }
 
 .menu-nav .menu-item-has-children > a {
@@ -251,5 +251,9 @@ header {
     .header-logo-mobile {
         display: block;
         max-height: 50px;
+    }
+
+    .header-mobile {
+        width: 90%;
     }
 }
