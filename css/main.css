@@ -49,19 +49,19 @@ section.hero {
 }
 /* About END */
 
-/* Ballet START */
-#ballet {
+/* Danse START */
+#danse {
     background: var(--grey-light);
 }
 
-#ballet .section-left {
+#danse .section-left {
     width: 50%;
 }
 
-#ballet .btn {
+#danse .btn {
     margin: 2.5rem 0;
 }
-/* Ballet END */
+/* Danse END */
 
 /* Section Loisir START */
 #loisir {
@@ -340,11 +340,11 @@ section.hero {
         width: 100%;
     }
 
-    #ballet .section-left {
+    #danse .section-left {
         width: 70%;
     }
 
-    #ballet .btn,
+    #danse .btn,
     #pro .btn {
         margin: 2rem 0;
     }
@@ -366,7 +366,7 @@ section.hero {
         justify-content: center;
     }
 
-    #ballet .btn {
+    #danse .btn {
         margin: 2rem 0;
     }
 
@@ -465,15 +465,15 @@ section.hero {
         width: 90%;
     }
 
-    #ballet .section-left {
+    #danse .section-left {
         width: 90%;
     }
 
-    #ballet .three-items-wrap {
+    #danse .three-items-wrap {
         display: none;
     }
 
-    #ballet .btn {
+    #danse .btn {
         margin: 2rem 0 1rem 0;
     }
 
@@ -610,7 +610,7 @@ section.hero {
         flex-direction: column;
     }
 
-    #ballet .btn,
+    #danse .btn,
     #pro .btn {
         width: 100%;
         margin: 1rem 0 0.5rem 0;

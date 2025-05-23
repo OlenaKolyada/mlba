@@ -42,7 +42,7 @@ body {
 	position: relative;
 	font-weight: 400;
 	background: var(--white);
-
+    padding-top: 120px;
 }
 
 input, label, textarea, button {
@@ -365,6 +365,10 @@ form button {
     select,
     textarea {
         padding: 0.8rem;
+    }
+
+    .scroll-dots-nav li a::after {
+        display: none;
     }
 }
 

@@ -119,8 +119,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    setupSectionScroll('#hero-btn-loisir', '#loisir', 0);
-    setupSectionScroll('#hero-btn-pro', '#pro', 0);
+    setupSectionScroll('#hero-btn-loisir', '#loisir', 120);
+    setupSectionScroll('#hero-btn-pro', '#pro', 120);
 
 
 }, false);
