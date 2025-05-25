@@ -49,11 +49,11 @@ section.no-padding {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 60%;
 }
 
 .section-center .section-text {
     margin: 0 auto 2rem;
+    width: 60%;
 }
 
 .subsection {
@@ -399,6 +399,11 @@ section.no-padding {
     .section-center {
         width: 80%;
     }
+
+    .section-center .section-text {
+        width: 100%;
+    }
+
 
     .cards {
         row-gap: 3rem;

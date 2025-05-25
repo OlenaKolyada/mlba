@@ -124,7 +124,7 @@ h5 {
 }
 
 strong {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 ul {
@@ -448,6 +448,7 @@ form button {
 
     h4 {
         font-size: 1.2rem;
+        font-weight: 600;
     }
 
     .form-group {

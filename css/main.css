@@ -7,8 +7,6 @@
     padding-top: 120px;
 }
 
-
-
 #hero .hero-title {
     max-width: 300px;
 }
@@ -41,7 +39,6 @@
     background: var(--white);
 }
 
-
 /* About END */
 
 /* Danse START */
@@ -69,9 +66,9 @@
 /* Section Loisir END */
 
 /* Section Pro START */
-#pro {
-    background: var(--grey-extra-light);
-}
+/*#pro {*/
+/*    background: var(--grey-extra-light);*/
+/*}*/
 
 #pro .section-row {
     align-items: flex-start;

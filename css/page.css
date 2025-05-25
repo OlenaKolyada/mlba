@@ -4,10 +4,6 @@ section:nth-child(even) {
 
 /* Notre Histoire START */
 
-#notre-histoire .section-row {
-    justify-content: left;
-    gap: 4rem;
-}
 
 
 /* Notre Histoire END */
@@ -39,10 +35,21 @@ section:nth-child(even) {
 #professeurs-classiques ul li {
     text-indent: -0.65rem;
     padding-left: 0.65rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
 }
 
 #professeurs-classiques .cards {
     margin-top: 3rem;
+}
+
+#professeurs-classiques .card-item iframe {
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+#professeurs-classiques .mobile-only {
+    display: none;
 }
 
 
@@ -58,15 +65,6 @@ section:nth-child(even) {
 }
 
 @media screen and (max-width: 1024px) {
-
-}
-
-@media screen and (max-width: 992px) {
-
-
-
-
-
     #professeurs-classiques .swiper-section-small {
         width: 450px;
         height: auto;
@@ -75,6 +73,13 @@ section:nth-child(even) {
     #professeurs-classiques .three-items-wrap {
         margin: 3rem 0 1rem 0;
     }
+}
+
+@media screen and (max-width: 992px) {
+
+
+
+
 
     #professeurs-classiques .three-items-item {
         font-size: 0.9rem;
@@ -83,6 +88,8 @@ section:nth-child(even) {
     #professeurs-classiques .cards {
         margin: 2rem 0 1rem;
     }
+
+
 
 }
 
@@ -95,6 +102,13 @@ section:nth-child(even) {
         font-size: 1rem;
         width: 80%;
     }
+
+
+
+    #professeurs-classiques .cards {
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 624px) {
@@ -106,13 +120,40 @@ section:nth-child(even) {
         gap: 2rem;
     }
 
+    #professeurs-classiques .three-items-item {
+        width: 100%;
+    }
 
-    #professeurs-classiques .three-items-item br {
+    #professeurs-classiques .swiper-section-small {
+        width: 80vw;
+        height: auto;
+    }
+
+    #professeurs-classiques .cards {
         display: none;
+    }
+
+    #professeurs-classiques .mobile-only {
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    #professeurs-classiques .mobile-only iframe {
+        width: 100%;
+        aspect-ratio: 3/2;
+        margin: 1rem auto;
     }
 }
 
 @media screen and (max-width: 480px) {
+
+
+    #professeurs-classiques ul li {
+        text-indent: 0;
+        padding-left: 0;
+    }
+
 
 
 }
