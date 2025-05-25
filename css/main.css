@@ -1,39 +1,33 @@
-@import url('global.css');
-
 /* Hero START */
-section.hero {
+#hero {
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    padding-top: 120px;
 }
 
-.hero-content {
-    padding: 5rem 0;
-    max-width: 100%;
-}
-
-.hero-title {
+#hero .hero-title {
     max-width: 40vw;
 }
 
-.hero-title h1 {
+#hero .hero-title h1 {
     font-size: clamp(1.8rem, 8vw, 3.5rem);
     font-weight: 600;
     margin-bottom: clamp(1rem, 2vw, 2rem);
 }
 
-.hero-slogan {
+#hero .hero-slogan {
     max-width: 30vw;
     margin-bottom: 2rem;
 }
 
-.hero-slogan p {
+#hero .hero-slogan p {
     font-family: 'Oooh Baby', serif;
     font-size: clamp(1.8rem, 7vw, 2.5rem);
 }
 
-.hero-buttons {
+#hero .hero-buttons {
     display: flex;
     gap: 1rem;
 }
@@ -64,12 +58,9 @@ section.hero {
 /* Danse END */
 
 /* Section Loisir START */
-#loisir {
-
-}
-
-#loisir .section-center {
+#loisir .section-text {
     width: 60%;
+    margin: 1rem auto 2rem;
 }
 
 #loisir .title-side-decorated {
@@ -81,62 +72,6 @@ section.hero {
 
 #loisir .title-side-decorated img {
     margin-bottom: 1rem;
-}
-
-#loisir .square-card-grid {
-    gap: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 50rem;
-    margin: 1rem auto 0;
-}
-
-#loisir .square-card-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 16rem;
-    height: 10rem;
-    background-size: cover;
-    background-position: center;
-    box-shadow: var(--shadow);
-    border-radius: 3px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    transition: all 0.5s ease;
-    aspect-ratio: 1 / 1;
-}
-
-#loisir .square-card-item:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    background-blend-mode: overlay;
-    box-shadow: none;
-}
-
-#loisir .square-card-item h4 {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    border-radius: 3px;
-    margin: 0;
-}
-
-#loisir .square-card-item:nth-child(1) {
-    background-image: url('../images/main/enfants-classique.jpg');
-}
-
-#loisir .square-card-item:nth-child(2) {
-    background-image: url('../images/main/adultes-classique.jpg');
-}
-
-#loisir .square-card-item:nth-child(3) {
-    background-image: url('../images/main/enfants-contemporain.jpg');
-}
-
-#loisir .square-card-item:nth-child(4) {
-    background-image: url('../images/main/adultes-contemporain.jpg');
 }
 /* Section Loisir END */
 
@@ -155,17 +90,12 @@ section.hero {
 
 #pro .title-top-decorated h2 {
     margin-top: 0.625rem;
-    margin-bottom: 2rem;
 }
 
 #pro .btn {
     width: 17.5rem;
     height: 3.75rem;
     margin-top: 3rem;
-}
-
-#pro .section-photo {
-    width: 450px;
 }
 
 #pro .quote-container {
@@ -180,7 +110,7 @@ section.hero {
     position: relative;
 }
 
-.decor-quote-mobile {
+#pro .decor-quote-mobile {
     position: absolute;
     top: 2rem;
     left: 2rem;
@@ -198,8 +128,8 @@ section.hero {
     font-size: 2rem;
     z-index: 10;
     top: 79%;
-    left: -10%;
-    transform: translateX(-60%);
+    left: -33%;
+    transform: translateX(-41%);
     line-height: 1.4;
 }
 
@@ -232,7 +162,7 @@ section.hero {
 }
 /* Stages END */
 
-/* Gallery START */
+/* Main Gallery START */
 #main-gallery {
     background-color: var(--grey-light);
 }
@@ -240,13 +170,13 @@ section.hero {
 #main-gallery .section-row {
     justify-content: center;
 }
+
 #main-gallery .swiper-frame {
     width: 95vw;
 }
+/* Main Gallery END */
 
-/* Gallery END */
-
-/* Contacts START */
+/* Main Contacts START */
 #main-contacts {
     background-image: url('../images/main/bg-contacts.jpg');
     background-repeat: no-repeat;
@@ -275,23 +205,18 @@ section.hero {
     margin-bottom: 2rem;
 }
 
-
 #main-contacts .google-map,
 #main-contacts .google-map iframe {
     width: 32rem;
     height: 16rem;
 }
+/* Main Contacts END */
 
-
-
-
-/* Contacts END */
-
-/* Contacts Form START */
-#main-contacts form h2 {
+/* Main Contacts Form START */
+#main-contacts form h2,
+#main-contacts form p {
     margin-left: 1rem;
 }
-
 
 #main-contacts form label {
     color: var(--white);
@@ -308,14 +233,61 @@ section.hero {
 #main-contacts button {
     margin: 1rem auto 0;
 }
-/* Contacts Form END */
+/* Main Contacts Form END */
 
 /* Responsive */
+@media screen and (max-width: 1440px) {
+
+    #danse .section-left {
+        width: 90%;
+    }
+
+    #danse .three-items-wrap {
+        margin-top: 1.5rem;
+    }
+
+    #danse .btn {
+        margin: 1rem 0;
+    }
+
+    #pro .decor-quote {
+        top: 76%;
+        left: -40%;
+        transform: translateX(-41%);
+    }
+}
+
 @media screen and (max-width: 1200px) {
+
+    #pro .btn {
+        margin-top: 2rem;
+        width: 16rem;
+        height: 3rem;
+    }
+
+    #pro .section-photo {
+        height: 450px;
+        width: auto;
+    }
+
+    #pro .decor-quote {
+        font-size: 1.6rem;
+        z-index: 10;
+        top: 79%;
+        left: -30.5%;
+        transform: translateX(-41%);
+        line-height: 1.4;
+    }
+
+    #pro .decor-quote-row:last-child {
+        transform: translateX(6rem);
+    }
 
     #main-contacts .section-row {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
 
     #main-contacts .section-row {
@@ -332,6 +304,9 @@ section.hero {
         margin-top: 2rem;
     }
 
+    #main-contacts .three-items-wrap {
+        margin: 1rem 0;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -344,13 +319,17 @@ section.hero {
         width: 70%;
     }
 
-    #danse .btn,
-    #pro .btn {
-        margin: 2rem 0;
+    #danse .btn {
+        margin: 1rem 0;
     }
 
+    #loisir .section-text {
+        margin: 1rem auto;
+    }
 
-
+    #pro .btn {
+        margin: 1rem 0;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -366,12 +345,8 @@ section.hero {
         justify-content: center;
     }
 
-    #danse .btn {
-        margin: 2rem 0;
-    }
-
     #loisir .section-center {
-        width: 70%;
+        width: 90%;
     }
 
     #loisir .title-side-decorated img {
@@ -409,14 +384,12 @@ section.hero {
 
     #pro .mobile-only {
         display: block;
-    }
-
-    #pro .btn {
-        margin: 2rem 0;
+        text-align: center;
     }
 
     #pro .section-photo {
         width: 100%;
+        height: auto;
     }
 
     #stages .section-right {
@@ -441,11 +414,6 @@ section.hero {
         justify-content: center;
     }
 
-
-    #main-gallery .swiper-frame {
-        width: 90vw;
-    }
-
     #main-contacts .section-left {
         width: 80%;
     }
@@ -455,10 +423,14 @@ section.hero {
     }
 }
 
-
 @media screen and (max-width: 768px) {
-    section.hero {
-        height: 70vh;
+
+    #hero .hero-title h1 {
+        font-size: 3rem;
+    }
+
+    #hero .hero-slogan p {
+        font-size: 2.3rem;
     }
 
     #about .section-right {
@@ -481,6 +453,15 @@ section.hero {
         width: 90%;
     }
 
+    #loisir .title-side-decorated {
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    #loisir .section-text {
+        width: 100%;
+    }
+
     #loisir .square-card-grid {
         display: flex;
         flex-direction: column;
@@ -499,19 +480,14 @@ section.hero {
         width: 90%;
     }
 
-
     #main-contacts .section-left {
         width: 90%;
     }
-
-
 
     #main-contacts .section-right {
         width: 90%;
         margin-top: 2rem;
     }
-
-
 
     #main-contacts .main-contacts-wrap {
         display: flex;
@@ -526,6 +502,7 @@ section.hero {
         padding: 0;
         width: auto;
     }
+
     #main-contacts .three-items-row {
         width: auto;
         gap: 1rem;
@@ -536,17 +513,18 @@ section.hero {
         margin: 0;
     }
 
-
     #main-contacts .google-map,
     #main-contacts .google-map iframe {
         width: 40vw;
         height: 50vw;
     }
-
-
 }
 
 @media (max-width: 624px) {
+
+    #stages .stages-social {
+        margin-top: 1rem;
+    }
 
     #main-gallery .section-row {
         margin: 0 auto;
@@ -568,12 +546,16 @@ section.hero {
         width: 100%;
         height: 40vw;
     }
-
 }
 
 @media screen and (max-width: 480px) {
-    section.hero {
-        height: 60vh;
+
+    #hero .hero-title h1 {
+        font-size: 2.5rem;
+    }
+
+    #pro .decor-quote-mobile {
+        display: none;
     }
 
     #main-gallery .swiper-frame {
@@ -583,7 +565,6 @@ section.hero {
     #main-contacts .section-left {
         width: 95%;
     }
-
 
     #main-contacts .section-right {
         width: 95%;
@@ -602,22 +583,63 @@ section.hero {
 }
 
 @media screen and (max-width: 425px) {
-    section.hero {
-        height: 70vh;
+
+    #hero .hero-title h1 {
+        font-size: 2.3rem;
     }
 
-    .hero-buttons {
+    #hero .hero-slogan p {
+        font-size: 2.1rem;
+    }
+
+    #hero .hero-buttons {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
     }
 
-    #danse .btn,
-    #pro .btn {
+    #danse .btn {
         width: 100%;
         margin: 1rem 0 0.5rem 0;
     }
 
-    #pro .decor-quote-mobile {
-        font-size: 1.5rem;
-        line-height: 1.3;
+
+
+    #loisir .section-text {
+        margin: 0;
+    }
+
+    #pro .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    #hero .hero-title h1 {
+        font-size: 1.9rem;
+    }
+
+    #hero .hero-slogan p {
+        font-size: 1.9rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #hero {
+        height: 100vh;
+        padding-top: 120px;
+    }
+
+    #hero .hero-buttons {
+        gap: 0.5rem;
+    }
+
+    #pro .section-row {
+        align-items: flex-start;
+        justify-content: left;
     }
 }

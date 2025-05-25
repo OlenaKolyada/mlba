@@ -1,20 +1,123 @@
+section:nth-child(even) {
+    background: var(--grey-extra-light);
+}
+
+/* Notre Histoire START */
+
+#notre-histoire .section-row {
+    justify-content: left;
+    gap: 4rem;
+}
+
+#notre-histoire #parcours .section-right,
+#notre-histoire #pedagogie .section-left,
+#notre-histoire #accompagnement .section-right,
+#notre-histoire #expression .section-left {
+    width: 50%;
+}
+
+/* Notre Histoire END */
+
+/* Professeurs Classiques START */
+#professeurs-classiques .swiper-section-small {
+    width: 360px;
+    height: 480px;
+}
+
+#professeurs-classiques .three-items-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    width: 30%;
+}
+
+#professeurs-classiques .three-items-item h4 {
+    margin-bottom: 0.6rem;
+}
+
+#professeurs-classiques .three-items-item ul {
+    padding: 0;
+}
+
+#professeurs-classiques ul li {
+    text-indent: -0.65rem;
+    padding-left: 0.65rem;
+}
+
+#professeurs-classiques .cards {
+    margin-top: 3rem;
+}
+
+
+/* Professeurs Classiques END */
+
 /* Responsive */
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
 @media screen and (max-width: 1023px) {
 
 }
 
 @media screen and (max-width: 992px) {
 
+    #notre-histoire .section-row {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #notre-histoire #parcours .section-right,
+    #notre-histoire #accompagnement .section-right {
+        order: 1;
+        width: 80%;
+    }
+
+    #notre-histoire #parcours .section-left,
+    #notre-histoire #accompagnement .section-left{
+        order: 2;
+    }
+
+    #notre-histoire #pedagogie .section-left,
+    #notre-histoire #expression .section-left {
+        width: 80%;
+    }
+
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 624px) {
 
 }
 
 @media screen and (max-width: 480px) {
 
+    #notre-histoire #parcours .section-right,
+    #notre-histoire #accompagnement .section-right,
+    #notre-histoire #pedagogie .section-left,
+    #notre-histoire #expression .section-left {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 425px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 320px) {
 
 }

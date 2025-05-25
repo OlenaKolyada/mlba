@@ -1,0 +1,26 @@
+# Désactiver la compression et optimisations automatiques
+<IfModule mod_headers.c>
+    # Empêcher OVH de modifier les fichiers CSS/JS
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "no-transform"
+        SetEnv no-gzip 1
+        SetEnv no-brotli 1
+    </FilesMatch>
+</IfModule>
+
+# Forcer le bon type MIME
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType application/javascript .js
+</IfModule>
+
+# Désactiver le cache pour les tests
+<IfModule mod_expires.c>
+    ExpiresActive On
+    <FilesMatch "\.(css|js|html)$">
+        ExpiresDefault "access plus 0 seconds"
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+</IfModule>

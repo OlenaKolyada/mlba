@@ -1,3 +1,31 @@
+/* Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoFlex.woff2') format('woff2-variations'),
+    url('../fonts/RobotoFlex.woff') format('woff-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.woff2') format('woff2'),
+    url('../fonts/Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Oooh Baby';
+    src: url('../fonts/OoohBaby.woff2') format('woff2'),
+    url('../fonts/OoohBaby.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 /* Variables */
 :root {
     --primary-color: #00CCBD;
@@ -36,13 +64,13 @@ html {
 body {
 	font-family: 'Roboto Flex', sans-serif;
 	color: var(--black);
-	line-height: 1.5;
+	line-height: 1.7;
 	margin: 0;
 	min-width: 320px;
 	position: relative;
 	font-weight: 400;
 	background: var(--white);
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 input, label, textarea, button {
@@ -50,34 +78,53 @@ input, label, textarea, button {
 	outline: none;
 }
 
-
 h1, h2, h3, h4, h5, h6, p {
-	margin: 0 0 1rem 0;
+	margin: 0;
 }
 
 h1 {
     font-family: 'Lora', serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 h2 {
     font-family: 'Lora', serif;
     font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
     font-family: 'Roboto Flex', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 h4 {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 1.5rem;
     font-weight: 100;
+    margin-bottom: 1rem;
 }
 
-input, textarea, div {
-	box-sizing: border-box;
+h5 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.title-has-subtilte {
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+strong {
+    font-weight: 800;
 }
 
 ul {
@@ -90,14 +137,21 @@ a {
 	color: var(--black);
 }
 
-.uppercase {
-	text-transform: uppercase;
-}
-
 ul, ol {
 	list-style: none;
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
+iframe {
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
 
 /* Forms START */
 .form-container {
@@ -115,7 +169,6 @@ ul, ol {
 }
 
 label {
-    margin-bottom: 0.5rem;
     font-weight: 400;
     color: var(--black);
 }
@@ -161,7 +214,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d4d4d4' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
-    background-size: 2rem auto;
+    background-size: 1.5rem auto;
     background-repeat: no-repeat;
     background-position: 100% center;
     outline: none;
@@ -190,12 +243,14 @@ select:required:invalid {
     display: flex;
     align-items: center;
     font-size: 14px;
+    line-height: 1.3;
 }
 
 .checkbox-label-paragraph {
     display: flex;
     align-items: baseline;
     font-size: 14px;
+    line-height: 1.3;
 }
 
 form button {
@@ -214,23 +269,12 @@ form button {
 .half-width {
     width: calc((100% - 1rem) / 2);
 }
-
 /* Forms END */
 
-/* Google Map */
-.google-map,
-.google-map iframe {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    display: block;
-    border-radius: 3px;
-}
-
-/* Scroll To Top */
+/* Scroll To Top START */
 .scroll-to-top {
     position: fixed;
-    bottom: 1.5rem;
+    bottom: 1rem;
     right: 1rem;
     opacity: 0;
     color: var(--primary-color);
@@ -254,8 +298,9 @@ form button {
 .scroll-to-top img:hover {
     opacity: 0.7;
 }
+/* Scroll To Top END */
 
-/* Scroll Dots Nav */
+/* Scroll Dots Nav START */
 .scroll-dots-nav {
     position: fixed;
     right: 1rem;
@@ -270,14 +315,14 @@ form button {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 .scroll-dots-nav li a {
     position: relative;
     display: block;
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background-color: #BBBBBB;
     transition: background-color 0.3s ease;
@@ -289,14 +334,6 @@ form button {
 
 .scroll-dots-nav li a:hover {
     background-color: var(--primary-color);
-}
-
-.scroll-dots-nav.blue li a.active {
-    background-color: var(--secondary-color);
-}
-
-.scroll-dots-nav.blue li a:hover {
-    background-color: var(--secondary-color);
 }
 
 .scroll-dots-nav li a::after {
@@ -320,20 +357,36 @@ form button {
 .scroll-dots-nav li a:hover::after {
     opacity: 1;
 }
+/* Scroll Dots Nav END */
 
 /* Responsive */
-
 @media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
     .scroll-dots-nav {
-        right: 0.5rem;
+        display: none;
     }
 
     .scroll-to-top {
         right: 0.5rem;
     }
-}
-@media screen and (max-width: 1024px) {
 
+    .scroll-to-top img {
+        width: 20px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -348,13 +401,21 @@ form button {
 }
 
 @media screen and (max-width: 624px) {
-
+    h1 {
+        font-size: 2.3rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 
 @media screen and (max-width: 480px) {
     .container {
         padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.3rem;
     }
 
     h2 {
@@ -367,8 +428,12 @@ form button {
         padding: 0.8rem;
     }
 
-    .scroll-dots-nav li a::after {
+    .scroll-dots-nav {
         display: none;
+    }
+
+    body {
+        padding-top: 90px;
     }
 }
 
@@ -380,10 +445,19 @@ form button {
         font-size: 14px;
     }
 
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .form-group {
+        margin-bottom: 0.5rem;
+    }
+
 
 }
 
 @media screen and (max-width: 375px) {
+
     input,
     select,
     textarea {
@@ -393,6 +467,13 @@ form button {
 
 @media screen and (max-width: 320px) {
 
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
 
+    h2 {
+        font-size: 1.4rem;
+    }
 }
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: sans-serif; padding: 1rem; }
+        code { background: #eee; padding: 0.2rem; display: block; margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+<h1>Device Info</h1>
+<code id="width"></code>
+<code id="height"></code>
+<code id="dpr"></code>
+<code id="scale"></code>
+<code id="viewport"></code>
+<code id="useragent"></code>
+<script>
+    document.getElementById('width').textContent = 'window.innerWidth: ' + window.innerWidth;
+    document.getElementById('height').textContent = 'window.innerHeight: ' + window.innerHeight;
+    document.getElementById('dpr').textContent = 'devicePixelRatio: ' + window.devicePixelRatio;
+    document.getElementById('scale').textContent = 'visualViewport.scale: ' + (window.visualViewport?.scale || 'N/A');
+    document.getElementById('viewport').textContent = 'viewport tag: ' + (document.querySelector('meta[name="viewport"]')?.content || 'NOT FOUND');
+    document.getElementById('useragent').textContent = 'User-Agent: ' + navigator.userAgent.substring(0, 50) + '...';
+</script>
+</body>
+</html>

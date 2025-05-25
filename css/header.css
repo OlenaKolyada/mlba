@@ -62,10 +62,6 @@ header {
     filter: brightness(0) invert(1);
 }
 
-.location {
-    width: 19px;
-}
-
 .header-bottom-row {
     display: flex;
     align-items: center;

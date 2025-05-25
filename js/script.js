@@ -108,19 +108,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sections.forEach(section => observer.observe(section));
 
-    // Scroll Buttons on Page
-    function setupSectionScroll(buttonId, sectionId, offset = 120, duration = 1200) {
-        document.querySelector(buttonId).addEventListener('click', function (event) {
-            event.preventDefault();
-            const section = document.querySelector(sectionId);
-            const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
 
-            smoothScrollTo(sectionPosition - offset, duration);
+    // Hidden Text
+    document.querySelectorAll('.read-more-link').forEach(function (readMoreLink) {
+        const hiddenText = readMoreLink.previousElementSibling;
+
+        readMoreLink.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const isExpanded = hiddenText.classList.contains('expanded');
+
+            if (isExpanded) {
+                hiddenText.style.maxHeight = hiddenText.scrollHeight + 'px';
+                void hiddenText.offsetHeight;
+                hiddenText.style.maxHeight = '0px';
+                hiddenText.classList.remove('expanded');
+                readMoreLink.classList.remove('active');
+            } else {
+                hiddenText.style.maxHeight = hiddenText.scrollHeight + 'px';
+                hiddenText.classList.add('expanded');
+                readMoreLink.classList.add('active');
+
+                hiddenText.addEventListener('transitionend', function handler() {
+                    if (hiddenText.classList.contains('expanded')) {
+                        hiddenText.style.maxHeight = 'none';
+                    }
+                    hiddenText.removeEventListener('transitionend', handler);
+                });
+            }
         });
-    }
-
-    setupSectionScroll('#hero-btn-loisir', '#loisir', 120);
-    setupSectionScroll('#hero-btn-pro', '#pro', 120);
+    });
 
 
 }, false);
