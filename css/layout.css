@@ -17,7 +17,7 @@ section.no-padding {
 }
 
 .container {
-    max-width: calc(1200px + 8rem);
+    max-width: 1200px;
     padding: 0 4rem;
     margin: 0 auto;
 }
@@ -29,7 +29,17 @@ section.no-padding {
     align-items: flex-start;
 }
 
-.section-left {
+.section-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.align-left {
+    align-items: flex-start;
+}
+
+.section-content-image {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +49,11 @@ section.no-padding {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    width: 60%;
+}
+
+.section-center .section-text {
+    margin: 0 auto 2rem;
 }
 
 .subsection {
@@ -320,6 +335,10 @@ section.no-padding {
         height: 400px;
         width: auto;
     }
+
+    .three-items-wrap {
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -329,21 +348,33 @@ section.no-padding {
     }
 
     .container {
-        max-width: calc(1200px + 2rem);
+        max-width: 1200px;
         padding: 0 2rem;
     }
 
-    .three-items-wrap {
-        margin-top: 2rem;
-    }
-
     .section-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
     }
 
+    .section-content-text {
+        order: 1;
+        width: 80%;
+    }
+
+    .section-content-image {
+        order: 2;
+    }
+
+    .align-left {
+        align-items: center;
+    }
+
     .section-photo {
-        height: 360px;
-        width: auto;
+        width: 450px;
+        height: auto;
     }
 
     .cards {
@@ -356,21 +387,17 @@ section.no-padding {
 }
 
 @media screen and (max-width: 992px) {
+
     section {
         padding: 3rem 0;
     }
 
-
-
-    .section-row {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    section h1 {
+        margin-top: 1rem;
     }
 
-    .section-photo {
-        width: 450px;
-        height: auto;
+    .section-center {
+        width: 80%;
     }
 
     .cards {
@@ -381,47 +408,31 @@ section.no-padding {
         max-width: 50rem;
         margin: 1rem auto 0;
     }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .three-items-row {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .three-items-item {
-        margin-top: 2rem;
-        width: 50%;
-    }
-
-    .swiper {
-        aspect-ratio: 1/1;
-    }
-
-    .swiper .swiper-button-prev,
-    .swiper .swiper-button-next {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 624px) {
 
     section h1 {
         margin-top: 1.5rem;
     }
 
-    .section-right {
-        display: flex;
+    .three-items-row {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0;
+        gap: 2rem;
+    }
+
+    .three-items-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 624px) {
+
+    .section-content-text,
+    .section-center {
+        width: 90%;
     }
 
     .cards {
@@ -445,6 +456,7 @@ section.no-padding {
 }
 
 @media screen and (max-width: 480px) {
+
     section h1 {
         margin-top: 0;
     }
@@ -455,16 +467,21 @@ section.no-padding {
     }
 
     .three-items-wrap {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .three-items-item {
         width: 70%;
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 425px) {
+
     .card-item img {
         width: 200px;
         height: auto;
@@ -472,12 +489,16 @@ section.no-padding {
 }
 
 @media screen and (max-width: 375px) {
+
     .three-items-item {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 320px) {
+    .container {
+        padding: 0 1rem;
+    }
     .btn {
         width: 11rem;
         height: 2.5rem;

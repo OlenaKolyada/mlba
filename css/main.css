@@ -7,14 +7,17 @@
     padding-top: 120px;
 }
 
+
+
 #hero .hero-title {
-    max-width: 40vw;
+    max-width: 300px;
 }
 
 #hero .hero-title h1 {
     font-size: clamp(1.8rem, 8vw, 3.5rem);
     font-weight: 600;
     margin-bottom: clamp(1rem, 2vw, 2rem);
+    margin-left: 0 !important;
 }
 
 #hero .hero-slogan {
@@ -38,18 +41,12 @@
     background: var(--white);
 }
 
-#about .section-right {
-    width: 80%;
-}
+
 /* About END */
 
 /* Danse START */
 #danse {
     background: var(--grey-light);
-}
-
-#danse .section-left {
-    width: 50%;
 }
 
 #danse .btn {
@@ -58,10 +55,6 @@
 /* Danse END */
 
 /* Section Loisir START */
-#loisir .section-text {
-    width: 60%;
-    margin: 1rem auto 2rem;
-}
 
 #loisir .title-side-decorated {
     display: flex;
@@ -79,12 +72,8 @@
 #pro {
     background: var(--grey-extra-light);
 }
-#pro .section-row {
-    align-items: flex-start;
-}
 
-#pro .section-left {
-    width: 50%;
+#pro .section-row {
     align-items: flex-start;
 }
 
@@ -148,9 +137,7 @@
 /* Section Pro END */
 
 /* Stages START */
-#stages .section-right {
-    align-items: flex-start;
-}
+
 
 #stages .social-icons {
     display: flex;
@@ -238,9 +225,7 @@
 /* Responsive */
 @media screen and (max-width: 1440px) {
 
-    #danse .section-left {
-        width: 90%;
-    }
+
 
     #danse .three-items-wrap {
         margin-top: 1.5rem;
@@ -287,7 +272,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 4rem;
     }
 
     #main-contacts .section-row {
@@ -296,57 +281,32 @@
     }
 
     #main-contacts .section-left {
-        width: 60%;
+        width: 70%;
+    }
+
+    #main-contacts .section-left .section-text {
+        width: 80%;
+    }
+
+    #main-contacts .section-left .three-items-row {
+        justify-content: left;
+        gap: 1rem;
     }
 
     #main-contacts .section-right {
-        width: 60%;
-        margin-top: 2rem;
+        width: 70%;
     }
 
-    #main-contacts .three-items-wrap {
-        margin: 1rem 0;
-    }
 }
 
 @media screen and (max-width: 1024px) {
-
-    #about .section-right {
-        width: 100%;
-    }
-
-    #danse .section-left {
-        width: 70%;
-    }
 
     #danse .btn {
         margin: 1rem 0;
     }
 
     #loisir .section-text {
-        margin: 1rem auto;
-    }
-
-    #pro .btn {
-        margin: 1rem 0;
-    }
-}
-
-@media screen and (max-width: 992px) {
-
-    #about .section-right {
-        width: 80%;
-        order: 1;
-    }
-
-    #about .section-left {
-        display: flex;
-        order: 2;
-        justify-content: center;
-    }
-
-    #loisir .section-center {
-        width: 90%;
+        margin: 0 auto 1rem;
     }
 
     #loisir .title-side-decorated img {
@@ -362,11 +322,6 @@
     }
 
     #pro .section-row {
-        align-items: center;
-    }
-
-    #pro .section-left {
-        width: 70%;
         align-items: center;
     }
 
@@ -392,13 +347,8 @@
         height: auto;
     }
 
-    #stages .section-right {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        order: 1;
-        justify-content: center;
-        align-items: center;
+    #pro .btn {
+        margin: 2rem 0;
     }
 
     #stages .stages-social {
@@ -407,19 +357,13 @@
         align-items: center;
         margin-top: 2rem;
     }
+}
 
-    #stages .section-left {
-        display: flex;
-        order: 2;
-        justify-content: center;
-    }
+@media screen and (max-width: 992px) {
 
-    #main-contacts .section-left {
-        width: 80%;
-    }
-
-    #main-contacts .section-right {
-        width: 80%;
+    #loisir .title-side-decorated {
+        justify-content: left;
+        align-items: flex-start;
     }
 }
 
@@ -433,14 +377,6 @@
         font-size: 2.3rem;
     }
 
-    #about .section-right {
-        width: 90%;
-    }
-
-    #danse .section-left {
-        width: 90%;
-    }
-
     #danse .three-items-wrap {
         display: none;
     }
@@ -449,44 +385,31 @@
         margin: 2rem 0 1rem 0;
     }
 
-    #loisir .section-center {
-        width: 90%;
-    }
-
-    #loisir .title-side-decorated {
-        justify-content: left;
-        align-items: flex-start;
-    }
-
-    #loisir .section-text {
-        width: 100%;
-    }
-
     #loisir .square-card-grid {
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
 
-    #pro .section-left {
-        width: 90%;
-    }
-
     #pro .btn {
         margin: 2rem 0 1rem 0;
     }
 
-    #stages .section-right {
-        width: 90%;
+    #main-gallery .swiper {
+        aspect-ratio: 1/1;
     }
 
-    #main-contacts .section-left {
-        width: 90%;
+    #main-contacts .section-row {
+        gap: 5rem;
     }
 
+    #main-contacts .section-left,
     #main-contacts .section-right {
         width: 90%;
-        margin-top: 2rem;
+    }
+
+    #main-contacts .section-left .section-text {
+        width: 100%;
     }
 
     #main-contacts .main-contacts-wrap {
@@ -494,7 +417,8 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
-        margin-top: 2rem;
+        align-items: center;
+        margin-top: 3rem;
     }
 
     #main-contacts .three-items-wrap {
@@ -562,13 +486,8 @@
         width: 85vw;
     }
 
-    #main-contacts .section-left {
-        width: 95%;
-    }
-
-    #main-contacts .section-right {
-        width: 95%;
-        margin-top: 2rem;
+    #main-contacts .section-row {
+        gap: 3rem;
     }
 
     #main-contacts .form-group {
@@ -604,8 +523,6 @@
         margin: 1rem 0 0.5rem 0;
     }
 
-
-
     #loisir .section-text {
         margin: 0;
     }
@@ -614,10 +531,10 @@
         width: 100%;
         margin: 0.5rem 0;
     }
-
 }
 
 @media screen and (max-width: 375px) {
+
     #hero .hero-title h1 {
         font-size: 1.9rem;
     }
@@ -638,8 +555,4 @@
         gap: 0.5rem;
     }
 
-    #pro .section-row {
-        align-items: flex-start;
-        justify-content: left;
-    }
 }
