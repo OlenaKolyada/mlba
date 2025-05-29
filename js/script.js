@@ -139,5 +139,49 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Modal Window
+    $('.open-modal-form-btn').magnificPopup({
+        type: 'inline',
+        showCloseBtn: false,
+        removalDelay: 700,
+        midClick: true,
+        mainClass: 'mfp-with-zoom',
+
+        zoom: {
+            enabled: true,
+            duration: 300,
+            easing: 'ease-in-out',
+
+            opener: function(openerElement) {
+                return $('#modal-form');
+            }
+        }
+    });
+
+
+    $('.modal-close').on('click', function () {
+        $.magnificPopup.close();
+    });
+
+// Enfants Ado Classique, Scroll Buttons
+    function setupSectionScroll(buttonId, sectionId, offset = 120, duration = 1200) {
+        const button = document.querySelector(buttonId);
+        const section = document.querySelector(sectionId);
+
+        if (!button || !section) return;
+
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+            smoothScrollTo(sectionPosition - offset, duration);
+        });
+    }
+
+    setupSectionScroll('#card-init', '#init', 70);
+    setupSectionScroll('#card-elem1', '#elem1', 70);
+    setupSectionScroll('#card-elem2', '#elem2', 70);
+    setupSectionScroll('#card-elem3', '#elem3', 70);
+    setupSectionScroll('#card-avance', '#avance', 70);
+
 
 }, false);

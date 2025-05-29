@@ -3,12 +3,21 @@ section {
     padding: 6rem 0;
 }
 
+.section-first {
+    padding: 4rem 0 1rem;
+    background: var(--white) !important;
+}
+
 section h1 {
     margin-top: 0;
 }
 
 section.no-padding {
     padding: 0;
+}
+
+section.no-padding-top {
+    padding: 0 0 6rem 0;
 }
 
 .section-wrap {
@@ -20,6 +29,7 @@ section.no-padding {
     max-width: 1200px;
     padding: 0 4rem;
     margin: 0 auto;
+    width: 100%;
 }
 
 .section-row {
@@ -48,12 +58,15 @@ section.no-padding {
 .section-center {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 
 .section-center .section-text {
-    margin: 0 auto 2rem;
-    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
 }
 
 .subsection {
@@ -73,6 +86,10 @@ section.no-padding {
     align-items: center;
     justify-content: center;
     font-size: inherit;
+}
+
+.btn-header {
+    width: 11rem;
 }
 
 .btn-ghost {
@@ -98,6 +115,19 @@ section.no-padding {
 .btn-primary-color {
     border: none;
     background: var(--primary-color-gradient);
+    color: var(--white);
+}
+
+.btn-primary-color-ghost {
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    border-radius: 3px;
+    color: var(--primary-color);
+    transition: all 0.5s ease;
+}
+
+.btn-primary-color-ghost:hover {
+    background: var(--primary-color);
     color: var(--white);
 }
 
@@ -197,9 +227,11 @@ section.no-padding {
 
 /* Photo START */
 .section-photo {
-    height: 540px;
     width: auto;
+    height: 540px;
+
 }
+
 /* Photo END */
 
 /* Google Map START */
@@ -249,10 +281,16 @@ section.no-padding {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    align-items: flex-start;
 }
 
 .card-thumb {
     overflow: hidden;
+}
+
+.cards .card-item {
+    max-width: calc((1200px - 6rem) / 4);
+    cursor: pointer;
 }
 
 .cards .card-thumb img {
@@ -266,7 +304,8 @@ section.no-padding {
     transform: scale(1.1);
 }
 
-.card-item:hover .card-title {
+.card-item:hover .card-title,
+.card-item:hover .card-subtitle {
     color: var(--primary-color);
 }
 
@@ -280,6 +319,13 @@ section.no-padding {
 .cards .card-title {
     margin: 1rem 0 0 0;
     transition: all 0.5s ease;
+    text-align: center;
+}
+
+.cards .card-subtitle {
+    transition: all 0.5s ease;
+    text-align: center;
+    font-size: 0.8rem;
 }
 /* Cards END */
 
@@ -316,6 +362,27 @@ section.no-padding {
 
 /* Hidden Text END  */
 
+/* Longread START */
+
+section.longread  {
+    padding: 3rem 0;
+}
+
+section.no-padding-top.longread  {
+    padding: 0 0 3rem 0;
+}
+
+section.longread ul {
+    list-style: disc;
+    margin-bottom: 1rem;
+}
+
+section.longread h4 {
+    margin: 2rem 0 0 2rem;
+}
+
+/* Longread END */
+
 /* Responsive */
 @media screen and (max-width: 1440px) {
 
@@ -323,10 +390,21 @@ section.no-padding {
         padding: 5rem 0;
     }
 
-    .section-photo {
-        height: 450px;
-        width: auto;
+    section.no-padding-top {
+        padding: 0 0 5rem 0;
     }
+
+    .section-photo {
+        width: auto;
+        height: 450px;
+    }
+
+    .section-photo.horisontal {
+        width: 100%;
+        height: auto;
+    }
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -345,6 +423,10 @@ section.no-padding {
 
     section {
         padding: 4rem 0;
+    }
+
+    section.no-padding-top {
+        padding: 0 0 4rem 0;
     }
 
     .container {
@@ -392,6 +474,10 @@ section.no-padding {
         padding: 3rem 0;
     }
 
+    section.no-padding-top {
+        padding: 0 0 3rem 0;
+    }
+
     section h1 {
         margin-top: 1rem;
     }
@@ -403,7 +489,6 @@ section.no-padding {
     .section-center .section-text {
         width: 100%;
     }
-
 
     .cards {
         row-gap: 3rem;
@@ -438,6 +523,10 @@ section.no-padding {
     .section-content-text,
     .section-center {
         width: 90%;
+    }
+
+    .section-center .section-text {
+        text-align: left;
     }
 
     .cards {
@@ -494,6 +583,9 @@ section.no-padding {
 }
 
 @media screen and (max-width: 375px) {
+    .container {
+        padding: 1rem;
+    }
 
     .three-items-item {
         width: 100%;
@@ -501,9 +593,9 @@ section.no-padding {
 }
 
 @media screen and (max-width: 320px) {
-    .container {
-        padding: 0 1rem;
-    }
+
+
+
     .btn {
         width: 11rem;
         height: 2.5rem;

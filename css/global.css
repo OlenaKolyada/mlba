@@ -108,8 +108,8 @@ h4 {
 
 h5 {
     font-family: 'Roboto Flex', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .title-has-subtilte {
@@ -137,12 +137,25 @@ a {
 	color: var(--black);
 }
 
+.underlined {
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.underlined:hover {
+    opacity: 0.6;
+}
+
 ul, ol {
 	list-style: none;
 }
 
 p {
     margin-bottom: 1rem;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    max-width: 100%;
 }
 
 iframe {
@@ -153,7 +166,7 @@ iframe {
     display: block;
 }
 
-/* Forms START */
+/* Form START */
 .form-container {
     width: 100%;
     background: transparent;
@@ -269,7 +282,65 @@ form button {
 .half-width {
     width: calc((100% - 1rem) / 2);
 }
-/* Forms END */
+/* Form END */
+
+/*Modal Form START */
+.modal-form {
+    max-width: 30rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.modal-form-wrap {
+    padding: 3rem;
+    background-color: rgba(7, 35, 89, 0.8);
+    color: var(--white);
+    border-radius: 3px;
+}
+
+.modal-form label {
+    color: var(--white);
+}
+
+.modal-form a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.modal-form a:hover {
+    color: white;
+}
+
+.modal-close {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 1rem;
+    left: 28rem;
+}
+
+.modal-icon {
+    width: 1rem;
+    display: inline-block;
+    filter: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg">\
+        <filter id="recolor" color-interpolation-filters="sRGB">\
+          <feColorMatrix type="matrix" values="\
+            0 0 0 0 0\
+            0 0 0 0 0.8\
+            0 0 0 0 0.741\
+            0 0 0 1 0"\
+          />\
+        </filter>\
+      </svg>#recolor');
+    cursor: pointer;
+}
+
+.modal-form button {
+    margin: 1rem auto 0;
+}
+
+/* Modal Form END */
 
 /* Scroll To Top START */
 .scroll-to-top {
@@ -397,7 +468,7 @@ form button {
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2.3rem;
-        margin: 0 0 1.5rem 1rem;
+        margin: 0 0 1.5rem 0;
     }
 
     h2 {
@@ -415,7 +486,7 @@ form button {
 
     h1 {
         font-size: 2.1rem;
-        margin: 0 0 1.3rem 1rem;
+        margin: 0 0 1.3rem 0;
     }
 
     h2 {

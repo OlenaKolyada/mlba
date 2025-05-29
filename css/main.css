@@ -53,29 +53,14 @@
 
 /* Section Loisir START */
 
-#loisir .title-side-decorated {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-}
 
-#loisir .title-side-decorated img {
-    margin-bottom: 1rem;
-}
+
 /* Section Loisir END */
 
 /* Section Pro START */
-/*#pro {*/
-/*    background: var(--grey-extra-light);*/
-/*}*/
 
 #pro .section-row {
     align-items: flex-start;
-}
-
-#pro .title-top-decorated h2 {
-    margin-top: 0.625rem;
 }
 
 #pro .btn {
