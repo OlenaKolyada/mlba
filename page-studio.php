@@ -16,12 +16,10 @@ get_header();
 ?>
 
     <main class="main" id="studio">
-
-        <?php get_template_part( 'template-parts/breadcrumbs' );?>
-
         <!--	Studio START-->
-    <section class="section-wrap no-padding-top">
+    <section class="section-wrap section-first no-padding-top">
         <div class="container">
+            <?php get_template_part( 'template-parts/breadcrumbs' );?>
             <div class="section-row">
                 <div class="section-center">
                     <div class="section-text">

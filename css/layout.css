@@ -4,8 +4,9 @@ section {
 }
 
 .section-first {
-    padding: 4rem 0 1rem;
-    background: var(--white) !important;
+    display: flex;
+    justify-content: left;
+    margin: 4rem 0 1rem;
 }
 
 section h1 {
@@ -229,7 +230,11 @@ section.no-padding-top {
 .section-photo {
     width: auto;
     height: 540px;
+}
 
+.section-photo.horisontal {
+    height: auto;
+    max-height: 400px;
 }
 
 /* Photo END */
@@ -399,11 +404,6 @@ section.longread h4 {
         height: 450px;
     }
 
-    .section-photo.horisontal {
-        width: 100%;
-        height: auto;
-    }
-
 
 }
 
@@ -457,6 +457,11 @@ section.longread h4 {
     .section-photo {
         width: 450px;
         height: auto;
+    }
+
+    .section-photo.horisontal {
+        width: 600px;
+        max-height: none;
     }
 
     .cards {
@@ -555,9 +560,20 @@ section.longread h4 {
         margin-top: 0;
     }
 
+    .section-first {
+        margin: 2rem 0 1rem;
+    }
+
     .section-photo {
         width: 100%;
         height: auto;
+    }
+
+    .section-photo.horisontal {
+        aspect-ratio: 1/1;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
     .three-items-wrap {
@@ -584,7 +600,7 @@ section.longread h4 {
 
 @media screen and (max-width: 375px) {
     .container {
-        padding: 1rem;
+        padding: 0 1rem;
     }
 
     .three-items-item {
@@ -593,9 +609,6 @@ section.longread h4 {
 }
 
 @media screen and (max-width: 320px) {
-
-
-
     .btn {
         width: 11rem;
         height: 2.5rem;

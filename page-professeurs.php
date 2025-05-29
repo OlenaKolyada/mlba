@@ -16,11 +16,10 @@ get_header();
 ?>
 
     <main class="main" id="professeurs-classiques">
-        <?php get_template_part( 'template-parts/breadcrumbs' );?>
-
     <!--	Roman Mikhalev START-->
-    <section class="section-wrap no-padding-top" id="roman-mikhalev">
+    <section class="section-wrap section-first no-padding-top" id="roman-mikhalev">
         <div class="container">
+            <?php get_template_part( 'template-parts/breadcrumbs' );?>
             <h1>Les Professeurs Classiques</h1>
             <div class="section-row">
                 <div class="section-content-image">
@@ -285,11 +284,6 @@ get_header();
                                     <img src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-2.jpg"
                                          alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
                                          title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/don-quichotte-m-petipa.jpg"
-                                         alt="Don Quichotte, ballet de Marius Petipa. Danseuse Corinne Lanssens"
-                                         title="Don Quichotte, ballet de Marius Petipa. Danseuse Corinne Lanssens" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/who-cares-g-balanchine-opera-national-de-bordeaux.jpg"

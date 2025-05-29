@@ -1,5 +1,4 @@
-<section class="section-first" id="top">
-    <div class="section-wrap">
+
         <div class="breadcrumbs-wrap">
             <?php
             if ( function_exists('yoast_breadcrumb') ) {
@@ -7,5 +6,3 @@
             }
             ?>
         </div>
-    </div>
-</section>

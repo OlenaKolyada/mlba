@@ -16,11 +16,10 @@ get_header();
 ?>
 
     <main class="main" id="notre-histoire">
-        <?php get_template_part( 'template-parts/breadcrumbs' );?>
-
     <!--	Parcours START-->
-    <section class="section-wrap no-padding-top" id="parcours">
+    <section class="section-wrap section-first no-padding-top" id="parcours">
         <div class="container">
+            <?php get_template_part( 'template-parts/breadcrumbs' );?>
             <h1>Notre histoire</h1>
             <div class="section-row">
                 <div class="section-content-image">
@@ -142,7 +141,7 @@ get_header();
 <!--Scroll Dots Nav START-->
 <nav class="scroll-dots-nav" aria-label="Navigation de section">
     <ul>
-        <li><a href="#parcours" data-target="parcours" data-offset="150" data-label="Top"></a></li>
+        <li><a href="#parcours" data-target="parcours" data-offset="150" data-label="Parcours"></a></li>
         <li><a href="#pedagogie" data-target="pedagogie" data-offset="70" data-label="Pédagogie"></a></li>
         <li><a href="#accompagnement" data-target="accompagnement" data-offset="70" data-label="Accompagnement"></a></li>
         <li><a href="#expression" data-target="expression" data-offset="70" data-label="Expression"></a></li>
