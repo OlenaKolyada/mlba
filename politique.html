@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages
- * Template name: Mentions Legales
+ * Template name: Politique Confidentialite
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -16,8 +16,9 @@ get_header();
 ?>
 
 <main class="main" id="mentions">
-    <section class="section-wrap section-first no-padding-top longread" id="article1">
+    <section class="section-wrap  section-first no-padding-top longread" id="article1">
         <div class="container">
+            <?php get_template_part( 'template-parts/breadcrumbs' );?>
             <h1>Mentions légales</h1>
             <div class="section-row">
                 <div class="section-content-text">
@@ -42,8 +43,8 @@ get_header();
                         <p class="address"><strong>Mikhalev Lanssens Ballet Academy</strong><br>
                             152 Avenue Jean Jaurès<br>
                             33600 Pessac<br>
-                            France<br>
-                       <a href="mailto:contact@mlba.fr" class="underlined">contact@mlba.fr</a></p>
+                            France</p>
+                        <p><a href="mailto:contact@mlba.fr" class="underlined">contact@mlba.fr</a></p>
                     </div>
                 </div>
             </div>
@@ -58,7 +59,8 @@ get_header();
                 <div class="section-content-text">
                     <div class="section-text">
                         <h2>Hébergement</h2>
-                        <p>OVH<br><a href="https://www.ovh.com/fr" target="_blank" class="underlined">www.ovh.com/fr</a></p>
+                        <h5>OVH</h5>
+                        <p><a href="https://www.ovh.com/fr" target="_blank" class="underlined">www.ovh.com/fr</a></p>
                     </div>
                 </div>
             </div>
@@ -91,7 +93,8 @@ get_header();
                     <div class="section-text">
                         <h2>Crédits</h2>
                         <h5>Conception graphique / développement :</h5>
-                        <p>Olena Kolyada<br><a href="https://funkycorgi.com" target="_blank" class="underlined">funkycorgi.com</a></p>
+                        <p>Olena Kolyada</p>
+                        <p><a href="https://funkycorgi.com" target="_blank" class="underlined">funkycorgi.com</a></p>
                         <h5>Photos</h5>
                         <ul>
                             <li>Marina Kudryashova</li>

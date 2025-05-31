@@ -18,7 +18,6 @@ get_header();
     <main class="main" id="adulte-classique">
             <section class="section-wrap section-first no-padding-top" id="intro">
                     <div class="container">
-                        <?php get_template_part( 'template-parts/breadcrumbs' );?>
                         <h1>Cours Adulte Classique</h1>
                             <div class="section-row">
                                 <div class="section-content-text">

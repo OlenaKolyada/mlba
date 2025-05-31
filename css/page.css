@@ -78,22 +78,29 @@ section:nth-child(even) {
 }
 /* Reglement END */
 
+/* Mentions Legales START */
+#mentions section.longread h5 {
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+}
+/* Mentions Legales END */
+
 /* Enfants-Ado Classique START */
 
-.cards.niveaux {
+#enfants-classique .cards.niveaux {
     margin-top: 1.5rem;
 }
 
-.cards .card-item {
-    width: calc((100% - 8rem) / 5);
+#enfants-classique .cards .card-thumb img {
+    width: 11rem;
 }
 
-.cards.niveaux h5 {
+#enfants-classique .cards h5 {
     font-size: 1rem;
     font-weight: bold;
 }
 
-.niveau-button {
+#enfants-classique .niveau-button {
     margin-top: 2rem;
 }
 
@@ -108,8 +115,75 @@ section:nth-child(even) {
     object-fit: cover;
     object-position: center;
 }
-
 /* Enfants-Ado Classique END */
+
+/*Tarifs START*/
+#tarifs h4 {
+    font-weight: bold;
+}
+
+#tarifs h4:first-of-type {
+    margin-top: 4rem;
+}
+
+#tarifs h4:last-of-type {
+    margin: 6rem 0 -3rem;
+}
+
+#tarifs .tarif-table {
+    width: 66rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#tarifs .tarif-table.small {
+    width: 43rem;
+    grid-template-columns: 2fr auto;
+}
+
+#tarifs .tarif-table.large {
+    margin-bottom: 0;
+}
+
+#tarifs .tarif-header {
+    display: contents;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#tarifs .tarif-row {
+    display: contents;
+}
+
+#tarifs .tarif-header::after,
+#tarifs .tarif-row::after {
+    content: "";
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--grey-light);
+    display: block;
+    height: 0;
+    margin-top: 0.3rem;
+}
+
+#tarifs .first-cell {
+    text-align: left;
+    margin-left: 1rem;
+    max-width: 15rem;
+}
+
+#tarifs em {
+    color: var(--grey);
+}
+
+#tarifs .mobile-only {
+    display: none;
+}
+
+/*Tarifs END*/
 
 /* Section Pro START */
 #section-pro .section-row {
@@ -136,13 +210,104 @@ section:nth-child(even) {
     margin-top: 2rem;
 }
 
-#admission .btn {
+#pro-admission .btn {
     margin-top: 2rem;
     width: 17.5rem;
     height: 3.75rem;
 }
 /* Section Pro END */
 
+/* Admission START */
+
+#admission .section-center {
+    width: 50%;
+}
+
+#admission .section-text {
+    background: var(--grey);
+    padding: 3rem;
+    border-radius: 3px;
+    color: var(--white);
+    width: 100%;
+}
+
+#admission .section-text a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+#admission form a:hover {
+    opacity: 0.8;
+}
+
+#admission form label {
+    color: var(--white);
+}
+
+#admission button {
+    margin: 1rem auto 0;
+}
+
+/* Admission END */
+
+/* Contacts START */
+
+#contacts .section-row {
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contacts .section-content-text {
+    width: 46%;
+}
+
+#contacts .section-content-text:last-of-type {
+    background: var(--grey);
+    padding: 3rem;
+    border-radius: 3px;
+    color: var(--white);
+}
+
+#contacts .section-content-text:last-of-type a {
+    color: var(--white);
+}
+
+#contacts .section-text {
+    width: 100%;
+}
+
+#contacts .main-contacts-wrap {
+    width: 100%;
+}
+
+#contacts .google-map iframe {
+    width: 100%;
+    height: 20rem;
+}
+
+#contacts .three-items-wrap {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#contacts form label {
+    color: var(--white);
+}
+
+#contacts form a {
+    text-decoration: underline;
+}
+
+#contacts form a:hover {
+    opacity: 0.8;
+}
+
+#contacts button {
+    margin: 1rem auto 0;
+}
+
+/* Contacts END */
 
 /* Responsive */
 @media screen and (max-width: 1440px) {
@@ -150,9 +315,56 @@ section:nth-child(even) {
 }
 
 @media screen and (max-width: 1200px) {
-    #section-pro #admission .btn {
+    #enfants-classique .cards {
+        gap: 1rem;
+    }
+
+    #enfants-classique .cards .card-thumb img {
+        width: 10rem;
+    }
+
+    #tarifs .tarif-table.large {
+        width: 100%;
+    }
+
+    #tarifs .tarif-table.small {
+        width: 100%;
+    }
+
+    #section-pro #pro-admission .btn {
         width: 16rem;
         height: 3rem;
+    }
+
+    #contacts .section-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    #contacts .section-content-text {
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contacts .section-text {
+        width: 100%;
+    }
+
+    #contacts p {
+        margin-bottom: 2rem;
+    }
+
+    #contacts .three-items-row {
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    #contacts form {
+        width: 100%;
     }
 }
 
@@ -174,16 +386,15 @@ section:nth-child(even) {
     #enfants-classique .cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
         gap: 1rem;
         margin-top: 0;
         max-width: 100%;
     }
 
-    #enfants-classique .cards .card-item {
-        max-width: 11rem;
-        min-height: 11rem;
+    #enfants-classique .cards h5 {
+        font-size: 0.8rem;
     }
 
     #enfants-classique .swiper-section-small {
@@ -199,6 +410,10 @@ section:nth-child(even) {
         margin-top: 3rem;
     }
 
+    #tarifs .section-content-text {
+        width: 100%;
+    }
+
     #section-pro #audition .btn {
         margin: 3rem auto 1rem;
     }
@@ -208,12 +423,28 @@ section:nth-child(even) {
         margin-top: 0;
     }
 
-    #section-pro #admission .btn {
+    #section-pro #pro-admission .btn {
         margin: 2rem 0 1rem 0;
+    }
+
+    #admission .section-center {
+        width: 60%;
+    }
+
+    #contacts .section-content-text {
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 992px) {
+
+    #enfants-classique .cards {
+        gap: 0.8rem;
+    }
+
+    #enfants-classique .cards .card-thumb img {
+        width: 8rem;
+    }
 
     #professeurs-classiques .three-items-item {
         font-size: 0.9rem;
@@ -225,6 +456,10 @@ section:nth-child(even) {
 
     #section-pro .section-center .section-text {
         width: 100%;
+    }
+
+    #admission .section-center {
+        width: 70%;
     }
 
 }
@@ -259,20 +494,105 @@ section:nth-child(even) {
         margin-top: 2rem;
     }
 
+    #enfants-classique .cards h5 {
+        font-size: 1rem;
+    }
 
-    #enfants-classique .cards .card-item img {
-        width: 300px;
+    #enfants-classique .cards .card-thumb img {
+        width: 15rem;
         height: auto;
     }
 
-    #enfants-classique .cards .card-item {
-        width: 300px;
-        max-width: 20rem;
+    #tarifs .tarif-table.mobile-only {
+        display: grid;
+        grid-template-columns: 2fr auto;
+        text-align: right;
+    }
+
+    #tarifs .tarif-table.small span {
+        display: block;
+    }
+
+    #tarifs .tarif-table.small span br {
+        display: none;
+    }
+
+    #tarifs .tarif-table.small .tarif-cell:empty {
+        display: none;
+    }
+
+    #tarifs .tarif-table.large {
+        display: none;
+    }
+
+    #tarifs h4:first-of-type {
+        margin-top: 3rem;
+    }
+
+    #tarifs h4 {
+        margin-bottom: 2rem;
+    }
+
+    #tarifs h4:last-of-type {
+        margin: 4rem 0 2rem;
+    }
+
+    #tarifs h5 {
+        font-weight: 700;
+    }
+
+    #tarifs .tarif-table:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #admission .section-center {
+        width: 80%;
+    }
+
+    #contacts .section-row {
+        gap: 5rem;
+    }
+
+    #contacts .section-content-text {
+        width: 90%;
+    }
+
+    #contacts .main-contacts-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+        gap: 6rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    #contacts .three-items-wrap {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    #contacts .three-items-row {
+        width: auto;
+        gap: 3rem;
+    }
+
+    #contacts .three-items-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    #contacts .google-map,
+    #contacts .google-map iframe {
+        width: 40vw;
+        height: 50vw;
     }
 
 }
 
 @media screen and (max-width: 624px) {
+
     #professeurs-classiques .three-items-wrap {
         margin: 2rem 0 1rem;
     }
@@ -283,6 +603,41 @@ section:nth-child(even) {
 
     #professeurs-classiques .three-items-item {
         width: 100%;
+    }
+
+    #admission .section-center {
+        width: 100%;
+    }
+
+    #contacts .section-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contacts .main-contacts-wrap {
+        margin-top: 0 !important;
+    }
+
+    #contacts .section-content-text:last-of-type {
+        padding: 0;
+        background: var(--white);
+        color: var(--black);
+    }
+
+    #contacts .section-content-text:last-of-type a {
+        color: var(--black);
+    }
+
+    #contacts form label {
+        color: var(--black);
+    }
+
+    #contacts form input,
+    #contacts form select,
+    #contacts form textarea {
+        background-color: var(--grey-extra-light);
     }
 
     #professeurs-classiques .swiper-section-small {
@@ -314,6 +669,26 @@ section:nth-child(even) {
         height: auto;
         aspect-ratio: 3/4;
     }
+
+    #contacts .section-content-text {
+        width: 100%;
+    }
+
+    #contacts .main-contacts-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 3rem;
+    }
+
+    #contacts .google-map,
+    #contacts .google-map iframe {
+        width: 100%;
+        height: 40vw;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -334,12 +709,90 @@ section:nth-child(even) {
     #enfants-classique .section-content-image .frame {
         margin-top: 2rem;
     }
+
+    #tarifs .first-cell {
+        margin-left: 0;
+        max-width: 12rem;
+    }
+
+    #tarifs .mobile-only .first-cell {
+        margin-left: 0;
+        max-width: 10rem;
+    }
+
+    #admission .section-first.no-padding-top {
+        margin: 3rem 0 0 0;
+    }
+
+    #admission .section-text {
+        background: var(--white);
+        color: var(--black);
+        padding: 0;
+    }
+
+    #admission .section-text a {
+        color: var(--black);
+    }
+
+    #admission form label {
+        color: var(--black);
+    }
+
+    #admission button {
+        margin: 1rem auto 0;
+    }
+
+    #admission form input,
+    #admission form select,
+    #admission form textarea {
+        background-color: var(--grey-extra-light);
+    }
+
+    #admission .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #admission form {
+        margin-top: 2rem;
+    }
+
+    #admission .half-width {
+        width: 100%;
+    }
+
+    #contacts .section-row {
+        gap: 3rem;
+    }
+
+    #contacts .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #contacts .half-width {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
-    #section-pro #admission .btn {
+    #section-pro #pro-admission .btn {
         width: 100%;
+    }
 
+    #tarifs .tarif-cell {
+        max-width: 11rem;
+    }
+
+    #admission .btn {
+        width: 100%;
+    }
+
+    #contacts .three-items-row {
+        gap: 2rem;
     }
 }
 
@@ -349,15 +802,16 @@ section:nth-child(even) {
         margin-top: 0;
     }
 
-    #enfants-classique .cards .card-item img {
-        width: 280px;
-    }
-
-    #enfants-classique .cards .card-item {
-        width: 280px;
-    }
 }
 
 @media screen and (max-width: 320px) {
+    #tarifs .tarif-table.small span br {
+        display: inline-block;
+    }
+
+    #admission .btn {
+        font-size: 1rem;
+        height: 3rem;
+    }
 
 }

@@ -1,72 +1,122 @@
-/* Main Form */
-.registration-form .section-content {
+/* Global  START */
+#inscription .section-center {
     background-color: var(--grey-light);
     box-shadow: var(--shadow);
     border-radius: 3px;
+    width: 85%;
 }
 
-.registration-form form {
+#inscription .section-center .section-text {
+    width: 100%;
+}
+
+#inscription .form-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding: 3rem;
-    box-shadow: none;
+    transition: height 0.6s ease;
+    overflow: hidden;
 }
 
-.registration-form .label {
-    margin-bottom: 0.8rem;
+#inscription .form-group {
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-.registration-form form input,
-.registration-form form select,
-.registration-form form textarea {
+#inscription fieldset {
+    padding: 0;
+}
+
+#inscription h3 {
+    margin: 3rem 0 2rem 0;
+}
+
+#inscription form input,
+#inscription form select,
+#inscription form textarea {
     background-color: var(--white);
+    width: 26rem;
 }
 
-
-
-.registration-form a {
-    color: var(--black);
-    text-decoration: underline;
-    transition: all 0.3s ease;
+#inscription .participant-age label span:hover,
+#inscription .form-single-input.checkboxes span:hover,
+#inscription .form-single-input.checkboxes input[type="checkbox"]:checked + span,
+#inscription .form-single-input.radio-buttons input[type="radio"]:checked + span {
+    background-color: var(--grey);
+    color: var(--white);
 }
 
-.registration-form a:hover {
-    color: var(--primary-color);
+#inscription .class-option {
+    margin-top: 2rem;
+    width: 26rem;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-.registration-form form > h3:first-of-type {
+#inscription .first-participant .class-option {
+
+}
+
+/* Global END */
+
+/* Info Contact START */
+#inscription .info-contact h3 {
     margin: 0 0 2rem 0;
 }
+/* Info Contact END */
 
-.registration-form h3 {
-    margin: 3rem 0 1rem 0;
-    font-weight: 400;
-    font-size: 2.2rem;
-}
+/* First Participant START */
 
-.registration-form h4 {
-    font-size: 1.8rem;
-    margin: 2rem 0 1rem 0;
-}
-
-.registration-form form button {
-    margin: 1rem auto 0;
-}
-
-.registration-form .radio-buttons {
+#inscription .participant {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
 }
 
-.registration-form .radio-buttons label {
-    cursor: pointer;
+#inscription .participant-identity {
+    display: flex;
+    flex-direction: column;
 }
 
-.registration-form .radio-buttons input[type="radio"] {
+#inscription .same-name {
+    margin-top: 1rem;
+}
+
+#inscription .same-name-checkbox-label {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#inscription .same-name-checkbox-label input[type="checkbox"] {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin: 0 0.5rem;
+}
+
+#inscription .radio-buttons input[type="radio"] {
     display: none;
 }
 
-.registration-form .age-participant label span {
+#inscription .participant-age .age-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#inscription .first-participant .participant-age .age-buttons {
+    margin-top: 3rem;
+}
+
+#inscription .participant-age label span {
     font-size: 14px;
     padding: 0.7rem 2rem;
     border-radius: 3px;
@@ -79,246 +129,222 @@
     height: 100%;
 }
 
-.registration-form .age-participant label span:hover,
-.form-single-input.checkboxes span:hover,
-.form-single-input.checkboxes input[type="checkbox"]:checked + span,
-.form-single-input.radio-buttons input[type="radio"]:checked + span {
-    background-color: var(--grey);
-    color: var(--white);
-}
-
-.registration-form .age-participant {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 1rem;
-}
-
-.registration-form .age-participant .form-single-input {
-    margin: 0 !important;
-}
-
-.age-sections-container {
-    position: relative;
-    transition: height 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.toggle-section {
-    transition: max-height 0.3s ease-in-out;
-    overflow: hidden;
-    max-height: 0;
-}
-
-.toggle-section.showing {
-    display: block;
-}
-
-.class-option label {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.class-option label span {
-    width: 12.5rem;
-    text-align: center;
-}
-
-.class-option {
-    width: 26rem;
-}
-
-.class-option fieldset {
-    margin: 0 !important;
-}
-
-.ado-section,
-.adult-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem !important;
-    flex-wrap: wrap;
-}
-
-.form-single-input.checkboxes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.form-single-input.checkboxes label {
-    cursor: pointer;
-    user-select: none;
-}
-
-.form-single-input.checkboxes input[type="checkbox"] {
+#inscription input[type="radio"] {
     display: none;
 }
 
-.form-single-input.checkboxes span {
-    display: inline-block;
-    padding: 0.7rem 2rem;
-    background-color: #eee;
-    border-radius: 3px;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-    font-size: 14px;
-    box-shadow: var(--shadow);
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"] + span {
+#inscription input[type="radio"] + span {
     display: inline-block;
     padding: 0.7rem 1rem;
-    background-color: #eee;
+    background-color: var(--grey-extra-light);
     border-radius: 3px;
     transition: background-color 0.3s ease;
     cursor: pointer;
     width: 8rem;
 }
 
-.form-single-input.radio-buttons input[type="radio"]:checked + span {
+#inscription .form-single-input.radio-buttons input[type="radio"]:checked + span {
     background-color: var(--grey);
     color: var(--white);
 }
 
-.participant-identity-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: left !important;
+#inscription .participant {
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease, margin 0.4s ease;
 }
 
-.custom-checkbox-label {
+#inscription .age-sections-container {
+    position: relative;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* First Participant END */
+
+/* Add-Remove START */
+#inscription .add-remove-participant {
+    width: 100%;
     display: flex;
-    font-size: 14px;
+    justify-content: space-between;
+}
+
+#inscription .add-participant {
+    justify-content: flex-start;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+}
+
+#inscription .remove-participant {
+    justify-content: flex-end;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#inscription .plus {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+#inscription .add-participant,
+#inscription .remove-participant {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+    color: var(--black);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#inscription .remove-participant {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#inscription .add-participant:hover,
+#inscription .remove-participant:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+#inscription .remove-participant.hiding {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#inscription .add-participant.showing {
+    opacity: 0;
+    visibility: visible;
+}
+
+/* Add-Remove END */
+
+/* Action START */
+#inscription .form-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 50%;
+    justify-self: center;
+}
+
+#inscription .action-checkbox-label {
+    display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.custom-checkbox-label input[type="checkbox"] {
+#inscription .action-checkbox-label input[type="checkbox"] {
     width: 0.9rem;
     height: 0.9rem;
     margin: 0 0.5rem;
 }
 
-.custom-checkbox {
-    margin-bottom: 2rem;
+#inscription a {
+    color: var(--black);
+    text-decoration: underline;
+    transition: all 0.3s ease;
 }
 
-.form-button .custom-checkbox {
-    margin: 2.5rem 0 0 0;
+#inscription a:hover {
+    color: var(--primary-color);
+}
+/* Action END */
+
+/* Participant Template START */
+#inscription .participant-template {
+    display: none;
+}
+/* Participant Template END */
+
+/* Animation START */
+#inscription .toggle-section {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
 }
 
-.form-button .custom-checkbox-label {
-    margin: 0;
+#inscription .toggle-section.showing {
+    display: block;
 }
 
-.registration-form input:not(:disabled):hover,
-.registration-form select:not(:disabled):hover,
-.registration-form textarea:not(:disabled):hover {
+#inscription .class-option label {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#inscription .form-single-input.checkboxes span {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background-color: #eee;
+    border-radius: 3px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    font-size: 14px;
+    box-shadow: var(--shadow);
+    width: 10rem;
+    text-align: center;
+}
+
+#inscription .class-option {
+
+}
+
+#inscription .class-option fieldset {
+    margin: 0 !important;
+}
+
+#inscription .ado-section,
+#inscription#inscription .adult-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem !important;
+    flex-wrap: wrap;
+}
+
+#inscription .form-single-input.checkboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#inscription .form-single-input.checkboxes label {
+    cursor: pointer;
+    user-select: none;
+}
+
+#inscription .form-single-input.checkboxes input[type="checkbox"] {
+    display: none;
+}
+
+
+
+#inscription input:not(:disabled):hover,
+#inscription select:not(:disabled):hover,
+#inscription textarea:not(:disabled):hover {
     background-color: white;
 }
 
-.registration-form input:disabled,
-.registration-form input:disabled:hover {
+#inscription input:disabled,
+#inscription input:disabled:hover {
     background-color: var(--grey-extra-light);
     box-shadow: none;
     cursor: default;
     opacity: 0.6;
 }
 
-.form-button.center {
-    display: flex;
-    justify-content: center;
-}
-
-.add-remove-participant {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.add-participant {
-    justify-content: flex-start;
-}
-
-.remove-participant {
-    justify-content: flex-end;
-}
-
-.add-participant,
-.remove-participant {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    margin-top: 2rem;
-    width: 100%;
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.add-participant:hover,
-.remove-participant:hover {
-    filter: brightness(1.3);
-    cursor: pointer;
-}
-
-hr {
-    margin-top: 3rem;
-}
-
-.participant-template {
-    display: none;
-}
-
-.participant.animating-add {
+#inscription .participant.animating-add {
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 1s ease, transform 0.4s ease;
 }
-.participant.added {
+
+#inscription .participant.added {
     opacity: 1;
     transform: translateY(0);
+    margin-top: 3rem;
 }
 
-.form-wrapper {
-    transition: height 0.6s ease;
-    overflow: hidden;
-}
-
-.participant {
-    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease, margin 0.4s ease;
-}
-
-.remove-participant {
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.remove-participant.hiding {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.add-participant {
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    opacity: 1;
-}
-
-.add-participant.showing {
-    opacity: 0;
-    visibility: visible;
-}
-
-.remove-participant {
-    display: none;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-input.large {
-    width: 26rem!important;
-    max-width: 26rem!important;
-}
+/* Animation END */

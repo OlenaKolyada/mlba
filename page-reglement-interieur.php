@@ -17,9 +17,8 @@ get_header();
 
     <main class="main" id="reglement">
     <!--	Article 1 START-->
-    <section class="section-wrap  section-first no-padding-top longread" id="article1">
+    <section class="section-wrap section-first no-padding-top longread" id="article1">
         <div class="container">
-            <?php get_template_part( 'template-parts/breadcrumbs' );?>
             <h1>Règlement Intérieur</h1>
             <div class="download-link up">
                 <a href="<?php echo get_template_directory_uri();?>/assets/pdf/reglement-interieur.pdf">Télécharger le pdf</a>

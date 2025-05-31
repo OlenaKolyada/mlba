@@ -19,7 +19,6 @@ get_header();
         <!--	Niveaux START-->
             <section class="section-wrap section-first no-padding-top" id="niveaux">
                 <div class="container">
-                    <?php get_template_part( 'template-parts/breadcrumbs' );?>
                     <h1>Cours Enfants-Ado Classique</h1>
                     <div class="section-row">
                         <div class="section-content-text">

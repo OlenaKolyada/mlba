@@ -19,7 +19,6 @@ get_header();
     <!--	Roman Mikhalev START-->
     <section class="section-wrap section-first no-padding-top" id="roman-mikhalev">
         <div class="container">
-            <?php get_template_part( 'template-parts/breadcrumbs' );?>
             <h1>Les Professeurs Classiques</h1>
             <div class="section-row">
                 <div class="section-content-image">

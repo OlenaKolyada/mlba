@@ -73,6 +73,16 @@ body {
     padding-top: 80px;
 }
 
+#page {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    flex: 1;
+}
+
 input, label, textarea, button {
 	font-family: 'Roboto Flex', sans-serif;
 	outline: none;
@@ -108,8 +118,8 @@ h4 {
 
 h5 {
     font-family: 'Roboto Flex', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .title-has-subtilte {
@@ -177,8 +187,10 @@ iframe {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
     margin-bottom: 1rem;
+    padding: 0 !important;
 }
 
 label {
@@ -277,6 +289,7 @@ form button {
 
 .form-single-input.full-width {
     margin-bottom: 1rem;
+    padding: 0 !important;
 }
 
 .half-width {
@@ -436,8 +449,14 @@ form button {
 }
 
 @media screen and (max-width: 1200px) {
+    .form-group {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 
-
+    .form-single-input.full-width {
+        margin-bottom: 1.5rem;
+    }
 
 }
 
@@ -522,20 +541,10 @@ form button {
         font-weight: 600;
     }
 
-    .form-group {
-        margin-bottom: 0.5rem;
-    }
-
-
 }
 
 @media screen and (max-width: 375px) {
 
-    input,
-    select,
-    textarea {
-        font-size: 10px;
-    }
 }
 
 @media screen and (max-width: 320px) {

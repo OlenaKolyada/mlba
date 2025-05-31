@@ -19,7 +19,6 @@ get_header();
     <!--	Presentation START -->
     <section class="section-wrap section-first no-padding-top" id="presentation">
     		<div class="container">
-                <?php get_template_part( 'template-parts/breadcrumbs' );?>
     			<h1>Formation professionnelle en&nbsp;Danse&nbsp;Classique</h1>
     			<div class="section-row">
     				<div class="section-content-text">
@@ -138,7 +137,7 @@ get_header();
     	<!--	Scolarite END-->
 
     	<!--	Admission START-->
-    	<section class="section-wrap" id="admission">
+    	<section class="section-wrap" id="pro-admission">
     		<div class="container">
     			<div class="section-row">
                     <div class="section-content-text">
@@ -218,7 +217,7 @@ get_header();
     		<li><a href="#mission" data-target="mission" data-offset="70" data-label="Mission"></a></li>
     		<li><a href="#formation" data-target="formation" data-offset="70" data-label="Formation"></a></li>
     		<li><a href="#scolarite" data-target="scolarite" data-offset="70" data-label="Scolarité"></a></li>
-    		<li><a href="#admission" data-target="admission" data-offset="70" data-label="Admission"></a></li>
+    		<li><a href="#pro-admission" data-target="pro-admission" data-offset="70" data-label="Admission"></a></li>
     	</ul>
     </nav>
     <!--Scroll Dots Nav END-->

@@ -68,23 +68,20 @@ global $mlba_options;
     				<div class="header-logo">
                         <?php if($mlba_options['logo']): ?>
                             <a href="<?php echo get_home_url();?>">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/images/logo-header.png"
-                                     class="header-logo"
-                                     alt="Logo de Mikhalev Lanssens Ballet Academy"
-                                     title="Logo de Mikhalev Lanssens Ballet Academy" />
+                                <?php if(is_page(array('section-pro', 'enseignants', 'admission'))): ?>
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/logo-pro.svg"
+                                         class="header-logo"
+                                         alt="Logo de Mikhalev Lanssens Ballet Academy, Section Pro"
+                                         title="Logo de Mikhalev Lanssens Ballet Academy, Section Pro" />
+                                <?php else: ?>
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/logo-horisontal.svg"
+                                         class="header-logo"
+                                         alt="Logo de Mikhalev Lanssens Ballet Academy"
+                                         title="Logo de Mikhalev Lanssens Ballet Academy" />
+                                <?php endif; ?>
                             </a>
                         <?php endif;?>
-    				</div>
-    				<div class="header-logo-mobile">
-                        <?php if($mlba_options['logo-mobile']): ?>
-                            <a href="<?php echo get_home_url();?>">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/images/logo-header-mobile.svg"
-                                     class="header-logo-mobile"
-                                     alt="Logo de Mikhalev Lanssens Ballet Academy"
-                                     title="Logo de Mikhalev Lanssens Ballet Academy" />
-                            </a>
-                        <?php endif;?>
-    				</div>
+                    </div>
     				<nav class="menu-nav">
                         <?php
                         wp_nav_menu(

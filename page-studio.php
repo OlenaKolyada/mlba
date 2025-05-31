@@ -19,7 +19,6 @@ get_header();
         <!--	Studio START-->
     <section class="section-wrap section-first no-padding-top">
         <div class="container">
-            <?php get_template_part( 'template-parts/breadcrumbs' );?>
             <div class="section-row">
                 <div class="section-center">
                     <div class="section-text">

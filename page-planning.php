@@ -15,77 +15,21 @@
 get_header();
 ?>
 
-    <main >
+<main class="main" id="planning">
 
-        <?php get_template_part( 'template-parts/breadcrumbs' );?>
-
-        <section class="section our-story section-second bg-white" id="our-story-1">
-            <div class="section-wrap">
+        <section class="section-wrap section-first no-padding-top">
+            <div class="container">
                 <h1>Planning</h1>
-                <div class="section-container no-margin">
-                    <div class="section-row last-of-type">
-                        <div class="section-content">
-                            <div class="section-text no-margin">
+                <div class="section-row">
+                    <div class="section-center">
+                        <div class="section-text">
 
-                                <table class="horaire-ballet">
-                                    <thead>
-                                    <tr>
-                                        <th>Heure</th>
-                                        <th>Lundi</th>
-                                        <th>Mardi</th>
-                                        <th>Mercredi</th>
-                                        <th>Jeudi</th>
-                                        <th>Vendredi</th>
-                                        <th>Samedi</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>9h00 - 10h30</td>
-                                        <td>Ballet Débutant</td>
-                                        <td>Ballet Intermédiaire</td>
-                                        <td>Ballet Débutant</td>
-                                        <td>Ballet Avancé</td>
-                                        <td>Ballet Débutant</td>
-                                        <td>Ballet Enfants</td>
-                                    </tr>
-                                    <tr>
-                                        <td>11h00 - 12h30</td>
-                                        <td>Pointes</td>
-                                        <td>Contemporain</td>
-                                        <td>Ballet Enfants</td>
-                                        <td>Stretching</td>
-                                        <td>Ballet Intermédiaire</td>
-                                        <td>Ballet Avancé</td>
-                                    </tr>
-                                    <tr>
-                                        <td>14h00 - 15h30</td>
-                                        <td>Contemporain</td>
-                                        <td>Ballet Enfants</td>
-                                        <td>Ballet Intermédiaire</td>
-                                        <td>Ballet Enfants</td>
-                                        <td>Pointes</td>
-                                        <td>Contemporain</td>
-                                    </tr>
-                                    <tr>
-                                        <td>16h00 - 17h30</td>
-                                        <td>Ballet Avancé</td>
-                                        <td>Stretching</td>
-                                        <td>Ballet Avancé</td>
-                                        <td>Ballet Intermédiaire</td>
-                                        <td>Ballet Avancé</td>
-                                        <td>Stretching</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </section>
     </main>
-    <!--Side Dot Nav-->
 
 <?php
 // get_sidebar();

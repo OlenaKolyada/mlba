@@ -19,7 +19,6 @@ get_header();
     <!--	Parcours START-->
     <section class="section-wrap section-first no-padding-top" id="parcours">
         <div class="container">
-            <?php get_template_part( 'template-parts/breadcrumbs' );?>
             <h1>Notre histoire</h1>
             <div class="section-row">
                 <div class="section-content-image">

@@ -52,7 +52,13 @@
 /* Danse END */
 
 /* Section Loisir START */
+#loisir .cards {
+    margin-top: 2rem;
+}
 
+#loisir .cards .card-thumb img {
+    width: 13rem;
+}
 
 
 /* Section Loisir END */
@@ -153,16 +159,35 @@
 }
 
 #main-contacts .container {
-    background-color: var(--secondary-color-extra-dark);
+    background-color: var(--grey);
     color: var(--white);
     border-radius: 3px;
     margin: 0 2rem;
 }
 
 #main-contacts .section-row {
+    gap: 0;
     padding: 3rem 0;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+#main-contacts .section-content-text {
+    width: 50%;
+    padding: 3rem;
+}
+
+#main-contacts .section-text {
+    width: 100%;
+}
+
+#main-contacts .main-contacts-wrap {
+    width: 100%;
+}
+
+#main-contacts .google-map iframe {
+    width: 100%;
+    height: 20rem;
 }
 
 #main-contacts a {
@@ -170,21 +195,8 @@
 }
 
 #main-contacts .three-items-wrap {
-    width: 90%;
+    width: 100%;
     margin-bottom: 2rem;
-}
-
-#main-contacts .google-map,
-#main-contacts .google-map iframe {
-    width: 32rem;
-    height: 16rem;
-}
-/* Main Contacts END */
-
-/* Main Contacts Form START */
-#main-contacts form h2,
-#main-contacts form p {
-    margin-left: 1rem;
 }
 
 #main-contacts form label {
@@ -202,12 +214,10 @@
 #main-contacts button {
     margin: 1rem auto 0;
 }
-/* Main Contacts Form END */
+/* Main Contacts END */
 
 /* Responsive */
 @media screen and (max-width: 1440px) {
-
-
 
     #danse .three-items-wrap {
         margin-top: 1.5rem;
@@ -225,6 +235,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    #loisir .cards .card-thumb img {
+        width: 12rem;
+    }
 
     #pro .btn {
         margin-top: 2rem;
@@ -254,29 +267,29 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 4rem;
+        gap: 0;
     }
 
-    #main-contacts .section-row {
-        justify-content: center;
-        align-items: center;
-    }
-
-    #main-contacts .section-left {
-        width: 70%;
-    }
-
-    #main-contacts .section-left .section-text {
+    #main-contacts .section-content-text {
         width: 80%;
     }
 
-    #main-contacts .section-left .three-items-row {
-        justify-content: left;
-        gap: 1rem;
+    #main-contacts .section-text {
+        width: 100%;
     }
 
-    #main-contacts .section-right {
-        width: 70%;
+    #main-contacts p {
+        margin-bottom: 2rem;
+    }
+
+    #main-contacts .three-items-row {
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    #main-contacts form {
+        width: 100%;
     }
 
 }
@@ -291,28 +304,12 @@
         margin: 0 auto 1rem;
     }
 
-    #loisir .title-side-decorated img {
-        display: none;
-    }
-
-    #loisir .title-side-decorated h2 {
-        margin-top: 0;
-    }
-
-    #loisir .square-card-item {
-        width: 15rem;
+    #loisir .cards {
+        margin-top: 1rem;
     }
 
     #pro .section-row {
         align-items: center;
-    }
-
-    #pro .title-top-decorated img {
-        display: none;
-    }
-
-    #pro .title-top-decorated h2 {
-        margin-top: 0;
     }
 
     #pro .quote-container {
@@ -339,14 +336,63 @@
         align-items: center;
         margin-top: 2rem;
     }
+
+    #main-contacts .section-content-text {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 992px) {
-
-    #loisir .title-side-decorated {
-        justify-content: left;
-        align-items: flex-start;
+    #main-contacts {
+        background-image: none;
+        background-color: var(--grey);
     }
+
+    #main-contacts .container {
+        margin: 0;
+    }
+
+    #main-contacts .section-row {
+        padding: 0;
+    }
+
+    #main-contacts .section-content-text {
+        width: 90%;
+        padding-bottom: 1rem;
+    }
+
+    #main-contacts .main-contacts-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+        gap: 3rem;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    #main-contacts .three-items-row {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    #main-contacts .three-items-row {
+        width: auto;
+        gap: 3rem;
+    }
+
+    #main-contacts .three-items-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    #main-contacts .google-map,
+    #main-contacts .google-map iframe {
+        width: 50rem;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -367,12 +413,6 @@
         margin: 2rem 0 1rem 0;
     }
 
-    #loisir .square-card-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
     #pro .btn {
         margin: 2rem 0 1rem 0;
     }
@@ -381,52 +421,19 @@
         aspect-ratio: 1/1;
     }
 
-    #main-contacts .section-row {
-        gap: 5rem;
-    }
-
-    #main-contacts .section-left,
-    #main-contacts .section-right {
-        width: 90%;
-    }
-
-    #main-contacts .section-left .section-text {
+    #main-contacts .section-content-text {
         width: 100%;
+        padding: 2rem 2rem 1rem 2rem;
     }
 
-    #main-contacts .main-contacts-wrap {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 3rem;
-    }
-
-    #main-contacts .three-items-wrap {
-        margin: 0;
-        padding: 0;
-        width: auto;
-    }
-
-    #main-contacts .three-items-row {
-        width: auto;
-        gap: 1rem;
-    }
-
-    #main-contacts .three-items-item {
-        width: 100%;
-        margin: 0;
-    }
-
-    #main-contacts .google-map,
-    #main-contacts .google-map iframe {
-        width: 40vw;
-        height: 50vw;
-    }
 }
 
 @media (max-width: 624px) {
+
+    #loisir .cards .card-thumb img {
+        width: 15rem;
+        height: auto;
+    }
 
     #stages .stages-social {
         margin-top: 1rem;
@@ -444,7 +451,12 @@
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
-        gap: 2rem;
+        gap: 3rem;
+    }
+
+    #main-contacts .section-content-text {
+        width: 100%;
+        padding: 1rem;
     }
 
     #main-contacts .google-map,
@@ -469,7 +481,11 @@
     }
 
     #main-contacts .section-row {
-        gap: 3rem;
+        gap: 2rem;
+    }
+
+    #main-contacts .main-contacts-wrap {
+        margin-top: 1rem;
     }
 
     #main-contacts .form-group {
@@ -513,6 +529,10 @@
         width: 100%;
         margin: 0.5rem 0;
     }
+
+    #main-contacts .three-items-row {
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -536,5 +556,4 @@
     #hero .hero-buttons {
         gap: 0.5rem;
     }
-
 }

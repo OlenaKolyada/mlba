@@ -9,6 +9,10 @@ section {
     margin: 4rem 0 1rem;
 }
 
+.section-first.no-padding-top {
+    margin: 4rem 0 0 0;
+}
+
 section h1 {
     margin-top: 0;
 }
@@ -28,9 +32,9 @@ section.no-padding-top {
 
 .container {
     max-width: 1200px;
-    padding: 0 4rem;
     margin: 0 auto;
     width: 100%;
+    padding: 0 2rem;
 }
 
 .section-row {
@@ -284,7 +288,7 @@ section.no-padding-top {
 .cards {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2rem;
     align-items: flex-start;
 }
@@ -294,12 +298,14 @@ section.no-padding-top {
 }
 
 .cards .card-item {
-    max-width: calc((1200px - 6rem) / 4);
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cards .card-thumb img {
-    max-width: 100%;
     border-radius: 3px;
     display: block;
     transition: all 0.8s ease;
@@ -307,18 +313,6 @@ section.no-padding-top {
 
 .card-item:hover .card-thumb img {
     transform: scale(1.1);
-}
-
-.card-item:hover .card-title,
-.card-item:hover .card-subtitle {
-    color: var(--primary-color);
-}
-
-.cards .card-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .cards .card-title {
@@ -332,6 +326,12 @@ section.no-padding-top {
     text-align: center;
     font-size: 0.8rem;
 }
+
+.card-item:hover .card-title,
+.card-item:hover .card-subtitle {
+    color: var(--primary-color);
+}
+
 /* Cards END */
 
 /* Hidden Text START  */
@@ -383,7 +383,16 @@ section.longread ul {
 }
 
 section.longread h4 {
-    margin: 2rem 0 0 2rem;
+    margin: 2rem 0 1rem 2rem;
+}
+
+section.longread h5 {
+    font-weight: bold;
+    margin: 2rem 0 1rem 2rem;
+}
+
+section.longread .address {
+    font-style: oblique;
 }
 
 /* Longread END */
@@ -403,8 +412,6 @@ section.longread h4 {
         width: auto;
         height: 450px;
     }
-
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -429,10 +436,7 @@ section.longread h4 {
         padding: 0 0 4rem 0;
     }
 
-    .container {
-        max-width: 1200px;
-        padding: 0 2rem;
-    }
+
 
     .section-row {
         flex-direction: column;
@@ -496,8 +500,8 @@ section.longread h4 {
     }
 
     .cards {
-        row-gap: 3rem;
-        column-gap: 3rem;
+        row-gap: 2rem;
+        column-gap: 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         max-width: 50rem;
@@ -538,11 +542,6 @@ section.longread h4 {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-    }
-
-    .card-item img {
-        width: 300px;
-        height: auto;
     }
 
     .three-items-row {
@@ -592,10 +591,7 @@ section.longread h4 {
 
 @media screen and (max-width: 425px) {
 
-    .card-item img {
-        width: 200px;
-        height: auto;
-    }
+
 }
 
 @media screen and (max-width: 375px) {
