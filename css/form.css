@@ -3,7 +3,7 @@
     background-color: var(--grey-light);
     box-shadow: var(--shadow);
     border-radius: 3px;
-    width: 85%;
+    width: 54vw;;
 }
 
 #inscription .section-center .section-text {
@@ -23,7 +23,6 @@
 
 #inscription .form-group {
     justify-content: space-between;
-    gap: 2rem;
 }
 
 #inscription fieldset {
@@ -34,11 +33,12 @@
     margin: 3rem 0 2rem 0;
 }
 
+/* Half-width fields */
 #inscription form input,
 #inscription form select,
 #inscription form textarea {
     background-color: var(--white);
-    width: 26rem;
+    width: 24vw;
 }
 
 #inscription .participant-age label span:hover,
@@ -47,15 +47,6 @@
 #inscription .form-single-input.radio-buttons input[type="radio"]:checked + span {
     background-color: var(--grey);
     color: var(--white);
-}
-
-#inscription .class-option {
-    margin-top: 2rem;
-    width: 26rem;
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    flex-direction: column;
 }
 
 /* Global END */
@@ -129,6 +120,7 @@
     display: none;
 }
 
+/* Age Buttons */
 #inscription input[type="radio"] + span {
     display: inline-block;
     padding: 0.7rem 1rem;
@@ -136,7 +128,7 @@
     border-radius: 3px;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    width: 8rem;
+    width: 7vw;
 }
 
 #inscription .form-single-input.radio-buttons input[type="radio"]:checked + span {
@@ -182,6 +174,7 @@
 
 #inscription .remove-participant {
     display: none;
+    margin-left: auto;
 }
 
 #inscription .plus {
@@ -248,15 +241,26 @@
     margin: 0 !important;
 }
 
+/* Cours Common Space */
+#inscription .class-option {
+    margin-top: 2rem;
+    width: 20vw;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Cours Buttons */
 #inscription .form-single-input.checkboxes span {
     display: inline-block;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 2rem;
     background-color: #eee;
     border-radius: 3px;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     font-size: 14px;
     box-shadow: var(--shadow);
-    width: 10rem;
+    width: 9vw;
     text-align: center;
 }
 
@@ -265,7 +269,7 @@
 }
 
 #inscription .ado-section,
-#inscription #inscription .adult-section {
+#inscription .adult-section {
     display: flex;
     justify-content: space-between;
     gap: 1rem !important;
@@ -317,9 +321,17 @@
 /* Animation END */
 
 /* Responsive */
+@media screen and (max-width: 1333px) {
+
+}
 
 @media screen and (max-width: 1200px) {
-    #inscription .section-center {
-        width: 100%;
-    }
+
 }
+
+@media screen and (max-width: 1024px) {
+
+
+
+}
+
