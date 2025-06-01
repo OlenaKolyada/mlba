@@ -436,8 +436,6 @@ section.longread .address {
         padding: 0 0 4rem 0;
     }
 
-
-
     .section-row {
         flex-direction: column;
         align-items: center;
@@ -464,7 +462,7 @@ section.longread .address {
     }
 
     .section-photo.horisontal {
-        width: 600px;
+        width: 80vw;
         max-height: none;
     }
 
@@ -525,6 +523,8 @@ section.longread .address {
     .three-items-item {
         width: 50%;
     }
+
+
 }
 
 @media screen and (max-width: 624px) {

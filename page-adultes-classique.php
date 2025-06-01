@@ -18,14 +18,14 @@ get_header();
     <main class="main" id="adulte-classique">
             <section class="section-wrap section-first no-padding-top" id="intro">
                     <div class="container">
-                        <h1>Cours Adulte Classique</h1>
+                        <h1>Danse classique pour adultes</h1>
                             <div class="section-row">
                                 <div class="section-content-text">
                                     <div class="section-text">
-                                        <p>!!! MANQUE DU TEXTE !!!</p>
+                                        <p>Ce cours s’adresse aux adultes ayant déjà pratiqué la danse classique et souhaitant poursuivre ou retrouver leur passion. L’enseignement, de qualité et rigoureux, est adapté aux besoins d’un corps adulte : posture, placement, mobilité articulaire et conscience du mouvement sont au cœur du travail. C’est un moment privilégié, pour soi, dans un cadre bienveillant, entre passionnés, alliant exigence, plaisir de danser et respect du corps.</p>
                                         <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
                                         <div class="niveau-button">
-                                            <a href="inscription.html" class="btn btn-primary-color">S'inscrire</a>
+                                            <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                         </div>
                                     </div>
                                 </div>

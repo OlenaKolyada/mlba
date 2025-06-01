@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Modal Window
-    $('.open-modal-form-btn').magnificPopup({
+    // Modal Form
+    $('.magnific-inline').magnificPopup({
         type: 'inline',
         showCloseBtn: false,
         removalDelay: 700,
@@ -182,6 +182,24 @@ document.addEventListener('DOMContentLoaded', function () {
     setupSectionScroll('#card-elem2', '#elem2', 70);
     setupSectionScroll('#card-elem3', '#elem3', 70);
     setupSectionScroll('#card-avance', '#avance', 70);
+
+    // Magnific Popup
+    $('.popup-image').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-with-zoom',
+        closeOnContentClick: true,
+        showCloseBtn: false,
+        image: {titleSrc: 'title'},
+        zoom: {
+            enabled: true,
+            duration: 600,
+            easing: 'ease-in-out',
+            opener: function(openerElement) {
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+    });
+
 
 
 }, false);

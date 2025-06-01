@@ -58,10 +58,6 @@
     flex-direction: column;
 }
 
-#inscription .first-participant .class-option {
-
-}
-
 /* Global END */
 
 /* Info Contact START */
@@ -165,56 +161,33 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-#inscription .add-participant {
-    justify-content: flex-start;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    opacity: 1;
+#inscription .add-participant,
+#inscription .remove-participant {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-weight: 600;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+#inscription .add-participant:hover,
+#inscription .remove-participant:hover {
+    color: var(--primary-color);
 }
 
 #inscription .remove-participant {
-    justify-content: flex-end;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: none;
 }
 
 #inscription .plus {
     font-weight: bold;
     font-size: 1.5rem;
     margin-right: 0.5rem;
-}
-
-#inscription .add-participant,
-#inscription .remove-participant {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    margin-top: 2rem;
-    width: 100%;
-    color: var(--black);
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-#inscription .remove-participant {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#inscription .add-participant:hover,
-#inscription .remove-participant:hover {
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-#inscription .remove-participant.hiding {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#inscription .add-participant.showing {
-    opacity: 0;
-    visibility: visible;
 }
 
 /* Add-Remove END */
@@ -287,16 +260,12 @@
     text-align: center;
 }
 
-#inscription .class-option {
-
-}
-
 #inscription .class-option fieldset {
     margin: 0 !important;
 }
 
 #inscription .ado-section,
-#inscription#inscription .adult-section {
+#inscription #inscription .adult-section {
     display: flex;
     justify-content: space-between;
     gap: 1rem !important;
@@ -318,8 +287,6 @@
 #inscription .form-single-input.checkboxes input[type="checkbox"] {
     display: none;
 }
-
-
 
 #inscription input:not(:disabled):hover,
 #inscription select:not(:disabled):hover,
@@ -348,3 +315,11 @@
 }
 
 /* Animation END */
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    #inscription .section-center {
+        width: 100%;
+    }
+}

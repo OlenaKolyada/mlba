@@ -110,7 +110,7 @@ get_header();
                                     souhaitée.</p>
                                 <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
                                 <div class="niveau-button">
-                                    <a href="inscription.html" class="btn btn-primary-color">S'inscrire</a>
+                                    <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
                             </div>
                         </div>
@@ -118,11 +118,6 @@ get_header();
                             <div class="frame">
                                 <div class="swiper swiper-section-small">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init4.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
-                                                 title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
-                                        </div>
                                         <div class="swiper-slide">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init1.jpg"
                                                  alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
@@ -135,6 +130,11 @@ get_header();
                                         </div>
                                         <div class="swiper-slide">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init3.jpg"
+                                                 alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
+                                                 title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init4.jpg"
                                                  alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
                                                  title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
                                         </div>
@@ -177,7 +177,7 @@ get_header();
                                     combinaisons de pas.</p>
                                 <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
                                 <div class="niveau-button">
-                                    <a href="inscription.html" class="btn btn-primary-color">S'inscrire</a>
+                                    <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
                             </div>
 
@@ -186,11 +186,6 @@ get_header();
                             <div class="frame">
                                 <div class="swiper swiper-section-small">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-5.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
-                                        </div>
                                         <div class="swiper-slide">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-1.jpg"
                                                  alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
@@ -208,6 +203,11 @@ get_header();
                                         </div>
                                         <div class="swiper-slide">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-4.jpg"
+                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
+                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-5.jpg"
                                                  alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
                                                  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
                                         </div>
@@ -241,7 +241,7 @@ get_header();
                                     connaissances et leur passion. Discipline et plaisir restent les maîtres mots du cours de danse.</p>
                                 <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
                                 <div class="niveau-button">
-                                    <a href="inscription.html" class="btn btn-primary-color">S'inscrire</a>
+                                    <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
                             </div>
 
@@ -276,7 +276,7 @@ get_header();
                                     est abordée grâce à un travail spécifique sur la puissance musculaire nécessaire à la virtuosité de leur exécution.</p>
                                 <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
                                 <div class="niveau-button">
-                                    <a href="inscription.html" class="btn btn-primary-color">S'inscrire</a>
+                                    <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
                             </div>
 
@@ -323,7 +323,7 @@ get_header();
                                     diverses.</p>
                                 <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
                                 <div class="niveau-button">
-                                    <a href="inscription.html" class="btn btn-primary-color">S'inscrire</a>
+                                    <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
                             </div>
 

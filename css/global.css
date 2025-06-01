@@ -42,7 +42,7 @@
     --grey-extra-light: #f0f0f0;
     --grey-light: #d4d4d4;
     --grey-dark: #333333;
-    --mixed-gradient: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
+    --mixed-gradient: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
     --secondary-color-gradient: linear-gradient(to bottom, var(--secondary-color-light), var(--secondary-color), var(--secondary-color-dark));
     --secondary-color-gradient-h1: linear-gradient(to bottom, var(--secondary-color-extra-light), var(--secondary-color), var(--secondary-color-dark));
     --primary-color-gradient: linear-gradient(to bottom, var(--primary-color-light), var(--primary-color), var(--primary-color-dark));
@@ -59,6 +59,7 @@ html, body {
 
 html {
     font-size: 16px;
+    overflow-y: scroll !important;
 }
 
 body {
@@ -70,7 +71,7 @@ body {
 	position: relative;
 	font-weight: 400;
 	background: var(--white);
-    padding-top: 80px;
+    padding-top: 7rem;
 }
 
 #page {
@@ -95,7 +96,12 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    line-height: 1.4;
+    background: var(--secondary-color-gradient-h1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
 }
 
 h2 {
@@ -174,6 +180,10 @@ iframe {
     width: 100%;
     max-width: 100%;
     display: block;
+}
+
+img {
+    border-radius: 3px;
 }
 
 /* Form START */
@@ -290,23 +300,24 @@ form button {
 .form-single-input.full-width {
     margin-bottom: 1rem;
     padding: 0 !important;
+    width: 100%;
 }
 
 .half-width {
-    width: calc((100% - 1rem) / 2);
+    width: 48%;
 }
 /* Form END */
 
 /*Modal Form START */
 .modal-form {
-    max-width: 30rem;
+    max-width: 32rem;
     margin: 0 auto;
     position: relative;
 }
 
 .modal-form-wrap {
     padding: 3rem;
-    background-color: rgba(7, 35, 89, 0.8);
+    background-color: var(--grey);
     color: var(--white);
     border-radius: 3px;
 }
@@ -321,7 +332,7 @@ form button {
 }
 
 .modal-form a:hover {
-    color: white;
+    color: var(--secondary-color);
 }
 
 .modal-close {
@@ -329,23 +340,12 @@ form button {
     justify-content: right;
     position: absolute;
     top: 1rem;
-    left: 28rem;
+    left: 30rem;
 }
 
 .modal-icon {
     width: 1rem;
     display: inline-block;
-    filter: url('data:image/svg+xml,\
-      <svg xmlns="http://www.w3.org/2000/svg">\
-        <filter id="recolor" color-interpolation-filters="sRGB">\
-          <feColorMatrix type="matrix" values="\
-            0 0 0 0 0\
-            0 0 0 0 0.8\
-            0 0 0 0 0.741\
-            0 0 0 1 0"\
-          />\
-        </filter>\
-      </svg>#recolor');
     cursor: pointer;
 }
 
@@ -443,6 +443,47 @@ form button {
 }
 /* Scroll Dots Nav END */
 
+/* Magnific PopUp START */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.mfp-title {
+    color: var(--white);
+    font-size: 16px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+img.mfp-img {
+    border-radius: 3px;
+    height: 90vh;
+    width: auto;
+}
+
+html {
+    margin-right: 0 !important;
+}
+/* Magnific PopUp END */
+
 /* Responsive */
 @media screen and (max-width: 1440px) {
 
@@ -461,6 +502,10 @@ form button {
 }
 
 @media screen and (max-width: 1024px) {
+
+    body {
+        padding-top: 7rem;
+    }
 
     h4 {
         font-size: 1.3rem;
@@ -496,7 +541,11 @@ form button {
 }
 
 @media screen and (max-width: 624px) {
-
+    img.mfp-img {
+        border-radius: 3px;
+        height: auto;
+        width: 90vw;
+    }
 }
 
 
@@ -524,6 +573,16 @@ form button {
 
     body {
         padding-top: 90px;
+    }
+
+    .modal-form .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .modal-form .half-width {
+        width: 100%;
     }
 }
 

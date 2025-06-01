@@ -8,6 +8,10 @@ header {
     z-index: 100;
 }
 
+.header-logo-mobile {
+    display: none;
+}
+
 .header-top {
     background: var(--mixed-gradient);
     padding: 0.6rem 0;
@@ -57,7 +61,7 @@ header {
 }
 
 .header-logo {
-    height: 2.5rem;
+    height: 5rem;
 }
 
 /* Menu */
@@ -199,6 +203,7 @@ header {
     .header-icon {
         height: 24px;
     }
+
     .header-contacts-text {
         display: none;
     }
@@ -222,6 +227,16 @@ header {
     .header-mobile {
         display: block;
     }
+
+    .header-logo {
+        display: none;
+    }
+
+    .header-logo-mobile {
+        display: block;
+        height: 2.5rem;
+    }
+
 }
 
 @media screen and (max-width: 480px) {

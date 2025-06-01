@@ -21,11 +21,11 @@ get_header();
 	<section class="no-padding" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/bg.jpg')" id="hero">
 		<div class="container">
 			<div class="hero-content">
-				<div class="hero-title">
-					<h1>Mikhalev&nbsp;Lanssens Ballet&nbsp;Academy</h1>
+				<div class="hero-title notranslate" translate="no">
+					<h1>Mikhalev&nbsp;Lanssens<br>Ballet&nbsp;Academy</h1>
 				</div>
 				<div class="hero-slogan">
-					<p>Danser&nbsp;est&nbsp;votre&nbsp;Passion, l'Enseigner&nbsp;est&nbsp;la&nbsp;nôtre</p>
+					<p>Danser est votre Passion, l'Enseigner est la nôtre</p>
 				</div>
 				<div class="hero-buttons">
 					<div class="btn btn-primary-color" id="hero-btn-loisir">Section Loisir</div>
@@ -416,7 +416,7 @@ get_header();
 								<fieldset class="form-single-input">
 									<label class="checkbox-label">
 										<input class="checkbox" type="checkbox" name="consent" required>
-										J’accepte la&nbsp;<a href="politique.html" target="_blank">politique de confidentialité</a>
+										J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
 									</label>
 								</fieldset>
 								<fieldset class="form-single-input">

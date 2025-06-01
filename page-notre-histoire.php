@@ -23,9 +23,12 @@ get_header();
             <div class="section-row">
                 <div class="section-content-image">
                     <div class="frame">
-                        <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/le-spectre-de-la-rose-m-fokine-opera-national-de-bordeaux.jpg"
-                             alt="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
-                             title="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                         <a href="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/le-spectre-de-la-rose-m-fokine-opera-national-de-bordeaux.jpg" class="popup-image"
+                            title="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev">
+                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/le-spectre-de-la-rose-m-fokine-opera-national-de-bordeaux.jpg"
+                                  alt="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
+                                  title="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                         </a>
                     </div>
                 </div>
                 <div class="section-content-text">
@@ -68,9 +71,12 @@ get_header();
                 </div>
                 <div class="section-content-image">
                     <div class="frame">
-                        <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/who-cares-g-balanchine-opera-national-de-bordeaux.jpg"
-                             alt="Who Cares? Ballet de George Balanchine, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
-                             title="Who Cares? Ballet de George Balanchine, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/who-cares-g-balanchine-opera-national-de-bordeaux.jpg" class="popup-image"
+                            title="Who Cares? Ballet de George Balanchine, Opéra National de Bordeaux. Danseuse Corinne Lanssens">
+                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/who-cares-g-balanchine-opera-national-de-bordeaux.jpg"
+                                  alt="Who Cares? Ballet de George Balanchine, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
+                                  title="Who Cares? Ballet de George Balanchine, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                         </a>
                     </div>
                 </div>
             </div>
@@ -84,9 +90,12 @@ get_header();
             <div class="section-row">
                 <div class="section-content-image">
                     <div class="frame">
-                        <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/apollon-musagete-g-balanchine-opera-national-de-bordeaux.jpg"
-                             alt="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
-                             title="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/apollon-musagete-g-balanchine-opera-national-de-bordeaux.jpg" class="popup-image"
+                            title="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev">
+                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/apollon-musagete-g-balanchine-opera-national-de-bordeaux.jpg"
+                                  alt="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
+                                  title="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                         </a>
                     </div>
                 </div>
                 <div class="section-content-text">
@@ -126,9 +135,12 @@ get_header();
                 </div>
                 <div class="section-content-image">
                     <div class="frame">
-                        <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-1.jpg"
-                             alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
-                             title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-1.jpg" class="popup-image"
+                            title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens">
+                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-1.jpg"
+                                  alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
+                                  title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                         </a>
                     </div>
                 </div>
             </div>

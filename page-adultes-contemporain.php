@@ -25,7 +25,7 @@ get_header();
                                         <p>!!! MANQUE DU TEXTE !!!</p>
                                         <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
                                         <div class="niveau-button">
-                                            <a href="inscription.html" class="btn btn-primary-color">S'inscrire</a>
+                                            <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                         </div>
                                     </div>
                                 </div>

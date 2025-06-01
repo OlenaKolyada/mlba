@@ -102,12 +102,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (participantCount >= maxParticipants) {
             this.style.display = 'none';
+            this.style.pointerEvents = 'none';
             return;
         }
 
         participantCount++;
-        if (participantCount >= maxParticipants) this.style.display = 'none';
-        document.querySelector('.remove-participant').style.display = 'flex';
+        if (participantCount >= maxParticipants) {
+            this.style.display = 'none';
+            this.style.pointerEvents = 'none';
+        }
+
+        const removeBtn = document.querySelector('.remove-participant');
+        removeBtn.style.display = 'flex';
+        removeBtn.style.pointerEvents = 'auto';
 
         const initialHeight = wrapper.offsetHeight;
 
@@ -145,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     this.classList.add('hiding');
                     setTimeout(() => {
                         this.style.display = 'none';
+                        this.style.pointerEvents = 'none';
                         this.classList.remove('hiding');
                     }, 300);
                     this.classList.remove('hiding');
@@ -176,22 +184,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (participantCount < maxParticipants) {
                     const addBtn = document.querySelector('.add-participant');
                     addBtn.style.display = 'flex';
+                    addBtn.style.pointerEvents = 'auto';
                     addBtn.classList.add('showing');
                     addBtn.offsetHeight; // Форсируем reflow
                     setTimeout(() => {
                         addBtn.classList.remove('showing');
                     }, 10);
                 }
-                if (participantCount <= 1) document.querySelector('.remove-participant').style.display = 'none';
-
+                if (participantCount <= 1) {
+                    const removeBtn = document.querySelector('.remove-participant');
+                    removeBtn.style.display = 'none';
+                    removeBtn.style.pointerEvents = 'none';
+                }
             }
         });
 
         participantCount--;
     });
 
+    // Инициализация кнопки Remove при загрузке
     if (participantCount <= 1) {
-        document.querySelector('.remove-participant').style.display = 'none';
+        const removeBtn = document.querySelector('.remove-participant');
+        removeBtn.style.display = 'none';
+        removeBtn.style.pointerEvents = 'none';
     }
 
     function setupNewParticipantToggle(block, index) {

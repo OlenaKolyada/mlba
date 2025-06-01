@@ -86,7 +86,7 @@ get_header();
                                 <fieldset class="form-single-input">
                                     <label class="checkbox-label">
                                         <input class="checkbox" type="checkbox" name="consent" required>
-                                        J’accepte la&nbsp;<a href="politique.html" target="_blank">politique de confidentialité</a>
+                                        J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
                                     </label>
                                 </fieldset>
                                 <fieldset class="form-btn">

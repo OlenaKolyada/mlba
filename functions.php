@@ -162,18 +162,11 @@ function mlba_scripts() {
     	wp_enqueue_script( 'mlba-main', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
 	}
 
+    if (is_page('inscription')) {
+        wp_enqueue_script('mlba-inscription', get_template_directory_uri() . '/assets/js/form.js', array('jquery'), '1.0', true);
+    }
 
-//     if ( is_page('inscription') ) {
-//         wp_enqueue_script('mlba-form-js', get_template_directory_uri() . '/assets/js/form.js', array('jquery'), _S_VERSION, true);
-//     }
-//
-//     if ( is_page('enfants-classique') ) {
-//         wp_enqueue_script('mlba-enfants-ado-classique-js', get_template_directory_uri() . '/assets/js/enfants-ado-classique.js', array('jquery'), _S_VERSION, true);
-//     }
-//
-//     if ( is_page('section-pro') ) {
-//         wp_enqueue_script('mlba-section-pro-js', get_template_directory_uri() . '/assets/js/section-pro.js', array('jquery'), _S_VERSION, true);
-//     }
+
 //
 // 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 // 		wp_enqueue_script( 'comment-reply' );

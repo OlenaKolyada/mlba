@@ -54,6 +54,7 @@
 .footer-address {
     display: inline-block;
     margin-bottom: 1rem;
+    max-width: 10rem;
 }
 
 .footer-social-icons {
@@ -95,6 +96,10 @@
     .footer {
         font-size: 12px;
         padding: 3rem 0 1rem;
+    }
+
+    .footer-address {
+        max-width: 9rem;
     }
 }
 

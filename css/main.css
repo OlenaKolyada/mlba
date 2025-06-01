@@ -8,24 +8,29 @@
 }
 
 #hero .hero-title {
-    max-width: 300px;
+
 }
 
 #hero .hero-title h1 {
-    font-size: clamp(1.8rem, 8vw, 3.5rem);
+    font-size: 3.5rem;
     font-weight: 600;
-    margin-bottom: clamp(1rem, 2vw, 2rem);
+    margin-bottom: 2rem;
     margin-left: 0 !important;
+    font-family: 'Lora', serif;
+    line-height: 1.4;
+    background: var(--secondary-color-gradient-h1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 #hero .hero-slogan {
-    max-width: 30vw;
     margin-bottom: 2rem;
 }
 
 #hero .hero-slogan p {
     font-family: 'Oooh Baby', serif;
-    font-size: clamp(1.8rem, 7vw, 2.5rem);
+    font-size: 2.5rem;
 }
 
 #hero .hero-buttons {
@@ -234,6 +239,16 @@
     }
 }
 
+@media screen and (max-width: 1333px) {
+    #hero .hero-title h1 {
+        font-size: 3rem;
+    }
+
+    #hero .hero-slogan p {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #loisir .cards .card-thumb img {
         width: 12rem;
@@ -397,14 +412,6 @@
 
 @media screen and (max-width: 768px) {
 
-    #hero .hero-title h1 {
-        font-size: 3rem;
-    }
-
-    #hero .hero-slogan p {
-        font-size: 2.3rem;
-    }
-
     #danse .three-items-wrap {
         display: none;
     }
@@ -505,10 +512,6 @@
         font-size: 2.3rem;
     }
 
-    #hero .hero-slogan p {
-        font-size: 2.1rem;
-    }
-
     #hero .hero-buttons {
         flex-direction: column;
         align-items: center;
@@ -538,7 +541,7 @@
 @media screen and (max-width: 375px) {
 
     #hero .hero-title h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
 
     #hero .hero-slogan p {

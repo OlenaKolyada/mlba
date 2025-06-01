@@ -1,26 +1,19 @@
-# Désactiver la compression et optimisations automatiques
-<IfModule mod_headers.c>
-    # Empêcher OVH de modifier les fichiers CSS/JS
-    <FilesMatch "\.(css|js)$">
-        Header set Cache-Control "no-transform"
-        SetEnv no-gzip 1
-        SetEnv no-brotli 1
-    </FilesMatch>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
 </IfModule>
 
-# Forcer le bon type MIME
-<IfModule mod_mime.c>
-    AddType text/css .css
-    AddType application/javascript .js
-</IfModule>
-
-# Désactiver le cache pour les tests
-<IfModule mod_expires.c>
-    ExpiresActive On
-    <FilesMatch "\.(css|js|html)$">
-        ExpiresDefault "access plus 0 seconds"
-        Header set Cache-Control "no-cache, no-store, must-revalidate"
-        Header set Pragma "no-cache"
-        Header set Expires 0
-    </FilesMatch>
-</IfModule>
+# END WordPress
