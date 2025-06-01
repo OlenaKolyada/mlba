@@ -3,7 +3,49 @@
     background-color: var(--grey-light);
     box-shadow: var(--shadow);
     border-radius: 3px;
-    width: 54vw;;
+    width: 85%;
+}
+
+/* Half-width fields */
+#inscription form input,
+#inscription form select,
+#inscription form textarea {
+    background-color: var(--white);
+    width: 26.5rem;
+}
+
+/* Age Buttons */
+#inscription input[type="radio"] + span {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background-color: var(--grey-extra-light);
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    width: 8rem;
+}
+
+/* Cours Common Space */
+#inscription .class-option {
+    width: 26.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+/* Cours Buttons */
+#inscription .form-single-input.checkboxes span {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background-color: var(--grey-extra-light);
+    border-radius: 3px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    font-size: 14px;
+    box-shadow: var(--shadow);
+    width: 12.5rem;
+    text-align: center;
 }
 
 #inscription .section-center .section-text {
@@ -31,14 +73,6 @@
 
 #inscription h3 {
     margin: 3rem 0 2rem 0;
-}
-
-/* Half-width fields */
-#inscription form input,
-#inscription form select,
-#inscription form textarea {
-    background-color: var(--white);
-    width: 24vw;
 }
 
 #inscription .participant-age label span:hover,
@@ -120,16 +154,7 @@
     display: none;
 }
 
-/* Age Buttons */
-#inscription input[type="radio"] + span {
-    display: inline-block;
-    padding: 0.7rem 1rem;
-    background-color: var(--grey-extra-light);
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    width: 7vw;
-}
+
 
 #inscription .form-single-input.radio-buttons input[type="radio"]:checked + span {
     background-color: var(--grey);
@@ -154,7 +179,7 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 #inscription .add-participant,
@@ -230,6 +255,8 @@
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
     max-height: 0;
+    display: flex;
+    gap: 2rem;
 }
 
 #inscription .toggle-section.showing {
@@ -241,39 +268,10 @@
     margin: 0 !important;
 }
 
-/* Cours Common Space */
-#inscription .class-option {
-    margin-top: 2rem;
-    width: 20vw;
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    flex-direction: column;
-}
 
-/* Cours Buttons */
-#inscription .form-single-input.checkboxes span {
-    display: inline-block;
-    padding: 0.7rem 2rem;
-    background-color: #eee;
-    border-radius: 3px;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-    font-size: 14px;
-    box-shadow: var(--shadow);
-    width: 9vw;
-    text-align: center;
-}
 
 #inscription .class-option fieldset {
     margin: 0 !important;
-}
-
-#inscription .ado-section,
-#inscription .adult-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem !important;
-    flex-wrap: wrap;
 }
 
 #inscription .form-single-input.checkboxes {
@@ -326,12 +324,336 @@
 }
 
 @media screen and (max-width: 1200px) {
+    #inscription form input,
+    #inscription form select,
+    #inscription form textarea {
+        width: 34vw;
+    }
 
+    /* Age Buttons */
+    #inscription input[type="radio"] + span {
+        width: 10.5vw;
+        padding: 0.7rem;
+    }
+
+    /* Cours Buttons */
+    #inscription .form-single-input.checkboxes span {
+        width: 10rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
 
+    #inscription .section-center {
+        width: 100%;
+    }
 
+    #inscription form input,
+    #inscription form select,
+    #inscription form textarea {
+        width: 40vw;
+    }
+
+    /* Age Buttons */
+    #inscription input[type="radio"] + span {
+        width: 12vw;
+    }
+
+    /* Cours Buttons */
+    #inscription .form-single-input.checkboxes span {
+        width: 18vw;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    #inscription form input,
+    #inscription form select,
+    #inscription form textarea {
+        width: 38vw;
+    }
+
+    /* Age Buttons */
+    #inscription input[type="radio"] + span {
+        width: 11.5vw;
+        padding: 0.6rem;
+    }
+
+    /* Cours Buttons */
+    #inscription .form-single-input.checkboxes span {
+        width: 17vw;
+    }
+
+
+    #inscription h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #inscription .container {
+        padding: 0 1rem;
+    }
+
+    #inscription .form-wrap {
+        padding: 1.5rem;
+    }
+
+    #inscription .form-group {
+        justify-content: left;
+    }
+
+    #inscription form input,
+    #inscription form select,
+    #inscription form textarea {
+        width: 42vw;
+    }
+
+    .section-center .section-text {
+        text-align: left;
+    }
+
+    .participant-age {
+        justify-content: left;
+    }
+
+    /* Age Buttons Area */
+    #inscription .participant-age .age-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 1rem;
+        justify-content: left;
+    }
+
+    #inscription .first-participant .participant-age .age-buttons {
+        margin-top: 2rem;
+    }
+
+    /* Age Buttons */
+    #inscription input[type="radio"] + span {
+        width: 20vw;
+        padding: 0.7rem 1rem;
+    }
+
+
+    /* Cours Buttons */
+    #inscription .form-single-input.checkboxes span {
+        width: 18vw;
+        min-height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inscription .add-remove-participant {
+        margin-top: 2rem;
+    }
+
+    #inscription .form-action {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #inscription h4 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    /* Cours Common Space */
+    #inscription .class-option {
+        margin-top: 2rem;
+    }
+
+    #inscription .form-action {
+        align-items: flex-start;
+    }
+
+    #inscription .form-action .btn {
+        margin: 3rem auto 1rem;
+    }
+
+    #inscription .same-name {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 624px) {
+    #inscription .form-group {
+        flex-direction: column;
+    }
+
+    #inscription form input,
+    #inscription form select,
+    #inscription form textarea {
+        width: 100%;
+    }
+
+    /* Age Buttons */
+    #inscription input[type="radio"] + span {
+        width: 26vw;
+        padding: 0.7rem 1rem;
+    }
+
+    .initiation-section.toggle-section.showing,
+    .elem-1-section.toggle-section.showing,
+    .elem-2-section.toggle-section.showing,
+    .elem-3-section.toggle-section.showing,
+    .ado-section.toggle-section.showing,
+    .adult-section.toggle-section.showing {
+        flex-direction: column;
+    }
+
+    /* Cours Common Space */
+    #inscription .class-option {
+        width: 100%;
+    }
+
+    /* Cours Buttons */
+    #inscription .form-single-input.checkboxes span {
+        font-size: 14px;
+        width: 35vw;
+        min-height: 4rem;
+    }
+
+    #inscription .toggle-section {
+        gap: 0;
+    }
+
+    #inscription .form-action .btn {
+        width: 85vw;
+        margin: 3rem auto 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    #inscription h3 {
+        font-size: 1.7rem;
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    #inscription .info-contact h3 {
+        margin: 1.5rem 0;
+    }
+
+    /* Age Buttons Area */
+    #inscription .participant-age .age-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+        justify-content: left;
+    }
+
+    /* Age Buttons */
+    #inscription input[type="radio"] + span {
+        width: 38vw;
+    }
+
+    /* Cours Buttons */
+    #inscription .form-single-input.checkboxes span {
+        width: 38vw;
+    }
+
+    #inscription .form-action .btn {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    #inscription h3 {
+        font-size: 1.5rem;
+    }
+
+    #inscription .info-contact h3 {
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    /* Age Buttons */
+    #inscription input[type="radio"] + span {
+        width: 36.5vw;
+    }
+
+    /* Cours Buttons */
+    #inscription .form-single-input.checkboxes span {
+        width: 36.5vw;
+    }
+    #inscription .form-action .btn {
+        width: 79vw;
+    }
+
+    .same-name-checkbox-label,
+    .form-action .action-checkbox-label {
+        font-size: 14px;
+    }
+
+    #inscription .add-remove-participant {
+        font-size: 13px;
+        margin-top: 1.5rem;
+    }
+
+    #inscription .plus {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-right: 0.3rem;
+    }
+
+    #inscription .participant.added {
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    #inscription h3 {
+        font-size: 1.3rem;
+    }
+
+    .same-name-checkbox-label,
+    .form-action .action-checkbox-label {
+        font-size: 12px;
+    }
+
+    /* Age Buttons */
+    #inscription input[type="radio"] + span {
+        width: 34.5vw;
+    }
+
+    /* Cours Buttons */
+    #inscription .form-single-input.checkboxes span {
+        width: 34.5vw;
+        font-size: 13px;
+        padding: 0.5rem;
+    }
+
+    #inscription h4 {
+        font-size: 0.9rem;
+    }
+
+    #inscription .form-action {
+        width: 100%;
+
+    }
+
+    #inscription .add-remove-participant {
+        font-size: 11px;
+    }
+
+    #inscription .plus {
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-right: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
 
 }
 

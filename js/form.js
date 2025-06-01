@@ -21,7 +21,18 @@ document.addEventListener('DOMContentLoaded', function () {
     function animateToggle(section, show) {
         if (show) {
             section.style.display = 'flex';
-            sectionsContainer.style.height = '200px';
+            section.style.flexDirection = window.innerWidth <= 624 ? 'column' : 'row';
+            requestAnimationFrame(() => {
+                const fullHeight = section.scrollHeight;
+                sectionsContainer.style.height = fullHeight + 'px';
+                section.style.maxHeight = fullHeight + 'px';
+
+                section.classList.add('showing');
+                section.addEventListener('transitionend', function handler() {
+                    section.style.maxHeight = 'none';
+                    section.removeEventListener('transitionend', handler);
+                });
+            });
             section.style.maxHeight = section.scrollHeight + 'px';
             section.classList.add('showing');
             section.addEventListener('transitionend', function handler() {
@@ -145,36 +156,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('.remove-participant').addEventListener('click', function () {
         if (participantCount <= 1) {
-            this.classList.add('hiding');
-            setTimeout(() => {
-                this.classList.add('hiding');
-                setTimeout(() => {
-                    this.classList.add('hiding');
-                    setTimeout(() => {
-                        this.style.display = 'none';
-                        this.style.pointerEvents = 'none';
-                        this.classList.remove('hiding');
-                    }, 300);
-                    this.classList.remove('hiding');
-                }, 300);
-                this.classList.remove('hiding');
-            }, 300);
+            this.style.display = 'none';
+            this.style.pointerEvents = 'none';
             return;
         }
 
         const participants = document.querySelectorAll('.participant');
         const lastParticipant = participants[participants.length - 1];
 
-        // Настройка анимации
         lastParticipant.style.maxHeight = lastParticipant.scrollHeight + 'px';
         lastParticipant.style.overflow = 'hidden';
-        lastParticipant.offsetHeight; // Форсируем reflow
+        lastParticipant.offsetHeight;
 
-        // Запуск анимации
         lastParticipant.style.maxHeight = '0';
         lastParticipant.style.opacity = '0';
 
-        // Удаляем после завершения
         lastParticipant.addEventListener('transitionend', function handler(e) {
             if (e.propertyName === 'max-height') {
                 lastParticipant.remove();
@@ -185,11 +181,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     const addBtn = document.querySelector('.add-participant');
                     addBtn.style.display = 'flex';
                     addBtn.style.pointerEvents = 'auto';
-                    addBtn.classList.add('showing');
-                    addBtn.offsetHeight; // Форсируем reflow
-                    setTimeout(() => {
-                        addBtn.classList.remove('showing');
-                    }, 10);
                 }
                 if (participantCount <= 1) {
                     const removeBtn = document.querySelector('.remove-participant');
@@ -202,7 +193,6 @@ document.addEventListener('DOMContentLoaded', function () {
         participantCount--;
     });
 
-    // Инициализация кнопки Remove при загрузке
     if (participantCount <= 1) {
         const removeBtn = document.querySelector('.remove-participant');
         removeBtn.style.display = 'none';
@@ -213,14 +203,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const radios = block.querySelectorAll('input[name="participant-age-' + index + '"]');
         const container = block.querySelector('.age-sections-container');
 
-        // Делаем уникальный id для контейнера
         container.id = 'age-container-' + index;
 
         container.style.height = '0';
         container.style.overflow = 'hidden';
         container.style.transition = 'height 0.3s ease';
 
-        // Создаем уникальный объект секций для ЭТОГО участника
         const sections = {
             '6-7': block.querySelector('#initiation-section-' + index),
             '8-9': block.querySelector('#elem-1-section-' + index),
@@ -232,11 +220,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let last = null;
 
-        // Функция анимации для ЭТОГО участника
         function toggleAnimation(section, show) {
             if (show) {
                 section.style.display = 'flex';
-                container.style.height = '200px';
+                section.style.flexDirection = window.innerWidth <= 624 ? 'column' : 'row';
+                requestAnimationFrame(() => {
+                    const fullHeight = section.scrollHeight;
+                    container.style.height = fullHeight + 'px';
+                    section.style.maxHeight = fullHeight + 'px';
+
+                    section.classList.add('showing');
+                    section.addEventListener('transitionend', function handler() {
+                        section.style.maxHeight = 'none';
+                        section.removeEventListener('transitionend', handler);
+                    });
+                });
                 section.style.maxHeight = section.scrollHeight + 'px';
                 section.classList.add('showing');
                 section.addEventListener('transitionend', function handler() {
