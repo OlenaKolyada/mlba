@@ -309,6 +309,10 @@ section:nth-child(even) {
     margin: 1rem auto 0;
 }
 
+#contacts .form-message .success {
+    color: var(--white);
+}
+
 /* Contacts END */
 
 /* Responsive */
@@ -639,6 +643,10 @@ section:nth-child(even) {
     #contacts form select,
     #contacts form textarea {
         background-color: var(--grey-extra-light);
+    }
+
+    #contacts .form-message .success {
+        color: var(--primary-color);
     }
 
     #professeurs-classiques .swiper-section-small {

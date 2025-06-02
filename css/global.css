@@ -315,10 +315,6 @@ form button {
     margin: 1.5rem auto 0;
 }
 
-.form-message .success {
-    color: var(--white);
-}
-
 .form-message .error {
     color: red;
 }
@@ -568,10 +564,6 @@ html {
         height: auto;
         width: 90vw;
     }
-
-    .form-message .success {
-        color: var(--primary-color);
-    }
 }
 
 
@@ -610,6 +602,10 @@ html {
     .modal-form .half-width {
         width: 100%;
     }
+
+    .form-message {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -627,17 +623,14 @@ html {
     }
 
     .form-message {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        font-weight: bold;
     }
-
 
 }
 
 @media screen and (max-width: 375px) {
-    .form-message {
-        font-size: 1rem;
-        font-weight: bold;
-    }
+
 }
 
 @media screen and (max-width: 320px) {

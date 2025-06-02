@@ -22,9 +22,9 @@ get_header();
             <div class="section-row">
                 <div class="section-center">
                     <div class="section-text">
-                        <h2>Modalités d'admission</h2>
-                        <p>Nous vous invitons à nous contacter pour connaître les modalités d’admission.</p>
-                        <form class="form-container" action="" method="post">
+                        <h2 id="admission-form-title">Modalités d'admission</h2>
+                        <p id="admission-form-text">Nous vous invitons à nous contacter pour connaître les modalités d’admission.</p>
+                        <form class="form-container" action="" method="post"  id="admission-page-form">
                             <fieldset class="form-group">
                                 <label for="first_name" class="sr-only"></label>
                                 <input type="text" class="half-width" id="first_name"

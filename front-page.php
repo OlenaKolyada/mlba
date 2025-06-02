@@ -378,11 +378,11 @@ get_header();
 				</div>
 				<div class="section-content-text">
 					<div class="section-text">
-						<h2>Cours d'essai</h2>
-						<p>Le cours d’essai permet à un élève désireux de pratiquer la danse,
+						<h2 id="main-page-form-title">Cours d'essai</h2>
+						<p id="main-page-form-text">Le cours d’essai permet à un élève désireux de pratiquer la danse,
 							de venir découvrir l’ambiance du cours et la pédagogie du professeur.</p>
 						<div class="main-contacts-wrap">
-							<form class="form-container" action="" method="post">
+							<form class="form-container" action="" method="post" id="main-page-form">
 								<fieldset class="form-group">
 									<label for="first_name" class="sr-only"></label>
 									<input type="text" class="half-width" id="first_name"
@@ -431,6 +431,7 @@ get_header();
 								</fieldset>
 							</form>
 						</div>
+                        <div id="main-page-message" class="form-message" aria-live="polite"></div>
 					</div>
 				</div>
 			</div>

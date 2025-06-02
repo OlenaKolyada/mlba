@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1' );
 }
 
 /**
@@ -179,7 +179,8 @@ add_action( 'wp_enqueue_scripts', 'mlba_scripts' );
 function localize_script() {
     wp_localize_script('mlba-form-handler', 'ajax_object', array(
         'ajax_url' => admin_url('admin-ajax.php'),
-        'nonce' => wp_create_nonce('contact_form_nonce')
+        'contact_nonce' => wp_create_nonce('contact_form_nonce'),
+        'main_page_nonce' => wp_create_nonce('main_page_form_nonce')
     ));
 }
 add_action('wp_enqueue_scripts', 'localize_script');
@@ -201,24 +202,76 @@ function add_menu_link_class($atts, $item, $args) {
 }
 add_filter('nav_menu_link_attributes', 'add_menu_link_class', 10, 3);
 
-// Обработка контактной формы
+// Main Page Form
+add_action('wp_ajax_main_page_form', 'handle_main_page_form');
+add_action('wp_ajax_nopriv_main_page_form', 'handle_main_page_form');
+
+function handle_main_page_form() {
+
+    if (!wp_verify_nonce($_POST['main_page_nonce'], 'main_page_form_nonce')) {
+        wp_die('Erreur de sécurité');
+    }
+
+    $first_name = sanitize_text_field($_POST['first_name']);
+    $last_name = sanitize_text_field($_POST['last_name']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $email = sanitize_email($_POST['email']);
+    $dance_class = sanitize_text_field($_POST['dance-class']);
+    $dance_classes = array(
+        'enfants_classique' => 'Enfants-Ado Classique',
+        'enfants_contemporain' => 'Ado Contemporain',
+        'adultes_classique' => 'Adultes Classique',
+        'adultes_contemporain' => 'Adultes Contemporain'
+    );
+
+    $dance_class_name = isset($dance_classes[$dance_class]) ? $dance_classes[$dance_class] : $dance_class;
+    $comment = sanitize_textarea_field($_POST['comment']);
+
+    $to = get_option('admin_email');
+    $subject = 'Demande cours d\'essai';
+
+    $message = "
+    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+        <h3 style='color: #333; border-bottom: 2px solid #00D4B4; padding-bottom: 10px;'>Demande de cours d'essai</h3>
+        <p><strong>Prénom:</strong> $first_name</p>
+        <p><strong>Nom:</strong> $last_name</p>
+        <p><strong>Téléphone:</strong> $phone</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Cours choisi:</strong> $dance_class_name</p>
+        <p><strong>Commentaire:</strong><br>$comment</p>
+    </div>
+    ";
+
+    $headers = array(
+        'From: MLBA.fr <contact@mlba.fr>',
+        'Content-Type: text/html; charset=UTF-8'
+    );
+
+    $mail_sent = wp_mail($to, $subject, $message, $headers);
+
+    if ($mail_sent) {
+        wp_die('success');
+    } else {
+        wp_die('error');
+    }
+}
+
+// Contact Page Form
 add_action('wp_ajax_contact_form', 'handle_contact_form');
 add_action('wp_ajax_nopriv_contact_form', 'handle_contact_form');
 
 function handle_contact_form() {
-    // Проверка nonce
-    if (!wp_verify_nonce($_POST['nonce'], 'contact_form_nonce')) {
+
+    if (!wp_verify_nonce($_POST['contact_nonce'], 'contact_form_nonce')) {
         wp_die('Erreur de sécurité');
     }
 
-    // Получаем данные
     $first_name = sanitize_text_field($_POST['first_name']);
     $last_name = sanitize_text_field($_POST['last_name']);
     $phone = sanitize_text_field($_POST['phone']);
     $email = sanitize_email($_POST['email']);
     $comment = sanitize_textarea_field($_POST['comment']);
 
-    // Отправляем email
     $to = get_option('admin_email');
     $subject = 'Nouveau message Contact';
     $message = "
