@@ -23,46 +23,65 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Contacts</h2>
+                        <?php if($mlba_options['contact-page-title']): ?>
+                        <h2><?php echo $mlba_options['contact-page-title'];?></h2>
+                        <?php endif;?>
                         <div class="main-contacts-wrap">
                             <div class="three-items-wrap">
                                 <div class="three-items-row">
+
                                     <div class="three-items-item">
+
                                         <img class="main-contacts-icon" src="<?php echo get_template_directory_uri();?>/assets/icons/location-mint.svg" alt="">
                                         <div class="three-items-text">
-                                            <a href="https://maps.app.goo.gl/9wLLnVA6TqUdcupN6" target="_blank"
+                                            <?php if($mlba_options['address']): ?>
+                                            <a href="<?php echo $mlba_options['google-maps'];?>" target="_blank"
                                                rel="noopener noreferrer">
-                                                152 Av. Jean Jaurès<br>33600 Pessac
+                                                <?php echo $mlba_options['address'];?>
                                             </a>
+                                            <?php endif;?>
                                         </div>
                                     </div>
+
                                     <div class="three-items-item">
                                         <img class="main-contacts-icon" src="<?php echo get_template_directory_uri();?>/assets/icons/phone-mint.svg" alt="">
                                         <div class="three-items-text">
-                                            <a href="tel:+33609756230" target="_blank" rel="noopener noreferrer">
-                                                + 33 6 09 75 62 30</a><br>
-                                            <a href="mailto:contact@mlba.fr">contact@mlba.fr</a>
+                                            <?php if($mlba_options['phone']): ?>
+                                            <a href="tel:<?php echo $mlba_options['phone'];?>" target="_blank" rel="noopener noreferrer">
+                                                <?php echo $mlba_options['phone'];?></a><br>
+                                                <?php endif;?>
+                                            <?php if($mlba_options['email']): ?>
+                                            <a href="mailto:<?php echo $mlba_options['email'];?>"><?php echo $mlba_options['email'];?></a>
+                                            <?php endif;?>
                                         </div>
                                     </div>
+
                                     <div class="three-items-item">
                                         <img class="main-contacts-icon" src="<?php echo get_template_directory_uri();?>/assets/icons/clock-mint.svg" alt="">
-                                        <div class="three-items-text">Du lundi au vendredi<br>
-                                            de 9h00 à 21h00<br>
-                                            Samedi 9h00 à 13h00</div>
+
+                                        <div class="three-items-text">
+                                            <?php if($mlba_options['schedule']): ?>
+                                            <?php echo $mlba_options['schedule'];?>
+                                            <?php endif;?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="google-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.486978541365!2d-0.6172210233234816!3d44.81164287674065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d8620ba5c94b%3A0xaf353211b9bbb9cf!2s152%20Av.%20Jean%20Jaur%C3%A8s%2C%2033600%20Pessac!5e0!3m2!1sen!2sfr!4v1745945878811!5m2!1sen!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <?php if($mlba_options['google-maps-iframe']): ?>
+                                    <?php echo $mlba_options['google-maps-iframe'];?>
+                                <?php endif;?>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Formulaire de contact</h2>
+                        <?php if($mlba_options['contact-page-form-title']): ?>
+                        <h2 id="contact-form-title"><?php echo $mlba_options['contact-page-form-title'];?></h2>
+                        <?php endif;?>
                         <div class="main-contacts-wrap">
-                            <form class="form-container" action="" method="post">
+                            <form class="form-container" action="" method="post" id="contact-page-form">
                                 <fieldset class="form-group">
                                     <label for="first_name" class="sr-only"></label>
                                     <input type="text" class="half-width" id="first_name"
@@ -85,7 +104,7 @@ get_header();
                                 </fieldset>
                                 <fieldset class="form-single-input">
                                     <label class="checkbox-label">
-                                        <input class="checkbox" type="checkbox" name="consent" required>
+                                        <input class="checkbox" type="checkbox" name="consent" required id="consent">
                                         J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
                                     </label>
                                 </fieldset>
@@ -95,6 +114,7 @@ get_header();
                             </form>
                         </div>
                     </div>
+                    <div id="contact-form-message" class="form-message" aria-live="polite"></div>
                 </div>
             </div>
         </div>

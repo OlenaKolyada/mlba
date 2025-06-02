@@ -75,13 +75,24 @@
     margin: 3rem 0 2rem 0;
 }
 
-#inscription .participant-age label span:hover,
-#inscription .form-single-input.checkboxes span:hover,
 #inscription .form-single-input.checkboxes input[type="checkbox"]:checked + span,
 #inscription .form-single-input.radio-buttons input[type="radio"]:checked + span {
     background-color: var(--grey);
     color: var(--white);
 }
+
+#inscription .participant-age label span:active,
+#inscription .form-single-input.checkboxes span:active {
+    background-color: var(--grey-dark);
+    color: var(--black);
+}
+
+#inscription .participant-age label span:hover,
+#inscription .form-single-input.checkboxes span:hover {
+    background-color: var(--grey-medium);
+    color: var(--white);
+}
+
 
 /* Global END */
 
@@ -155,11 +166,6 @@
 }
 
 
-
-#inscription .form-single-input.radio-buttons input[type="radio"]:checked + span {
-    background-color: var(--grey);
-    color: var(--white);
-}
 
 #inscription .participant {
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease, margin 0.4s ease;
@@ -268,8 +274,6 @@
     margin: 0 !important;
 }
 
-
-
 #inscription .class-option fieldset {
     margin: 0 !important;
 }
@@ -318,7 +322,25 @@
 
 /* Animation END */
 
+#inscription .participant-age label span,
+#inscription .form-single-input.checkboxes span {
+    -webkit-tap-highlight-color: transparent !important;
+}
+
 /* Responsive */
+@media (hover: hover) {
+
+}
+
+@media (hover: none) {
+    #inscription .participant-age label span:hover,
+    #inscription .form-single-input.checkboxes span:hover {
+        background-color: var(--grey-extra-light);
+        color: var(--white);
+    }
+}
+
+
 @media screen and (max-width: 1333px) {
 
 }
@@ -364,6 +386,12 @@
         width: 18vw;
     }
 
+    #inscription .participant-age label span:hover,
+    #inscription .form-single-input.checkboxes span:hover {
+        background-color: var(--grey-extra-light);
+        color: var(--black);
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -384,12 +412,10 @@
         width: 17vw;
     }
 
-
     #inscription h4 {
         font-size: 1.2rem;
         margin-bottom: 0.7rem;
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -411,11 +437,11 @@
         width: 42vw;
     }
 
-    .section-center .section-text {
+    #inscription .section-center .section-text {
         text-align: left;
     }
 
-    .participant-age {
+    #inscription .participant-age {
         justify-content: left;
     }
 
@@ -436,7 +462,6 @@
         width: 20vw;
         padding: 0.7rem 1rem;
     }
-
 
     /* Cours Buttons */
     #inscription .form-single-input.checkboxes span {
@@ -498,12 +523,12 @@
         padding: 0.7rem 1rem;
     }
 
-    .initiation-section.toggle-section.showing,
-    .elem-1-section.toggle-section.showing,
-    .elem-2-section.toggle-section.showing,
-    .elem-3-section.toggle-section.showing,
-    .ado-section.toggle-section.showing,
-    .adult-section.toggle-section.showing {
+    #inscription .initiation-section.toggle-section.showing,
+    #inscription .elem-1-section.toggle-section.showing,
+    #inscription .elem-2-section.toggle-section.showing,
+    #inscription .elem-3-section.toggle-section.showing,
+    #inscription .ado-section.toggle-section.showing,
+    #inscription .adult-section.toggle-section.showing {
         flex-direction: column;
     }
 
@@ -528,8 +553,6 @@
         margin: 3rem auto 1rem;
     }
 }
-
-
 
 @media screen and (max-width: 480px) {
 
@@ -584,12 +607,13 @@
     #inscription .form-single-input.checkboxes span {
         width: 36.5vw;
     }
+
     #inscription .form-action .btn {
         width: 79vw;
     }
 
-    .same-name-checkbox-label,
-    .form-action .action-checkbox-label {
+    #inscription .same-name-checkbox-label,
+    #inscription .form-action .action-checkbox-label {
         font-size: 14px;
     }
 
@@ -616,8 +640,8 @@
         font-size: 1.3rem;
     }
 
-    .same-name-checkbox-label,
-    .form-action .action-checkbox-label {
+    #inscription .same-name-checkbox-label,
+    #inscription .form-action .action-checkbox-label {
         font-size: 12px;
     }
 
@@ -639,7 +663,6 @@
 
     #inscription .form-action {
         width: 100%;
-
     }
 
     #inscription .add-remove-participant {

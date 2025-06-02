@@ -38,9 +38,11 @@
     --secondary-color-extra-dark: #000066;
     --black: #1a1a18;
     --white: #fff;
-    --grey: #6c757d;
+
     --grey-extra-light: #f0f0f0;
     --grey-light: #d4d4d4;
+    --grey-medium: #a0a4a8;
+    --grey: #6c757d;
     --grey-dark: #333333;
     --mixed-gradient: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
     --secondary-color-gradient: linear-gradient(to bottom, var(--secondary-color-light), var(--secondary-color), var(--secondary-color-dark));
@@ -51,6 +53,7 @@
 
 * {
 	box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
@@ -306,6 +309,20 @@ form button {
 .half-width {
     width: 48%;
 }
+
+.form-message {
+    font-size: 1.5rem;
+    margin: 1.5rem auto 0;
+}
+
+.form-message .success {
+    color: var(--white);
+}
+
+.form-message .error {
+    color: red;
+}
+
 /* Form END */
 
 /*Modal Form START */
@@ -538,6 +555,11 @@ html {
     h2 {
         font-size: 1.8rem;
     }
+
+    .form-message {
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 624px) {
@@ -545,6 +567,10 @@ html {
         border-radius: 3px;
         height: auto;
         width: 90vw;
+    }
+
+    .form-message .success {
+        color: var(--primary-color);
     }
 }
 
@@ -600,10 +626,18 @@ html {
         font-weight: 600;
     }
 
+    .form-message {
+        font-size: 1.3rem;
+    }
+
+
 }
 
 @media screen and (max-width: 375px) {
-
+    .form-message {
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width: 320px) {

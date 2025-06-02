@@ -27,11 +27,11 @@ get_header();
                                 <p>Les forfaits de la MLBA tiennent comptent des semaines de vacances scolaires.</p>
                                 <p><strong>5% de réduction</strong> dès le 2<sup>e</sup> membre d'une même famille (le moins élevé des deux forfaits).</p>
 
-                                <h4>Inscription</h4>
+                                <h4>Frais d'adhésion</h4>
                                 <div class="tarif-table small">
                                     <div class="tarif-row">
                                         <div class="tarif-cell first-cell">1 élève</div>
-                                        <div class="tarif-cell">€28</div>
+                                        <div class="tarif-cell">€30</div>
 
                                     </div>
                                     <div class="tarif-row">

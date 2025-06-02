@@ -590,7 +590,6 @@ section:nth-child(even) {
         width: 40vw;
         height: 50vw;
     }
-
 }
 
 @media screen and (max-width: 624px) {

@@ -157,6 +157,7 @@ function mlba_scripts() {
     wp_enqueue_script( 'mlba-swiper-bundle.min', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'mlba-magnific-popup.min', get_template_directory_uri() . '/assets/js/magnific-popup.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'mlba-script', get_template_directory_uri() . '/assets/js/script.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'mlba-form-handler', get_template_directory_uri() . '/assets/js/form-handler.js', array(), _S_VERSION, true );
 	
 	if ( is_front_page() ) {
     	wp_enqueue_script( 'mlba-main', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
@@ -173,6 +174,15 @@ function mlba_scripts() {
 // 	}
 }
 add_action( 'wp_enqueue_scripts', 'mlba_scripts' );
+
+// Переменные для AJAX
+function localize_script() {
+    wp_localize_script('mlba-form-handler', 'ajax_object', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'nonce' => wp_create_nonce('contact_form_nonce')
+    ));
+}
+add_action('wp_enqueue_scripts', 'localize_script');
 
 /**
  * Global Options
@@ -191,4 +201,43 @@ function add_menu_link_class($atts, $item, $args) {
 }
 add_filter('nav_menu_link_attributes', 'add_menu_link_class', 10, 3);
 
+// Обработка контактной формы
+add_action('wp_ajax_contact_form', 'handle_contact_form');
+add_action('wp_ajax_nopriv_contact_form', 'handle_contact_form');
 
+function handle_contact_form() {
+    // Проверка nonce
+    if (!wp_verify_nonce($_POST['nonce'], 'contact_form_nonce')) {
+        wp_die('Erreur de sécurité');
+    }
+
+    // Получаем данные
+    $first_name = sanitize_text_field($_POST['first_name']);
+    $last_name = sanitize_text_field($_POST['last_name']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $email = sanitize_email($_POST['email']);
+    $comment = sanitize_textarea_field($_POST['comment']);
+
+    // Отправляем email
+    $to = get_option('admin_email');
+    $subject = 'Nouveau message Contact';
+    $message = "
+    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+        <h3 style='color: #333; border-bottom: 2px solid #00D4B4; padding-bottom: 10px;'>Nouveau message de contact</h3>
+        <p><strong>Prénom:</strong> $first_name</p>
+        <p><strong>Nom:</strong> $last_name</p>
+        <p><strong>Téléphone:</strong> $phone</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Message:</strong><br>$comment</p>
+    </div>
+    ";
+
+    $headers = array(
+        'From: MLBA.fr <contact@mlba.fr>',
+        'Content-Type: text/html; charset=UTF-8'
+    );
+
+    wp_mail($to, $subject, $message, $headers);
+
+    wp_die('success');
+}

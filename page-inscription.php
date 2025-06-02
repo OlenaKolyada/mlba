@@ -17,7 +17,7 @@ get_header();
 
 <main class="main" id="inscription">
 
-<!--	Inscription START-->
+    <!--	Inscription START-->
     <section class="section-wrap section-first no-padding-top">
         <div class="container">
             <h1>Formulaire d'inscription</h1>
@@ -32,18 +32,18 @@ get_header();
                                     <h3>Informations de contact</h3>
                                     <fieldset class="form-group">
                                         <label>
-                                            <input type="text" id="first_name" placeholder="Votre prénom *" name="first_name" required>
+                                            <input class="half-width" type="text" id="first_name" placeholder="Votre prénom *" name="first_name" required>
                                         </label>
                                         <label>
-                                            <input type="text" id="last_name" placeholder="Votre nom *" name="last_name" required>
+                                            <input class="half-width" type="text" id="last_name" placeholder="Votre nom *" name="last_name" required>
                                         </label>
                                     </fieldset>
                                     <fieldset class="form-group">
                                         <label>
-                                            <input type="tel" id="phone" placeholder="Numéro de téléphone *" name="phone" required>
+                                            <input class="half-width" type="tel" id="phone" placeholder="Numéro de téléphone *" name="phone" required>
                                         </label>
                                         <label>
-                                            <input type="email" id="email" placeholder="Email" name="email">
+                                            <input class="half-width" type="email" id="email" placeholder="Email" name="email">
                                         </label>
                                     </fieldset>
                                 </div>
@@ -55,10 +55,10 @@ get_header();
                                         <h3>Information d'élève</h3>
                                         <fieldset class="form-group">
                                             <label>
-                                                <input type="text" id="first_name-participant" placeholder="Prénom d'élève *" name="first_name_participant" required>
+                                                <input class="half-width" type="text" id="first_name-participant" placeholder="Prénom d'élève *" name="first_name_participant" required>
                                             </label>
                                             <label>
-                                                <input type="text" id="last_name-participant" placeholder="Nom d'élève *" name="last_name_participant" required>
+                                                <input class="half-width" type="text" id="last_name-participant" placeholder="Nom d'élève *" name="last_name_participant" required>
                                             </label>
                                         </fieldset>
                                         <fieldset class="same-name">
@@ -278,10 +278,10 @@ get_header();
                                         <h3>Information d'élève</h3>
                                         <fieldset class="form-group">
                                             <label>
-                                                <input type="text" id="first_name-participant-" placeholder="Prénom d'élève *" name="first_name_participant" required>
+                                                <input class="half-width" type="text" id="first_name-participant-" placeholder="Prénom d'élève *" name="first_name_participant" required>
                                             </label>
                                             <label>
-                                                <input type="text" id="last_name-participant-" placeholder="Nom d'élève *" name="last_name_participant" required>
+                                                <input class="half-width" type="text" id="last_name-participant-" placeholder="Nom d'élève *" name="last_name_participant" required>
                                             </label>
                                         </fieldset>
                                     </div>
