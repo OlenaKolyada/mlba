@@ -210,10 +210,27 @@ section:nth-child(even) {
     margin-top: 2rem;
 }
 
-#pro-admission .btn {
-    margin-top: 2rem;
-    width: 17.5rem;
-    height: 3.75rem;
+#section-pro #pro-admission .section-row {
+    justify-content: left;
+}
+
+#section-pro #pro-admission a {
+    text-decoration: underline;
+}
+
+#section-pro input,
+#section-pro select,
+#section-pro textarea {
+    background-color: var(--grey-light);
+}
+
+#section-pro .form-container input:hover,
+#section-pro .form-container select:hover,
+#section-pro .form-container textarea:hover,
+#section-pro .form-container input:focus,
+#section-pro .form-container select:focus,
+#section-pro .form-container textarea:focus {
+    background-color: var(--grey-extra-light);
 }
 
 
@@ -342,6 +359,10 @@ section:nth-child(even) {
         height: 3rem;
     }
 
+    #section-pro form {
+        width: 100%;
+    }
+
     #contacts .section-row {
         flex-direction: column;
         align-items: center;
@@ -420,8 +441,12 @@ section:nth-child(even) {
         width: 100%;
     }
 
-    #section-pro #audition .btn {
+    #section-pro #admission .btn {
         margin: 3rem auto 1rem;
+    }
+
+    #section-pro #admission .section-content-text {
+        width: 70%;
     }
 
     #section-pro #presentation .frame,
@@ -431,6 +456,10 @@ section:nth-child(even) {
 
     #section-pro #pro-admission .btn {
         margin: 2rem 0 1rem 0;
+    }
+
+    #section-pro #pro-admission .section-content-text {
+        align-items: flex-start;
     }
 
     #admission .section-center {
@@ -679,6 +708,10 @@ section:nth-child(even) {
         aspect-ratio: 3/4;
     }
 
+    #section-pro .section-photo  {
+        width: 85vw;
+    }
+
     #contacts .section-content-text {
         width: 100%;
     }
@@ -711,9 +744,7 @@ section:nth-child(even) {
         width: 85vw;
     }
 
-    #section-pro .swiper-frame {
-        width: 85vw;
-    }
+
 
     #enfants-classique .section-content-image .frame {
         margin-top: 2rem;
@@ -727,6 +758,16 @@ section:nth-child(even) {
     #tarifs .mobile-only .first-cell {
         margin-left: 0;
         max-width: 10rem;
+    }
+
+    #section-pro .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #section-pro .half-width {
+        width: 100%;
     }
 
     #admission .section-first.no-padding-top {

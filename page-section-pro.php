@@ -142,11 +142,40 @@ get_header();
     			<div class="section-row">
                     <div class="section-content-text">
                         <div class="section-text">
-                            <h2>Modalités d'admission</h2>
-                            <p>Nous vous invitons à nous contacter pour connaître les modalités d’admission.</p>
-                            <div class="btn btn-secondary-color">
-                                <a href="#modal-form-admission" class="magnific-inline">Modalités d’admission</a>
-                            </div>
+                            <h2 id="admission-section-form-title">Modalités d'admission</h2>
+                            <p id="admission-section-form-text">Nous vous invitons à nous contacter pour connaître les modalités d’admission.</p>
+                            <form class="form-container" action="" method="post"  id="admission-section-form">
+                                <fieldset class="form-group">
+                                    <label for="first_name" class="sr-only"></label>
+                                    <input type="text" class="half-width" id="first_name"
+                                           placeholder="Prénom *" name="first_name" required>
+                                    <label for="last_name" class="sr-only"></label>
+                                    <input type="text" class="half-width" id="last_name"
+                                           placeholder="Nom *" name="last_name" required>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="phone"  class="sr-only"></label>
+                                    <input type="tel" class="half-width" id="phone"
+                                           placeholder="Numéro de téléphone *" name="phone" required>
+                                    <label for="email"  class="sr-only"></label>
+                                    <input type="email" class="half-width" id="email"
+                                           placeholder="Email" name="email">
+                                </fieldset>
+                                <fieldset class="form-single-input full-width">
+                                    <label for="comment"  class="sr-only"></label>
+                                    <textarea id="comment" placeholder="Commentaire" name="comment" rows="4"></textarea>
+                                </fieldset>
+                                <fieldset class="form-single-input">
+                                    <label class="checkbox-label">
+                                        <input class="checkbox" type="checkbox" name="consent" required>
+                                        J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset class="form-btn">
+                                    <button class="btn btn-secondary-color" type="submit">Envoyer</button>
+                                </fieldset>
+                            </form>
+                            <div id="admission-section-message" class="form-message" aria-live="polite"></div>
                         </div>
                     </div>
     				<div class="section-content-image">
@@ -162,53 +191,6 @@ get_header();
     	<!--	Admission END-->
 
     </main>
-
-<!--Modal Form Admission START -->
-<div class="modal-form mfp-hide mfp-with-anim" id="modal-form-admission">
-	<div class="modal-form-wrap">
-		<div class="modal-form-head">
-			<div class="modal-close">
-				<img class="modal-icon" src="<?php echo get_template_directory_uri();?>/assets/icons/xmark-white.svg"
-					 alt="" />
-			</div>
-		</div>
-		<div class="modal-body">
-			<form class="form-container" action="" method="post">
-				<h4>Modalités d'admission</h4>
-				<fieldset class="form-group">
-					<label for="modal-admission_first_name"  class="sr-only"></label>
-					<input class="half-width" type="text" id="modal-admission_first_name" placeholder="Prénom *" name="first_name" required>
-					<label for="modal-admission_last_name"  class="sr-only"></label>
-					<input  class="half-width" type="text" id="modal-admission_last_name" placeholder="Nom *" name="last_name" required>
-				</fieldset>
-
-				<fieldset class="form-group">
-					<label for="modal-admission_phone"  class="sr-only"></label>
-					<input  class="half-width" type="tel" id="modal-admission_phone" placeholder="Numéro de téléphone *" name="phone" required>
-					<label for="modal-admission_email"  class="sr-only"></label>
-					<input  class="half-width" type="email" id="modal-admission_email" placeholder="Email" name="email">
-				</fieldset>
-
-				<fieldset class="form-single-input full-width">
-					<label for="modal-admission_comment"  class="sr-only"></label>
-					<textarea id="modal-admission_comment" placeholder="Commentaire" name="comment" rows="4"></textarea>
-				</fieldset>
-
-				<fieldset class="form-single-input">
-					<label class="checkbox-label">
-						<input class="checkbox" type="checkbox" name="consent" required>
-						J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
-					</label>
-				</fieldset>
-
-				<fieldset class="form-btn">
-					<button class="btn btn-secondary-color" type="submit">Envoyer</button>
-				</fieldset>
-			</form>
-		</div>
-	</div>
-</div>
-<!--Modal Form Admission END -->
 
     <!--Scroll Dots Nav START-->
     <nav class="scroll-dots-nav" aria-label="Navigation de section">

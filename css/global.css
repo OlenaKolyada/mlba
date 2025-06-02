@@ -321,53 +321,6 @@ form button {
 
 /* Form END */
 
-/*Modal Form START */
-.modal-form {
-    max-width: 32rem;
-    margin: 0 auto;
-    position: relative;
-}
-
-.modal-form-wrap {
-    padding: 3rem;
-    background-color: var(--grey);
-    color: var(--white);
-    border-radius: 3px;
-}
-
-.modal-form label {
-    color: var(--white);
-}
-
-.modal-form a {
-    color: var(--white);
-    text-decoration: underline;
-}
-
-.modal-form a:hover {
-    color: var(--secondary-color);
-}
-
-.modal-close {
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    top: 1rem;
-    left: 30rem;
-}
-
-.modal-icon {
-    width: 1rem;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.modal-form button {
-    margin: 1rem auto 0;
-}
-
-/* Modal Form END */
-
 /* Scroll To Top START */
 .scroll-to-top {
     position: fixed;
@@ -591,16 +544,6 @@ html {
 
     body {
         padding-top: 90px;
-    }
-
-    .modal-form .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .modal-form .half-width {
-        width: 100%;
     }
 
     .form-message {

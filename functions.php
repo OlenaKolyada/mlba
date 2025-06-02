@@ -179,8 +179,10 @@ add_action( 'wp_enqueue_scripts', 'mlba_scripts' );
 function localize_script() {
     wp_localize_script('mlba-form-handler', 'ajax_object', array(
         'ajax_url' => admin_url('admin-ajax.php'),
+        'main_page_nonce' => wp_create_nonce('main_page_form_nonce'),
+        'admission_page_nonce' => wp_create_nonce('admission_page_form_nonce'),
+        'admission_section_nonce' => wp_create_nonce('admission_section_form_nonce'),
         'contact_nonce' => wp_create_nonce('contact_form_nonce'),
-        'main_page_nonce' => wp_create_nonce('main_page_form_nonce')
     ));
 }
 add_action('wp_enqueue_scripts', 'localize_script');
@@ -238,6 +240,92 @@ function handle_main_page_form() {
         <p><strong>Téléphone:</strong> $phone</p>
         <p><strong>Email:</strong> $email</p>
         <p><strong>Cours choisi:</strong> $dance_class_name</p>
+        <p><strong>Commentaire:</strong><br>$comment</p>
+    </div>
+    ";
+
+    $headers = array(
+        'From: MLBA.fr <contact@mlba.fr>',
+        'Content-Type: text/html; charset=UTF-8'
+    );
+
+    $mail_sent = wp_mail($to, $subject, $message, $headers);
+
+    if ($mail_sent) {
+        wp_die('success');
+    } else {
+        wp_die('error');
+    }
+}
+
+// Admission Page Form
+add_action('wp_ajax_admission_page_form', 'handle_admission_page_form');
+add_action('wp_ajax_nopriv_admission_page_form', 'handle_admission_page_form');
+
+function handle_admission_page_form() {
+    if (!wp_verify_nonce($_POST['admission_page_nonce'], 'admission_page_form_nonce')) {
+        wp_die('Erreur de sécurité');
+    }
+
+    $first_name = sanitize_text_field($_POST['first_name']);
+    $last_name = sanitize_text_field($_POST['last_name']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $email = sanitize_email($_POST['email']);
+    $comment = sanitize_textarea_field($_POST['comment']);
+
+    $to = get_option('admin_email');
+    $subject = 'Demande d\'admission';
+
+    $message = "
+    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+        <h3 style='color: #333; border-bottom: 2px solid #00D4B4; padding-bottom: 10px;'>Demande d'admission</h3>
+        <p><strong>Prénom:</strong> $first_name</p>
+        <p><strong>Nom:</strong> $last_name</p>
+        <p><strong>Téléphone:</strong> $phone</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Commentaire:</strong><br>$comment</p>
+    </div>
+    ";
+
+    $headers = array(
+        'From: MLBA.fr <contact@mlba.fr>',
+        'Content-Type: text/html; charset=UTF-8'
+    );
+
+    $mail_sent = wp_mail($to, $subject, $message, $headers);
+
+    if ($mail_sent) {
+        wp_die('success');
+    } else {
+        wp_die('error');
+    }
+}
+
+// Admission Section Form
+add_action('wp_ajax_admission_section_form', 'handle_admission_section_form');
+add_action('wp_ajax_nopriv_admission_section_form', 'handle_admission_section_form');
+
+function handle_admission_section_form() {
+    if (!wp_verify_nonce($_POST['admission_section_nonce'], 'admission_section_form_nonce')) {
+        wp_die('Erreur de sécurité');
+    }
+
+    $first_name = sanitize_text_field($_POST['first_name']);
+    $last_name = sanitize_text_field($_POST['last_name']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $email = sanitize_email($_POST['email']);
+    $comment = sanitize_textarea_field($_POST['comment']);
+
+    $to = get_option('admin_email');
+    $subject = 'Demande d\'admission';
+
+    $message = "
+    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+        <h3 style='color: #333; border-bottom: 2px solid #00D4B4; padding-bottom: 10px;'>Demande d'admission (Modal)</h3>
+        <p><strong>Prénom:</strong> $first_name</p>
+        <p><strong>Nom:</strong> $last_name</p>
+        <p><strong>Téléphone:</strong> $phone</p>
+        <p><strong>Email:</strong> $email</p>
         <p><strong>Commentaire:</strong><br>$comment</p>
     </div>
     ";

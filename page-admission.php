@@ -22,8 +22,8 @@ get_header();
             <div class="section-row">
                 <div class="section-center">
                     <div class="section-text">
-                        <h2 id="admission-form-title">Modalités d'admission</h2>
-                        <p id="admission-form-text">Nous vous invitons à nous contacter pour connaître les modalités d’admission.</p>
+                        <h2 id="admission-page-form-title">Modalités d'admission</h2>
+                        <p id="admission-page-form-text">Nous vous invitons à nous contacter pour connaître les modalités d’admission.</p>
                         <form class="form-container" action="" method="post"  id="admission-page-form">
                             <fieldset class="form-group">
                                 <label for="first_name" class="sr-only"></label>
@@ -55,6 +55,7 @@ get_header();
                                 <button class="btn btn-primary-color" type="submit">Envoyer</button>
                             </fieldset>
                         </form>
+                        <div id="admission-page-message" class="form-message" aria-live="polite"></div>
                     </div>
                 </div>
             </div>
