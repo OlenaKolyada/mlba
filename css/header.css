@@ -87,13 +87,13 @@ header {
     color: var(--primary-color);
 }
 
-.menu-nav > ul > li > a:hover {
+.menu-item-has-children > a:first-child {
     cursor: default;
 }
 
 .menu-nav .sub-menu {
     position: absolute;
-    min-width: 13rem;
+    min-width: 15rem;
     box-shadow: var(--shadow);
     left: 0;
     top: calc(100% + 10px);
@@ -102,7 +102,7 @@ header {
     opacity: 0;
     visibility: hidden;
     transition: 0.4s ease;
-    background-color: var(--white);
+    background-color: var(--grey-extra-light);
 }
 
 .menu-nav .sub-menu li a {
@@ -165,7 +165,7 @@ header {
 }
 
 .menu-mobile-nav {
-    margin: 1rem 0 0 1rem;
+    margin-top: 1rem;
 }
 
 .header-mobile .sub-menu {
@@ -245,7 +245,7 @@ header {
     }
 
     .header-mobile {
-        width: 90%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 425px) {

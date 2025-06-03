@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages
- * Template name: Professeurs
+ * Template name: Professeurs Classiques
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -26,29 +26,39 @@ get_header();
                         <div class="swiper swiper-section-small">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/roman-mikhalev.jpg"
-                                         alt="Roman Mikhalev"
-                                         title="Roman Mikhalev">
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/roman-mikhalev.jpg" class="popup-gallery"  title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/roman-mikhalev.jpg"
+                                             alt="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux"
+                                             title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/apollon-musagete-g-balanchine-opera-national-de-bordeaux.jpg"
-                                         alt="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
-                                         title="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/apollon-musagete-g-balanchine-opera-national-de-bordeaux.jpg" class="popup-gallery"  title="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/apollon-musagete-g-balanchine-opera-national-de-bordeaux.jpg"
+                                             alt="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
+                                             title="Apollon Musagète, ballet de George Balanchine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux.jpg"
-                                         alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
-                                         title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux.jpg" class="popup-gallery"  title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux.jpg"
+                                             alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
+                                             title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/le-lac-des-cygnes-c-jude-opera-national-de-bordeaux.jpg"
-                                         alt="Le Lac des cygnes, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
-                                         title="Le Lac des cygnes, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/le-lac-des-cygnes-c-jude-opera-national-de-bordeaux.jpg" class="popup-gallery"  title="Le Lac des cygnes, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/le-lac-des-cygnes-c-jude-opera-national-de-bordeaux.jpg"
+                                             alt="Le Lac des cygnes, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
+                                             title="Le Lac des cygnes, ballet de Charles Jude, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/roman-mikhalev/le-spectre-de-la-rose-m-fokine-opera-national-de-bordeaux.jpg"
-                                         alt="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
-                                         title="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/le-spectre-de-la-rose-m-fokine-opera-national-de-bordeaux.jpg" class="popup-gallery"  title="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/le-spectre-de-la-rose-m-fokine-opera-national-de-bordeaux.jpg"
+                                             alt="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
+                                             title="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                                    </a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -270,24 +280,32 @@ get_header();
                         <div class="swiper swiper-section-small">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/corinne-lanssens.jpg"
-                                         alt="Corinne Lanssens"
-                                         title="Corinne Lanssens">
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/corinne-lanssens.jpg" class="popup-gallery"  title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/corinne-lanssens.jpg"
+                                             alt="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux"
+                                             title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux">
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-1.jpg"
-                                         alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
-                                         title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-1.jpg" class="popup-gallery"  title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-1.jpg"
+                                             alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
+                                             title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-2.jpg"
-                                         alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
-                                         title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-2.jpg" class="popup-gallery"  title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/la-belle-au-bois-dormant-c-jude-opera-national-de-bordeaux-2.jpg"
+                                             alt="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
+                                             title="La Belle au bois dormant, ballet de Charles Jude, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/corinne-lanssens/who-cares-g-balanchine-opera-national-de-bordeaux.jpg"
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/who-cares-g-balanchine-opera-national-de-bordeaux.jpg" class="popup-gallery"  title="Who Cares? Ballet de George Balanchine, Opéra National de Bordeaux. Danseuse Corinne Lanssens">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/who-cares-g-balanchine-opera-national-de-bordeaux.jpg"
                                          alt="Who Cares? Ballet de George Balanchine, Opéra National de Bordeaux. Danseuse Corinne Lanssens"
                                          title="Who Cares? Ballet de George Balanchine, Opéra National de Bordeaux. Danseuse Corinne Lanssens" />
+                                    </a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>

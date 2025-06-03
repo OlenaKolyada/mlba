@@ -42,9 +42,11 @@ get_header();
 			<div class="section-row">
 				<div class="section-content-image">
 					<div class="frame">
-						<img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg"
-							 alt="A propos de Mikhalev Lanssens Ballet Academy"
-							 title="A propos de Mikhalev Lanssens Ballet Academy" />
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg" class="popup-image" title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy">
+                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg"
+                                 alt="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy"
+                                 title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy" />
+                        </a>
 					</div>
 				</div>
 				<div class="section-content-text">
@@ -62,7 +64,7 @@ get_header();
 							<div class="three-items-item">
 								<img class="icon" src="<?php echo get_template_directory_uri();?>/assets/icons/star.svg" alt="">
 								<h4>Excellence</h4>
-								<p class="three-item-text">Grâce à une longue expérience (Danseuse et Danseur Étoile de l’Opéra National de
+								<p class="three-items-text">Grâce à une longue expérience (Danseuse et Danseur Étoile de l’Opéra National de
 									Bordeaux), richesse et expérience pédagogique</p>
 							</div>
 							<div class="three-items-item">
@@ -74,7 +76,7 @@ get_header();
 							<div class="three-items-item">
 								<img class="icon" src="<?php echo get_template_directory_uri();?>/assets/icons/star.svg" alt="">
 								<h4>Diversité</h4>
-								<p class="three-item-text">Danse Classique (École française et russe) et Contemporaine, pour se découvrir,
+								<p class="three-items-text">Danse Classique (École française et russe) et Contemporaine, pour se découvrir,
 									s’éveiller, s’enrichir et partager</p>
 							</div>
 						</div>
@@ -104,7 +106,7 @@ get_header();
 							<div class="three-items-item">
 								<img class="icon" src="<?php echo get_template_directory_uri();?>/assets/icons/star.svg" alt="">
 								<h4>Amélioration</h4>
-								<p class="three-item-text">de la posture, de la souplesse, et de la tonicité musculaire</p>
+								<p class="three-items-text">de la posture, de la souplesse, et de la tonicité musculaire</p>
 							</div>
 							<div class="three-items-item">
 								<img class="icon" src="<?php echo get_template_directory_uri();?>/assets/icons/star.svg" alt="">
@@ -114,7 +116,7 @@ get_header();
 							<div class="three-items-item">
 								<img class="icon" src="<?php echo get_template_directory_uri();?>/assets/icons/star.svg" alt="">
 								<h4>Développement</h4>
-								<p class="three-item-text">de la confiance en soi, de la mémoire, de la discipline, et de la créativité</p>
+								<p class="three-items-text">de la confiance en soi, de la mémoire, de la discipline, et de la créativité</p>
 							</div>
 						</div>
 					</div>
@@ -124,9 +126,11 @@ get_header();
 				</div>
 				<div class="section-content-image">
 					<div class="frame">
-						<img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/danse.jpg"
-							 alt="La Danse"
-							 title="La Danse" />
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/danse.jpg" class="popup-image" title="La Danse">
+                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/danse.jpg"
+                                 alt="La Danse"
+                                 title="La Danse" />
+                        </a>
 					</div>
 				</div>
 			</div>
@@ -224,9 +228,11 @@ get_header();
 			<div class="section-content-image">
 				<div class="quote-container">
 					<div class="frame">
-						<img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg"
-							 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
-							 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg"
+                                 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
+                                 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                        </a>
 					</div>
 					<div class="decor-quote">
 						<div class="decor-quote-row">
@@ -258,9 +264,11 @@ get_header();
 			<div class="section-row">
 				<div class="section-content-image">
 					<div class="frame">
-						<img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/stages.jpg"
-							 alt="Mikhalev Lanssens Ballet Academy, Stages"
-							 title="Mikhalev Lanssens Ballet Academy, Stages" />
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/stages.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Stages">
+                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/stages.jpg"
+                                 alt="Mikhalev Lanssens Ballet Academy, Stages"
+                                 title="Mikhalev Lanssens Ballet Academy, Stages" />
+                        </a>
 					</div>
 				</div>
 				<div class="section-content-text align-left">
@@ -299,29 +307,39 @@ get_header();
 					<div class="swiper swiper-main-gallery">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-1.jpg"
-									 alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-									 title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-1.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-1.jpg"
+                                     alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
+                                     title="Galerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                </a>
 							</div>
 							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-2.jpg"
-									 alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-									 title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-2.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-2.jpg"
+                                     alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
+                                     title="Galerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                </a>
 							</div>
 							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-3.jpg"
-									 alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-									 title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-3.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-3.jpg"
+                                         alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
+                                         title="Galerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                </a>
 							</div>
 							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-4.jpg"
-									 alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-									 title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-4.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-4.jpg"
+                                         alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
+                                         title="Galerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                </a>
 							</div>
 							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-5.jpg"
-									 alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-									 title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-5.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-5.jpg"
+                                     alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
+                                     title="Galerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                </a>
 							</div>
 						</div>
 						<div class="swiper-pagination"></div>

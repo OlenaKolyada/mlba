@@ -119,31 +119,40 @@ get_header();
                                 <div class="swiper swiper-section-small">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init1.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
-                                                 title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init1.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
+                                                     title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init2.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
-                                                 title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init2.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
+                                                     title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init3.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
-                                                 title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init3.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
+                                                     title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init4.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
-                                                 title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init4.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init4.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
+                                                     title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init5.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
-                                                 title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init5.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/init/init5.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique"
+                                                     title="Mikhalev Lanssens Ballet Academy, Initiation à la danse classique">
+                                            </a>
                                         </div>
-
                                     </div>
                                     <div class="swiper-pagination"></div>
                                     <div class="swiper-button-prev"></div>
@@ -187,31 +196,40 @@ get_header();
                                 <div class="swiper swiper-section-small">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-1.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-1.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-2.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-2.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-3.jpg"
                                                  alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
                                                  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-4.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-4.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-4.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-5.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-5.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem1/elem1-5.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 1">
+                                            </a>
                                         </div>
-
                                     </div>
                                     <div class="swiper-pagination"></div>
                                     <div class="swiper-button-prev"></div>
@@ -248,9 +266,11 @@ get_header();
                         </div>
                         <div class="section-content-image">
                             <div class="frame">
-                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg"
-                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2"
-                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2" />
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg" class="popup-image"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2">
+                                    <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg"
+                                         alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2"
+                                         title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -286,14 +306,18 @@ get_header();
                                 <div class="swiper swiper-section-small">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-1.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-1.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-2.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Lac des cygnes"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Lac des cygnes">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Lac des cygnes">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-2.jpg"
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Lac des cygnes"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Lac des cygnes" />
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -330,9 +354,11 @@ get_header();
                         </div>
                         <div class="section-content-image">
                             <div class="frame">
-                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance1.jpg"
-                                     alt="Mikhalev Lanssens Ballet Academy, Classique Avancé"
-                                     title="Mikhalev Lanssens Ballet Academy, Classique Avancé" />
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance1.jpg" class="popup-image"  title="Mikhalev Lanssens Ballet Academy, Classique Avancé">
+                                    <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance1.jpg"
+                                         alt="Mikhalev Lanssens Ballet Academy, Classique Avancé"
+                                         title="Mikhalev Lanssens Ballet Academy, Classique Avancé" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -340,8 +366,6 @@ get_header();
             </section>
             <!--	Avance END-->
         </main>
-
-
 
         <!--Scroll Dots Nav START-->
         <nav class="scroll-dots-nav" aria-label="Navigation de section">

@@ -30,24 +30,32 @@ get_header();
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-1.jpg"
-                                         alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-                                         title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-1.jpg" class="popup-gallery"  title="Studio de Mikhalev Lanssens Ballet Academy">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-1.jpg"
+                                             alt="Studio de Mikhalev Lanssens Ballet Academy"
+                                             title="Studio de Mikhalev Lanssens Ballet Academy" />
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-2.jpg"
-                                         alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-                                         title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-2.jpg" class="popup-gallery"  title="Studio de Mikhalev Lanssens Ballet Academy">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-2.jpg"
+                                             alt="Studio de Mikhalev Lanssens Ballet Academy"
+                                             title="Studio de Mikhalev Lanssens Ballet Academy" />
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-3.jpg"
-                                         alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-                                         title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-3.jpg" class="popup-gallery"  title="Studio de Mikhalev Lanssens Ballet Academy">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-3.jpg"
+                                             alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
+                                             title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-4.jpg"
-                                         alt="Gallerie des photos de Mikhalev Lanssens Ballet Academy"
-                                         title="Gallerie des photos de Mikhalev Lanssens Ballet Academy" />
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-4.jpg" class="popup-gallery"  title="Studio de Mikhalev Lanssens Ballet Academy">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/academy/studio-4.jpg"
+                                             alt="Studio de Mikhalev Lanssens Ballet Academy"
+                                             title="Studio de Mikhalev Lanssens Ballet Academy" />
+                                    </a>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>

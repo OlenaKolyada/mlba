@@ -47,6 +47,51 @@ section:nth-child(even) {
 }
 /* Professeurs Classiques END */
 
+/* Professeurs Contemporain START */
+#professeurs-contemporain .swiper-section-small {
+    width: 360px;
+    height: auto;
+}
+
+#professeurs-contemporain .three-items-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    width: 30%;
+}
+
+#professeurs-contemporain .three-items-item h4 {
+    margin-bottom: 0.6rem;
+}
+
+#professeurs-contemporain .three-items-item ul {
+    padding: 0;
+}
+
+#professeurs-contemporain ul li {
+    text-indent: -0.65rem;
+    padding-left: 0.65rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+
+#professeurs-contemporain .cards {
+    margin-top: 3rem;
+}
+
+#professeurs-contemporain .card-item iframe {
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+#professeurs-contemporain .mobile-only {
+    display: none;
+}
+/* Professeurs Contemporain END */
+
 /* Studio START */
 #studio .swiper-frame {
     width: 95vw;
@@ -110,6 +155,19 @@ section:nth-child(even) {
 }
 
 #enfants-classique .swiper-section-small .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#enfants-classique .swiper-section-small .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#enfants-classique .swiper-section-small .swiper-slide a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -405,6 +463,15 @@ section:nth-child(even) {
         margin: 3rem 0 1rem 0;
     }
 
+    #professeurs-contemporain .swiper-section-small {
+        width: 450px;
+        height: auto;
+    }
+
+    #professeurs-contemporain .three-items-wrap {
+        margin: 3rem 0 1rem 0;
+    }
+
     #enfants-classique .section-content-text,
     #enfants-classique .section-center {
         width: 100%;
@@ -489,6 +556,14 @@ section:nth-child(even) {
         margin: 2rem 0 1rem;
     }
 
+    #professeurs-contemporain .three-items-item {
+        font-size: 0.9rem;
+    }
+
+    #professeurs-contemporain .cards {
+        margin: 2rem 0 1rem;
+    }
+
     #section-pro .section-center .section-text {
         width: 100%;
     }
@@ -510,6 +585,20 @@ section:nth-child(even) {
     }
 
     #professeurs-classiques .cards {
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+    #professeurs-contemporain .three-items-wrap {
+        margin: 1rem 0;
+    }
+
+    #professeurs-contemporain .three-items-item {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    #professeurs-contemporain .cards {
         row-gap: 2rem;
         column-gap: 2rem;
     }
@@ -639,6 +728,18 @@ section:nth-child(even) {
         width: 100%;
     }
 
+    #professeurs-contemporain .three-items-wrap {
+        margin: 2rem 0 1rem;
+    }
+
+    #professeurs-contemporain .three-items-row {
+        gap: 2rem;
+    }
+
+    #professeurs-contemporain .three-items-item {
+        width: 100%;
+    }
+
     #admission .section-center {
         width: 100%;
     }
@@ -699,6 +800,27 @@ section:nth-child(even) {
         margin: 1rem auto;
     }
 
+    #professeurs-contemporain .swiper-section-small {
+        width: 80vw;
+        height: auto;
+    }
+
+    #professeurs-contemporain .cards {
+        display: none;
+    }
+
+    #professeurs-contemporain .mobile-only {
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    #professeurs-contemporain .mobile-only iframe {
+        width: 100%;
+        aspect-ratio: 3/2;
+        margin: 1rem auto;
+    }
+
     #enfants-classique .swiper-section-small {
         width: 80vw;
     }
@@ -740,11 +862,14 @@ section:nth-child(even) {
         padding-left: 0;
     }
 
+    #professeurs-contemporain ul li {
+        text-indent: 0;
+        padding-left: 0;
+    }
+
     #studio .swiper-frame {
         width: 85vw;
     }
-
-
 
     #enfants-classique .section-content-image .frame {
         margin-top: 2rem;

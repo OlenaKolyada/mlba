@@ -32,9 +32,11 @@ get_header();
     				</div>
                     <div class="section-content-image">
                         <div class="frame">
-                            <img class="section-photo horisontal" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg"
-                                 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
-                                 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                                <img class="section-photo horisontal" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg"
+                                     alt="Mikhalev Lanssens Ballet Academy, Section Pro"
+                                     title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -48,9 +50,11 @@ get_header();
     			<div class="section-row">
                     <div class="section-content-image">
                         <div class="frame">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg"
                                  alt="Mikhalev Lanssens Ballet Academy, Section Pro"
                                  title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                            </a>
                         </div>
                     </div>
     				<div class="section-content-text">
@@ -95,9 +99,11 @@ get_header();
     				</div>
                 <div class="section-content-image">
                         <div class="frame">
-                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg"
-                                 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
-                                 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg"
+                                     alt="Mikhalev Lanssens Ballet Academy, Section Pro"
+                                     title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                            </a>
                         </div>
                     </div>
     			</div>
@@ -111,9 +117,11 @@ get_header();
     			<div class="section-row">
                     <div class="section-content-image">
                         <div class="frame">
-                            <img class="section-photo horisontal" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg"
-                                 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
-                                 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                                <img class="section-photo horisontal" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg"
+                                     alt="Mikhalev Lanssens Ballet Academy, Section Pro"
+                                     title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                            </a>
                         </div>
                     </div>
     				<div class="section-content-text">
@@ -180,9 +188,11 @@ get_header();
                     </div>
     				<div class="section-content-image">
                         <div class="frame">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro5.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro5.jpg"
                                  alt="Mikhalev Lanssens Ballet Academy, Section Pro"
                                  title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                            </a>
                         </div>
     			    </div>
     			</div>

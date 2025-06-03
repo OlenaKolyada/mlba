@@ -31,9 +31,11 @@ get_header();
                                 </div>
                                 <div class="section-content-image">
                                     <div class="frame">
+                                        <a href="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Cours Adulte Contemporain">
                                         <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg"
                                              alt="Mikhalev Lanssens Ballet Academy, Cours Adulte Contemporainn"
                                              title="Mikhalev Lanssens Ballet Academy, Cours Adulte Contemporain" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

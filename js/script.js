@@ -139,30 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Modal Form
-    $('.magnific-inline').magnificPopup({
-        type: 'inline',
-        showCloseBtn: false,
-        removalDelay: 700,
-        midClick: true,
-        mainClass: 'mfp-with-zoom',
-
-        zoom: {
-            enabled: true,
-            duration: 300,
-            easing: 'ease-in-out',
-
-            opener: function(openerElement) {
-                return $('#modal-form');
-            }
-        }
-    });
-
-
-    $('.modal-close').on('click', function () {
-        $.magnificPopup.close();
-    });
-
 // Enfants Ado Classique, Scroll Buttons
     function setupSectionScroll(buttonId, sectionId, offset = 120, duration = 1200) {
         const button = document.querySelector(buttonId);
@@ -183,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setupSectionScroll('#card-elem3', '#elem3', 70);
     setupSectionScroll('#card-avance', '#avance', 70);
 
-    // Magnific Popup
+    // Magnific PopUp Photo
     $('.popup-image').magnificPopup({
         type: 'image',
         mainClass: 'mfp-with-zoom',
@@ -200,6 +176,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-
+// Magnific PopUp Gallery
+    $('.swiper').magnificPopup({
+        delegate: '.popup-gallery',
+        type: 'image',
+        mainClass: 'mfp-with-zoom',
+        closeOnContentClick: true,
+        showCloseBtn: false,
+        image: {titleSrc: 'title'},
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 600,
+            easing: 'ease-in-out',
+            opener: function(openerElement) {
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+    });
 
 }, false);
