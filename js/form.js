@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     sectionsContainer.style.transition = 'height 0.3s ease';
 
     const ageSections = {
-        '6-7': document.getElementById('initiation-section'),
-        '8-9': document.getElementById('elem-1-section'),
-        '10-11': document.getElementById('elem-2-section'),
-        '12-14': document.getElementById('elem-3-section'),
-        '15-17': document.getElementById('ado-section'),
-        '18+': document.getElementById('adult-section'),
+        '6-7 ans': document.getElementById('initiation-section'),
+        '8-9 ans': document.getElementById('elem-1-section'),
+        '10-11 ans': document.getElementById('elem-2-section'),
+        '12-14 ans': document.getElementById('elem-3-section'),
+        '15-17 ans': document.getElementById('ado-section'),
+        '18+ ans': document.getElementById('adult-section'),
     };
 
     let lastAge = null;
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    setupSameNameCheckbox(document.querySelector('.participant'), 'same-name-checkbox');
+    // setupSameNameCheckbox(document.querySelector('.participant'), 'same-name-checkbox');
 
     let participantCount = 1;
     const maxParticipants = 3;
@@ -210,12 +210,12 @@ document.addEventListener('DOMContentLoaded', function () {
         container.style.transition = 'height 0.3s ease';
 
         const sections = {
-            '6-7': block.querySelector('#initiation-section-' + index),
-            '8-9': block.querySelector('#elem-1-section-' + index),
-            '10-11': block.querySelector('#elem-2-section-' + index),
-            '12-14': block.querySelector('#elem-3-section-' + index),
-            '15-17': block.querySelector('#ado-section-' + index),
-            '18+': block.querySelector('#adult-section-' + index),
+            '6-7 ans': block.querySelector('#initiation-section-' + index),
+            '8-9 ans': block.querySelector('#elem-1-section-' + index),
+            '10-11 ans': block.querySelector('#elem-2-section-' + index),
+            '12-14 ans': block.querySelector('#elem-3-section-' + index),
+            '15-17 ans': block.querySelector('#ado-section-' + index),
+            '18+ ans': block.querySelector('#adult-section-' + index),
         };
 
         let last = null;
@@ -295,18 +295,54 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    document.getElementById('first_name').addEventListener('input', updateParticipantNames);
-    document.getElementById('last_name').addEventListener('input', updateParticipantNames);
+    // document.getElementById('first_name').addEventListener('input', updateParticipantNames);
+    // document.getElementById('last_name').addEventListener('input', updateParticipantNames);
 
-    function updateParticipantNames() {
-        document.querySelectorAll('.participant').forEach((participant, i) => {
-            const checkbox = participant.querySelector(`input[name="same-name-checkbox${i ? '-' + (i + 1) : ''}"]`);
-            if (checkbox && checkbox.checked) {
-                const first = participant.querySelector('input[id^="first_name-participant"]');
-                const last = participant.querySelector('input[id^="last_name-participant"]');
-                first.value = document.getElementById('first_name').value;
-                last.value = document.getElementById('last_name').value;
-            }
+    // function updateParticipantNames() {
+    //     document.querySelectorAll('.participant').forEach((participant, i) => {
+    //         const checkbox = participant.querySelector(`input[name="same-name-checkbox${i ? '-' + (i + 1) : ''}"]`);
+    //         if (checkbox && checkbox.checked) {
+    //             const first = participant.querySelector('input[id^="first_name-participant"]');
+    //             const last = participant.querySelector('input[id^="last_name-participant"]');
+    //             first.value = document.getElementById('first_name').value;
+    //             last.value = document.getElementById('last_name').value;
+    //         }
+    //     });
+    // }
+
+    // Обработка отправки формы
+    const inscriptionForm = document.getElementById('inscription-form');
+
+    if (inscriptionForm) {
+        inscriptionForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Принудительное копирование значений из автозаполненных полей
+            const tempForm = this.cloneNode(true);
+            const originalInputs = this.querySelectorAll('input, select, textarea');
+            const clonedInputs = tempForm.querySelectorAll('input, select, textarea');
+
+            originalInputs.forEach((input, index) => {
+                if (input.value) clonedInputs[index].value = input.value;
+            });
+
+            const formData = new FormData(tempForm);
+            formData.append('action', 'inscription_form');
+            formData.append('inscription_nonce', ajax_object.inscription_nonce);
+
+            fetch(ajax_object.ajax_url, {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('inscription-form').style.display = 'none';
+                    document.getElementById('inscription-form-message').innerHTML = '<p class="success">Demande d\'inscription envoyée avec succès !</p>';
+                })
+                .catch(error => {
+                    document.getElementById('inscription-form-message').innerHTML = '<p class="error">Erreur lors de l\'envoi</p>';
+                });
         });
     }
+
 });

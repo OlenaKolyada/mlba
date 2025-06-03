@@ -183,6 +183,7 @@ function localize_script() {
         'admission_page_nonce' => wp_create_nonce('admission_page_form_nonce'),
         'admission_section_nonce' => wp_create_nonce('admission_section_form_nonce'),
         'contact_nonce' => wp_create_nonce('contact_form_nonce'),
+        'inscription_nonce' => wp_create_nonce('inscription_form_nonce'),
     ));
 }
 add_action('wp_enqueue_scripts', 'localize_script');
@@ -321,7 +322,7 @@ function handle_admission_section_form() {
 
     $message = "
     <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-bottom: 2px solid #00D4B4; padding-bottom: 10px;'>Demande d'admission (Modal)</h3>
+        <h3 style='color: #333; border-bottom: 2px solid #00D4B4; padding-bottom: 10px;'>Demande d'admission</h3>
         <p><strong>Prénom:</strong> $first_name</p>
         <p><strong>Nom:</strong> $last_name</p>
         <p><strong>Téléphone:</strong> $phone</p>
@@ -349,7 +350,6 @@ add_action('wp_ajax_contact_form', 'handle_contact_form');
 add_action('wp_ajax_nopriv_contact_form', 'handle_contact_form');
 
 function handle_contact_form() {
-
     if (!wp_verify_nonce($_POST['contact_nonce'], 'contact_form_nonce')) {
         wp_die('Erreur de sécurité');
     }
@@ -380,5 +380,59 @@ function handle_contact_form() {
 
     wp_mail($to, $subject, $message, $headers);
 
+    wp_die('success');
+}
+
+// Inscription Form
+add_action('wp_ajax_inscription_form', 'handle_inscription_form');
+add_action('wp_ajax_nopriv_inscription_form', 'handle_inscription_form');
+
+function handle_inscription_form() {
+    if (!wp_verify_nonce($_POST['inscription_nonce'], 'inscription_form_nonce')) {
+        wp_die('Erreur de sécurité');
+    }
+
+    $first_name = sanitize_text_field($_POST['first_name']);
+    $last_name = sanitize_text_field($_POST['last_name']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $email = sanitize_email($_POST['email']);
+
+    $participant_first = sanitize_text_field($_POST['first_name_participant']);
+    $participant_last = sanitize_text_field($_POST['last_name_participant']);
+    $participant_age = sanitize_text_field($_POST['participant-age']);
+    $schedules = isset($_POST['schedule']) ? $_POST['schedule'] : [];
+
+    $message = "
+    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information de contact</h3>
+        <p><strong>Prénom:</strong> $first_name</p>
+        <p><strong>Nom:</strong> $last_name</p>
+        <p><strong>Téléphone:</strong> $phone</p>
+        <p><strong>Email:</strong> $email</p>
+
+        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0;  font-size: 18px;'>Information d'élève</h3>
+        <p><strong>Prénom:</strong> $participant_first</p>
+        <p><strong>Nom:</strong> $participant_last</p>
+        <p><strong>Âge:</strong> $participant_age</p>";
+
+    if (!empty($schedules)) {
+        $message .= "<p><strong>Créneaux choisis:</strong><br>";
+        foreach ($schedules as $slot) {
+            $message .= "- " . sanitize_text_field($slot) . "<br>";
+        }
+        $message .= "</p>";
+    }
+
+    $message .= "</div>";
+
+    $headers = array(
+        'From: MLBA.fr <contact@mlba.fr>',
+        'Content-Type: text/html; charset=UTF-8'
+    );
+
+    $to = get_option('admin_email');
+    $subject = 'Demande d\'inscription';
+
+    wp_mail($to, $subject, $message, $headers);
     wp_die('success');
 }
