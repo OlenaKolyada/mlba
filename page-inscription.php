@@ -73,27 +73,27 @@ get_header();
                                     <div class="participant-age-1">
                                         <fieldset class="form-single-input radio-buttons age-buttons">
                                             <label>
-                                                <input type="radio" name="participant_age" value="6-7 ans" required>
+                                                <input type="radio" name="participant_age_1" value="6-7 ans" required>
                                                 <span>6-7 ans</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="participant_age" value="8-9 ans">
+                                                <input type="radio" name="participant_age_1" value="8-9 ans">
                                                 <span>8-9 ans</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="participant_age" value="10-11 ans">
+                                                <input type="radio" name="participant_age_1" value="10-11 ans">
                                                 <span>10-11 ans</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="participant_age" value="12-14 ans">
+                                                <input type="radio" name="participant_age_1" value="12-14 ans">
                                                 <span>12-14 ans</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="participant_age" value="15-17 ans">
+                                                <input type="radio" name="participant_age_1" value="15-17 ans">
                                                 <span>15-17 ans</span>
                                             </label>
                                             <label>
-                                                <input type="radio" name="participant_age" value="18+ ans">
+                                                <input type="radio" name="participant_age_1" value="18+ ans">
                                                 <span>18+ ans</span>
                                             </label>
                                         </fieldset>

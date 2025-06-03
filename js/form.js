@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const wrapper = document.querySelector('.form-wrap');
 
     // Настройка для первого участника
-    setupParticipantToggle('.participant-1', 'participant_age', {
+    setupParticipantToggle('.participant-1', 'participant_age_1', {
         '6-7 ans': '#initiation-section-1',
         '8-9 ans': '#elem-1-section-1',
         '10-11 ans': '#elem-2-section-1',
@@ -218,8 +218,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Кнопки уже настроены в HTML - не управляем их видимостью
-
     // Обработка отправки формы
     const inscriptionForm = document.getElementById('inscription-form');
     if (inscriptionForm) {
@@ -233,6 +231,18 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = new FormData(this);
             formData.append('action', 'inscription_form');
             formData.append('inscription_nonce', ajax_object.inscription_nonce);
+
+            // Удаляем данные скрытых участников на основе счетчика
+            const keysToDelete = [];
+            for (let [key, value] of formData.entries()) {
+                if (key.includes('participant_2') && participantCount < 2) {
+                    keysToDelete.push(key);
+                }
+                if (key.includes('participant_3') && participantCount < 3) {
+                    keysToDelete.push(key);
+                }
+            }
+            keysToDelete.forEach(key => formData.delete(key));
 
             // Возвращаем disabled состояние
             disabledInputs.forEach(input => input.disabled = true);
