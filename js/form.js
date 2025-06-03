@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // setupSameNameCheckbox(document.querySelector('.participant'), 'same-name-checkbox');
+    setupSameNameCheckbox(document.querySelector('.participant'), 'same-name-checkbox');
 
     let participantCount = 1;
     const maxParticipants = 3;
@@ -295,20 +295,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // document.getElementById('first_name').addEventListener('input', updateParticipantNames);
-    // document.getElementById('last_name').addEventListener('input', updateParticipantNames);
+    document.getElementById('first_name').addEventListener('input', updateParticipantNames);
+    document.getElementById('last_name').addEventListener('input', updateParticipantNames);
 
-    // function updateParticipantNames() {
-    //     document.querySelectorAll('.participant').forEach((participant, i) => {
-    //         const checkbox = participant.querySelector(`input[name="same-name-checkbox${i ? '-' + (i + 1) : ''}"]`);
-    //         if (checkbox && checkbox.checked) {
-    //             const first = participant.querySelector('input[id^="first_name-participant"]');
-    //             const last = participant.querySelector('input[id^="last_name-participant"]');
-    //             first.value = document.getElementById('first_name').value;
-    //             last.value = document.getElementById('last_name').value;
-    //         }
-    //     });
-    // }
+    function updateParticipantNames() {
+        document.querySelectorAll('.participant').forEach((participant, i) => {
+            const checkbox = participant.querySelector(`input[name="same-name-checkbox${i ? '-' + (i + 1) : ''}"]`);
+            if (checkbox && checkbox.checked) {
+                const first = participant.querySelector('input[id^="first_name-participant"]');
+                const last = participant.querySelector('input[id^="last_name-participant"]');
+                first.value = document.getElementById('first_name').value;
+                last.value = document.getElementById('last_name').value;
+            }
+        });
+    }
 
     // Обработка отправки формы
     const inscriptionForm = document.getElementById('inscription-form');
@@ -316,6 +316,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (inscriptionForm) {
         inscriptionForm.addEventListener('submit', function(e) {
             e.preventDefault();
+
+            // Временно включаем disabled поля перед отправкой
+            const disabledInputs = this.querySelectorAll('input:disabled');
+            disabledInputs.forEach(input => input.disabled = false);
 
             // Принудительное копирование значений из автозаполненных полей
             const tempForm = this.cloneNode(true);
