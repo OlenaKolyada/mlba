@@ -1,4 +1,3 @@
-/* Global  START */
 #inscription .section-center {
     background-color: var(--grey-light);
     box-shadow: var(--shadow);
@@ -81,36 +80,37 @@
     color: var(--white);
 }
 
-#inscription .participant-age label span:active,
+#inscription .participant-age-1 label span:active,
+#inscription .participant-age-2 label span:active,
+#inscription .participant-age-3 label span:active,
 #inscription .form-single-input.checkboxes span:active {
     background-color: var(--grey-dark);
     color: var(--black);
 }
 
-#inscription .participant-age label span:hover,
+#inscription .participant-age-1 label span:hover,
+#inscription .participant-age-2 label span:hover,
+#inscription .participant-age-3 label span:hover,
 #inscription .form-single-input.checkboxes span:hover {
     background-color: var(--grey-medium);
     color: var(--white);
 }
 
-
-/* Global END */
-
-/* Info Contact START */
 #inscription .info-contact h3 {
     margin: 0 0 2rem 0;
 }
-/* Info Contact END */
 
-/* First Participant START */
-
-#inscription .participant {
+#inscription .participant-1,
+#inscription .participant-2,
+#inscription .participant-3 {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#inscription .participant-identity {
+#inscription .participant-identity-1,
+#inscription .participant-identity-2,
+#inscription .participant-identity-3 {
     display: flex;
     flex-direction: column;
 }
@@ -135,7 +135,9 @@
     display: none;
 }
 
-#inscription .participant-age .age-buttons {
+#inscription .participant-age-1 .age-buttons,
+#inscription .participant-age-2 .age-buttons,
+#inscription .participant-age-3 .age-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -144,11 +146,15 @@
     margin-top: 1rem;
 }
 
-#inscription .first-participant .participant-age .age-buttons {
+#inscription .participant-1 .participant-age-1 .age-buttons,
+#inscription .participant-2 .participant-age-2 .age-buttons,
+#inscription .participant-2 .participant-age-2 .age-buttons {
     margin-top: 3rem;
 }
 
-#inscription .participant-age label span {
+#inscription .participant-age-1 label span,
+#inscription .participant-age-2 label span,
+#inscription .participant-age-3 label span {
     font-size: 14px;
     padding: 0.7rem 2rem;
     border-radius: 3px;
@@ -165,22 +171,28 @@
     display: none;
 }
 
-
-
-#inscription .participant {
+#inscription .participant-1,
+#inscription .participant-2,
+#inscription .participant-3 {
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease, margin 0.4s ease;
 }
 
-#inscription .age-sections-container {
+#inscription #age-sections-container-1,
+#inscription #age-sections-container-2,
+#inscription #age-sections-container-3 {
     position: relative;
     transition: height 0.3s ease-in-out;
     overflow: hidden;
 }
 
-/* First Participant END */
+#inscription .add-remove-participant-1 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 1rem;
+}
 
-/* Add-Remove START */
-#inscription .add-remove-participant {
+#inscription .add-remove-participant-2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -188,8 +200,17 @@
     margin-top: 1rem;
 }
 
-#inscription .add-participant,
-#inscription .remove-participant {
+#inscription .add-remove-participant-3 {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+}
+
+#inscription .add-participant-1,
+#inscription .add-participant-2,
+#inscription .remove-participant-2,
+#inscription .remove-participant-3 {
     display: flex;
     align-items: center;
     color: var(--black);
@@ -198,14 +219,11 @@
     cursor: pointer;
 }
 
-#inscription .add-participant:hover,
-#inscription .remove-participant:hover {
+#inscription .add-participant-1:hover,
+#inscription .add-participant-2:hover,
+#inscription .remove-participant-2:hover,
+#inscription .remove-participant-3:hover {
     color: var(--primary-color);
-}
-
-#inscription .remove-participant {
-    display: none;
-    margin-left: auto;
 }
 
 #inscription .plus {
@@ -214,9 +232,6 @@
     margin-right: 0.5rem;
 }
 
-/* Add-Remove END */
-
-/* Action START */
 #inscription .form-action {
     display: flex;
     flex-direction: column;
@@ -248,15 +263,12 @@
 #inscription a:hover {
     color: var(--primary-color);
 }
-/* Action END */
 
-/* Participant Template START */
-#inscription .participant-template {
+#inscription .participant-2,
+#inscription .participant-3 {
     display: none;
 }
-/* Participant Template END */
 
-/* Animation START */
 #inscription .toggle-section {
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
@@ -308,13 +320,15 @@
     opacity: 0.6;
 }
 
-#inscription .participant.animating-add {
+#inscription .participant-2.animating-add,
+#inscription .participant-3.animating-add {
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 1s ease, transform 0.4s ease;
 }
 
-#inscription .participant.added {
+#inscription .participant-2.added,
+#inscription .participant-3.added {
     opacity: 1;
     transform: translateY(0);
     margin-top: 3rem;
@@ -322,7 +336,9 @@
 
 /* Animation END */
 
-#inscription .participant-age label span,
+#inscription .participant-age-1 label span,
+#inscription .participant-age-2 label span,
+#inscription .participant-age-3 label span,
 #inscription .form-single-input.checkboxes span {
     -webkit-tap-highlight-color: transparent !important;
 }
@@ -333,7 +349,9 @@
 }
 
 @media (hover: none) {
-    #inscription .participant-age label span:hover,
+    #inscription .participant-age-1 label span:hover,
+    #inscription .participant-age-2 label span:hover,
+    #inscription .participant-age-3 label span:hover,
     #inscription .form-single-input.checkboxes span:hover {
         background-color: var(--grey-extra-light);
         color: var(--white);
@@ -386,7 +404,9 @@
         width: 18vw;
     }
 
-    #inscription .participant-age label span:hover,
+    #inscription .participant-age-1 label span:hover,
+    #inscription .participant-age-2 label span:hover,
+    #inscription .participant-age-3 label span:hover,
     #inscription .form-single-input.checkboxes span:hover {
         background-color: var(--grey-extra-light);
         color: var(--black);
@@ -441,19 +461,25 @@
         text-align: left;
     }
 
-    #inscription .participant-age {
+    #inscription .participant-age-1,
+    #inscription .participant-age-2,
+    #inscription .participant-age-3 {
         justify-content: left;
     }
 
     /* Age Buttons Area */
-    #inscription .participant-age .age-buttons {
+    #inscription .participant-age-1 .age-buttons,
+    #inscription .participant-age-2 .age-buttons,
+    #inscription .participant-age-3 .age-buttons {
         display: grid;
         grid-template-columns: repeat(3, auto);
         gap: 1rem;
         justify-content: left;
     }
 
-    #inscription .first-participant .participant-age .age-buttons {
+    #inscription .participant-1 .participant-age-1 .age-buttons,
+    #inscription .participant-2 .participant-age-2 .age-buttons,
+    #inscription .participant-3 .participant-age-3 .age-buttons {
         margin-top: 2rem;
     }
 
@@ -472,7 +498,9 @@
         justify-content: center;
     }
 
-    #inscription .add-remove-participant {
+    #inscription .add-remove-participant-1,
+    #inscription .add-remove-participant-2,
+    #inscription .add-remove-participant-3 {
         margin-top: 2rem;
     }
 
@@ -523,12 +551,24 @@
         padding: 0.7rem 1rem;
     }
 
-    #inscription .initiation-section.toggle-section.showing,
-    #inscription .elem-1-section.toggle-section.showing,
-    #inscription .elem-2-section.toggle-section.showing,
-    #inscription .elem-3-section.toggle-section.showing,
-    #inscription .ado-section.toggle-section.showing,
-    #inscription .adult-section.toggle-section.showing {
+    #inscription #initiation-section.toggle-section.showing,
+    #inscription #elem-1-section.toggle-section.showing,
+    #inscription #elem-2-section.toggle-section.showing,
+    #inscription #elem-3-section.toggle-section.showing,
+    #inscription #ado-section.toggle-section.showing,
+    #inscription #adult-section.toggle-section.showing,
+    #inscription #initiation-section-2.toggle-section.showing,
+    #inscription #elem-1-section-2.toggle-section.showing,
+    #inscription #elem-2-section-2.toggle-section.showing,
+    #inscription #elem-3-section-2.toggle-section.showing,
+    #inscription #ado-section-2.toggle-section.showing,
+    #inscription #adult-section-2.toggle-section.showing,
+    #inscription #initiation-section-3.toggle-section.showing,
+    #inscription #elem-1-section-3.toggle-section.showing,
+    #inscription #elem-2-section-3.toggle-section.showing,
+    #inscription #elem-3-section-3.toggle-section.showing,
+    #inscription #ado-section-3.toggle-section.showing,
+    #inscription #adult-section-3.toggle-section.showing {
         flex-direction: column;
     }
 
@@ -566,7 +606,9 @@
     }
 
     /* Age Buttons Area */
-    #inscription .participant-age .age-buttons {
+    #inscription .participant-age-1 .age-buttons,
+    #inscription .participant-age-2 .age-buttons,
+    #inscription .participant-age-3 .age-buttons {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 1rem;
@@ -617,7 +659,9 @@
         font-size: 14px;
     }
 
-    #inscription .add-remove-participant {
+    #inscription .add-remove-participant-1,
+    #inscription .add-remove-participant-2,
+    #inscription .add-remove-participant-3 {
         font-size: 13px;
         margin-top: 1.5rem;
     }
@@ -628,7 +672,8 @@
         margin-right: 0.3rem;
     }
 
-    #inscription .participant.added {
+    #inscription .participant-2.added,
+    #inscription .participant-3.added {
         margin-top: 2rem;
     }
 
@@ -665,7 +710,9 @@
         width: 100%;
     }
 
-    #inscription .add-remove-participant {
+    #inscription .add-remove-participant-1,
+    #inscription .add-remove-participant-2,
+    #inscription .add-remove-participant-3 {
         font-size: 11px;
     }
 

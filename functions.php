@@ -384,9 +384,6 @@ function handle_contact_form() {
 }
 
 // Inscription Form
-add_action('wp_ajax_inscription_form', 'handle_inscription_form');
-add_action('wp_ajax_nopriv_inscription_form', 'handle_inscription_form');
-
 function handle_inscription_form() {
     if (!wp_verify_nonce($_POST['inscription_nonce'], 'inscription_form_nonce')) {
         wp_die('Erreur de sécurité');
@@ -397,24 +394,37 @@ function handle_inscription_form() {
     $phone = sanitize_text_field($_POST['phone']);
     $email = sanitize_email($_POST['email']);
 
-    $participant_first = sanitize_text_field($_POST['first_name_participant']);
-    $participant_last = sanitize_text_field($_POST['last_name_participant']);
-    $participant_age = sanitize_text_field($_POST['participant-age']);
-    $schedules = isset($_POST['schedule']) ? $_POST['schedule'] : [];
-
     $message = "
     <div style='font-family: Arial, sans-serif; max-width: 600px;'>
         <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information de contact</h3>
         <p><strong>Prénom:</strong> $first_name</p>
         <p><strong>Nom:</strong> $last_name</p>
         <p><strong>Téléphone:</strong> $phone</p>
-        <p><strong>Email:</strong> $email</p>
+        <p><strong>Email:</strong> $email</p>";
 
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0;  font-size: 18px;'>Information d'élève</h3>
+    // Обрабатываем всех участников
+    $participant_count = 1;
+    while (true) {
+        $first_key = $participant_count == 1 ? 'first_name_participant' : 'first_name_participant_' . $participant_count;
+        $last_key = $participant_count == 1 ? 'last_name_participant' : 'last_name_participant_' . $participant_count;
+        $age_key = $participant_count == 1 ? 'participant_age' : 'participant_age_' . $participant_count;
+
+        if (!isset($_POST[$first_key])) break;
+
+        $participant_first = sanitize_text_field($_POST[$first_key]);
+        $participant_last = sanitize_text_field($_POST[$last_key]);
+        $participant_age = sanitize_text_field($_POST[$age_key]);
+
+        $message .= "
+        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information d'élève №$participant_count</h3>
         <p><strong>Prénom:</strong> $participant_first</p>
         <p><strong>Nom:</strong> $participant_last</p>
         <p><strong>Âge:</strong> $participant_age</p>";
 
+        $participant_count++;
+    }
+
+    $schedules = isset($_POST['schedule']) ? $_POST['schedule'] : [];
     if (!empty($schedules)) {
         $message .= "<p><strong>Créneaux choisis:</strong><br>";
         foreach ($schedules as $slot) {
