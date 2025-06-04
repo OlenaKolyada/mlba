@@ -3,7 +3,8 @@ section:nth-child(even) {
 }
 
 /* Professeurs Classiques START */
-#professeurs-classiques .swiper-section-small {
+#professeurs-classiques .swiper-section-small,
+#professeurs-classiques .frame img {
     width: 360px;
     height: auto;
 }
@@ -454,7 +455,8 @@ section:nth-child(even) {
 }
 
 @media screen and (max-width: 1024px) {
-    #professeurs-classiques .swiper-section-small {
+    #professeurs-classiques .swiper-section-small,
+    #professeurs-classiques .frame img {
         width: 450px;
         height: auto;
     }
@@ -779,7 +781,8 @@ section:nth-child(even) {
         color: var(--primary-color);
     }
 
-    #professeurs-classiques .swiper-section-small {
+    #professeurs-classiques .swiper-section-small,
+    #professeurs-classiques .frame img {
         width: 80vw;
         height: auto;
     }
