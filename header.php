@@ -108,7 +108,7 @@ global $mlba_options;
                         ?>
     				</nav>
     				<div class="btn btn-header btn-ghost">
-    					<a href="<?php echo get_permalink(124); ?>">Inscription</a>
+    					<a href="<?php echo get_permalink(124); ?>">Pré-Inscription</a>
     				</div>
     				<div class="burger">
     					<img src="<?php echo get_template_directory_uri();?>/assets/icons/burger.svg" alt="" />
@@ -136,7 +136,7 @@ global $mlba_options;
                     ?>
     			</nav>
     			<div class="btn btn-primary-color">
-    				<a href="<?php echo get_permalink(124); ?>">Inscription</a>
+    				<a href="<?php echo get_permalink(124); ?>">Pré-Inscription</a>
     			</div>
     		</div>
     	</div>

@@ -38,7 +38,6 @@
     --secondary-color-extra-dark: #000066;
     --black: #1a1a18;
     --white: #fff;
-
     --grey-extra-light: #f0f0f0;
     --grey-light: #d4d4d4;
     --grey-medium: #a0a4a8;
@@ -107,7 +106,7 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 h2 {
@@ -520,6 +519,10 @@ html {
 
     .scroll-to-top img {
         width: 20px;
+    }
+
+    h1 {
+        margin-bottom: 3rem;
     }
 }
 

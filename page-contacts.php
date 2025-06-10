@@ -94,6 +94,7 @@ get_header();
                                     <label for="phone"  class="sr-only"></label>
                                     <input type="tel" class="half-width" id="phone"
                                            placeholder="Numéro de téléphone *" name="phone" required>
+                                           placeholder="Numéro de téléphone *" name="phone" required>
                                     <label for="email"  class="sr-only"></label>
                                     <input type="email" class="half-width" id="email"
                                            placeholder="Email" name="email">

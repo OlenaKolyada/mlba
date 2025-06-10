@@ -235,7 +235,7 @@ function handle_main_page_form() {
 
     $message = "
     <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information de contact</h3>
+        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande cours d'essai</h3>
         <p><strong>Prénom:</strong> $first_name</p>
         <p><strong>Nom:</strong> $last_name</p>
         <p><strong>Téléphone:</strong> $phone</p>
@@ -279,7 +279,7 @@ function handle_admission_page_form() {
 
     $message = "
     <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information de contact</h3>
+        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'admission</h3>
         <p><strong>Prénom:</strong> $first_name</p>
         <p><strong>Nom:</strong> $last_name</p>
         <p><strong>Téléphone:</strong> $phone</p>
@@ -322,7 +322,7 @@ function handle_admission_section_form() {
 
     $message = "
     <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information de contact</h3>
+        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'admission</h3>
         <p><strong>Prénom:</strong> $first_name</p>
         <p><strong>Nom:</strong> $last_name</p>
         <p><strong>Téléphone:</strong> $phone</p>
@@ -364,7 +364,7 @@ function handle_contact_form() {
     $subject = 'Nouveau message Contact';
     $message = "
     <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information de contact</h3>
+        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Message de contact</h3>
         <p><strong>Prénom:</strong> $first_name</p>
         <p><strong>Nom:</strong> $last_name</p>
         <p><strong>Téléphone:</strong> $phone</p>
@@ -403,13 +403,12 @@ function handle_inscription_form() {
 
    $message = "
    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-       <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information de contact</h3>
+       <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'inscription</h3>
        <p><strong>Prénom:</strong> $first_name</p>
        <p><strong>Nom:</strong> $last_name</p>
        <p><strong>Téléphone:</strong> $phone</p>
        <p><strong>Email:</strong> $email</p>";
 
-   // Обрабатываем всех участников
    $participant_count = 1;
    while (true) {
        $first_key = 'first_name_participant_' . $participant_count;
@@ -428,7 +427,6 @@ function handle_inscription_form() {
        <p><strong>Nom:</strong> $participant_last</p>
        <p><strong>Âge:</strong> $participant_age</p>";
 
-       // Обрабатываем расписание для этого участника
        $schedule_key = 'schedule_' . $participant_count;
        $schedules = isset($_POST[$schedule_key]) ? $_POST[$schedule_key] : [];
        if (!empty($schedules)) {

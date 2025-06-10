@@ -377,6 +377,11 @@ section.no-padding-top.longread  {
     padding: 0 0 3rem 0;
 }
 
+section.longread h2 span {
+    border-bottom: 3px solid var(--primary-color);
+    display: inline-block;
+}
+
 section.longread ul {
     list-style: disc;
     margin-bottom: 1rem;
@@ -436,6 +441,10 @@ section.longread .address {
         padding: 0 0 4rem 0;
     }
 
+    .section-first.no-padding-top {
+        margin: 3rem 0 0 0;
+    }
+
     .section-row {
         flex-direction: column;
         align-items: center;
@@ -443,9 +452,22 @@ section.longread .address {
         gap: 2rem;
     }
 
+    .longread .section-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 4rem;
+        align-items: flex-start;
+    }
+
+    .longread .section-row .section-content-text {
+        align-items: flex-start;
+    }
+
     .section-content-text {
         order: 1;
         width: 80%;
+
     }
 
     .section-content-image {
@@ -483,6 +505,10 @@ section.longread .address {
 
     section.no-padding-top {
         padding: 0 0 3rem 0;
+    }
+
+    .section-first.no-padding-top {
+        margin: 1rem 0 0 0;
     }
 
     section h1 {
@@ -524,7 +550,6 @@ section.longread .address {
         width: 50%;
     }
 
-
 }
 
 @media screen and (max-width: 624px) {
@@ -555,9 +580,6 @@ section.longread .address {
 
 @media screen and (max-width: 480px) {
 
-    section h1 {
-        margin-top: 0;
-    }
 
     .section-first {
         margin: 2rem 0 1rem;
@@ -591,7 +613,9 @@ section.longread .address {
 
 @media screen and (max-width: 425px) {
 
-
+    section.longread h2 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -601,6 +625,10 @@ section.longread .address {
 
     .three-items-item {
         width: 100%;
+    }
+
+    section.longread h2 {
+        font-size: 1.4rem;
     }
 }
 

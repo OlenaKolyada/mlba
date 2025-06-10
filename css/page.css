@@ -242,6 +242,22 @@ section:nth-child(even) {
     display: none;
 }
 
+#tarifs .highlighted {
+    position: relative;
+    z-index: 10;
+}
+
+#tarifs .highlight {
+    position: absolute;
+    background: var(--grey-extra-light);
+    border-radius: 3rem;
+    padding: 2rem;
+    width: 7rem;
+    height: 34rem;
+    z-index: -1;
+    top: -2.2rem;
+    right: 0.9rem;
+}
 /*Tarifs END*/
 
 /* Section Pro START */
@@ -452,6 +468,10 @@ section:nth-child(even) {
     #contacts form {
         width: 100%;
     }
+
+    #tarifs .highlight {
+        right: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -566,6 +586,10 @@ section:nth-child(even) {
         margin: 2rem 0 1rem;
     }
 
+    #tarifs .highlight {
+        right: -0.2rem;
+    }
+
     #section-pro .section-center .section-text {
         width: 100%;
     }
@@ -669,6 +693,14 @@ section:nth-child(even) {
 
     #tarifs .tarif-table:last-of-type {
         margin-bottom: 0;
+    }
+
+    #tarifs .mobile-only .highlighted {
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+        background: var(--grey-extra-light);
+        border-radius: 3rem;
+        transform: translateX(1rem);
     }
 
     #admission .section-center {

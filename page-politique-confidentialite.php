@@ -44,7 +44,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>1. Données que nous recueillons</h2>
+                        <h2><span>1. Données que nous recueillons</span></h2>
                         <p>Lorsque vous naviguez sur le site www.mlba.fr, certaines informations que vous nous transmettez peuvent
                             permettre de vous identifier et sont donc considérées comme des données personnelles (ci-après les « Données »).</p>
                         <p>Cela inclut notamment les informations que vous renseignez dans le cadre de l’inscription aux cours,
@@ -70,7 +70,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>2. Utilisation des données collectées</h2>
+                        <h2><span>2. Utilisation des données collectées</span></h2>
                         <p>Les Données que nous recueillons sont utilisées dans les buts suivants :</p>
                         <h5>Finalités</h5>
                         <ul>
@@ -102,7 +102,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>3. À qui transmettons-nous vos données et pourquoi ?</h2>
+                        <h2><span>3. À qui transmettons-nous vos données et pourquoi&nbsp;?</span></h2>
                         <h4>3.1 Données utilisées en interne à la MLBA</h4>
                         <p>Les Données collectées sont exclusivement traitées par la Mikhalev Lanssens Ballet Academy,
                             en sa qualité de responsable du traitement.</p>
@@ -137,7 +137,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>4. Durée de conservation de vos données</h2>
+                        <h2><span>4. Durée de conservation de vos données</span></h2>
                         <p>Vos Données sont conservées uniquement pendant le temps nécessaire à la réalisation des objectifs
                             mentionnés dans la présente politique, conformément au Règlement (UE) 2016/679 et à la législation applicable.</p>
                         <p>En pratique :</p>
@@ -162,7 +162,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>5. Transfert de vos données : modalités et localisation</h2>
+                        <h2><span>5. Transfert de vos données : modalités et localisation</span></h2>
                         <p>Les Données que nous recueillons ne font l’objet d’aucun transfert en dehors de l’Union Européenne. Elles sont traitées et hébergées exclusivement au sein de l’UE, dans le respect des exigences réglementaires en matière de protection des données.</p>
                     </div>
                 </div>
@@ -177,7 +177,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>6. Sécurité de vos données</h2>
+                        <h2><span>6. Sécurité de vos données</span></h2>
                         <p>Nous mettons en œuvre des mesures techniques et organisationnelles appropriées afin de garantir la sécurité de vos Données et d’éviter tout accès non autorisé, toute altération, divulgation, perte ou destruction.</p>
                         <p>L’accès aux Données est strictement limité aux membres de notre équipe habilités, via des ordinateurs protégés par des mots de passe et un accès VPN sécurisé. Ces dispositifs visent à assurer la confidentialité et l’intégrité des informations que vous nous confiez.</p>
                     </div>
@@ -194,7 +194,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>7. Vos droits concernant vos données personnelles</h2>
+                        <h2><span>7. Vos droits concernant vos données personnelles</span></h2>
                         <p>Conformément à la réglementation en vigueur sur la protection des données, vous disposez des droits suivants :</p>
                         <ul>
                             <li>Droit d’accès et d’information : vous pouvez obtenir des informations claires sur la manière dont vos Données sont utilisées, savoir si nous les traitons, et en demander une copie.</li>
@@ -228,7 +228,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>8. Modification de la présente politique de confidentialité</h2>
+                        <h2><span>8. Modification de la présente politique de confidentialité</span></h2>
                         <p>Cette politique de confidentialité peut faire l’objet de mises à jour ponctuelles, notamment pour refléter des évolutions législatives, jurisprudentielles ou techniques.</p>
                         <p>En cas de modification, la date de dernière mise à jour sera actualisée en bas de cette page. Si les changements sont significatifs, ou s’ils concernent des points pour lesquels votre consentement est requis, nous vous en informerons explicitement ou vous le demanderons à nouveau.</p>
                         <p>Nous vous encourageons à consulter régulièrement cette rubrique afin de rester informé(e) de notre politique en matière de protection des données personnelles.</p>
@@ -246,7 +246,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>9. Contact</h2>
+                        <h2><span>9. Contacts</span></h2>
                         <p>Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits relatifs à vos Données, vous pouvez nous contacter :</p>
                         <p>Par e-mail à l’adresse suivante :</p>
                         <p><a href="mailto:contact@mlba.fr" class="underlined">contact@mlba.fr</a></p>

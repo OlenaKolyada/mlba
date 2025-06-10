@@ -26,20 +26,20 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 1. Frais d'inscription / Tarifs des cours / Participation spectacle</h2>
+                        <h2><span>Article 1. Frais d'adhésion / Tarifs des cours / Participation spectacle</span></h2>
                         <h4>1.1. Frais d'inscription</h4>
-                        <p>Les frais d'inscription (ou d’adhésion) de 28 euros devront être acquittés lors de
-                            la pré-inscription ou inscription de l’élève et sont non remboursables en cas de
-                            désistement.</p>
+                        <p>Les frais d’adhésion de 30€ devront être acquittés soit:
+                            <ul>
+                                <li>après la pré-inscription en ligne, avec l’envoi d’un chèque de 30€ libellé à l’ordre de la <strong>Mikhalev Lanssens Ballet Academy</strong>,</li>
+                                <li>lors de l’inscription en présentiel, sur les jours dédiés.</li>
+                            </ul>
                         <h4>1.2. Tarifs des cours</h4>
                         <p>Les tarifs des cours sont basés sur un forfait tenant compte des vacances
                             scolaires et jours fériés, sur une période de 10 mois.</p>
-                        <p>L’engagement à la <strong>Mikhalev Lanssens Ballet Academy</strong> est annuel et le règlement de la
-                            totalité des forfaits doit être effectué lors de l’inscription, soit&nbsp;:</p>
+                        <p>L’engagement à la <strong>Mikhalev Lanssens Ballet Academy</strong> est annuel et le règlement de la totalité des forfaits doit être effectué lors de l’inscription, soit&nbsp;:</p>
                         <ul>
-                            <li><strong>en espèce : </strong>règlement en 1 fois le jour de l’inscription</li>
-                            <li><strong>par chèque(s) </strong>libellé(s) au nom de la <strong>Mikhalev Lanssens Ballet Academy</strong>
-                                (voir modalités sur <a class="underlined" href="<?php echo get_permalink(103); ?>">tarifs</a>)</li>
+                            <li><strong>en espèce : </strong>autorisé seulement pour un règlement en 1 fois le jour de l’inscription</li>
+                            <li><strong>par chèque(s) </strong>libellé(s) au nom de la <strong>Mikhalev Lanssens Ballet Academy</strong> (voir modalités sur <a class="underlined" href="<?php echo get_permalink(103); ?>">tarifs</a>) datés du jour de remise, et encaissés selon l’échéancier de facilité de paiement.</li>
                         </ul>
                         <p><strong>Aucun remboursement possible durant l’année,</strong> sauf en cas de déménagement suite
                             à une mutation (sur justificatif) ou pour maladies graves (sur présentation d’un arrêt
@@ -70,13 +70,15 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 2. Pré-inscription et inscription</h2>
+                        <h2><span>Article 2. Pré-inscription et inscription</span></h2>
                         <h4>2.1. Pré-inscription</h4>
-                        <p><strong>Pré-inscription : </strong>Réalisable en ligne via le formulaire. Prise en compte à réception
-                            ou à remise du coût de l’inscription (adhésion).</p>
+                        <p><strong>Pré-inscription : </strong>Réalisable en ligne via le <a class="underlined" href="<?php echo get_permalink(124); ?>">formulaire</a>. Prise en compte à réception
+                            ou à remise du coût de l’adhésion.</p>
+                            <p>Envoi de chèques au :</p>
+                            <p>152 Av. Jean Jaurès<br>
+                            33600 Pessac</p>
                         <h4>2.2. Inscription</h4>
-                        <p><strong>Inscription :</strong> En présentiel sur le lieu des cours, sur les jours annoncés via le site ou
-                            réseaux sociaux.</p>
+                        <p><strong>Inscription :</strong> En présentiel sur le lieu des cours, sur les jours annoncés via le site ou réseaux sociaux.</p>
                         <p>Documents à fournir :</p>
                         <ul>
                             <li><strong>Formulaire d’inscription </strong>rempli (télécharger ici).</li>
@@ -98,7 +100,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 3. Niveaux</h2>
+                        <h2><span>Article 3. Niveaux</span></h2>
                         <p>Seuls les professeurs sont habilités à orienter les&nbsp;élèves sur un niveau.</p>
                     </div>
                 </div>
@@ -113,7 +115,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 4. Tenue et coiffure</h2>
+                        <h2><span>Article 4. Tenue et coiffure</span></h2>
                         <p><strong>Une tenue de danse est exigée au sein de la Mikhalev Lanssens Ballet Academy pour chaque niveau
                             et discipline.</strong></p>
                         <h4>4.1. Tenue classique</h4>
@@ -130,7 +132,7 @@ get_header();
                             les tapis de danse.</p>
                         <p><strong>Les téléphones portables sont également interdits</strong> dans les studios, sauf pour les
                             professionnels d’astreinte.</p>
-                        <p>Les élèves <strong>ont interdiction de se filmer</strong> ou les autres élèves dans les vestiaires et les
+                        <p>Les élèves <strong>ont interdiction de se filmer</strong> ou de filmer les autres élèves dans les vestiaires et les
                             studios.</p>
                     </div>
                 </div>
@@ -145,7 +147,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 5. Studios</h2>
+                        <h2><span>Article 5. Studios</span></h2>
                         <p>L’accès aux studios de danse est interdit aux parents pendant les cours.</p>
                     </div>
                 </div>
@@ -160,7 +162,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 6. Arrivée / Sortie des cours</h2>
+                        <h2><span>Article 6. Arrivée / Sortie des cours</span></h2>
                         <p>Les enfants sont <strong>sous la responsabilité des accompagnants</strong> jusqu’au début et dès la
                             fin du cours de danse.</p>
                         <p>Les parents sont tenus de venir chercher <strong>les élèves de moins de 12 ans au sein de
@@ -180,7 +182,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 7. Présences / Absences / Retards</h2>
+                        <h2><span>Article 7. Présences / Absences / Retards</span></h2>
                         <p><strong>Un minimum de 5 élèves</strong> est requis pour que le cours soit dispensé.</p>
                         <p>En cas d’absence, les parents doivent <strong>impérativement</strong> en informer les professeurs
                             (appels, ou textos).</p>
@@ -200,7 +202,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 8. Photographies et vidéos</h2>
+                        <h2><span>Article 8. Photographies et vidéos</span></h2>
                         <p>Il est interdit aux élèves et aux parents de prendre des photos ou vidéos au sein de la
                             <strong>Mikhalev Lanssens Ballet Academy</strong>, sauf accord explicite de l’équipe pédagogique.</p>
                         <p>La <strong>Mikhalev Lanssens Ballet Academy</strong> pourra être amener à utiliser des photos ou vidéos des élèves
@@ -220,7 +222,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 9. Planning</h2>
+                        <h2><span>Article 9. Planning</span></h2>
                         <p>L’équipe pédagogique se réserve le droit de modifier le planning dans l’intérêt des
                             élèves et du bon fonctionnement de l’école.</p>
                     </div>
@@ -237,7 +239,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 10. Pertes et vols</h2>
+                        <h2><span>Article 10. Pertes et vols</span></h2>
                         <p>La <strong>Mikhalev Lanssens Ballet Academy ne peut être tenue responsable en cas de perte, de
                             vol ou d’oubli d’objets personnels</strong> au sein des locaux.</p>
                     </div>
@@ -253,14 +255,12 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2>Article 11. Respect des lieux</h2>
+                        <h2><span>Article 11. Respect des lieux</span></h2>
                         <p>Tout élève s’engage à respecter le matériel et les lieux mis à sa disposition. En cas
                             de détérioration, le parent, ou l’élève, sera facturé du remplacement ou de la
                             réparation du bien.</p>
                         <p>Les élèves doivent individuellement vérifier la propreté des vestiaires et des toilettes
                             après leur passage.</p>
-                        <p>Des espaces d’attente sont mises à disposition des parents et ne sont en aucun cas
-                            des espaces de jeux et de récréation pour les plus jeunes.</p>
                         <div class="download-link down">
                             <a href="<?php echo get_template_directory_uri();?>/assets/pdf/reglement-interieur.pdf">Télécharger le pdf</a>
                         </div>

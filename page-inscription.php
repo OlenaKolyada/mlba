@@ -18,7 +18,7 @@ get_header();
 <main class="main" id="inscription">
     <section class="section-wrap section-first no-padding-top">
         <div class="container">
-            <h1>Formulaire d'inscription</h1>
+            <h1>Pre-inscription</h1>
             <div class="section-row">
                 <div class="section-center">
                     <div class="section-text">
@@ -656,12 +656,20 @@ get_header();
 
                                 <!--Button START-->
                                 <div class="form-action">
-                                    <fieldset class="action-checkbox">
-                                        <label class="action-checkbox-label">
-                                            <input class="" type="checkbox" name="consent" required>
-                                            J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
-                                        </label>
-                                    </fieldset>
+                                    <div class="action-checkboxes">
+                                        <fieldset class="action-checkbox">
+                                            <label class="action-checkbox-label">
+                                                <input class="" type="checkbox" name="consent" required>
+                                                J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="action-checkbox">
+                                            <label class="action-checkbox-label">
+                                                <input class="" type="checkbox" name="consent2" required>
+                                                Je comprends que la pré-inscription sera prise en compte à réception des 30€ d’adhésion et est non remboursable en cas de désistement.
+                                            </label>
+                                        </fieldset>
+                                    </div>
                                     <fieldset class="form-btn">
                                         <button class="btn btn-primary-color" type="submit">Envoyer</button>
                                     </fieldset>

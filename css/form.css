@@ -246,10 +246,20 @@
     justify-self: center;
 }
 
+
+
 #inscription .action-checkbox-label {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
+}
+
+#inscription .action-checkbox:last-of-type {
+    margin: 2rem 0;
+}
+
+#inscription .action-checkbox:last-of-type .action-checkbox-label {
+    text-align: left;
 }
 
 #inscription .action-checkbox-label input[type="checkbox"] {
@@ -529,6 +539,10 @@
 
     #inscription .form-action .btn {
         margin: 3rem auto 1rem;
+    }
+
+    #inscription .action-checkbox:last-of-type {
+        margin: 2rem 0 0 0;
     }
 
     #inscription .same-name {
