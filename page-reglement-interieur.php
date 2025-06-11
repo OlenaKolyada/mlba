@@ -187,7 +187,7 @@ get_header();
                         <p>En cas d’absence, les parents doivent <strong>impérativement</strong> en informer les professeurs
                             (appels, ou textos).</p>
                         <p>Il est demandé aux parents et aux élèves de <strong>respecter les horaires</strong> de début de cours
-                            indiqués sur le planning.</p>
+                            indiqués sur le <a class="underlined" href="<?php echo get_permalink(118); ?>">planning</a>.</p>
                     </div>
                 </div>
             </div>
@@ -223,7 +223,7 @@ get_header();
                 <div class="section-content-text">
                     <div class="section-text">
                         <h2><span>Article 9. Planning</span></h2>
-                        <p>L’équipe pédagogique se réserve le droit de modifier le planning dans l’intérêt des
+                        <p>L’équipe pédagogique se réserve le droit de modifier le <a class="underlined" href="<?php echo get_permalink(118); ?>">planning</a> dans l’intérêt des
                             élèves et du bon fonctionnement de l’école.</p>
                     </div>
                 </div>

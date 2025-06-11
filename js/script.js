@@ -197,4 +197,37 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Antitranslate
+
+    function wrapWord(node, word) {
+        const regex = new RegExp(word, 'gi');
+        if (node.nodeType === 3) { // текст
+            const matches = node.nodeValue.match(regex);
+            if (matches) {
+                const span = document.createElement('span');
+                span.classList.add('notranslate');
+                span.setAttribute('translate', 'no');
+
+                const frag = document.createDocumentFragment();
+                let lastIndex = 0;
+                node.nodeValue.replace(regex, (match, offset) => {
+                    frag.appendChild(document.createTextNode(node.nodeValue.slice(lastIndex, offset)));
+                    const wrapped = span.cloneNode();
+                    wrapped.textContent = match;
+                    frag.appendChild(wrapped);
+                    lastIndex = offset + match.length;
+                });
+                frag.appendChild(document.createTextNode(node.nodeValue.slice(lastIndex)));
+
+                node.parentNode.replaceChild(frag, node);
+            }
+        } else {
+            node.childNodes.forEach(child => wrapWord(child, word));
+        }
+    }
+
+    wrapWord(document.body, 'planning');
+
+
+
 }, false);

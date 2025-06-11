@@ -42,10 +42,10 @@ get_header();
 			<div class="section-row">
 				<div class="section-content-image">
 					<div class="frame">
-                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg" class="popup-image" title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy">
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg" class="popup-image" title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo Marina Kudryashova">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg"
-                                 alt="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy"
-                                 title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy" />
+                                 alt="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo Marina Kudryashova"
+                                 title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo Marina Kudryashova" />
                         </a>
 					</div>
 				</div>
@@ -228,10 +228,10 @@ get_header();
 			<div class="section-content-image">
 				<div class="quote-container">
 					<div class="frame">
-                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg"
-                                 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
-                                 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                                 alt="Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès"
+                                 title="Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès" />
                         </a>
 					</div>
 					<div class="decor-quote">

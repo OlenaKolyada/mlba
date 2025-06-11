@@ -2,7 +2,7 @@ section:nth-child(even) {
     background: var(--grey-extra-light);
 }
 
-/* Professeurs Classiques START */
+/* Professeurs START */
 #professeurs-classiques .swiper-section-small,
 #professeurs-classiques .frame img {
     width: 360px;
@@ -92,6 +92,51 @@ section:nth-child(even) {
     display: none;
 }
 /* Professeurs Contemporain END */
+
+/* Professeurs Invites START */
+#professeurs-invites .swiper-section-small {
+    width: 360px;
+    height: auto;
+}
+
+#professeurs-invites .three-items-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    width: 30%;
+}
+
+#professeurs-invites .three-items-item h4 {
+    margin-bottom: 0.6rem;
+}
+
+#professeurs-invites .three-items-item ul {
+    padding: 0;
+}
+
+#professeurs-invites ul li {
+    text-indent: -0.65rem;
+    padding-left: 0.65rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+
+#professeurs-invites .cards {
+    margin-top: 3rem;
+}
+
+#professeurs-invites .card-item iframe {
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+#professeurs-invites .mobile-only {
+    display: none;
+}
+/* Professeurs Invites END */
 
 /* Studio START */
 #studio .swiper-frame {
@@ -494,6 +539,15 @@ section:nth-child(even) {
         margin: 3rem 0 1rem 0;
     }
 
+    #professeurs-invites .swiper-section-small {
+        width: 450px;
+        height: auto;
+    }
+
+    #professeurs-invites .three-items-wrap {
+        margin: 3rem 0 1rem 0;
+    }
+
     #enfants-classique .section-content-text,
     #enfants-classique .section-center {
         width: 100%;
@@ -586,6 +640,14 @@ section:nth-child(even) {
         margin: 2rem 0 1rem;
     }
 
+    #professeurs-invites .three-items-item {
+        font-size: 0.9rem;
+    }
+
+    #professeurs-invites .cards {
+        margin: 2rem 0 1rem;
+    }
+
     #tarifs .highlight {
         right: -0.2rem;
     }
@@ -625,6 +687,20 @@ section:nth-child(even) {
     }
 
     #professeurs-contemporain .cards {
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+    #professeurs-invites .three-items-wrap {
+        margin: 1rem 0;
+    }
+
+    #professeurs-invites .three-items-item {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    #professeurs-invites .cards {
         row-gap: 2rem;
         column-gap: 2rem;
     }
@@ -774,6 +850,18 @@ section:nth-child(even) {
         width: 100%;
     }
 
+    #professeurs-invites .three-items-wrap {
+        margin: 2rem 0 1rem;
+    }
+
+    #professeurs-invites .three-items-row {
+        gap: 2rem;
+    }
+
+    #professeurs-invites .three-items-item {
+        width: 100%;
+    }
+
     #admission .section-center {
         width: 100%;
     }
@@ -856,6 +944,27 @@ section:nth-child(even) {
         margin: 1rem auto;
     }
 
+    #professeurs-invites .swiper-section-small {
+        width: 80vw;
+        height: auto;
+    }
+
+    #professeurs-invites .cards {
+        display: none;
+    }
+
+    #professeurs-invites .mobile-only {
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    #professeurs-invites .mobile-only iframe {
+        width: 100%;
+        aspect-ratio: 3/2;
+        margin: 1rem auto;
+    }
+
     #enfants-classique .swiper-section-small {
         width: 80vw;
     }
@@ -898,6 +1007,11 @@ section:nth-child(even) {
     }
 
     #professeurs-contemporain ul li {
+        text-indent: 0;
+        padding-left: 0;
+    }
+
+    #professeurs-invites ul li {
         text-indent: 0;
         padding-left: 0;
     }

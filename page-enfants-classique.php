@@ -63,7 +63,7 @@ get_header();
                                         </div>
                                     </div>
                                     <h5 class="card-title">Classique Elémentaire<br>Niveau 2</h5>
-                                    <p class="card-subtitle">10-12 ans</p>
+                                    <p class="card-subtitle">10-11 ans</p>
                                 </div>
 
                                 <div class="card-item" id="card-elem3">
@@ -73,7 +73,7 @@ get_header();
                                         </div>
                                     </div>
                                     <h5 class="card-title">Classique Elémentaire<br>Niveau 3</h5>
-                                    <p class="card-subtitle">13-14 ans</p>
+                                    <p class="card-subtitle">12-14 ans</p>
                                 </div>
 
                                 <div class="card-item" id="card-avance">

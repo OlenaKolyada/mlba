@@ -150,8 +150,8 @@ get_header();
     			<div class="section-row">
                     <div class="section-content-text">
                         <div class="section-text">
-                            <h2 id="admission-section-form-title">Modalités d'admission</h2>
-                            <p id="admission-section-form-text">Nous vous invitons à nous contacter pour connaître les modalités d’admission.</p>
+                            <h2 id="admission-section-form-title">Modalités d'audition</h2>
+                            <p id="admission-section-form-text">Nous vous invitons à nous contacter pour connaître les modalités d’audition.</p>
                             <form class="form-container" action="" method="post"  id="admission-section-form">
                                 <fieldset class="form-group">
                                     <label for="first_name" class="sr-only"></label>
