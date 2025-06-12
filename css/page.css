@@ -221,6 +221,104 @@ section:nth-child(even) {
 }
 /* Enfants-Ado Classique END */
 
+/*Planning START*/
+#planning .schedule-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--grey-light);
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+
+#planning .schedule-row {
+    display: flex;
+    width: 100%;
+}
+
+#planning .schedule-header {
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--grey-light);
+}
+
+#planning .schedule-cell {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#planning .schedule-item {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-align: center;
+    width: 12rem;
+    font-size: 0.8rem;
+}
+
+#planning .schedule-row:not(.schedule-header) .schedule-cell:not(:last-child),
+#planning .schedule-header .schedule-cell:not(:last-child) {
+    border-right: 1px solid var(--grey-light);
+}
+
+#planning .init {
+    background: #f9dcf7;
+}
+
+#planning .elem-1 {
+    background: #abf0fc;
+}
+
+#planning .elem-2 {
+    background: #aad3fc;
+}
+
+#planning .elem-3 {
+    background: #e7d1fb;
+}
+
+#planning .ado-avance {
+    background: #ddfbd0;
+}
+
+#planning .ado-contempo {
+    background: #fef7c0;
+}
+
+#planning .adulte-avance {
+    background: #fecdc0;
+}
+
+#planning .adulte-contempo {
+    background: #fadfac;
+}
+
+#planning .section-row,
+#planning .section-content-text {
+    align-items: flex-start;
+    justify-content: left;
+}
+
+#planning .section-content-text .section-text {
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+#planning .schedule-mobile {
+    display: none;
+}
+/*Planning END*/
+
 /*Tarifs START*/
 #tarifs h4 {
     font-weight: bold;
@@ -466,6 +564,20 @@ section:nth-child(even) {
         width: 10rem;
     }
 
+    #planning .section-content-text,
+    #planning .schedule-row {
+        width: 100%;
+    }
+
+    #planning .schedule-item {
+        padding: 0.5rem 0.7rem;
+        width: 10rem;
+    }
+
+    #planning .schedule-item h5 {
+        font-size: 0.9rem;
+    }
+
     #tarifs .tarif-table.large {
         width: 100%;
     }
@@ -580,6 +692,16 @@ section:nth-child(even) {
         margin-top: 3rem;
     }
 
+    #planning .schedule-item {
+        padding: 0.5rem 0.7rem;
+        width: 9rem;
+        font-size: 0.7rem;
+    }
+
+    #planning .schedule-item h5 {
+        font-size: 0.8rem;
+    }
+
     #tarifs .section-content-text {
         width: 100%;
     }
@@ -648,6 +770,16 @@ section:nth-child(even) {
         margin: 2rem 0 1rem;
     }
 
+    #planning .schedule-item {
+        padding: 0.5rem 0.5rem;
+        width: 8rem;
+        font-size: 0.7rem;
+    }
+
+    #planning .schedule-item h5 {
+        font-size: 0.7rem;
+    }
+
     #tarifs .highlight {
         right: -0.2rem;
     }
@@ -709,10 +841,6 @@ section:nth-child(even) {
         aspect-ratio: 1/1;
     }
 
-    #section-pro .swiper {
-        aspect-ratio: 1/1;
-    }
-
     #enfants-classique .cards {
         display: flex;
         flex-direction: column;
@@ -727,6 +855,61 @@ section:nth-child(even) {
     #enfants-classique .cards .card-thumb img {
         width: 15rem;
         height: auto;
+    }
+
+    #planning .schedule-table {
+        display: none;
+    }
+
+    #planning .schedule-table {
+        display: none;
+    }
+
+    #planning .schedule-mobile {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        border: 1px solid var(--grey-light);
+        border-radius: 3px;
+    }
+
+    #planning .schedule-mobile .day-block {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem 1rem 3rem 1rem;
+        border-bottom: 1px solid var(--grey-light);
+    }
+
+    #planning .schedule-mobile .day-block:last-of-type {
+        border-bottom: none;
+    }
+
+    #planning .schedule-mobile .morning,
+    #planning .schedule-mobile .afternoon,
+    #planning .schedule-mobile .evening {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #planning .schedule-mobile .day-block-row {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    #planning .schedule-mobile .schedule-item {
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        text-align: center;
+        width: 12rem;
+        font-size: 1rem;
+    }
+
+    #planning .schedule-mobile .schedule-item h5 {
+        font-size: 1rem;
     }
 
     #tarifs .tarif-table.mobile-only {
@@ -779,6 +962,10 @@ section:nth-child(even) {
         transform: translateX(1rem);
     }
 
+    #section-pro .swiper {
+        aspect-ratio: 1/1;
+    }
+
     #admission .section-center {
         width: 80%;
     }
@@ -825,6 +1012,8 @@ section:nth-child(even) {
 }
 
 @media screen and (max-width: 624px) {
+
+
 
     #professeurs-classiques .three-items-wrap {
         margin: 2rem 0 1rem;
@@ -1022,6 +1211,18 @@ section:nth-child(even) {
 
     #enfants-classique .section-content-image .frame {
         margin-top: 2rem;
+    }
+
+    #planning .schedule-mobile .day-block-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #planning .schedule-mobile .day-block {
+        justify-content: center;
+        align-items: center;
     }
 
     #tarifs .first-cell {

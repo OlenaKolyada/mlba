@@ -461,13 +461,13 @@ section.longread .address {
     }
 
     .longread .section-row .section-content-text {
+        justify-content: left;
         align-items: flex-start;
     }
 
     .section-content-text {
         order: 1;
         width: 80%;
-
     }
 
     .section-content-image {

@@ -198,35 +198,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Antitranslate
+    function antitranslate(node, words) {
+        if (node.nodeType === 3) {
+            let nodeValue = node.nodeValue;
+            let frag = document.createDocumentFragment();
+            let lastIndex = 0;
 
-    function wrapWord(node, word) {
-        const regex = new RegExp(word, 'gi');
-        if (node.nodeType === 3) { // текст
-            const matches = node.nodeValue.match(regex);
-            if (matches) {
+            const escapedWords = words.map(w => w.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'));
+            const regex = new RegExp(escapedWords.join('|'), 'gi');
+
+            let match;
+            while ((match = regex.exec(nodeValue)) !== null) {
+                frag.appendChild(document.createTextNode(nodeValue.slice(lastIndex, match.index)));
+
                 const span = document.createElement('span');
                 span.classList.add('notranslate');
                 span.setAttribute('translate', 'no');
+                span.textContent = match[0];
 
-                const frag = document.createDocumentFragment();
-                let lastIndex = 0;
-                node.nodeValue.replace(regex, (match, offset) => {
-                    frag.appendChild(document.createTextNode(node.nodeValue.slice(lastIndex, offset)));
-                    const wrapped = span.cloneNode();
-                    wrapped.textContent = match;
-                    frag.appendChild(wrapped);
-                    lastIndex = offset + match.length;
-                });
-                frag.appendChild(document.createTextNode(node.nodeValue.slice(lastIndex)));
-
-                node.parentNode.replaceChild(frag, node);
+                frag.appendChild(span);
+                lastIndex = match.index + match[0].length;
             }
+
+            if (lastIndex === 0) return;
+
+            frag.appendChild(document.createTextNode(nodeValue.slice(lastIndex)));
+            node.parentNode.replaceChild(frag, node);
         } else {
-            node.childNodes.forEach(child => wrapWord(child, word));
+            node.childNodes.forEach(child => antitranslate(child, words));
         }
     }
 
-    wrapWord(document.body, 'planning');
+    antitranslate(document.body, ['planning', 'Mikhalev Lanssens Ballet Academy', 'Academy']);
+
+
 
 
 
