@@ -107,12 +107,8 @@ get_header();
                                                 <h4>Initiation à la danse classique</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Initiation classique : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Initiation classique : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Initiation classique : Mercredi 11h-12h">
+                                                        <span>Mecredi<br>11h-12h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -124,12 +120,8 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 1</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 1 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 1 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 1 : Mercredi 15h-16h30">
+                                                        <span>Mercredi<br>15h-16h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -141,12 +133,12 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 2</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 2 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 2 : Lundi 18h-19h30">
+                                                        <span>Lundi<br>18h-19h30</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 2 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 2 : Jeudi 18h-19h30">
+                                                        <span>Jeudi<br>18h-19h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -158,12 +150,12 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 3</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 3 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 3 : Mardi 18h-19h30">
+                                                        <span>Mardi<br>18h-19h30</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 3 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 3 : Vendredi 18h-19h30">
+                                                        <span>Vendredi<br>18h-19h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -172,12 +164,8 @@ get_header();
                                                 <h4>Ado Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -189,12 +177,12 @@ get_header();
                                                 <h4>Ado Classique Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Ado Classique Avancé : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Classique Avancé : Mercredi 18h45-20h15">
+                                                        <span>Mercredi<br>18h45-20h15</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Ado Classique Avancé : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Classique Avancé : Vendredi 18h45-20h15">
+                                                        <span>Vendredi<br>18h45-20h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -203,12 +191,8 @@ get_header();
                                                 <h4>Ado Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -220,12 +204,12 @@ get_header();
                                                 <h4>Classique Intermediaire-Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Lundi 18h30-21h">
+                                                        <span>Lundi<br>18h30-21h</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Jeudi 18h30-21h">
+                                                        <span>Jeudi<br>18h30-21h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -234,12 +218,8 @@ get_header();
                                                 <h4>Adultes Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Adultes Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_1[]" value="Adultes Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Adultes Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -305,12 +285,8 @@ get_header();
                                                 <h4>Initiation à la danse classique</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Initiation classique : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Initiation classique : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Initiation classique : Mercredi 11h-12h">
+                                                        <span>Mecredi<br>11h-12h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -323,12 +299,8 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 1</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Elémentaire 1 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Elémentaire 1 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 1 : Mercredi 15h-16h30">
+                                                        <span>Mercredi<br>15h-16h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -340,12 +312,12 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 2</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Elémentaire 2 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 2 : Lundi 18h-19h30">
+                                                        <span>Lundi<br>18h-19h30</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Elémentaire 2 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 2 : Jeudi 18h-19h30">
+                                                        <span>Jeudi<br>18h-19h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -357,12 +329,12 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 3</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Elémentaire 3 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 3 : Mardi 18h-19h30">
+                                                        <span>Mardi<br>18h-19h30</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Elémentaire 3 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 3 : Vendredi 18h-19h30">
+                                                        <span>Vendredi<br>18h-19h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -371,12 +343,8 @@ get_header();
                                                 <h4>Ado Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Ado Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Ado Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -388,12 +356,12 @@ get_header();
                                                 <h4>Ado Classique Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Ado Classique Avancé : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Classique Avancé : Mercredi 18h45-20h15">
+                                                        <span>Mercredi<br>18h45-20h15</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Ado Classique Avancé : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Classique Avancé : Vendredi 18h45-20h15">
+                                                        <span>Vendredi<br>18h45-20h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -402,12 +370,8 @@ get_header();
                                                 <h4>Ado Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Ado Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Ado Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -419,12 +383,12 @@ get_header();
                                                 <h4>Classique Intermediaire-Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Classique Intermediaire-Avancé : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Lundi 18h30-21h">
+                                                        <span>Lundi<br>18h30-21h</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Classique Intermediaire-Avancé : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Jeudi 18h30-21h">
+                                                        <span>Jeudi<br>18h30-21h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -433,12 +397,8 @@ get_header();
                                                 <h4>Adultes Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Adultes Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_2[]" value="Adultes Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Adultes Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -507,12 +467,8 @@ get_header();
                                                 <h4>Initiation à la danse classique</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Initiation classique : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Initiation classique : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Initiation classique : Mercredi 11h-12h">
+                                                        <span>Mecredi<br>11h-12h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -525,12 +481,8 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 1</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Elémentaire 1 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Elémentaire 1 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 1 : Mercredi 15h-16h30">
+                                                        <span>Mercredi<br>15h-16h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -542,12 +494,12 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 2</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Elémentaire 2 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 2 : Lundi 18h-19h30">
+                                                        <span>Lundi<br>18h-19h30</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Elémentaire 2 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 2 : Jeudi 18h-19h30">
+                                                        <span>Jeudi<br>18h-19h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -559,12 +511,12 @@ get_header();
                                                 <h4>Classique Elémentaire Niveau 3</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Elémentaire 3 : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 3 : Mardi 18h-19h30">
+                                                        <span>Mardi<br>18h-19h30</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Elémentaire 3 : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Elémentaire 3 : Vendredi 18h-19h30">
+                                                        <span>Vendredi<br>18h-19h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -573,12 +525,8 @@ get_header();
                                                 <h4>Ado Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Ado Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Ado Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -590,12 +538,12 @@ get_header();
                                                 <h4>Ado Classique Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Ado Classique Avancé : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Classique Avancé : Mercredi 18h45-20h15">
+                                                        <span>Mercredi<br>18h45-20h15</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Ado Classique Avancé : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Classique Avancé : Vendredi 18h45-20h15">
+                                                        <span>Vendredi<br>18h45-20h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -604,12 +552,8 @@ get_header();
                                                 <h4>Ado Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Ado Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Ado Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Ado Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -621,12 +565,12 @@ get_header();
                                                 <h4>Classique Intermediaire-Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Classique Intermediaire-Avancé : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Lundi 18h30-21h">
+                                                        <span>Lundi<br>18h30-21h</span>
                                                     </label>
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Classique Intermediaire-Avancé : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Jeudi 18h30-21h">
+                                                        <span>Jeudi<br>18h30-21h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -635,12 +579,8 @@ get_header();
                                                 <h4>Adultes Contemporain</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Adultes Contemporain : Jeudi 15h Studio Noureev">
-                                                        <span>Jeudi 15h<br>Studio Noureev</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="checkbox" name="schedule_3[]" value="Adultes Contemporain : Samedi 12h Studio Lifar">
-                                                        <span>Samedi 12h<br>Studio Lifar</span>
+                                                        <input type="checkbox" name="schedule_1[]" value="Adultes Contemporain : Lundi 18h15-19h15">
+                                                        <span>Lundi<br>18h15-19h15</span>
                                                     </label>
                                                 </fieldset>
                                             </div>

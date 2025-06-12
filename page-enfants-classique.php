@@ -108,7 +108,7 @@ get_header();
                                     l’encouragement d’interactions bienveillantes avec les autres. Toutes ses connaissances
                                     permettront à l’enfant, dès ses 8 ans, de s’orienter librement vers la technique de danse
                                     souhaitée.</p>
-                                <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
+                                <p><strong>Mercredi 11h-12h</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -184,7 +184,7 @@ get_header();
                                     seront proposés afin d’affiner leur écoute musicale, encourager leur expressivité, explorer
                                     leur propre créativité, et enrichir leur langage dansé grâce à l’acquisition de différentes
                                     combinaisons de pas.</p>
-                                <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
+                                <p><strong>Mercredi 15h-16h30</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -257,7 +257,7 @@ get_header();
                                     produites par l’élève. L’Histoire de la Danse et les ballets du répertoire sont abordés, lors
                                     d’échanges, de partages de photos, vidéos et ateliers chorégraphiques, afin de nourrir leurs
                                     connaissances et leur passion. Discipline et plaisir restent les maîtres mots du cours de danse.</p>
-                                <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
+                                <p><strong>Lundi 18h-19h30</strong> et / ou <strong>Jeudi 18h-19h30</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -294,7 +294,7 @@ get_header();
                                     dépendra le bon apprentissage de cette technique. Il se fera au studio ou lors d’un rendez-
                                     vous en boutique avec la présence du professeur. Pour les garçons, la technique des «&nbsp;grands sauts&nbsp;»
                                     est abordée grâce à un travail spécifique sur la puissance musculaire nécessaire à la virtuosité de leur exécution.</p>
-                                <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
+                                <p><strong>Mardi 18h-19h30</strong> et / ou <strong>Vendredi 18h-19h30</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -345,7 +345,7 @@ get_header();
                                 <p>Un travail de variation du répertoire sera proposé afin de compléter les connaissances déjà
                                     acquises, et de se confronter à un travail de style, de technique, et d’expression artistique
                                     diverses.</p>
-                                <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
+                                <p><strong>Mercredi 18h45-20h15</strong> et / ou <strong>Vendredi 18h45-20h15</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>

@@ -23,7 +23,7 @@ get_header();
                             <div class="section-content-text">
                                 <div class="section-text">
                                     <p>!!! MANQUE DU TEXTE !!!</p>
-                                    <p><strong>Mercredi 19h</strong> et / ou <strong>Jeudi 18h</strong></p>
+                                    <p><strong>Lundi 18h15-19h15</strong></p>
                                     <div class="niveau-button">
                                         <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                     </div>
