@@ -550,6 +550,21 @@ section.longread .address {
         width: 50%;
     }
 
+    .swiper-slide img.horisontal {
+        aspect-ratio: 1/1;
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .mfp-img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+
 }
 
 @media screen and (max-width: 624px) {

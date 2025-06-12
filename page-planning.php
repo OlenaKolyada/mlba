@@ -256,8 +256,8 @@ get_header();
                     </div>
 
                 <div class="section-text">
-                    <p><strong>Samedi :</strong> cours particuliers, répétitions spectacle, répétition Concours<br>
-                    <strong>Dimanche :</strong> Cours particuliers</p>
+                    <p><strong>Samedi :</strong> cours particuliers, répétitions spectacle, répétition сoncours<br>
+                    <strong>Dimanche :</strong> сours particuliers</p>
                     <p>Planning susceptible de modification.</p>
                 </div>
                 </div>

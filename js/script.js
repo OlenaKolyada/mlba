@@ -166,14 +166,6 @@ document.addEventListener('DOMContentLoaded', function () {
         closeOnContentClick: true,
         showCloseBtn: false,
         image: {titleSrc: 'title'},
-        zoom: {
-            enabled: true,
-            duration: 600,
-            easing: 'ease-in-out',
-            opener: function(openerElement) {
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
     });
 
 // Magnific PopUp Gallery
@@ -187,14 +179,6 @@ document.addEventListener('DOMContentLoaded', function () {
         gallery: {
             enabled: true
         },
-        zoom: {
-            enabled: true,
-            duration: 600,
-            easing: 'ease-in-out',
-            opener: function(openerElement) {
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
     });
 
 // Magnific PopUp Schedule
@@ -203,14 +187,6 @@ document.addEventListener('DOMContentLoaded', function () {
         mainClass: 'mfp-with-zoom',
         closeOnContentClick: true,
         showCloseBtn: true,
-        zoom: {
-            enabled: true,
-            duration: 600,
-            easing: 'ease-in-out',
-            opener: function(openerElement) {
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
     });
 
     // Antitranslate

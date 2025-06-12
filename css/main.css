@@ -1,10 +1,35 @@
 /* Hero START */
 #hero {
     height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 120px;
+    background: #e4e4e4;
+    padding-top: 160px;
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+#hero .hero-bg {
+    position: absolute;
+    bottom: -195px;
+    left: 60vw;
+    width: 100%;
+    height: 100%;
+    /*z-index: -1;*/
+    pointer-events: none;
+}
+
+#hero .hero-bg img {
+    width: auto;
+    height: 70vh;
+    object-fit: cover;
+    object-position: bottom;
+    display: block;
+}
+
+#hero .hero-title {
+    z-index: 2;
 }
 
 #hero .hero-title h1 {
@@ -21,7 +46,12 @@
 }
 
 #hero .hero-slogan {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    z-index: 2;
+}
+
+#hero .hero-slogan br {
+    display: none;
 }
 
 #hero .hero-slogan p {
@@ -32,6 +62,7 @@
 #hero .hero-buttons {
     display: flex;
     gap: 1rem;
+    z-index: 2;
 }
 /* Hero END */
 
@@ -235,7 +266,11 @@
     }
 }
 
-@media screen and (max-width: 1333px) {
+@media (width: 1333px) and (height: 599px) {
+    #hero {
+        padding-top: 120px;
+    }
+
     #hero .hero-title h1 {
         font-size: 3rem;
     }
@@ -243,9 +278,23 @@
     #hero .hero-slogan p {
         font-size: 2rem;
     }
+
+    #hero .hero-slogan {
+        margin-bottom: 2rem;
+    }
+
+    #hero .hero-bg {
+        top: 170px;
+        left: 900px;
+    }
 }
 
+
 @media screen and (max-width: 1200px) {
+    #hero .hero-bg {
+        left: 60%;
+    }
+
     #loisir .cards .card-thumb img {
         width: 12rem;
     }
@@ -306,6 +355,13 @@
 }
 
 @media screen and (max-width: 1024px) {
+    #hero .hero-bg {
+        bottom: -163px;
+    }
+
+    #hero .hero-bg img {
+        height: 74vh;
+    }
 
     #danse .btn {
         margin: 1rem 0;
@@ -354,6 +410,18 @@
 }
 
 @media screen and (max-width: 992px) {
+    #hero {
+        padding-top: 120px;
+    }
+
+    #hero .hero-bg {
+        left: 54%;
+    }
+
+    #hero .hero-slogan br {
+        display: inline;
+    }
+
     #main-contacts {
         background-image: none;
         background-color: var(--grey);
@@ -407,6 +475,21 @@
 }
 
 @media screen and (max-width: 768px) {
+    #hero {
+        padding-top: 100px;
+    }
+
+    #hero .hero-title h1 {
+        font-size: 3rem;
+    }
+
+    #hero .hero-bg {
+        left: 47%;
+    }
+
+    #hero .hero-bg img {
+        height: 74vh;
+    }
 
     #danse .three-items-wrap {
         display: none;
@@ -432,6 +515,28 @@
 }
 
 @media (max-width: 624px) {
+    #hero .hero-bg {
+        left: 45%;
+    }
+
+    #hero .hero-title h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #hero .hero-slogan {
+        margin-bottom: 3rem;
+    }
+
+    #hero .hero-slogan p {
+        font-size: 2rem;
+    }
 
     #loisir .cards .card-thumb img {
         width: 15rem;
@@ -470,9 +575,25 @@
 }
 
 @media screen and (max-width: 480px) {
+    #hero {
+        padding-top: 80px;
+    }
 
     #hero .hero-title h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+
+    #hero .hero-slogan p {
+        font-size: 1.9rem;
+    }
+
+    #hero .hero-bg {
+        left: 40%;
+        bottom: -123px;
+    }
+
+    #hero .hero-bg img {
+        height: 76vh;
     }
 
     #pro .decor-quote-mobile {
@@ -504,15 +625,22 @@
 
 @media screen and (max-width: 425px) {
 
-    #hero .hero-title h1 {
-        font-size: 2.3rem;
+
+    #hero .hero-bg {
+        left: 35%;
     }
 
-    #hero .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
+    #hero .hero-title h1 {
+        font-size: 2.1rem;
+    }
+
+    #hero .hero-slogan p {
+        font-size: 1.8rem;
+        max-width: 14rem;
+    }
+
+    #hero .hero-slogan br {
+        display: none;
     }
 
     #danse .btn {
@@ -535,24 +663,17 @@
 }
 
 @media screen and (max-width: 375px) {
-
-    #hero .hero-title h1 {
-        font-size: 2rem;
+    #hero .hero-bg {
+        left: 30%;
     }
 
-    #hero .hero-slogan p {
+    #hero .hero-title h1 {
         font-size: 1.9rem;
-        line-height: 1.5;
     }
 }
 
 @media screen and (max-width: 320px) {
-    #hero {
-        height: 100vh;
-        padding-top: 120px;
-    }
-
-    #hero .hero-buttons {
-        gap: 0.5rem;
+    #hero .hero-bg {
+        left: 26%;
     }
 }
