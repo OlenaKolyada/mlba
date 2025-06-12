@@ -258,7 +258,7 @@ section:nth-child(even) {
     justify-content: center;
 }
 
-#planning .schedule-item {
+.schedule-item {
     padding: 0.5rem 1rem;
     border-radius: 50px;
     text-align: center;
@@ -271,35 +271,35 @@ section:nth-child(even) {
     border-right: 1px solid var(--grey-light);
 }
 
-#planning .init {
+.init {
     background: #f9dcf7;
 }
 
-#planning .elem-1 {
+.elem-1 {
     background: #abf0fc;
 }
 
-#planning .elem-2 {
+.elem-2 {
     background: #aad3fc;
 }
 
-#planning .elem-3 {
+.elem-3 {
     background: #e7d1fb;
 }
 
-#planning .ado-avance {
+.ado-avance {
     background: #ddfbd0;
 }
 
-#planning .ado-contempo {
+.ado-contempo {
     background: #fef7c0;
 }
 
-#planning .adulte-avance {
+.adulte-avance {
     background: #fecdc0;
 }
 
-#planning .adulte-contempo {
+.adulte-contempo {
     background: #fadfac;
 }
 
@@ -316,6 +316,33 @@ section:nth-child(even) {
 
 #planning .schedule-mobile {
     display: none;
+}
+
+.modal-schedule {
+    background: var(--white);
+    text-align: center;
+    width: 560px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2.5rem;
+    gap: 2rem;
+    position: relative;
+}
+
+.modal-schedule-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.modal-schedule .modal-close {
+    position: absolute;
 }
 /*Planning END*/
 
@@ -1013,8 +1040,6 @@ section:nth-child(even) {
 
 @media screen and (max-width: 624px) {
 
-
-
     #professeurs-classiques .three-items-wrap {
         margin: 2rem 0 1rem;
     }
@@ -1163,6 +1188,15 @@ section:nth-child(even) {
         aspect-ratio: 3/4;
     }
 
+    .modal-schedule {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .modal-schedule h3 {
+        font-size: 1.6rem;
+    }
+
     #section-pro .section-photo  {
         width: 85vw;
     }
@@ -1306,6 +1340,10 @@ section:nth-child(even) {
 @media screen and (max-width: 425px) {
     #section-pro #pro-admission .btn {
         width: 100%;
+    }
+
+    .modal-schedule h3 {
+        font-size: 1.3rem;
     }
 
     #tarifs .tarif-cell {

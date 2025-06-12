@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setupSectionScroll('#card-elem3', '#elem3', 70);
     setupSectionScroll('#card-avance', '#avance', 70);
 
-    // Magnific PopUp Photo
+// Magnific PopUp Photo
     $('.popup-image').magnificPopup({
         type: 'image',
         mainClass: 'mfp-with-zoom',
@@ -187,6 +187,22 @@ document.addEventListener('DOMContentLoaded', function () {
         gallery: {
             enabled: true
         },
+        zoom: {
+            enabled: true,
+            duration: 600,
+            easing: 'ease-in-out',
+            opener: function(openerElement) {
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+    });
+
+// Magnific PopUp Schedule
+    $('.popup-schedule').magnificPopup({
+        type: 'inline',
+        mainClass: 'mfp-with-zoom',
+        closeOnContentClick: true,
+        showCloseBtn: true,
         zoom: {
             enabled: true,
             duration: 600,
