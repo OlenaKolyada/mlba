@@ -168,17 +168,16 @@ document.addEventListener('DOMContentLoaded', function () {
         image: {titleSrc: 'title'},
     });
 
-// Magnific PopUp Gallery
-    $('.swiper').magnificPopup({
-        delegate: '.popup-gallery',
-        type: 'image',
-        mainClass: 'mfp-with-zoom',
-        closeOnContentClick: true,
-        showCloseBtn: false,
-        image: {titleSrc: 'title'},
-        gallery: {
-            enabled: true
-        },
+    $('.swiper.swiper-section-small').each(function() {
+        $(this).magnificPopup({
+            delegate: '.popup-gallery',
+            type: 'image',
+            mainClass: 'mfp-with-zoom',
+            closeOnContentClick: true,
+            showCloseBtn: false,
+            image: {titleSrc: 'title'},
+            gallery: {enabled: true}
+        });
     });
 
 // Magnific PopUp Schedule

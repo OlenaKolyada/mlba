@@ -221,6 +221,108 @@ section:nth-child(even) {
 }
 /* Enfants-Ado Classique END */
 
+/*Ado Contemporain START*/
+#ado-contemporain .swiper-section-small {
+    width: 360px;
+    height: 480px;
+}
+
+#ado-contemporain .swiper-section-small .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#ado-contemporain .swiper-section-small .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#ado-contemporain .swiper-section-small .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#ado-contemporain p:last-of-type {
+    margin-bottom: 2rem;
+}
+/*Ado Contemporain END*/
+
+/*Adulte Classique START*/
+#adulte-classique .swiper-section-small {
+    width: 360px;
+    height: 480px;
+}
+
+#adulte-classique .swiper-section-small .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#adulte-classique .swiper-section-small .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#adulte-classique .swiper-section-small .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#adulte-classique p:last-of-type {
+    margin-bottom: 2rem;
+}
+/*Adulte Classique END*/
+
+/*Adulte Contemporain START*/
+#adulte-contemporain p:has(+ ul) {
+    margin-bottom: 0;
+}
+
+#adulte-contemporain ul {
+    list-style: disc;
+    margin-bottom: 1rem;
+}
+
+#adulte-contemporain .swiper-section-small {
+    width: 360px;
+    height: 480px;
+}
+
+#adulte-contemporain .swiper-section-small .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#adulte-contemporain .swiper-section-small .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#adulte-contemporain .swiper-section-small .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#adulte-contemporain p:last-of-type {
+    margin-bottom: 2rem;
+}
+/*Adulte Contemporain END*/
+
 /*Planning START*/
 #planning .schedule-table {
     display: flex;
@@ -404,6 +506,12 @@ section:nth-child(even) {
     max-width: 15rem;
 }
 
+#tarifs .first-cell-large {
+    text-align: left;
+    margin-left: 1rem;
+    max-width: 25rem;
+}
+
 #tarifs em {
     color: var(--grey);
 }
@@ -426,7 +534,7 @@ section:nth-child(even) {
     height: 34rem;
     z-index: -1;
     top: -2.2rem;
-    right: 0.9rem;
+    right: 5.35rem;
 }
 /*Tarifs END*/
 
@@ -654,7 +762,7 @@ section:nth-child(even) {
     }
 
     #tarifs .highlight {
-        right: 0.5rem;
+        right: 4.4rem;
     }
 }
 
@@ -676,6 +784,16 @@ section:nth-child(even) {
 
     #professeurs-contemporain .three-items-wrap {
         margin: 3rem 0 1rem 0;
+    }
+
+
+    .section-content-text {
+        order: 2;
+        width: 80%;
+    }
+
+    .section-content-image {
+        order: 1;
     }
 
     #professeurs-invites .swiper-section-small {
@@ -716,6 +834,60 @@ section:nth-child(even) {
     }
 
     #enfants-classique .section-content-image .frame {
+        margin-top: 3rem;
+    }
+
+    #ado-contemporain .section-content-text,
+    #ado-contemporain .section-center {
+        width: 100%;
+    }
+
+    #ado-contemporain .swiper-section-small {
+        width: 450px;
+        height: auto;
+    }
+
+    #ado-contemporain .swiper-section-small .swiper-slide img {
+        height: 600px;
+    }
+
+    #ado-contemporain .section-content-image .frame {
+        margin-top: 3rem;
+    }
+
+    #adulte-classique .section-content-text,
+    #adulte-classique .section-center {
+        width: 100%;
+    }
+
+    #adulte-classique .swiper-section-small {
+        width: 450px;
+        height: auto;
+    }
+
+    #adulte-classique .swiper-section-small .swiper-slide img {
+        height: 600px;
+    }
+
+    #adulte-classique .section-content-image .frame {
+        margin-top: 3rem;
+    }
+
+    #adulte-contemporain .section-content-text,
+    #adulte-contemporain .section-center {
+        width: 100%;
+    }
+
+    #adulte-contemporain .swiper-section-small {
+        width: 450px;
+        height: auto;
+    }
+
+    #adulte-contemporain .swiper-section-small .swiper-slide img {
+        height: 600px;
+    }
+
+    #adulte-contemporain .section-content-image .frame {
         margin-top: 3rem;
     }
 
@@ -808,7 +980,7 @@ section:nth-child(even) {
     }
 
     #tarifs .highlight {
-        right: -0.2rem;
+        right: 3rem;
     }
 
     #section-pro .section-center .section-text {
@@ -1188,6 +1360,33 @@ section:nth-child(even) {
         aspect-ratio: 3/4;
     }
 
+    #ado-contemporain .swiper-section-small {
+        width: 80vw;
+    }
+
+    #ado-contemporain .swiper-section-small .swiper-slide img {
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
+    #adulte-classique .swiper-section-small {
+        width: 80vw;
+    }
+
+    #adulte-classique .swiper-section-small .swiper-slide img {
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
+    #adulte-contemporain .swiper-section-small {
+        width: 80vw;
+    }
+
+    #adule-contemporain .swiper-section-small .swiper-slide img {
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
     .modal-schedule {
         width: 100%;
         padding: 1rem;
@@ -1220,6 +1419,10 @@ section:nth-child(even) {
         width: 100%;
         height: 40vw;
     }
+
+    #tarifs .first-cell-large {
+        max-width: 20rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1247,6 +1450,18 @@ section:nth-child(even) {
         margin-top: 2rem;
     }
 
+    #ado-contemporain .section-content-image .frame {
+        margin-top: 2rem;
+    }
+
+    #adulte-classique .section-content-image .frame {
+        margin-top: 2rem;
+    }
+
+    #adulte-contemporain .section-content-image .frame {
+        margin-top: 2rem;
+    }
+
     #planning .schedule-mobile .day-block-row {
         flex-direction: column;
         justify-content: center;
@@ -1259,14 +1474,13 @@ section:nth-child(even) {
         align-items: center;
     }
 
-    #tarifs .first-cell {
-        margin-left: 0;
-        max-width: 12rem;
-    }
-
     #tarifs .mobile-only .first-cell {
         margin-left: 0;
         max-width: 10rem;
+    }
+
+    #tarifs .first-cell-large {
+        max-width: 15rem;
     }
 
     #section-pro .form-group {
@@ -1348,6 +1562,10 @@ section:nth-child(even) {
 
     #tarifs .tarif-cell {
         max-width: 11rem;
+    }
+
+    #tarifs .first-cell-large {
+        max-width: 15rem;
     }
 
     #admission .btn {

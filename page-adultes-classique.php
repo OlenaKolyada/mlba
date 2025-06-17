@@ -31,11 +31,36 @@ get_header();
                                 </div>
                                 <div class="section-content-image">
                                     <div class="frame">
-                                        <a href="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Cours Adulte Classique">
-                                        <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg"
-                                             alt="Mikhalev Lanssens Ballet Academy, Cours Adulte Classique"
-                                             title="Mikhalev Lanssens Ballet Academy, Cours Adulte Classique" />
-                                        </a>
+                                        <div class="swiper swiper-section-small">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-classique/adulte-classique1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova">
+                                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-classique/adulte-classique1.jpg"
+                                                             alt="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova"
+                                                             title="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova">
+                                                    </a>
+                                                </div>
+                                            <div class="swiper-slide">
+                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-classique/adulte-classique2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova">
+                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-classique/adulte-classique2.jpg"
+                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova"
+                                                         title="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-classique/adulte-classique3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova">
+                                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-classique/adulte-classique3.jpg"
+                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova"
+                                                         title="Mikhalev Lanssens Ballet Academy, Danse Adulte Classique. Crédit photo Marina Kudryashova">
+                                                </a>
+                                            </div>
+
+
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

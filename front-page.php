@@ -26,9 +26,7 @@ get_header();
 			<div class="hero-content">
 				<div class="hero-title notranslate" translate="no">
 					<h1>Mikhalev&nbsp;Lanssens<br>Ballet&nbsp;Academy</h1>
-				</div>
-				<div class="hero-slogan">
-					<p>Danser est votre Passion,<br> l'Enseigner est la nôtre</p>
+					<p class="hero-slogan">Danser est votre Passion,<br> l'Enseigner est la nôtre</p>
 				</div>
 				<div class="hero-buttons">
 					<div class="btn btn-primary-color" id="hero-btn-loisir">Section Loisir</div>
@@ -171,7 +169,7 @@ get_header();
 							<div class="frame">
 								<div class="card-thumb">
 									<a href="<?php echo get_permalink(109); ?>">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/no-photo-small.jpg" alt="Enfants-Ado Contemporain" />
+										<img src="<?php echo get_template_directory_uri();?>/assets/images/thumbs/ado-contempo.jpg" alt="Enfants-Ado Contemporain" />
 									</a>
 								</div>
 							</div>
@@ -184,7 +182,7 @@ get_header();
 							<div class="frame">
 								<div class="card-thumb">
 									<a href="<?php echo get_permalink(112); ?>">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/no-photo-small.jpg" alt="Adultes Classique" />
+										<img src="<?php echo get_template_directory_uri();?>/assets/images/thumbs/adulte-classique.jpg" alt="Adultes Classique" />
 									</a>
 								</div>
 							</div>
@@ -197,7 +195,7 @@ get_header();
 							<div class="frame">
 								<div class="card-thumb">
 									<a href="<?php echo get_permalink(115); ?>">
-										<img src="<?php echo get_template_directory_uri();?>/assets/images/no-photo-small.jpg" alt="Adultes Contemporain" />
+										<img src="<?php echo get_template_directory_uri();?>/assets/images/thumbs/adulte-contempo.jpg" alt="Adultes Contemporain" />
 									</a>
 								</div>
 							</div>
@@ -341,14 +339,7 @@ get_header();
                                          class="horisontal" />
                                 </a>
 							</div>
-							<div class="swiper-slide">
-                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-5.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-5.jpg"
-                                     alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
-                                     title="Galerie des photos de Mikhalev Lanssens Ballet Academy"
-                                     class="horisontal" />
-                                </a>
-							</div>
+
 						</div>
 						<div class="swiper-pagination"></div>
 						<div class="swiper-button-prev"></div>
@@ -448,8 +439,7 @@ get_header();
 								<fieldset class="form-single-input">
 									<label class="checkbox-label-paragraph">
 										<input class="checkbox text-small" type="checkbox" name="consent-cour-essai" required>
-										J'ai compris que le cours d'essai offert UNE seule fois sur UNE discipline. Au delà il sera facturé
-										au prix unitaire de 18€
+										J’ai compris que le cours d’essai est offert UNE seule fois sur une discipline choisie. Au delà il sera facturé au prix unitaire de 18€
 									</label>
 								</fieldset>
 								<fieldset class="form-btn">

@@ -1,28 +1,27 @@
 /* Hero START */
 #hero {
-    height: 80vh;
+    padding-top: 15vh;
     background: #e4e4e4;
-    padding-top: 160px;
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
 }
 
 #hero .hero-content {
+    height: 50vh;
     position: relative;
     z-index: 2;
-}
-
-#hero .hero-bg {
-    position: absolute;
-    bottom: -195px;
-    left: 60vw;
-    width: 100%;
-    height: 100%;
-    /*z-index: -1;*/
-    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #hero .hero-bg img {
+    position: absolute;
+    bottom: 0;
+    left: 60vw;
     width: auto;
-    height: 70vh;
+    height: 75vh;
     object-fit: cover;
     object-position: bottom;
     display: block;
@@ -35,18 +34,16 @@
 #hero .hero-title h1 {
     font-size: 3.5rem;
     font-weight: 600;
-    margin-bottom: 2rem;
-    margin-left: 0 !important;
     font-family: 'Lora', serif;
     line-height: 1.5;
     background: var(--secondary-color-gradient-h1);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    margin: 0;
 }
 
 #hero .hero-slogan {
-    margin-bottom: 4rem;
     z-index: 2;
 }
 
@@ -54,7 +51,7 @@
     display: none;
 }
 
-#hero .hero-slogan p {
+#hero .hero-slogan {
     font-family: 'Oooh Baby', serif;
     font-size: 2.5rem;
 }
@@ -267,9 +264,6 @@
 }
 
 @media (width: 1333px) and (height: 599px) {
-    #hero {
-        padding-top: 120px;
-    }
 
     #hero .hero-title h1 {
         font-size: 3rem;
@@ -279,21 +273,12 @@
         font-size: 2rem;
     }
 
-    #hero .hero-slogan {
-        margin-bottom: 2rem;
-    }
 
-    #hero .hero-bg {
-        top: 170px;
-        left: 900px;
-    }
 }
 
 
 @media screen and (max-width: 1200px) {
-    #hero .hero-bg {
-        left: 60%;
-    }
+
 
     #loisir .cards .card-thumb img {
         width: 12rem;
@@ -355,13 +340,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #hero .hero-bg {
-        bottom: -163px;
-    }
 
-    #hero .hero-bg img {
-        height: 74vh;
-    }
+
 
     #danse .btn {
         margin: 1rem 0;
@@ -410,13 +390,7 @@
 }
 
 @media screen and (max-width: 992px) {
-    #hero {
-        padding-top: 120px;
-    }
 
-    #hero .hero-bg {
-        left: 54%;
-    }
 
     #hero .hero-slogan br {
         display: inline;
@@ -475,21 +449,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    #hero {
-        padding-top: 100px;
-    }
 
-    #hero .hero-title h1 {
-        font-size: 3rem;
-    }
 
-    #hero .hero-bg {
-        left: 47%;
-    }
 
-    #hero .hero-bg img {
-        height: 74vh;
-    }
+
 
     #danse .three-items-wrap {
         display: none;
@@ -515,12 +478,16 @@
 }
 
 @media (max-width: 624px) {
-    #hero .hero-bg {
-        left: 45%;
+    #hero {
+        padding-top: 10vh;
+    }
+
+    #hero .hero-bg img {
+        left: 50vw;
     }
 
     #hero .hero-title h1 {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
 
     #hero .hero-buttons {
@@ -531,10 +498,6 @@
     }
 
     #hero .hero-slogan {
-        margin-bottom: 3rem;
-    }
-
-    #hero .hero-slogan p {
         font-size: 2rem;
     }
 
@@ -575,25 +538,16 @@
 }
 
 @media screen and (max-width: 480px) {
-    #hero {
-        padding-top: 80px;
+    #hero .hero-bg img {
+        left: 45vw;
     }
 
     #hero .hero-title h1 {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
     }
 
-    #hero .hero-slogan p {
-        font-size: 1.9rem;
-    }
-
-    #hero .hero-bg {
-        left: 40%;
-        bottom: -123px;
-    }
-
-    #hero .hero-bg img {
-        height: 76vh;
+    #hero .hero-slogan {
+        font-size: 2rem;
     }
 
     #pro .decor-quote-mobile {
@@ -624,18 +578,16 @@
 }
 
 @media screen and (max-width: 425px) {
-
-
-    #hero .hero-bg {
-        left: 35%;
+    #hero .hero-bg img {
+        left: 40vw;
     }
 
     #hero .hero-title h1 {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
-    #hero .hero-slogan p {
-        font-size: 1.8rem;
+    #hero .hero-slogan {
+        font-size: 1.9rem;
         max-width: 14rem;
     }
 
@@ -663,17 +615,18 @@
 }
 
 @media screen and (max-width: 375px) {
-    #hero .hero-bg {
-        left: 30%;
-    }
+
 
     #hero .hero-title h1 {
         font-size: 1.9rem;
     }
+    #hero .hero-slogan {
+        font-size: 1.8rem;
+        max-width: 14rem;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
-    #hero .hero-bg {
-        left: 26%;
-    }
+
 }

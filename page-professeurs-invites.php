@@ -20,6 +20,13 @@ get_header();
     <!--	Ruslan Savdenov START-->
         <section class="section-wrap" id="ruslan-savdenov">
             <div class="container">
+                <div class="section-row section-title">
+                    <h2 class="title-has-subtilte">Ruslan Savdenov</h2>
+                    <div class="subtitle">
+                        Danseur étoile international, soliste invité et interprète de grands rôles classiques
+                    </div>
+                </div>
+
                 <div class="section-row">
                     <div class="section-content-image">
                         <div class="frame">
@@ -32,11 +39,9 @@ get_header();
                     </div>
                     <div class="section-content-text">
                         <div class="section-text">
-                            <h2 class="title-has-subtilte">Ruslan Savdenov</h2>
-                            <div class="subtitle">
-                                Danseur étoile international, soliste invité et interprète de grands rôles classiques
-                            </div>
-                            <p>Rouslan Savdenov est reconnu comme Artiste d’honneur de la République du Tatarstan. Il a reçu de nombreux prix prestigieux, parmi lesquels le Grand Prix et la Médaille d’or au Concours international de Danse d’Astana en 2001, ainsi que la Médaille d’argent au Concours international de Danse de Perm en 2006. En 2012, il a été distingué par la République du Tatarstan avec le prix "Tantana" en tant que Meilleur Acteur de théâtre musical. En 2014, il a été lauréat du Kraï de Perm dans le domaine de la culture et des arts, récompensé pour son interprétation du rôle de Roméo dans Roméo et Juliette de Kenneth MacMillan.</p>
+                            <p><strong>Études chorégraphiques :</strong> Conservatoire national de Kazan (Tatarstan) – Ecole chorégraphique d’Almaty (Kazakhstan)</p>
+                            <p><strong>Parcours chorégraphique :</strong> Soliste au Ballet de l’Opéra national du Capitole – Ballet de l’Opéra Tchaïkovski de Perm (Russie) – Opéra national du Tatarstan (Kazan) – Ballet de l’Opéra national d’Almaty (Kazakhstan)</p>
+                            <p>Rouslan Savdenov est né à Almaty (Kazakhstan). Il est reconnu comme Artiste d’honneur de la République du Tatarstan. Il a reçu de nombreux prix prestigieux, parmi lesquels le Grand Prix et la Médaille d’or au Concours international de Danse d’Astana en 2001, ainsi que la Médaille d’argent au Concours international de Danse de Perm en 2006. En 2012, il a été distingué par la République du Tatarstan avec le prix "Tantana" en tant que Meilleur Acteur de théâtre musical. En 2014, il a été lauréat du Kraï de Perm dans le domaine de la culture et des arts, récompensé pour son interprétation du rôle de Roméo dans Roméo et Juliette de Kenneth MacMillan.</p>
                             <p>Artiste invité à plusieurs reprises, il a dansé avec le Ballet de l’Opéra de Bordeaux en 2011 et 2012, ainsi qu’avec le Young European Ballet (UNESCO) entre 2003 et 2005. Depuis 2002, il participe régulièrement à de nombreux festivals prestigieux, dont le Festival international de Danse classique Rudolf Noureev à Kazan, le Festival "Siberian Crane" en Yakoutie, The Golden Mask à Moscou, le Mariinsky de Saint-Pétersbourg, Dance Open à Saint-Pétersbourg, et Ballet Night in Bangkok.</p>
                         </div>
                     </div>
@@ -49,7 +54,6 @@ get_header();
                                 <div class="three-items-item">
                                     <h4>Parcour</h4>
                                     <ul class="three-items-text">
-                                        <li>Né à Almaty (Kazakhstan)</li>
                                         <li>Conservatoire national de Kazan (Tatarstan)</li>
                                         <li>Ecole chorégraphique d’Almaty (Kazakhstan)</li>
                                         <li>Soliste au Ballet de l’Opéra national du Capitole</li>
@@ -132,29 +136,33 @@ get_header();
         <!--	Ruslan Savdenov END-->
 
         <!--	Aleksandra Surodeev START-->
-            <section class="section-wrap section-first no-padding-top" id="alexandra-surodeev">
+            <section class="section-wrap" id="alexandra-surodeev">
                 <div class="container">
+                    <div class="section-row section-title">
+                        <h2 class="title-has-subtilte">Aleksandra Surodeev</h2>
+                        <div class="subtitle">
+                            Danseuse étoile au parcours international, interprète des grands rôles du répertoire classique et contemporain
+                        </div>
+                    </div>
                     <div class="section-row">
                         <div class="section-content-text">
                             <div class="section-text">
-                                <h2 class="title-has-subtilte">Aleksandra Surodeev</h2>
-                                <div class="subtitle">
-                                    Danseuse étoile au parcours international, interprète des grands rôles du répertoire classique et contemporain
-                                </div>
-                                <p>Aleksandra Surodeev a remporté de nombreux prix prestigieux au cours de sa carrière. En 2002, elle reçoit la médaille d’argent ainsi que le Prix de la Meilleure interprétation de chorégraphie moderne lors du Concours international de Danse de Varna, en Bulgarie. La même année, elle obtient un diplôme et un Prix spécial au Concours international de Danse Vaganova à Saint-Pétersbourg.</p>
+                                <p><strong>Études chorégraphiques :</strong> Ecole chorégraphique d’Almaty (Kazakhstan)</p>
+                                <p><strong>Parcours chorégraphique :</strong> Soliste au Ballet de l’Opéra national du Capitole – Danseuse principale au Ballet de l’Opéra Tchaïkovski de Perm (Russie) – Danseuse principale à l’Opéra national du Tatarstan (Kazan)</p>
+                                <p>Aleksandra Surodeev est née à Almaty (Kazakhstan). Elle a remporté de nombreux prix prestigieux au cours de sa carrière. En 2002, elle reçoit la médaille d’argent ainsi que le Prix de la Meilleure interprétation de chorégraphie moderne lors du Concours international de Danse de Varna, en Bulgarie. La même année, elle obtient un diplôme et un Prix spécial au Concours international de Danse Vaganova à Saint-Pétersbourg.</p>
                                 <p>En 2001, elle est récompensée par un diplôme et un Prix spécial au Concours international de Danse de Moscou, ainsi qu’au Concours international de Danse d’Helsinki. En 2000, elle reçoit le Prix Nina Ananiashvili, décerné au « plus talentueux des jeunes danseurs », au Concours international de Danse « Arabesque » de Perm, en Russie.</p>
                                 <p>En tant qu’artiste invitée, elle a été soliste de 2003 à 2005 au sein du Young European Ballet, sous l’égide de l’UNESCO. Depuis 2002, elle participe régulièrement à des festivals et galas prestigieux tels que le Festival international de Danse classique Rudolf Noureev à Kazan (Tatarstan), le Festival de Danse classique « Siberian Crane » en Yakoutie, The Golden Mask à Moscou, le Mariinsky de Saint-Pétersbourg, Dance Open à Saint-Pétersbourg et Ballet Night in Bangkok.</p>
                             </div>
                         </div>
-                    <div class="section-content-image">
-                        <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/aleksandra-surodeev/aleksandra-surodeev.jpg" class="popup-image" title="Aleksandra Surodeev">
-                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/profs/aleksandra-surodeev/aleksandra-surodeev.jpg"
-                                     alt="Aleksandra Surodeev"
-                                     title="Aleksandra Surodeev" />
-                            </a>
+                        <div class="section-content-image">
+                            <div class="frame">
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/aleksandra-surodeev/aleksandra-surodeev.jpg" class="popup-image" title="Aleksandra Surodeev">
+                                    <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/profs/aleksandra-surodeev/aleksandra-surodeev.jpg"
+                                         alt="Aleksandra Surodeev"
+                                         title="Aleksandra Surodeev" />
+                                </a>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div class="section-row">
                         <div class="section-center">
@@ -163,7 +171,6 @@ get_header();
                                     <div class="three-items-item">
                                         <h4>Parcour</h4>
                                         <ul class="three-items-text">
-                                            <li>Née à Almaty (Kazakhstan)</li>
                                             <li>Ecole chorégraphique d’Almaty (Kazakhstan)</li>
                                             <li>Soliste au Ballet de l’Opéra national du Capitole</li>
                                             <li>Danseuse principale au Ballet de l’Opéra Tchaïkovski de Perm (Russie)</li>

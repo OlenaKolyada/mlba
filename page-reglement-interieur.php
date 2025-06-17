@@ -47,16 +47,7 @@ get_header();
                             déjà effectués. Si possibilité de planning <strong>un cours manqué peut être rattrapé.</strong></p>
 
                         <h4>1.3. Une participation au spectacle</h4>
-                        <p>Une participation financiere au spectacle sera requise auprès de chaque
-                            élève afin de permettre à la <strong>Mikhalev Lanssens Ballet Academy</strong> de couvrir une partie des frais
-                            inhérents à cet événement (location de salle, location ou création de costumes,
-                            décors et lumières, affiches, programmes, etc…).</p>
-                        <p>Le règlement de cette participation se fera entre le 15 novembre et 15 décembre.</p>
-                        <ul>
-                            <li><strong>Initiation classique ou contemporain : </strong>40 euros</li>
-                            <li><strong>Autres niveaux classique ou contemporain : </strong>45 euros</li>
-                            <li><strong>Classique + contemporain : </strong>80 euros</li>
-                        </ul>
+                        <p>La MLBA organisera un spectacle tous les deux ans. À cette occasion il sera demandé dans le courant du mois de novembre, une participation financière pour chaque élève afin d’engager les premiers frais inhérents à cet événement ( location de salle, décors, programmes, costumes etc…)</p>
                     </div>
                 </div>
             </div>
@@ -74,14 +65,15 @@ get_header();
                         <h4>2.1. Pré-inscription</h4>
                         <p><strong>Pré-inscription : </strong>Réalisable en ligne via le <a class="underlined" href="<?php echo get_permalink(124); ?>">formulaire</a>. Prise en compte à réception
                             ou à remise du coût de l’adhésion.</p>
-                            <p>Envoi de chèques au :</p>
-                            <p>152 Av. Jean Jaurès<br>
+                            <p>Envoi du paiement au :</p>
+                            <p>MLBA<br>
+                            152 Av. Jean Jaurès<br>
                             33600 Pessac</p>
                         <h4>2.2. Inscription</h4>
                         <p><strong>Inscription :</strong> En présentiel sur le lieu des cours, sur les jours annoncés via le site ou réseaux sociaux.</p>
                         <p>Documents à fournir :</p>
                         <ul>
-                            <li><strong>Formulaire d’inscription </strong>rempli (télécharger ici).</li>
+                            <li><strong>Formulaires d’inscription </strong>rempli (télécharger ici).</li>
                             <li><strong>Un certificat médical </strong>de non contre-indication à pratique de la danse</li>
                             <li><strong>Le(s) règlement(s) : </strong>inscription (adhésion)+ forfait annuel</li>
                         </ul>
@@ -128,7 +120,7 @@ get_header();
                         <p><strong>Tenue près du corps : </strong>T-shirt ou tunique, short, pantalon ou
                             legging et <strong>chaussettes réservées exclusivement au cours.</strong></p>
                         <p> <strong>Coiffure : </strong>Cheveux bien attachés.</p>
-                        <p><strong>Les bijoux et les montres sont strictement interdits</strong> dans les studios afin de protéger
+                        <p><strong>Les bijoux et les montres sont strictement interdits</strong> dans les studios de la MLBA afin de protéger
                             les tapis de danse.</p>
                         <p><strong>Les téléphones portables sont également interdits</strong> dans les studios, sauf pour les
                             professionnels d’astreinte.</p>
