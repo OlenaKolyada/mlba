@@ -1,0 +1,315 @@
+/* Hero */
+#hero {
+    position: relative;
+    height: 42rem;
+    overflow: hidden;
+    min-height: 90vh;
+}
+
+#hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+#hero-container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+#hero-content {
+    position: relative;
+    margin-top: 12rem;
+    z-index: 2;
+}
+
+#hero-title {
+    /* background: var(--blue-gradient-h1); */
+    /* -webkit-background-clip: text;
+    background-clip: text; */
+    color: black;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: var(--title-h1-hero);
+}
+
+#hero-subtitle {
+    font-size: var(--subtitle-h1-hero);
+    font-family: 'Oooh Baby';
+    font-weight: 100;
+    background: var(--mixed-gradient);
+    /* background-size: 300% 100%;
+    background-position: 0% center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text; */
+    background-clip: text;
+    color: transparent;
+}
+
+#hero-text {
+    font-size: var(--text-large);
+    font-family: 'Lora', serif;
+    margin-top: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+
+#hero-slogan {
+    font-size: var(--title-h2);
+    font-family: 'Oooh Baby', serif;
+    background: var(--mixed-gradient);
+    background-size: 300% 100%;
+    background-position: 0% center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: pulse-gradient 6s ease-in-out infinite alternate;
+    width: max-content;
+    margin: 1rem 0 0 auto;
+    padding-right: 1rem;
+    display: none;
+}
+
+@keyframes smooth-bounce {
+    0% {
+        transform: translateY(0) translateX(-50%);
+    }
+    50% {
+        transform: translateY(-2px) translateX(-50%);
+    }
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+/*@media screen and (min-width: 1920px) {*/
+/*    #hero {*/
+/*        height: 52rem;*/
+/*    }*/
+
+/*    #hero-content {*/
+/*        margin-top: 18rem;*/
+/*    }*/
+
+/*    #hero-text {*/
+/*        margin-top: 4rem;*/
+/*    }*/
+
+/*    #hero-slogan {*/
+/*        margin: 3rem 0 0 auto;*/
+/*    }*/
+/*}*/
+
+/* About */
+.main .about {
+    background-color: white;
+}
+
+.main .about .section-text {
+    width: 100%;
+}
+
+.main .about .three-items-item {
+    text-align: center;
+}
+
+
+/* Ballet */
+.main .ballet {
+    background: var(--grey-extra-light);
+}
+
+.main .ballet .section-text {
+    width: 100%;
+}
+
+.main .ballet .three-items-item {
+    text-align: center;
+
+}
+
+.ballet .items-row {
+    width: 95%;
+    margin-bottom: 0;
+}
+
+.main .ballet .three-items-item img {
+    filter: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg">\
+        <filter id="recolor" color-interpolation-filters="sRGB">\
+          <feColorMatrix type="matrix" values="\
+            0 0 0 0 0\
+            0 0 0 0 0.8\
+            0 0 0 0 0.741\
+            0 0 0 1 0"\
+          />\
+        </filter>\
+      </svg>#recolor');
+}
+
+/* Loisir */
+.main .loisir {
+    background-color: white;
+}
+
+.main .loisir .square-card-item:nth-child(1) {
+    background-image: url('../images/main/enfants-classique.jpg');
+}
+
+.main .loisir .square-card-item:nth-child(2) {
+    background-image: url('../images/main/adultes-classique.jpg');
+}
+
+.main .loisir .square-card-item:nth-child(3) {
+    background-image: url('../images/main/enfants-contemporain.jpg');
+}
+
+.main .loisir .square-card-item:nth-child(4) {
+    background-image: url('../images/main/adultes-contemporain.jpg');
+}
+
+/* Pro */
+.main .pro {
+    background: var(--grey-extra-light);
+}
+
+.main .pro .btn {
+    width: 17.5rem;
+    height: 3.75rem;
+    margin-top: 2.5rem;
+}
+
+.main .pro .decor-quote {
+    position: absolute;
+    font-family: 'Oooh Baby', serif;
+    font-size: var(--title-h2);
+    z-index: 1;
+    top: 77%;
+    left: 35.5%;
+    line-height: 1.4;
+}
+
+.main .pro .decor-quote-row:last-child {
+    transform: translateX(16.5rem);
+}
+
+.main .pro .decor-quote-white:nth-child(1) {
+    color: var(--white);
+    margin-left: 1.1rem;
+}
+
+.main .pro .decor-quote-white:nth-child(2) {
+    color: var(--white);
+}
+
+/* Gallery */
+.main .gallery {
+    background: var(--grey-light);
+}
+
+.gallery .section-row {
+    justify-content: center;
+}
+
+.main .gallery .swiper {
+    width: 60rem;
+}
+
+/* Stages  */
+.main .stages-social .social {
+    display: inline-block;
+    margin: 0 2px 0 0;
+}
+
+/* Contacts */
+.main .main-contacts {
+    background-image: url('../images/main/bg-contacts.jpg');
+}
+
+.main .main-contacts .section-container {
+    background-color: rgba(7, 35, 89, 0.8);
+    color: var(--white);
+    border-radius: 3px;
+}
+
+.main .main-contacts .section-text p {
+    font-size: var(--text-large);
+    font-weight: 100;
+}
+.main .main-contacts .items-row,
+.main .main-contacts .items-row-wrap {
+    margin-bottom: 1rem !important;
+}
+
+.main .main-contacts .three-items-item {
+    text-align: center;
+    font-size: var(--text-small);
+}
+
+.main .main-contacts .google-map,
+.main .main-contacts .google-map iframe {
+    width: 32rem;
+    height: 16rem;
+}
+
+.main .main-contacts .section-row {
+    align-items: flex-end;
+    gap: 6rem;
+}
+
+.main-contacts-icon {
+    width: 1rem;
+    display: inline-block;
+    filter: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg">\
+        <filter id="recolor" color-interpolation-filters="sRGB">\
+          <feColorMatrix type="matrix" values="\
+            0 0 0 0 0\
+            0 0 0 0 0.8\
+            0 0 0 0 0.741\
+            0 0 0 1 0"\
+          />\
+        </filter>\
+      </svg>#recolor');
+}
+
+/*Contacts Form*/
+.main .main-contacts form label {
+    color: var(--white);
+}
+
+.main .main-contacts a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.main .main-contacts .form-group .large {
+    max-width: 15rem !important;
+}
+
+.main .main-contacts a:hover {
+    color: white;
+}
+
+.main .main-contacts form .form-group input {
+    width: 13rem;
+}
+
+.main-contacts .checkbox-label-paragraph,
+.main-contacts .checkbox-label {
+    font-size: 0.8rem !important;
+}
+.main-contacts .btn {
+    margin-top: 0 !important;
+}
+

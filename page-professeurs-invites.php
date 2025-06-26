@@ -23,7 +23,7 @@ get_header();
                 <div class="section-row section-title">
                     <h2 class="title-has-subtilte">Ruslan Savdenov</h2>
                     <div class="subtitle">
-                        Danseur étoile international, soliste invité et interprète de grands rôles classiques
+                        Soliste de l'Opéra National du Capitole-Toulouse
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@ get_header();
                         <div class="three-items-wrap">
                             <div class="three-items-row">
                                 <div class="three-items-item">
-                                    <h4>Parcour</h4>
+                                    <h4>Parcours</h4>
                                     <ul class="three-items-text">
                                         <li>Conservatoire national de Kazan (Tatarstan)</li>
                                         <li>Ecole chorégraphique d’Almaty (Kazakhstan)</li>
@@ -141,7 +141,7 @@ get_header();
                     <div class="section-row section-title">
                         <h2 class="title-has-subtilte">Aleksandra Surodeev</h2>
                         <div class="subtitle">
-                            Danseuse étoile au parcours international, interprète des grands rôles du répertoire classique et contemporain
+                            Soliste du Ballet de l'Opéra National du Capitole
                         </div>
                     </div>
                     <div class="section-row">
@@ -169,7 +169,7 @@ get_header();
                             <div class="three-items-wrap">
                                 <div class="three-items-row">
                                     <div class="three-items-item">
-                                        <h4>Parcour</h4>
+                                        <h4>Parcours</h4>
                                         <ul class="three-items-text">
                                             <li>Ecole chorégraphique d’Almaty (Kazakhstan)</li>
                                             <li>Soliste au Ballet de l’Opéra national du Capitole</li>

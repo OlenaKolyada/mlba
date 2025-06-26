@@ -19,12 +19,12 @@ get_header();
     <!--	Presentation START -->
     <section class="section-wrap section-first no-padding-top" id="presentation">
     		<div class="container">
-    			<h1>Formation professionnelle en&nbsp;Danse&nbsp;Classique</h1>
+    			<h1>Formation professionnelle</h1>
     			<div class="section-row">
     				<div class="section-content-text">
     					<div class="section-text">
     						<h2>Présentation</h2>
-    						<p>Destinée aux jeunes danseurs passionnés souhaitant se préparer au métier de danseur professionnel,
+    						<p>Destinée aux jeunes danseurs passionnés de danse classique et souhaitant se préparer au métier de danseur professionnel,
     							cette section propose un enseignement complet et exigeant, alliant qualité, rigueur et transmission artistique.
     							Dirigée par Roman Mikhalev et Corinne Lanssens, tous deux issus de grandes écoles et riches de longues carrières
     							sur les scènes nationales et internationales, elle offre une formation solide, en adéquation avec les attentes du milieu professionnel.</p>
@@ -188,8 +188,8 @@ get_header();
                     </div>
     				<div class="section-content-image">
                         <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro5.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
-                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro5.jpg"
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/no-photo.jpg"
                                  alt="Mikhalev Lanssens Ballet Academy, Section Pro"
                                  title="Mikhalev Lanssens Ballet Academy, Section Pro" />
                             </a>

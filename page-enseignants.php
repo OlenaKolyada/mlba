@@ -94,7 +94,7 @@ get_header();
                         <div class="three-items-wrap">
                             <div class="three-items-row">
                                 <div class="three-items-item">
-                                    <h4>Parcour</h4>
+                                    <h4>Parcours</h4>
                                     <ul class="three-items-text">
                                         <li><strong>1999</strong> l’Ecole de Ballet Vaganova, Saint‑Pétersbourg</li>
                                         <li><strong>2003</strong> l’Opéra de Moussorgski (actuel Mikhailovsky)</li>
@@ -322,7 +322,7 @@ get_header();
                         <div class="three-items-wrap">
                             <div class="three-items-row">
                                 <div class="three-items-item">
-                                    <h4>Parcour</h4>
+                                    <h4>Parcours</h4>
                                     <ul class="three-items-text">
                                         <li><strong>Avant 1989</strong> Formation auprès de Marie‑Pierre Bianco, au CNR de Toulouse (Jean‑Pierre Guérin),
                                             puis CNSMD de Paris (Christiane Vaussard)</li>

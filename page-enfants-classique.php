@@ -28,7 +28,6 @@ get_header();
                                     Chaque cours se compose d’un travail à la barre puis d’un travail au milieu à travers des enchaînements de plus en plus complexes dont
                                     la technique évolue au fil des âges. Le travail de pointes pour les filles est abordé à partir des élémentaires 3 avec
                                     une attention toute particulière portée à cette étape. Un travail spécifique pour les garçons est proposé à partir de ce même niveau.</p>
-                                    <p><strong>Durée du cours :</strong> 1H</p>
                             </div>
                         </div>
                     </div>
