@@ -3,7 +3,6 @@
     padding-top: 15vh;
     background: #e4e4e4;
     overflow: hidden;
-    position: relative;
     height: 80vh;
 }
 
@@ -16,10 +15,10 @@
     justify-content: space-around;
 }
 
-#hero .hero-bg img {
+#hero img {
     position: absolute;
-    bottom: 0;
-    left: 60vw;
+    bottom: -18vh;
+    right: -10vw;
     width: auto;
     height: 75vh;
     object-fit: cover;
@@ -272,13 +271,9 @@
     #hero .hero-slogan p {
         font-size: 2rem;
     }
-
-
 }
 
-
 @media screen and (max-width: 1200px) {
-
 
     #loisir .cards .card-thumb img {
         width: 12rem;
@@ -336,12 +331,9 @@
     #main-contacts form {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 1024px) {
-
-
 
     #danse .btn {
         margin: 1rem 0;
@@ -390,7 +382,6 @@
 }
 
 @media screen and (max-width: 992px) {
-
 
     #hero .hero-slogan br {
         display: inline;
@@ -445,14 +436,31 @@
     #main-contacts .google-map iframe {
         width: 50rem;
     }
-
 }
 
 @media screen and (max-width: 768px) {
+    #hero {
+        padding-top: 10vh;
+    }
 
+    #hero img {
+        bottom: -20vh;
+    }
 
+    #hero .hero-title h1 {
+        font-size: 2.6rem;
+    }
 
+    #hero .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+    }
 
+    #hero .hero-slogan {
+        font-size: 2rem;
+    }
 
     #danse .three-items-wrap {
         display: none;
@@ -474,31 +482,12 @@
         width: 100%;
         padding: 2rem 2rem 1rem 2rem;
     }
-
 }
 
 @media (max-width: 624px) {
-    #hero {
-        padding-top: 10vh;
-    }
 
-    #hero .hero-bg img {
-        left: 50vw;
-    }
-
-    #hero .hero-title h1 {
-        font-size: 2.7rem;
-    }
-
-    #hero .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    #hero .hero-slogan {
-        font-size: 2rem;
+    #hero img {
+        right: -27vw;
     }
 
     #loisir .cards .card-thumb img {
@@ -537,9 +526,18 @@
     }
 }
 
+@media screen and (max-width: 552px) {
+    #hero img {
+        right: -44vw;
+    }
+}
+
 @media screen and (max-width: 480px) {
-    #hero .hero-bg img {
-        left: 45vw;
+
+    @media screen and (max-width: 552px) {
+        #hero img {
+            right: -50vw;
+        }
     }
 
     #hero .hero-title h1 {
@@ -577,9 +575,15 @@
     }
 }
 
+@media screen and (max-width: 453px) {
+    #hero img {
+        right: -58vw;
+    }
+}
+
 @media screen and (max-width: 425px) {
-    #hero .hero-bg img {
-        left: 40vw;
+    #hero img {
+        right: -60vw;
     }
 
     #hero .hero-title h1 {
@@ -614,12 +618,18 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
+    #hero img {
+        right: -64vw;
+    }
+}
 
+@media screen and (max-width: 375px) {
 
     #hero .hero-title h1 {
         font-size: 1.9rem;
     }
+
     #hero .hero-slogan {
         font-size: 1.8rem;
         max-width: 14rem;
@@ -627,6 +637,98 @@
 
 }
 
-@media screen and (max-width: 320px) {
-
+@media screen and (max-width: 348px) {
+    #hero img {
+        right: -78vw;
+    }
 }
+
+@media screen and (max-width: 320px) {
+    #hero .hero-title h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero .hero-slogan {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin: 1rem 0;
+        max-width: 12rem;
+    }
+
+    #hero img {
+        right: -80vw;
+    }
+}
+
+@media (width: 375px) and (height: 667px) {
+    #hero img {
+        right: -50vw;
+    }
+}
+
+@media (width: 390px) and (height: 655px) {
+    #hero img {
+        right: -50vw;
+    }
+}
+
+@media (width: 430px) and (height: 932px) {
+    #hero img {
+        right: -64vw;
+    }
+}
+
+@media (width: 360px) and (height: 740px) {
+    #hero img {
+        right: -60vw;
+    }
+}
+
+@media (width: 820px) and (height: 1180px) {
+    #hero img {
+        right: -20vw;
+    }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+    #hero .hero-slogan br {
+        display: inline;
+    }
+}
+
+@media (width: 912px) and (height: 1368px) {
+    #hero img {
+        right: -20vw;
+    }
+}
+
+@media (width: 540px) and (height: 720px) {
+    #hero img {
+        right: -35vw;
+    }
+}
+
+@media (width: 853px) and (height: 1280px) {
+    #hero img {
+        right: -20vw;
+    }
+}
+
+@media (width: 320px) and (height: 480px) {
+    #hero img {
+        right: -40vw;
+    }
+}
+
+@media (width: 320px) and (height: 568px) {
+    #hero img {
+        right: -50vw;
+    }
+}
+
+@media (width: 414px) and (height: 736px) {
+    #hero img {
+        right: -40vw;
+    }
+}
+

@@ -19,9 +19,6 @@ get_header();
 
 <!--Hero START-->
 	<section class="no-padding"  id="hero">
-        <div class="hero-bg">
-            <img src="<?php echo get_template_directory_uri();?>/assets/images/bg.jpg" alt="Mikhalev Lanssens Ballet Academy" title="Mikhalev Lanssens Ballet Academy" />
-        </div>
 		<div class="container">
 			<div class="hero-content">
 				<div class="hero-title notranslate" translate="no">
@@ -32,6 +29,7 @@ get_header();
 					<div class="btn btn-primary-color" id="hero-btn-loisir">Section Loisir</div>
 					<div class="btn btn-secondary-color"  id="hero-btn-pro">Section Pro</div>
 				</div>
+                <img src="<?php echo get_template_directory_uri();?>/assets/images/bg.jpg" alt="Mikhalev Lanssens Ballet Academy" title="Mikhalev Lanssens Ballet Academy" />
 			</div>
 		</div>
 	</section>
