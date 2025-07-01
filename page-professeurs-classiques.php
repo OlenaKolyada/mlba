@@ -26,10 +26,10 @@ get_header();
                         <div class="swiper swiper-section-small">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/roman-mikhalev.jpg" class="popup-gallery"  title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Crédit photo Marina Kudryashova">
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/roman-mikhalev.jpg" class="popup-gallery"  title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/roman-mikhalev.jpg"
-                                             alt="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Crédit photo Marina Kudryashova"
-                                             title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Crédit photo Marina Kudryashova">
+                                             alt="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                             title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
@@ -69,7 +69,7 @@ get_header();
                 </div>
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2 class="title-has-subtilte">Roman Mikhalev</h2>
+                        <h2 class="title-has-subtitle">Roman Mikhalev</h2>
                         <div class="subtitle">
                             Danseur étoile de l’Opéra National de Bordeaux
                         </div>
@@ -258,7 +258,7 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2 class="title-has-subtilte">Corinne Lanssens</h2>
+                        <h2 class="title-has-subtitle">Corinne Lanssens</h2>
                         <div class="subtitle">
                             Danseuse de l’Opéra National de Bordeaux
                         </div>
@@ -280,10 +280,10 @@ get_header();
                         <div class="swiper swiper-section-small">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/corinne-lanssens.jpg" class="popup-gallery"  title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Crédit photo Marina Kudryashova">
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/corinne-lanssens.jpg" class="popup-gallery"  title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/corinne-lanssens.jpg"
-                                             alt="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Crédit photo Marina Kudryashova"
-                                             title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Crédit photo Marina Kudryashova">
+                                             alt="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                             title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">

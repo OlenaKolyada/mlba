@@ -38,31 +38,31 @@ get_header();
                                     <div class="swiper swiper-section-small">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova">
+                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                     <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo1.jpg"
-                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova"
-                                                         title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova">
+                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                         title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova">
+                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                     <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo2.jpg"
-                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova"
-                                                         title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova">
+                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                         title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova">
+                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                     <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo3.jpg"
-                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova"
-                                                         title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova">
+                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                         title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 </a>
                                             </div>
                                         <div class="swiper-slide">
-                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo4.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova">
+                                                <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo4.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                     <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/ado-contemporain/ado-contempo4.jpg"
-                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova"
-                                                         title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo Marina Kudryashova">
+                                                         alt="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                         title="Mikhalev Lanssens Ballet Academy, Danse Ado Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 </a>
                                             </div>
 

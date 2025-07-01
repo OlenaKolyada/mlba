@@ -133,7 +133,7 @@ h5 {
     font-weight: bold;
 }
 
-.title-has-subtilte {
+.title-has-subtitle {
     margin-bottom: 0;
 }
 
@@ -156,6 +156,10 @@ a {
 	text-decoration: none;
 	transition: all 0.3s ease;
 	color: var(--black);
+}
+
+.no-margin {
+    margin: 0;
 }
 
 .underlined {

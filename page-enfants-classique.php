@@ -97,7 +97,7 @@ get_header();
                     <div class="section-row">
                         <div class="section-content-text">
                             <div class="section-text">
-                                <h2 class="title-has-subtilte">Initiation à&nbsp;la&nbsp;danse classique</h2>
+                                <h2 class="title-has-subtitle">Initiation à&nbsp;la&nbsp;danse classique</h2>
                                 <p class="subtitle">6-7 ans</p>
                                 <p>Un cours d’une heure, qui accueille l’enfant par des rituels rassurants, dont un échauffement
                                     progressif qui développe connaissance et respect de son corps. S’y acquiert également,
@@ -159,7 +159,7 @@ get_header();
                     <div class="section-row">
                         <div class="section-content-text">
                             <div class="section-text">
-                                <h2 class="title-has-subtilte">Classique Elémentaire Niveau&nbsp;1</h2>
+                                <h2 class="title-has-subtitle">Classique Elémentaire Niveau&nbsp;1</h2>
                                 <p class="subtitle">8-9 ans</p>
                                 <p>Dès l’âge requis de 8 ans, ce cours répond au désir de l’enfant de pratiquer la technique de
                                     la danse classique. Il y fait l’apprentissage des bases, tels que les ports de bras et ports de
@@ -170,7 +170,7 @@ get_header();
                                     seront proposés afin d’affiner leur écoute musicale, encourager leur expressivité, explorer
                                     leur propre créativité, et enrichir leur langage dansé grâce à l’acquisition de différentes
                                     combinaisons de pas.</p>
-                                <p><strong>Mercredi 15h-16h30</strong></p>
+                                <p><strong>Mercredi 16h30-18h</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -221,7 +221,7 @@ get_header();
                     <div class="section-row">
                         <div class="section-content-text">
                             <div class="section-text">
-                                <h2 class="title-has-subtilte">Classique Elémentaire Niveau&nbsp;2</h2>
+                                <h2 class="title-has-subtitle">Classique Elémentaire Niveau&nbsp;2</h2>
                                 <p class="subtitle">10-12 ans</p>
                                 <p>Dans ce cours, grâce à une meilleure maîtrise et connaissance corporelle, le travail «&nbsp;à la
                                     barre&nbsp;» se poursuit et se complète, ainsi que les exercices et la technique de certains pas
@@ -242,24 +242,24 @@ get_header();
                                 <div class="swiper swiper-section-small">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem2/elem2-1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens.  Crédit photo Marina Kudryashova">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem2/elem2-1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens.  Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem2/elem2-1.jpg"
-                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo Marina Kudryashova"
-                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo Marina Kudryashova">
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                             </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem2/elem2-2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens.  Crédit photo Marina Kudryashova">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem2/elem2-2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens.  Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem2/elem2-2.jpg"
-                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo Marina Kudryashova"
-                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo Marina Kudryashova">
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                             </a>
                                         </div>
                                         <div class="swiper-slide">
                                             <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem2/elem2-3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem2/elem2-3.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo Marina Kudryashova"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo Marina Kudryashova">
+                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                 title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 2. Professeuse Corinne Lanssens. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                             </a>
                                         </div>
 
@@ -282,7 +282,7 @@ get_header();
                     <div class="section-row">
                         <div class="section-content-text">
                             <div class="section-text">
-                                <h2 class="title-has-subtilte">Classique Elémentaire Niveau&nbsp;3</h2>
+                                <h2 class="title-has-subtitle">Classique Elémentaire Niveau&nbsp;3</h2>
                                 <p class="subtitle">13-14 ans</p>
                                 <p>Continuité et complexification des apprentissages à la barre et au milieu, avec de nouveaux
                                     pas techniques abordés, notamment avec le travail de pirouettes et de sauts.</p>
@@ -303,17 +303,17 @@ get_header();
                                 <div class="swiper swiper-section-small">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo Marina Kudryashova">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-1.jpg"
-                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo Marina Kudryashova"
-                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo Marina Kudryashova">
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                             </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo Marina Kudryashova">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/elem3/elem3-2.jpg"
-                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo Marina Kudryashova"
-                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo Marina Kudryashova" />
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Elémentaire Niveau 3. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)" />
                                             </a>
                                         </div>
                                     </div>
@@ -334,7 +334,7 @@ get_header();
                     <div class="section-row">
                         <div class="section-content-text">
                             <div class="section-text">
-                                <h2 class="title-has-subtilte">Classique Avancé</h2>
+                                <h2 class="title-has-subtitle">Classique Avancé</h2>
                                 <p class="subtitle">À partir de 15 ans</p>
                                 <p>Ce niveau met l’accent sur la bonne maitrise de la technique de la danse classique ainsi que
                                     sur l’aisance de l’expressivité artistique. Le professeur affinera la technique de l’élève et
@@ -354,24 +354,24 @@ get_header();
                                 <div class="swiper swiper-section-small">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova">
+                                            <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance1.jpg"
-                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova"
-                                                     title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova">
+                                                     alt="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                     title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                             </a>
                                         </div>
                                     <div class="swiper-slide">
-                                        <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova">
+                                        <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance2.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova">
+                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                 title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova">
+                                        <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                             <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/enfants-ado-classique/avance/avance3.jpg"
-                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova"
-                                                 title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo Marina Kudryashova">
+                                                 alt="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                 title="Mikhalev Lanssens Ballet Academy, Classique Avancé. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                         </a>
                                     </div>
                                     </div>

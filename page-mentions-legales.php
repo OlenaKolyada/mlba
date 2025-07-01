@@ -94,7 +94,7 @@ get_header();
                         <p>Olena Kolyada<br><a href="https://funkycorgi.com" target="_blank" class="underlined">funkycorgi.com</a></p>
                         <h5>Photos</h5>
                         <ul>
-                            <li>Marina Kudryashova</li>
+                            <li>O.R. Studio (Marina Kudryashova et Oleg Rogachev)</li>
                             <li>Sigried Colomyès</li>
                         </ul>
                     </div>

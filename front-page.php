@@ -35,16 +35,36 @@ get_header();
 	</section>
 <!--Hero END-->
 
+<!--	Inscription Dates START-->
+<section class="section-wrap" id="main-inscription-dates">
+    <div class="container">
+        <div class="section-row">
+            <div class="section-center">
+                <div class="main-inscription-dates">
+                    <h2><span>Dates d’inscriptions en présentiel&nbsp;:</span></h2>
+                    <ul>
+                        <li>Samedi 30 août 10h-13h</li>
+                        <li>Mercredi 3 septembre 18h-20h</li>
+                        <li>Samedi 6 septembre 10h-13h</li>
+                    <ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--	Inscription Dates END-->
+
+
 <!--	About START-->
 	<section class="section-wrap" id="about">
 		<div class="container">
 			<div class="section-row">
 				<div class="section-content-image">
 					<div class="frame">
-                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg" class="popup-image" title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo Marina Kudryashova">
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg" class="popup-image" title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg"
-                                 alt="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo Marina Kudryashova"
-                                 title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo Marina Kudryashova" />
+                                 alt="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                 title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)" />
                         </a>
 					</div>
 				</div>
@@ -75,7 +95,7 @@ get_header();
 							<div class="three-items-item">
 								<img class="icon" src="<?php echo get_template_directory_uri();?>/assets/icons/star.svg" alt="">
 								<h4>Diversité</h4>
-								<p class="three-items-text">Danse Classique (École française et russe) et Contemporaine, pour se découvrir,
+								<p class="three-items-text">Danse Classique (méthode française et méthode Vaganova) et Contemporaine, pour se découvrir,
 									s’éveiller, s’enrichir et partager</p>
 							</div>
 						</div>
@@ -306,42 +326,42 @@ get_header();
 					<div class="swiper swiper-main-gallery">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-1.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-1.jpg" class="popup-image"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
                                 <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-1.jpg"
                                      alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
                                      title="Galerie des photos de Mikhalev Lanssens Ballet Academy"
                                      class="horisontal" />
                                 </a>
 							</div>
-							<div class="swiper-slide">
-                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-2.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-2.jpg"
-                                     alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
-                                     title="Galerie des photos de Mikhalev Lanssens Ballet Academy"
-                                     class="horisontal" />
-                                </a>
-							</div>
-							<div class="swiper-slide">
-                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-3.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-3.jpg"
-                                         alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
-                                         title="Galerie des photos de Mikhalev Lanssens Ballet Academy"
-                                         class="horisontal" />
-                                </a>
-							</div>
-							<div class="swiper-slide">
-                                <a href="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-4.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/main-gallery/main-gallery-4.jpg"
-                                         alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"
-                                         title="Galerie des photos de Mikhalev Lanssens Ballet Academy"
-                                         class="horisontal" />
-                                </a>
-							</div>
+<!--							<div class="swiper-slide">-->
+<!--                                <a href="--><?php //echo get_template_directory_uri();?><!--/assets/images/main-gallery/main-gallery-2.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">-->
+<!--                                <img src="--><?php //echo get_template_directory_uri();?><!--/assets/images/main-gallery/main-gallery-2.jpg"-->
+<!--                                     alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"-->
+<!--                                     title="Galerie des photos de Mikhalev Lanssens Ballet Academy"-->
+<!--                                     class="horisontal" />-->
+<!--                                </a>-->
+<!--							</div>-->
+<!--							<div class="swiper-slide">-->
+<!--                                <a href="--><?php //echo get_template_directory_uri();?><!--/assets/images/main-gallery/main-gallery-3.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">-->
+<!--                                    <img src="--><?php //echo get_template_directory_uri();?><!--/assets/images/main-gallery/main-gallery-3.jpg"-->
+<!--                                         alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"-->
+<!--                                         title="Galerie des photos de Mikhalev Lanssens Ballet Academy"-->
+<!--                                         class="horisontal" />-->
+<!--                                </a>-->
+<!--							</div>-->
+<!--							<div class="swiper-slide">-->
+<!--                                <a href="--><?php //echo get_template_directory_uri();?><!--/assets/images/main-gallery/main-gallery-4.jpg" class="popup-gallery"  title="Galerie des photos de Mikhalev Lanssens Ballet Academy">-->
+<!--                                    <img src="--><?php //echo get_template_directory_uri();?><!--/assets/images/main-gallery/main-gallery-4.jpg"-->
+<!--                                         alt="Galerie des photos de Mikhalev Lanssens Ballet Academy"-->
+<!--                                         title="Galerie des photos de Mikhalev Lanssens Ballet Academy"-->
+<!--                                         class="horisontal" />-->
+<!--                                </a>-->
+<!--							</div>-->
 
 						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+<!--						<div class="swiper-pagination"></div>-->
+<!--						<div class="swiper-button-prev"></div>-->
+<!--						<div class="swiper-button-next"></div>-->
 					</div>
 				</div>
 			</div>

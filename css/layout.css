@@ -288,6 +288,42 @@ section.no-padding-top {
 }
 /* Three Items Row END */
 
+/*Two List START*/
+.two-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.two-list li {
+    margin-bottom: 1rem;
+}
+
+.two-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.two-list li a {
+    color: var(--grey);
+}
+
+.two-list li a:hover {
+    color: var(--primary-color);
+}
+
+.two-list .two-list-item p {
+    margin: 0;
+}
+
+.two-list .two-list-item .read-more-link {
+    margin-bottom: 3rem;
+}
+
+.two-list .two-list-item .item-text {
+    margin-top: 1rem;
+}
+
+/*Two List END*/
 
 /* Cards START */
 .cards {
@@ -383,8 +419,10 @@ section.no-padding-top.longread  {
 }
 
 section.longread h2 span {
-    border-bottom: 3px solid var(--primary-color);
-    display: inline-block;
+    background-image: linear-gradient(var(--primary-color), var(--primary-color));
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 3px;
 }
 
 section.longread ul {
@@ -472,11 +510,11 @@ section.longread .address {
 
     .section-content-text {
         order: 1;
-        width: 80%;
+        width: 100%;
     }
 
     .section-row.section-title {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -526,7 +564,7 @@ section.longread .address {
     }
 
     .section-center {
-        width: 80%;
+        width: 100%;
     }
 
     .section-center .section-text {
@@ -558,6 +596,11 @@ section.longread .address {
 
     .three-items-item {
         width: 50%;
+    }
+
+    .two-list {
+        flex-direction: column;
+        gap: 0;
     }
 
     .swiper-slide img.horisontal {
@@ -608,7 +651,9 @@ section.longread .address {
 }
 
 @media screen and (max-width: 480px) {
-
+    .section-content-text {
+        width: 100%;
+    }
 
     .section-first {
         margin: 2rem 0 1rem;
@@ -638,12 +683,16 @@ section.longread .address {
     .swiper-button-next {
         display: none;
     }
+
+    .two-list ul {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 425px) {
 
     section.longread h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 

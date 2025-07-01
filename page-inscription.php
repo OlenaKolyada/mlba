@@ -21,8 +21,23 @@ get_header();
             <h1>Pre-inscription</h1>
             <div class="section-row">
                 <div class="section-center">
+                    <p>La pré-inscription vous permet de réserver une place sur le cours choisit dés à présent. Les inscriptions se finalisent EN PRÉSENTIEL en ayant au préalable télécharger et rempli la <a href="<?php echo get_template_directory_uri();?>/assets/pdf/inscription.pdf">fiche de renseignement</a> et celle des <a href="<?php echo get_template_directory_uri();?>/assets/pdf/authorisation.pdf">autorisations parentales</a>.</p>
+
+                    <div class="inscription-dates">
+                        <h4><span>Dates d’inscriptions en présentiel&nbsp;:</span></h4>
+                        <ul>
+                            <li>Samedi 30 août 10h-13h</li>
+                            <li>Mercredi 3 septembre 18h-20h</li>
+                            <li>Samedi 6 septembre 10h-13h</li>
+                        <ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-row">
+                <div class="section-center">
                     <div class="section-text">
                         <div id="inscription-form-message" class="form-message" aria-live="polite"></div>
+
                         <div class="form-wrap">
                             <form class="form-container" action="" method="post" id="inscription-form">
 
@@ -121,7 +136,7 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
                                                         <input type="checkbox" name="schedule_1[]" value="Elémentaire 1 : Mercredi 15h-16h30">
-                                                        <span>Mercredi<br>15h-16h30</span>
+                                                        <span>Mercredi<br>16h30-18h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -300,7 +315,7 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
                                                         <input type="checkbox" name="schedule_1[]" value="Elémentaire 1 : Mercredi 15h-16h30">
-                                                        <span>Mercredi<br>15h-16h30</span>
+                                                        <span>Mercredi<br>16h30-18h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -482,7 +497,7 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label>
                                                         <input type="checkbox" name="schedule_1[]" value="Elémentaire 1 : Mercredi 15h-16h30">
-                                                        <span>Mercredi<br>15h-16h30</span>
+                                                        <span>Mercredi<br>16h30-18h</span>
                                                     </label>
                                                 </fieldset>
                                             </div>

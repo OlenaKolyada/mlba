@@ -136,7 +136,64 @@ section:nth-child(even) {
 #professeurs-invites .mobile-only {
     display: none;
 }
+
+#yumi-aizawa .section-row:last-of-type {
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+#yumi-aizawa .read-more-link {
+    margin-bottom: 2rem;
+}
+
 /* Professeurs Invites END */
+
+/* Professeurs Caractere START */
+#professeurs-caractere .swiper-section-small {
+    width: 360px;
+    height: auto;
+}
+
+#professeurs-caractere .three-items-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    width: 30%;
+}
+
+#professeurs-caractere .three-items-item h4 {
+    margin-bottom: 0.6rem;
+}
+
+#professeurs-caractere .three-items-item ul {
+    padding: 0;
+}
+
+#professeurs-caractere ul li {
+    text-indent: -0.65rem;
+    padding-left: 0.65rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+
+#professeurs-caractere .cards {
+    margin-top: 3rem;
+}
+
+#professeurs-caractere .card-item iframe {
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+#professeurs-caractere .mobile-only {
+    display: none;
+}
+/* Professeurs Caractere END */
 
 /* Studio START */
 #studio .swiper-frame {
@@ -323,13 +380,55 @@ section:nth-child(even) {
 }
 /*Adulte Contemporain END*/
 
+/*Barre START*/
+#barre p:has(+ ul) {
+    margin-bottom: 0;
+}
+
+#barre ul {
+    list-style: disc;
+    margin-bottom: 1rem;
+}
+
+#barre .swiper-section-small {
+    width: 360px;
+    height: 480px;
+}
+
+#barre .swiper-section-small .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#barre .swiper-section-small .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#barre .swiper-section-small .swiper-slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#barre p:last-of-type {
+    margin-bottom: 2rem;
+}
+/*Barre END*/
+
 /*Planning START*/
+#planning .section-content-text {
+    width: 100%;
+}
 #planning .schedule-table {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--grey-light);
     width: 100%;
-    max-width: 1200px;
     min-width: 320px;
     margin: 0 auto;
     border-collapse: collapse;
@@ -350,9 +449,9 @@ section:nth-child(even) {
 #planning .schedule-cell {
     flex: 1 1 0;
     min-width: 0;
-    padding: 1rem;
+    padding: 0.5rem;
     box-sizing: border-box;
-    min-height: 3rem;
+    min-height: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -360,13 +459,19 @@ section:nth-child(even) {
     justify-content: center;
 }
 
-.schedule-item {
-    padding: 0.5rem 1rem;
+#planning .schedule-item {
+    padding: 0.3rem 0.5rem;
     border-radius: 50px;
     text-align: center;
-    width: 12rem;
-    font-size: 0.8rem;
+    width: 11rem;
+    font-size: 0.7rem;
 }
+
+#planning .schedule-item h5 {
+    font-size: 0.9rem;
+}
+
+
 
 #planning .schedule-row:not(.schedule-header) .schedule-cell:not(:last-child),
 #planning .schedule-header .schedule-cell:not(:last-child) {
@@ -386,7 +491,7 @@ section:nth-child(even) {
 }
 
 .elem-3 {
-    background: #e7d1fb;
+    background: #dbb6fc;
 }
 
 .ado-avance {
@@ -403,6 +508,14 @@ section:nth-child(even) {
 
 .adulte-contempo {
     background: #fadfac;
+}
+
+.barre {
+    background: #fef2e8;
+}
+
+.cours-particuliers {
+    background: var(--grey-extra-light);
 }
 
 #planning .section-row,
@@ -706,11 +819,12 @@ section:nth-child(even) {
 
     #planning .schedule-item {
         padding: 0.5rem 0.7rem;
-        width: 10rem;
+        width: 9rem;
+        font-size: 0.7rem;
     }
 
     #planning .schedule-item h5 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #tarifs .tarif-table.large {
@@ -786,10 +900,9 @@ section:nth-child(even) {
         margin: 3rem 0 1rem 0;
     }
 
-
     .section-content-text {
         order: 2;
-        width: 80%;
+        width: 100%;
     }
 
     .section-content-image {
@@ -803,6 +916,10 @@ section:nth-child(even) {
 
     #professeurs-invites .three-items-wrap {
         margin: 3rem 0 1rem 0;
+    }
+
+    #yumi-aizawa .section-row:last-of-type .section-center {
+        align-items: flex-start;
     }
 
     #enfants-classique .section-content-text,
@@ -891,14 +1008,22 @@ section:nth-child(even) {
         margin-top: 3rem;
     }
 
-    #planning .schedule-item {
-        padding: 0.5rem 0.7rem;
-        width: 9rem;
-        font-size: 0.7rem;
+    #barre .section-content-text,
+    #barre .section-center {
+        width: 100%;
     }
 
-    #planning .schedule-item h5 {
-        font-size: 0.8rem;
+    #barre .swiper-section-small {
+        width: 450px;
+        height: auto;
+    }
+
+    #barre .swiper-section-small .swiper-slide img {
+        height: 600px;
+    }
+
+    #barre .section-content-image .frame {
+        margin-top: 3rem;
     }
 
     #tarifs .section-content-text {
@@ -970,13 +1095,13 @@ section:nth-child(even) {
     }
 
     #planning .schedule-item {
-        padding: 0.5rem 0.5rem;
-        width: 8rem;
-        font-size: 0.7rem;
+        padding: 0.5rem;
+        width: 7rem;
+        font-size: 0.6rem;
     }
 
     #planning .schedule-item h5 {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     #tarifs .highlight {
@@ -1034,6 +1159,10 @@ section:nth-child(even) {
     #professeurs-invites .cards {
         row-gap: 2rem;
         column-gap: 2rem;
+    }
+
+    #professeurs-invites #yumi-aizawa .section-row:last-of-type {
+        align-items: center;
     }
 
     #studio .swiper {
@@ -1382,7 +1511,16 @@ section:nth-child(even) {
         width: 80vw;
     }
 
-    #adule-contemporain .swiper-section-small .swiper-slide img {
+    #adulte-contemporain .swiper-section-small .swiper-slide img {
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
+    #barre .swiper-section-small {
+        width: 80vw;
+    }
+
+    #barre .swiper-section-small .swiper-slide img {
         height: auto;
         aspect-ratio: 3/4;
     }
@@ -1459,6 +1597,10 @@ section:nth-child(even) {
     }
 
     #adulte-contemporain .section-content-image .frame {
+        margin-top: 2rem;
+    }
+
+    #barre .section-content-image .frame {
         margin-top: 2rem;
     }
 

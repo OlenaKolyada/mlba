@@ -16,7 +16,7 @@ get_header();
 ?>
 
     <main class="main" class="professeurs" id="professeurs-contemporain">
-    <!--	Alexiz Sere START-->
+    <!--	Alexia Sere START-->
     <section class="section-wrap section-first no-padding-top" id="alexia-sere">
         <div class="container">
             <h1>Les Professeurs Contempoarain</h1>
@@ -52,7 +52,7 @@ get_header();
                 </div>
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2 class="title-has-subtilte">Alexia Séré</h2>
+                        <h2 class="title-has-subtitle">Alexia Séré</h2>
                         <div class="subtitle">
                             Professeure de danse contemporaine, chorégraphe et pédagogue engagée
                         </div>
