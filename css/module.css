@@ -363,7 +363,7 @@ section h1 {
 }
 /* Google Map END */
 
-/* Three Items Row START */
+/* Three Items START */
 .three-items-wrap {
     display: flex;
     justify-content: center;
@@ -390,44 +390,114 @@ section h1 {
 .three-items-item h4 {
     margin-bottom: 0;
 }
-/* Three Items Row END */
+/* Three Items END */
 
-/*Two List START*/
-.two-list {
+/* Two List START */
+.two-list-wrap {
+    display: flex;
+    justify-content: left;
+    margin-top: 2.5rem;
+}
+
+.two-list-row {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    justify-content: left;
+    width: 100%;
+    gap: 4rem;
 }
 
-.two-list li {
-    margin-bottom: 1rem;
+.two-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    width: 50%;
 }
 
-.two-list li:last-of-type {
-    margin-bottom: 0;
+.two-list-item h4 {
+    margin-bottom: 0.6rem;
 }
 
-.two-list li a {
-    color: var(--grey);
+.two-list-item ul {
+    padding: 0;
 }
 
-.two-list li a:hover {
+.two-list-item a {
+    text-decoration: underline;
+}
+
+.two-list-item a:hover {
     color: var(--primary-color);
 }
 
-.two-list .two-list-item p {
-    margin: 0;
-}
-
-.two-list .two-list-item .read-more-link {
-    margin-bottom: 3rem;
-}
-
-.two-list .two-list-item .item-text {
-    margin-top: 1rem;
-}
-
 /*Two List END*/
+
+/* Three List START */
+.three-list-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.three-list-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.three-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    width: 30%;
+}
+
+.three-list-item h4 {
+    margin-bottom: 0.6rem;
+}
+
+.three-list-item ul {
+    padding: 0;
+}
+/* Three List END */
+
+/* Four List START */
+.four-list-wrap {
+    width: 100%;
+}
+.four-list-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.four-list-item {
+    width: 23%;
+}
+
+.four-list-item-text {
+    margin-top: 1rem;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.hidden-text .four-list-item-text {
+    margin-top: 0;
+}
+
+.four-list-item-text li {
+    margin-bottom: 0.5rem !important;
+}
+
+
+/* Four List END */
 
 /* Cards START */
 .cards {
@@ -492,6 +562,7 @@ section h1 {
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s;
+    text-decoration: none !important;
 }
 
 .read-more-link:hover {
@@ -533,6 +604,10 @@ section h1 {
         margin-top: 2rem;
     }
 
+    .two-list-item {
+        width: 40%;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -570,6 +645,30 @@ section h1 {
     .cards .card-title {
         margin: 0.7rem 0 0 0;
     }
+
+    .three-list-wrap {
+        margin: 3rem 0 1rem 0;
+    }
+
+    .two-list-item {
+        width: 50%;
+    }
+
+    .two-list-row {
+        gap: 0;
+    }
+
+    .four-list-row {
+        flex-wrap: wrap;
+    }
+
+    .four-list-item {
+        width: 50%;
+    }
+
+    .four-list-item-text {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -594,6 +693,25 @@ section h1 {
         max-width: 50rem;
         margin: 1rem auto 0;
     }
+
+    .three-list-wrap {
+        margin: 2rem 0 1rem 0;
+        gap: 1rem;
+    }
+
+    .three-list-row {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+
+    .three-list-item {
+        width: 100%;
+    }
+
+    .four-list-item {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -610,11 +728,8 @@ section h1 {
         margin-top: 1.5rem;
     }
 
-
-
-    .two-list {
-        flex-direction: column;
-        gap: 0;
+    .two-list-row {
+        gap: 2rem;
     }
 
     .swiper-slide img.horisontal {
@@ -631,6 +746,15 @@ section h1 {
         height: auto;
         object-fit: contain;
     }
+
+    .four-list-row {
+        flex-direction: column;
+    }
+
+    .four-list-item {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 624px) {
@@ -686,6 +810,14 @@ section h1 {
         margin-top: 0;
     }
 
+    .two-list-row {
+        flex-direction: column;
+    }
+
+    .two-list-item {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -714,14 +846,14 @@ section h1 {
         width: 70%;
     }
 
+
+
     .swiper-button-prev,
     .swiper-button-next {
         display: none;
     }
 
-    .two-list ul {
-        padding: 0;
-    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -739,6 +871,10 @@ section h1 {
 
 @media screen and (max-width: 375px) {
     .three-items-item {
+        width: 100%;
+    }
+
+    .three-list-item {
         width: 100%;
     }
 

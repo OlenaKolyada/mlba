@@ -261,12 +261,14 @@ section.longread .address {
 
     .section-content-text,
     .section-content-center {
-        width: 90%;
+        width: 100%;
     }
 
     .section-content-center .section-text {
         text-align: left;
     }
+
+
 
     .section-background-image,
     .section-background-image .container {

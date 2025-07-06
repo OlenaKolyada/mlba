@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-    <main class="main" class="professeurs" id="professeurs-contemporain">
+    <main class="main professeurs" id="professeurs-contemporain">
     <!--	Alexia Sere START-->
     <section class="section-wrap section-first no-padding-top" id="alexia-sere">
         <div class="container">

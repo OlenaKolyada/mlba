@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-    <main class="main" class="professeurs" id="professeurs-classiques">
+    <main class="main professeurs" id="professeurs-classiques">
     <!--	Roman Mikhalev START-->
     <section class="section-wrap section-first no-padding-top" id="roman-mikhalev">
         <div class="container">
@@ -91,11 +91,11 @@ get_header();
             </div>
             <div class="section-row">
                 <div class="section-content-center">
-                    <div class="three-items-wrap">
-                        <div class="three-items-row">
-                            <div class="three-items-item">
+                    <div class="three-list-wrap">
+                        <div class="three-list-row">
+                            <div class="three-list-item">
                                 <h4>Parcours</h4>
-                                <ul class="three-items-text">
+                                <ul class="three-list-item-text">
                                     <li><strong>1999</strong> l’Ecole de Ballet Vaganova, Saint‑Pétersbourg</li>
                                     <li><strong>2003</strong> l’Opéra de Moussorgski (actuel Mikhailovsky)</li>
                                     <li><strong>2004</strong> Nommé soliste</li>
@@ -103,7 +103,7 @@ get_header();
                                     <li><strong>2012</strong> Nommé Danseur Etoile</li>
                                 </ul>
                                 <div class="hidden-text">
-                                    <ul class="item-text">
+                                    <ul class="three-list-item-text">
                                         <li><strong>2018</strong> Assistant Maître de Ballet sur la production de «&nbsp;Blanche‑Neige&nbsp;» de Angelin Preljocaj</li>
                                         <li><strong>2018</strong> Obtient le diplôme d’état pour l’enseignement de la danse classique</li>
                                         <li><strong>2021</strong> Co‑Directeur et enseignant de la Jude Mikhalev Ballet Academy, Section Loisir et Professionnelle</li>
@@ -115,9 +115,9 @@ get_header();
                                     <span class="text-close">Afficher moins</span>
                                 </a>
                             </div>
-                            <div class="three-items-item">
+                            <div class="three-list-item">
                                 <h4>Ballet classique</h4>
-                                <ul class="three-items-text">
+                                <ul class="three-list-item-text">
                                     <li>«&nbsp;Coppélia&nbsp;»</li>
                                     <li>«&nbsp;Don Quichotte&nbsp;»</li>
                                     <li>«&nbsp;Casse‑noisette&nbsp;»</li>
@@ -127,7 +127,7 @@ get_header();
                                     <li>«&nbsp;Roméo et Juliette&nbsp;» de Charles Jude</li>
                                 </ul>
                                 <div class="hidden-text">
-                                    <ul class="item-text">
+                                    <ul class="three-list-item-text">
                                         <li>«&nbsp;Petrouchka&nbsp;»</li>
                                         <li>«&nbsp;Le Spectre de la Rose&nbsp;» de Michel Fokine</li>
                                         <li>«&nbsp;Les Noces&nbsp;» de Bronislava Nijinska (L’Ami)</li>
@@ -142,9 +142,9 @@ get_header();
                                     <span class="text-close">Afficher moins</span>
                                 </a>
                             </div>
-                            <div class="three-items-item">
+                            <div class="three-list-item">
                                 <h4>Ballet contemporain</h4>
-                                <ul class="three-items-text">
+                                <ul class="three-list-item-text">
                                     <li>«&nbsp;Clic‑Pause‑Silence&nbsp;» de Jiri Kylian</li>
                                     <li>«&nbsp;Petite Mort&nbsp;» de Jiri Kylian</li>
                                     <li>«&nbsp;In The Middle Somewhat Elevated&nbsp;» de William Forsythe</li>
@@ -153,7 +153,7 @@ get_header();
                                     <li>«&nbsp;Tétris&nbsp;» (création) d’Anthony Egéa</li>
                                 </ul>
                                 <div class="hidden-text">
-                                    <ul class="item-text">
+                                    <ul class="three-list-item-text">
                                         <li>«&nbsp;Bottom of my Sea&nbsp;» de Ludmila Komkova</li>
                                         <li>«&nbsp;Zatoichi&nbsp;» (création) de Carlotta Ikéda</li>
                                         <li>«&nbsp;Les Indomptés&nbsp;»</li>
@@ -319,11 +319,11 @@ get_header();
 
             <div class="section-row">
                 <div class="section-content-center">
-                    <div class="three-items-wrap">
-                        <div class="three-items-row">
-                            <div class="three-items-item">
+                    <div class="three-list-wrap">
+                        <div class="three-list-row">
+                            <div class="three-list-item">
                                 <h4>Parcours</h4>
-                                <ul class="three-items-text">
+                                <ul class="three-list-item-text">
                                     <li><strong>Avant 1989</strong> Formation auprès de Marie‑Pierre Bianco, au CNR de Toulouse (Jean‑Pierre Guérin),
                                         puis CNSMD de Paris (Christiane Vaussard)</li>
                                     <li><strong>1989</strong> Engagée au Jeune Ballet de France (dir. Robert Berthier)</li>
@@ -333,7 +333,7 @@ get_header();
                                     <li><strong>1993</strong> Intègre le Ballet de l’Opéra National de Bordeaux (dir. Paolo Bortoluzzi)</li>
                                 </ul>
                                 <div class="hidden-text">
-                                    <ul class="item-text">
+                                    <ul class="three-list-item-text">
                                         <li><strong>1994</strong> Travaille sous la direction d’Éric Vu‑An</li>
                                         <li><strong>1996</strong> Danse sous la direction de Charles Jude</li>
                                         <li><strong>2013</strong> Quitte la scène après 25 ans de carrière (dont 20 à Bordeaux)</li>
@@ -347,9 +347,9 @@ get_header();
                                     <span class="text-close">Afficher moins</span>
                                 </a>
                             </div>
-                            <div class="three-items-item">
+                            <div class="three-list-item">
                                 <h4>Ballet classique</h4>
-                                <ul class="three-items-text">
+                                <ul class="three-list-item-text">
                                     <li>«&nbsp;Le Lac des Cygnes&nbsp;» (Pas de Trois)</li>
                                     <li>«&nbsp;Giselle&nbsp;» (Myrtha, Le Pas De Six)</li>
                                     <li>«&nbsp;Casse‑Noisette&nbsp;» (Colombine)</li>
@@ -362,9 +362,9 @@ get_header();
                                 </ul>
 
                            </div>
-                            <div class="three-items-item">
+                            <div class="three-list-item">
                                 <h4>Ballet contemporain</h4>
-                                <ul class="three-items-text">
+                                <ul class="three-list-item-text">
                                     <li>«&nbsp;Sérénade&nbsp;» de Georges Balanchin</li>
                                     <li>«&nbsp;Who Cares (The Man I Love)&nbsp;» de Georges Balanchine</li>
                                     <li>«&nbsp;Les Quatre Tempéraments&nbsp;» (4 couples) de Georges Balanchine</li>
@@ -376,7 +376,7 @@ get_header();
                                     <li>«&nbsp;Le Sacre du Printemps&nbsp;» d’E. Walter</li>
                                 </ul>
                                 <div class="hidden-text">
-                                    <ul class="item-text">
+                                    <ul class="three-list-item-text">
                                         <li>«&nbsp;Le Sacre du Printemps&nbsp;» (rôle‑titre) de Paul Taylor</li>
                                         <li>«&nbsp;Auréoles&nbsp;» de Paul Taylor</li>
                                         <li>«&nbsp;Sextet&nbsp;» de Thierry Malandain</li>

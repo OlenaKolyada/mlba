@@ -49,11 +49,11 @@ get_header();
 
                 <div class="section-row">
                     <div class="section-content-center">
-                        <div class="three-items-wrap">
-                            <div class="three-items-row">
-                                <div class="three-items-item">
+                        <div class="three-list-wrap">
+                            <div class="three-list-row">
+                                <div class="three-list-item">
                                     <h4>Parcours</h4>
-                                    <ul class="three-items-text">
+                                    <ul class="three-list-item-text">
                                         <li>Conservatoire national de Kazan (Tatarstan)</li>
                                         <li>Ecole chorégraphique d’Almaty (Kazakhstan)</li>
                                         <li>Soliste au Ballet de l’Opéra national du Capitole</li>
@@ -62,9 +62,9 @@ get_header();
                                         <li>Ballet de l’Opéra national d’Almaty (Kazakhstan)</li>
                                     </ul>
                                 </div>
-                                <div class="three-items-item">
+                                <div class="three-list-item">
                                     <h4>Danse classique</h4>
-                                    <ul class="three-items-text">
+                                    <ul class="three-list-item-text">
                                         <li>«&nbsp;Les Patineurs&nbsp;» de Frederick Ashton</li>
                                         <li>«&nbsp;Rubis, Tarantella Pas de deux, Tchaïkovski Pas de deux&nbsp;» de George Balanchine</li>
                                         <li>«&nbsp;Giselle&nbsp;» (Albrecht et Hilarion) de Kader Belarbi</li>
@@ -74,7 +74,7 @@ get_header();
                                         <li>«&nbsp;Casse-Noisette&nbsp;» (le Prince) de Charles Jude</li>
                                     </ul>
                                     <div class="hidden-text">
-                                        <ul class="item-text">
+                                        <ul class="three-list-item-text">
                                             <li>«&nbsp;Casse-Noisette&nbsp;» (rôle-titre et Drosselmeyer) de Kader Belarbi</li>
                                             <li>«&nbsp;Le Lac des cygnes&nbsp;» (Siegfried) de Natalia Makarova</li>
                                             <li>«&nbsp;Roméo et Juliette&nbsp;» (Roméo, Scène du balcon, acte I) de Rudolf Noureev</li>
@@ -99,9 +99,9 @@ get_header();
                                         <span class="text-close">Afficher moins</span>
                                     </a>
                                 </div>
-                                <div class="three-items-item">
+                                <div class="three-list-item">
                                     <h4>Danse contemporaine</h4>
-                                    <ul class="three-items-text">
+                                    <ul class="three-list-item-text">
                                         <li>«&nbsp;Kammermusik n°2&nbsp;» de George Balanchine</li>
                                         <li>«&nbsp;La Bête et la Belle&nbsp;» de Kader Belarbi</li>
                                         <li>«&nbsp;Les Saltimbanques&nbsp;» de Kader Belarbi</li>
@@ -112,7 +112,7 @@ get_header();
                                         <li>«&nbsp;Kiki la Rose&nbsp;» de Michel Kelemenis</li>
                                     </ul>
                                     <div class="hidden-text">
-                                        <ul class="item-text">
+                                        <ul class="three-list-item-text">
                                             <li>«&nbsp;Les Noces&nbsp;» (le Marieur) de Jiří Kylián</li>
                                             <li>«&nbsp;Souvenir, When Snow Is Falling&nbsp;» de Douglas Lee</li>
                                             <li>«&nbsp;Daphnis et Chloé&nbsp;» (Dorcon) de Thierry Malandain</li>
@@ -166,20 +166,20 @@ get_header();
                     </div>
                     <div class="section-row">
                         <div class="section-content-center">
-                            <div class="three-items-wrap">
-                                <div class="three-items-row">
-                                    <div class="three-items-item">
+                            <div class="three-list-wrap">
+                                <div class="three-list-row">
+                                    <div class="three-list-item">
                                         <h4>Parcours</h4>
-                                        <ul class="three-items-text">
+                                        <ul class="three-list-item-text">
                                             <li>Ecole chorégraphique d’Almaty (Kazakhstan)</li>
                                             <li>Soliste au Ballet de l’Opéra national du Capitole</li>
                                             <li>Danseuse principale au Ballet de l’Opéra Tchaïkovski de Perm (Russie)</li>
                                             <li>Danseuse principale à l’Opéra national du Tatarstan (Kazan)</li>
                                         </ul>
                                     </div>
-                                    <div class="three-items-item">
+                                    <div class="three-list-item">
                                         <h4>Danse classique</h4>
-                                        <ul class="three-items-text">
+                                        <ul class="three-list-item-text">
                                             <li>«&nbsp;Rubis&nbsp;» de George Balanchine</li>
                                             <li>«&nbsp;Symphonie en trois mouvements&nbsp;» de George Balanchine</li>
                                             <li>«&nbsp;Tchaïkovski Pas de deux&nbsp;» de George Balanchine</li>
@@ -190,7 +190,7 @@ get_header();
                                             <li>«&nbsp;Raymonda&nbsp;» (Clémence, Grand Pas classique, acte III) de Rudolf Noureev</li>
                                         </ul>
                                         <div class="hidden-text">
-                                            <ul class="item-text">
+                                            <ul class="three-list-item-text">
                                             <li>«&nbsp;La Bayadère&nbsp;» (Gamzatti) de Alexandre Gorsky</li>
                                             <li>«&nbsp;Don Quichotte&nbsp;» (Kitri) de Alexandre Gorsky</li>
                                             <li>«&nbsp;Spartacus&nbsp;» (Claudia) de Georgy Kovtun</li>
@@ -217,9 +217,9 @@ get_header();
                                             <span class="text-close">Afficher moins</span>
                                         </a>
                                     </div>
-                                    <div class="three-items-item">
+                                    <div class="three-list-item">
                                         <h4>Danse contemporaine</h4>
-                                        <ul class="three-items-text">
+                                        <ul class="three-list-item-text">
                                             <li>«&nbsp;Roméo et Juliette&nbsp;» (Lady Capulet) de Jean-Christophe Maillot</li>
                                             <li>«&nbsp;Cendrillon&nbsp;» (rôle-titre) de Alexeï Mirochnytchenko</li>
                                             <li>«&nbsp;La Bête et la Belle&nbsp;» de Kader Belarbi</li>
@@ -228,7 +228,7 @@ get_header();
                                             <li>«&nbsp;Giselle&nbsp;» (Bathilde et Myrtha) de Kader Belarbi</li>
                                         </ul>
                                         <div class="hidden-text">
-                                            <ul class="item-text">
+                                            <ul class="three-list-item-text">
                                                 <li>«&nbsp;Liens de table&nbsp;» de Kader Belarbi</li>
                                                 <li>«&nbsp;Les Saltimbanques&nbsp;» de Kader Belarbi</li>
                                                 <li>«&nbsp;Toulouse-Lautrec&nbsp;» (la comtesse Adèle) de Kader Belarbi</li>
@@ -282,67 +282,68 @@ get_header();
                         <div class="section-text">
                             <p>Vladimir Ippolitov a étudié à l’Académie de ballet russe A. Y. Vaganova de Saint-Pétersbourg. Il a travaillé avec les compagnies de ballet internationales les plus prestigieuses, notamment au Théâtre Mariinsky de Saint-Pétersbourg, à l’Opéra National de Bordeaux et au Grand Théâtre de Genève, où il a été soliste. Vladimir produit régulièrement des événements uniques, ce qui lui permet de partager son amour pour le ballet classique et contemporain avec un large public, tant au niveau local qu’international.</p>
 
-                            <div class="two-list">
-                                <div class="two-list-item">
-                                    <h4>Parcours</h4>
-                                    <ul>
-                                        <li><strong>Depuis 2018</strong><br>
-                                            École de ballet V. Ippolitov<br>
-                                            <em>Poste :</em> Fondateur / Directeur Artistique<br>
-                                            <a href="https://ecoledeballetgeneve.ch/" target="_blank">Site web</a> /
-                                            <a href="https://www.instagram.com/ippolitovballetschool/" target="_blank">Instagram</a></li>
-                                        <li><strong>Depuis 2017</strong><br>
-                                            World Ballet Stars Gala<br>
-                                            <em>Poste :</em> Fondateur / Directeur Artistique<br>
-                                            <a href="https://fr.starsballet.ch/" target="_blank">Site web</a> / <a href="https://www.youtube.com/@worldballetstars" target="_blank">YouTube</a> / <a href="https://www.instagram.com/world_ballet_stars/" target="_blank">Instagram</a></li>
-                                        <li><strong>Depuis 2016</strong><br>
-                                            Geneva Dance Events<br>
-                                            <em>Poste :</em> Directeur Artistique<br>
-                                            <a href="https://www.instagram.com/genevadanceevents/?hl=en" target="_blank">Instagram</a></li>
-                                    </ul>
 
-                                    <div class="hidden-text">
-                                        <ul class="item-text">
-                                            <li><strong>2011-2016</strong><br>
-                                                Ballet du Grand Théâtre de Genève<br>
-                                                <em>Poste :</em> Soliste<br>
-                                                <em>Directeur :</em> Philippe Cohen<br>
-                                                <a href="https://www.gtg.ch/" target="_blank">Site web</a></li>
-                                            <li><strong>2007-2011</strong><br>
-                                                Ballet du Grand Théâtre de Bordeaux<br>
-                                                <em>Poste :</em> Soliste<br>
-                                                <em>Directeur :</em> Charles Jude<br>
-                                                <a href="https://www.opera-bordeaux.com/en" target="_blank">Site web</a></li>
-                                            <li><strong>2006-2007</strong><br>
-                                                Ballet de Saint-Petersbourg<br>
-                                                <em>Poste :</em> Soliste<br>
-                                                <em>Directeur :</em> M. Konstantin Tachkin</li>
-                                            <li><strong>2003-2006</strong><br>
-                                                Ballet du Théâtre Mariinsky<br>
-                                                <em>Poste :</em> Artiste de ballet<br>
-                                                <em>Directeur :</em> M. Makhar Vasiev<br>
-                                                <a href="https://www.mariinsky.ru/en/" target="_blank">Site web</a></li>
+
+
+                            <div class="two-list-wrap">
+                                <div class="two-list-row">
+                                    <div class="two-list-item">
+                                        <h4>Parcours</h4>
+                                        <ul class="two-list-item-text">
+                                            <li><strong>Depuis 2018</strong><br>
+                                                École de ballet V. Ippolitov<br>
+                                                <em>Poste :</em> Fondateur / Directeur Artistique<br>
+                                                <a href="https://ecoledeballetgeneve.ch/" target="_blank">Site web</a> /
+                                                <a href="https://www.instagram.com/ippolitovballetschool/" target="_blank">Instagram</a></li>
+                                            <li><strong>Depuis 2017</strong><br>
+                                                World Ballet Stars Gala<br>
+                                                <em>Poste :</em> Fondateur / Directeur Artistique<br>
+                                                <a href="https://fr.starsballet.ch/" target="_blank">Site web</a> / <a href="https://www.youtube.com/@worldballetstars" target="_blank">YouTube</a> / <a href="https://www.instagram.com/world_ballet_stars/" target="_blank">Instagram</a></li>
+                                            <li><strong>Depuis 2016</strong><br>
+                                                Geneva Dance Events<br>
+                                                <em>Poste :</em> Directeur Artistique<br>
+                                                <a href="https://www.instagram.com/genevadanceevents/?hl=en" target="_blank">Instagram</a></li>
+                                        </ul>
+                                        <div class="hidden-text">
+                                            <ul class="three-list-item-text">
+                                                <li><strong>2011-2016</strong><br>
+                                                    Ballet du Grand Théâtre de Genève<br>
+                                                    <em>Poste :</em> Soliste<br>
+                                                    <em>Directeur :</em> Philippe Cohen<br>
+                                                    <a href="https://www.gtg.ch/" target="_blank">Site web</a></li>
+                                                <li><strong>2007-2011</strong><br>
+                                                    Ballet du Grand Théâtre de Bordeaux<br>
+                                                    <em>Poste :</em> Soliste<br>
+                                                    <em>Directeur :</em> Charles Jude<br>
+                                                    <a href="https://www.opera-bordeaux.com/en" target="_blank">Site web</a></li>
+                                                <li><strong>2006-2007</strong><br>
+                                                    Ballet de Saint-Petersbourg<br>
+                                                    <em>Poste :</em> Soliste<br>
+                                                    <em>Directeur :</em> M. Konstantin Tachkin</li>
+                                                <li><strong>2003-2006</strong><br>
+                                                    Ballet du Théâtre Mariinsky<br>
+                                                    <em>Poste :</em> Artiste de ballet<br>
+                                                    <em>Directeur :</em> M. Makhar Vasiev<br>
+                                                    <a href="https://www.mariinsky.ru/en/" target="_blank">Site web</a></li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="read-more-link">
+                                            <span class="text-open">Afficher plus</span>
+                                            <span class="text-close">Afficher moins</span>
+                                        </a>
+                                    </div>
+                                    <div class="two-list-item">
+                                        <h4>Formation</h4>
+                                        <ul class="two-list-item-text">
+                                            <li><strong>Diplômé Baccalauréat professionnel</strong><br>
+                                                <strong>2000–2003</strong><br>
+                                                Académie de la danse Vaganova<br>
+                                                <em>Directeur :</em> Mme. Altinay Asilmuratova</li>
+                                            <li><strong>1994–2000</strong><br>
+                                                Collège de Ballet de Perm<br>
+                                                <em>Directeur :</em> Mme. Ludmila Sakhorova</li
                                         </ul>
                                     </div>
-                                    <a href="#" class="read-more-link">
-                                        <span class="text-open">Afficher plus</span>
-                                        <span class="text-close">Afficher moins</span>
-                                    </a>
-
-
-                                </div>
-
-                                <div class="two-list-item">
-                                    <h4>Formation</h4>
-                                    <ul>
-                                        <li><strong>Diplômé Baccalauréat professionnel</strong><br>
-                                            <strong>2000–2003</strong><br>
-                                            Académie de la danse Vaganova<br>
-                                            <em>Directeur :</em> Mme. Altinay Asilmuratova</li>
-                                        <li><strong>1994–2000</strong><br>
-                                            Collège de Ballet de Perm<br>
-                                            <em>Directeur :</em> Mme. Ludmila Sakhorova</li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -382,11 +383,11 @@ get_header();
                 </div>
                 <div class="section-row">
                     <div class="section-content-center">
-                        <div class="three-items-wrap">
-                            <div class="three-items-row">
-                                <div class="three-items-item">
+                        <div class="three-list-wrap">
+                            <div class="three-list-row">
+                                <div class="three-list-item">
                                     <h4>Parcours</h4>
-                                    <ul class="three-items-text">
+                                    <ul class="three-list-item-text">
                                         <li><strong>Depuis juin 2014</strong><br>
                                             Ballet du Grand Théâtre de Genève, Suisse<br>
                                             <em>Directeur :</em> Sidi Larbi Cherkaoui (2022 - )<br>
@@ -403,9 +404,9 @@ get_header();
                                             Corps de ballet</li>
                                     </ul>
                                 </div>
-                                <div class="three-items-item">
+                                <div class="three-list-item">
                                     <h4>Formation</h4>
-                                    <ul class="three-items-text">
+                                    <ul class="three-list-item-text">
                                         <li><strong>2004</strong><br>
                                             L’obtention du diplôme, l’école de Ballet d’Hambourg, Allemagne</li>
                                         <li><strong>2001–2004</strong><br>
@@ -420,9 +421,9 @@ get_header();
                                             <em>Enseignant :</em> Teruyo Kurashima</li>
                                     </ul>
                                 </div>
-                                <div class="three-items-item">
+                                <div class="three-list-item">
                                     <h4>Les Prix</h4>
-                                    <ul class="three-items-text">
+                                    <ul class="three-list-item-text">
                                         <li><strong>2003</strong><br>
                                             Prix de Lausanne, Lausanne :<br>Demi-finaliste</li>
                                         <li><strong>2002</strong><br>
@@ -440,20 +441,25 @@ get_header();
                 <div class="section-row">
                     <div class="section-content-text">
                         <h4>Répertoire</h4>
-                        <div class="two-list">
-                            <div class="two-list-item">
-                                <div>
+
+
+
+                        <div class="four-list-wrap">
+                            <div class="four-list-row">
+                                <div class="four-list-item">
                                     <h5 class="title-has-subtitle">Ballet du Grand Théâtre de Genève</h5>
-                                    <p class="no-margin">Directeur : Sidi Larbi Cherkaoui / Philippe Cohen</p>
+                                    <p class="no-margin"><em>Directeur : </em>Sidi Larbi Cherkaoui / Philippe Cohen</p>
+                                    <ul class="four-list-item-text">
+                                        <li>Amoveo (Benjamin Millepied)</li>
+                                        <li>Les Sylphides (Benjamin Millepied)</li>
+                                        <li>Petite Mort (Jiri Kylian)</li>
+                                        <li>Bella Figura (Jiri Kylian)</li>
+                                        <li>Faun (Sidi Larbi Cherkaoui)</li>
+                                        <li>Noetic (Sidi Larbi Cherkaoui)</li>
+                                        <li>Ukiyo-e (Sidi Larbi Cherkaoui)</li>
+                                    </ul>
                                     <div class="hidden-text">
-                                        <ul class="item-text">
-                                            <li>Amoveo (Benjamin Millepied)</li>
-                                            <li>Les Sylphides (Benjamin Millepied)</li>
-                                            <li>Petite Mort (Jiri Kylian)</li>
-                                            <li>Bella Figura (Jiri Kylian)</li>
-                                            <li>Faun (Sidi Larbi Cherkaoui)</li>
-                                            <li>Noetic (Sidi Larbi Cherkaoui)</li>
-                                            <li>Ukiyo-e (Sidi Larbi Cherkaoui)</li>
+                                        <ul class="four-list-item-text">
                                             <li>Exhibition (Sidi Larbi Cherkaoui)</li>
                                             <li>Fall (Sidi Larbi Cherkaoui)</li>
                                             <li>Ihsane (Sidi Larbi Cherkaoui)</li>
@@ -483,21 +489,24 @@ get_header();
                                         </ul>
                                     </div>
                                     <a href="#" class="read-more-link">
-                                        <span class="text-open">Afficher</span>
-                                        <span class="text-close">Masquer</span>
+                                        <span class="text-open">Afficher plus</span>
+                                        <span class="text-close">Afficher moins</span>
                                     </a>
                                 </div>
-                                <div>
+                                <div class="four-list-item">
                                     <h5 class="title-has-subtitle">Dresden Ballet (l'Opéra Semper de Dresde)</h5>
-                                    <p class="no-margin">Directeur : Vladimir Derevianko</p>
+                                    <p class="no-margin"><em>Directeur : </em>Vladimir Derevianko</p>
+                                    <ul class="four-list-item-text">
+                                        <li>Six dances (Jiri Kylian)</li>
+                                        <li>Sinfonietta (Jiri Kylian)</li>
+                                        <li>The Vertiginous Thrill of Exactitude (William Forsythe)</li>
+                                        <li>Le Casse-Noisette (John Neumeier)</li>
+                                        <li>Le songe d’une nuit d’été (John Neumeier)</li>
+                                        <li>Daphnis et Chloé (John Neumeier)</li>
+
+                                    </ul>
                                     <div class="hidden-text">
-                                        <ul class="item-text">
-                                            <li>Six dances (Jiri Kylian)</li>
-                                            <li>Sinfonietta (Jiri Kylian)</li>
-                                            <li>The Vertiginous Thrill of Exactitude (William Forsythe)</li>
-                                            <li>Le Casse-Noisette (John Neumeier)</li>
-                                            <li>Le songe d’une nuit d’été (John Neumeier)</li>
-                                            <li>Daphnis et Chloé (John Neumeier)</li>
+                                        <ul class="four-list-item-text">
                                             <li>Le Sacre du printemps (John Neumeier)</li>
                                             <li>La Mégère apprivoisée (John Cranko)</li>
                                             <li>Le Rouge et le Noir (Uwe Scholz)</li>
@@ -513,22 +522,24 @@ get_header();
                                         </ul>
                                     </div>
                                     <a href="#" class="read-more-link">
-                                        <span class="text-open">Afficher</span>
-                                        <span class="text-close">Masquer</span>
+                                        <span class="text-open">Afficher plus</span>
+                                        <span class="text-close">Afficher moins</span>
                                     </a>
+
                                 </div>
-                            </div>
-                            <div class="two-list-item">
-                                <div>
+                                <div class="four-list-item">
                                     <h5 class="title-has-subtitle">Ballet de l'Opéra National de Bordeaux</h5>
-                                    <p class="no-margin">Directeur : Charles Jude</p>
+                                    <p class="no-margin"><em>Directeur : </em>Charles Jude</p>
+                                    <ul class="four-list-item-text">
+                                        <li>La belle au bois dormant (Aurore: Charles Jude)</li>
+                                        <li>Roméo et Juliette (Juliette: Charles Jude)</li>
+                                        <li>Le lac des cygnes (Odile: Charles Jude)</li>
+                                        <li>Coppelia (Swanie: Charles Jude)</li>
+                                        <li>Le Casse-Noisette (Marie: Charles Jude)</li>
+
+                                    </ul>
                                     <div class="hidden-text">
-                                        <ul class="item-text">
-                                            <li>La belle au bois dormant (Aurore: Charles Jude)</li>
-                                            <li>Roméo et Juliette (Juliette: Charles Jude)</li>
-                                            <li>Le lac des cygnes (Odile: Charles Jude)</li>
-                                            <li>Coppelia (Swanie: Charles Jude)</li>
-                                            <li>Le Casse-Noisette (Marie: Charles Jude)</li>
+                                        <ul class="four-list-item-text">
                                             <li>Le spectre de la rose (M. Fokine)</li>
                                             <li>Petruska (Vaslav Nijinsky)</li>
                                             <li>Paquitta (3rd act: Charles Jude)</li>
@@ -539,7 +550,7 @@ get_header();
                                             <li>Annonciation (Angel: Angelin Preljocaj)</li>
                                             <li>Click-Pause-Silence (Jiri Kylian)</li>
                                             <li>Petite Mort (4th couple: Jiri Kylian)</li>
-                                            <li>Il est de certains cœurs... (Itzik Galili)</li>
+                                            <li>Il est de certains cœurs… (Itzik Galili)</li>
                                             <li>Pneuma (Carolyn Carlson)</li>
                                             <li>Temporary Condition (Vaslav Kunes)</li>
                                             <li>Valse (Thierry Malandain)</li>
@@ -549,31 +560,31 @@ get_header();
                                             <li>Giselle (Myrta: Charles Jude)</li>
                                             <li>In the Middle, somewhat elevated (William Forsythe)</li>
                                             <li>Carmina Burana (Maurizio Weinrot)</li>
-                                            <li>Parfois Une Hirondelle.. (Claude Brumachon)</li>
+                                            <li>Parfois Une Hirondelle… (Claude Brumachon)</li>
                                             <li>Les Sylphides (M. Fokine)</li>
                                             <li>Le Sacre du printemps (Léonide Massine)</li>
                                             <li>Les Noces (Nijinskaya)</li>
                                         </ul>
                                     </div>
                                     <a href="#" class="read-more-link">
-                                        <span class="text-open">Afficher</span>
-                                        <span class="text-close">Masquer</span>
+                                        <span class="text-open">Afficher plus</span>
+                                        <span class="text-close">Afficher moins</span>
                                     </a>
                                 </div>
-                                <div>
-                                    <h5 class="title-has-subtitle">Le Ballet d’Hambourg / L’école de Ballet d’Hambourg</h5>
-                                    <p class="no-margin">Directeur : John Neumeier</p>
 
+                                <div class="four-list-item">
+                                    <h5 class="title-has-subtitle">Le Ballet d’Hambourg / L’école de Ballet d’Hambourg</h5>
+                                    <p class="no-margin"><em>Directeur : </em>John Neumeier</p>
+                                    <ul class="four-list-item-text">
+                                        <li><strong>Avec la compagnie :</strong></li>
+                                        <li>Illusionen wie Schwanensee (Le lac des cygnes) (John Neumeier)</li>
+                                        <li>La belle au bois dormant (John Neumeier)</li>
+                                        <li>Magnificat (John Neumeier)</li>
+                                        <li>Le Casse-Noisette (John Neumeier)</li>
+                                    </ul>
                                     <div class="hidden-text">
-                                        <p class="item-text"><strong>Avec la compagnie :</strong></p>
-                                        <ul class="item-text">
-                                            <li>Illusionen wie Schwanensee (Le lac des cygnes) (John Neumeier)</li>
-                                            <li>La belle au bois dormant (John Neumeier)</li>
-                                            <li>Magnificat (John Neumeier)</li>
-                                            <li>Le Casse-Noisette (John Neumeier)</li>
-                                        </ul>
-                                        <p class="item-text"><strong>A l’école :</strong></p>
-                                        <ul class="item-text">
+                                        <ul class="four-list-item-text">
+                                            <li><strong>A l’école :</strong></li>
                                             <li>Haiku (rôle principale: John Neumeier)</li>
                                             <li>Jondering (rôle principale: John Neumeier)</li>
                                             <li>Napoli (Pas de six; August Bournonville)</li>
@@ -583,8 +594,8 @@ get_header();
                                         </ul>
                                     </div>
                                     <a href="#" class="read-more-link">
-                                        <span class="text-open">Afficher</span>
-                                        <span class="text-close">Masquer</span>
+                                        <span class="text-open">Afficher plus</span>
+                                        <span class="text-close">Afficher moins</span>
                                     </a>
                                 </div>
                             </div>

@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-    <main class="main" class="professeurs" id="professeurs-caractere">
+    <main class="main professeurs" id="professeurs-caractere">
     <!--	Valeriya Pyestryakova START-->
     <section class="section-wrap section-first no-padding-top" id="valeriya-pyestryakova">
         <div class="container">
