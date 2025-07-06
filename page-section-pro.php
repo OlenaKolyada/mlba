@@ -32,8 +32,8 @@ get_header();
     				</div>
                     <div class="section-content-image">
                         <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
-                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg"
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg"
                                      alt="Mikhalev Lanssens Ballet Academy, Section Pro"
                                      title="Mikhalev Lanssens Ballet Academy, Section Pro" />
                             </a>
@@ -50,10 +50,10 @@ get_header();
     			<div class="section-row">
                     <div class="section-content-image">
                         <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg" class="popup-image" title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg"
-                                 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
-                                 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                                 alt="Corinne Lanssens, professeure de danse classique, MLBA Section Pro"
+                                 title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro" />
                             </a>
                         </div>
                     </div>
@@ -99,8 +99,8 @@ get_header();
     				</div>
                 <div class="section-content-image">
                         <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
-                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg"
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg"
                                      alt="Mikhalev Lanssens Ballet Academy, Section Pro"
                                      title="Mikhalev Lanssens Ballet Academy, Section Pro" />
                             </a>
@@ -117,10 +117,10 @@ get_header();
     			<div class="section-row">
                     <div class="section-content-image">
                         <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg" class="popup-image" title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro">
                                 <img class="section-photo horisontal" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg"
-                                     alt="Mikhalev Lanssens Ballet Academy, Section Pro"
-                                     title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                                     alt="Corinne Lanssens, professeure de danse classique, MLBA Section Pro"
+                                     title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro" />
                             </a>
                         </div>
                     </div>
