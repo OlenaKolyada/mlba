@@ -438,7 +438,7 @@ get_header();
                     </div>
                 </div>
                 <div class="section-row">
-                    <div class="section-center">
+                    <div class="section-content-text">
                         <h4>Répertoire</h4>
                         <div class="two-list">
                             <div class="two-list-item">

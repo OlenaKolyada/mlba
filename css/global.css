@@ -202,8 +202,8 @@ img {
     font-family: 'Roboto Flex', sans-serif;
 }
 
-.form-group {
-    width: 100%;
+.form-group p {
+    width: 100% !important;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -306,14 +306,17 @@ form button {
     width: 100%;
 }
 
-.form-single-input.full-width {
-    margin-bottom: 1rem;
-    padding: 0 !important;
+.full-width {
     width: 100%;
 }
 
-.half-width {
-    width: 48%;
+.wpcf7-not-valid-tip {
+    display: inline !important;
+}
+
+.form-single-input.full-width {
+    padding: 0 !important;
+    width: 100%;
 }
 
 .form-message {
@@ -327,6 +330,57 @@ form button {
 
 /* Form END */
 
+/*Forminator START*/
+.forminator-custom-form {
+    width: 100%;
+}
+
+.forminator-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem !important;
+    padding: 0;
+}
+
+.forminator-ui.forminator-custom-form[data-grid=open] .forminator-col:not(:last-child) {
+    margin-bottom: 0 !important;
+}
+
+.forminator-col,
+.forminator-field,
+.forminator-field input.forminator-input {
+    width: 100%;
+}
+
+.forminator-module-edit-link {
+    display: none;
+}
+
+.forminator-checkbox__wrapper {
+    display: flex;
+    justify-content: left;
+}
+
+.forminator-consent {
+    margin-right: 0.5rem;
+}
+
+.forminator-error-message {
+    color: var(--primary-color);
+}
+
+.forminator-response-message.forminator-error {
+    display: none;
+}
+
+.forminator-response-message.forminator-show.forminator-success {
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+/*Forminator END*/
 /* Scroll To Top START */
 .scroll-to-top {
     position: fixed;
@@ -465,8 +519,6 @@ img.mfp-img {
     transform: scale(0.8);
 }
 
-
-
 /* Magnific PopUp END */
 
 .error-404 a {
@@ -492,15 +544,10 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
-    .form-group {
+    .form-group p {
         gap: 1.5rem;
         margin-bottom: 1.5rem;
     }
-
-    .form-single-input.full-width {
-        margin-bottom: 1.5rem;
-    }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -557,6 +604,11 @@ html {
         height: auto;
         width: 90vw;
     }
+
+    .forminator-response-message.forminator-show.forminator-success {
+        color: var(--black);
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -588,6 +640,10 @@ html {
 
     .form-message {
         font-size: 1.3rem;
+    }
+
+    .forminator-row {
+        flex-direction: column;
     }
 }
 

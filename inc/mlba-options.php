@@ -444,6 +444,36 @@ Redux::set_section(
 );
 // Contact Page END
 
+// Admission Page START
+Redux::set_section(
+    $opt_name,
+    array(
+        'title'            => esc_html__( 'Formulaire d\'Audition', 'Mikhalev Lanssens Ballet Academy' ),
+        'id'               => 'mlba-admission-form',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'fields'           => array(
+
+            array(
+                'id'       => 'admission-form-title',
+                'type'     => 'text',
+                'title'    => esc_html__( 'Titre', 'Mikhalev Lanssens Ballet Academy' ),
+            ),
+            array(
+                'id'       => 'admission-form-text',
+                'type'     => 'textarea',
+                'title'    => esc_html__( 'Texte', 'Mikhalev Lanssens Ballet Academy' ),
+            ),
+            array(
+                'id'       => 'admission-form-shortcode',
+                'type'     => 'text',
+                'title'    => esc_html__( 'Shortcode', 'Mikhalev Lanssens Ballet Academy' ),
+            ),
+        ),
+    )
+);
+// Admission Page END
+
 
 
 if ( ! function_exists( 'compiler_action' ) ) {

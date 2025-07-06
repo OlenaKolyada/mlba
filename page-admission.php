@@ -23,7 +23,8 @@ get_header();
                 <div class="section-center">
                     <div class="section-text">
                         <h2 id="admission-page-form-title">Modalités d'audition</h2>
-                        <p id="admission-page-form-text">Nous vous invitons à nous contacter pour connaître les modalités d’audition.</p>
+                        <p id="admission-page-form-text">Nous vous invitons à nous contacter pour connaître les modalités d’audition. Les champs indiqués par un astérisque (*) sont obligatoires et doivent être renseignés.</p>
+                        <?php echo do_shortcode($mlba_options['admission-form-shortcode']) ?>
                         <form class="form-container" action="" method="post"  id="admission-page-form">
                             <fieldset class="form-group">
                                 <label for="first_name" class="sr-only"></label>
@@ -55,6 +56,7 @@ get_header();
                                 <button class="btn btn-primary-color" type="submit">Envoyer</button>
                             </fieldset>
                         </form>
+
                         <div id="admission-page-message" class="form-message" aria-live="polite"></div>
                     </div>
                 </div>

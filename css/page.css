@@ -143,6 +143,10 @@ section:nth-child(even) {
     gap: 0;
 }
 
+#yumi-aizawa .section-row:last-of-type .section-content-text {
+    align-items: flex-start;
+}
+
 
 #yumi-aizawa .read-more-link {
     margin-bottom: 2rem;
@@ -478,43 +482,43 @@ section:nth-child(even) {
     border-right: 1px solid var(--grey-light);
 }
 
-.init {
+#planning .init {
     background: #f9dcf7;
 }
 
-.elem-1 {
+#planning .elem-1 {
     background: #abf0fc;
 }
 
-.elem-2 {
+#planning .elem-2 {
     background: #aad3fc;
 }
 
-.elem-3 {
+#planning .elem-3 {
     background: #dbb6fc;
 }
 
-.ado-avance {
+#planning .ado-avance {
     background: #ddfbd0;
 }
 
-.ado-contempo {
+#planning .ado-contempo {
     background: #fef7c0;
 }
 
-.adulte-avance {
+#planning .adulte-avance {
     background: #fecdc0;
 }
 
-.adulte-contempo {
+#planning .adulte-contempo {
     background: #fadfac;
 }
 
-.barre {
+#planning .barre {
     background: #fef2e8;
 }
 
-.cours-particuliers {
+#planning .cours-particuliers {
     background: var(--grey-extra-light);
 }
 
@@ -710,7 +714,7 @@ section:nth-child(even) {
 
 #admission .section-text {
     background: var(--grey);
-    padding: 3rem;
+    padding: 3rem 3rem 0 3rem;
     border-radius: 3px;
     color: var(--white);
     width: 100%;
@@ -730,7 +734,12 @@ section:nth-child(even) {
 }
 
 #admission button {
-    margin: 1rem auto 0;
+    margin: 0 auto;
+}
+
+#admission #admission-page-form-text {
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 /* Admission END */
@@ -918,9 +927,7 @@ section:nth-child(even) {
         margin: 3rem 0 1rem 0;
     }
 
-    #yumi-aizawa .section-row:last-of-type .section-center {
-        align-items: flex-start;
-    }
+
 
     #enfants-classique .section-content-text,
     #enfants-classique .section-center {
@@ -1161,7 +1168,7 @@ section:nth-child(even) {
         column-gap: 2rem;
     }
 
-    #professeurs-invites #yumi-aizawa .section-row:last-of-type {
+    #yumi-aizawa .section-row:last-of-type .section-content-text {
         align-items: center;
     }
 
@@ -1295,7 +1302,7 @@ section:nth-child(even) {
     }
 
     #admission .section-center {
-        width: 80%;
+        width: 100%;
     }
 
     #contacts .section-row {
@@ -1303,7 +1310,7 @@ section:nth-child(even) {
     }
 
     #contacts .section-content-text {
-        width: 90%;
+        width: 100%;
     }
 
     #contacts .main-contacts-wrap {
@@ -1374,10 +1381,6 @@ section:nth-child(even) {
     }
 
     #professeurs-invites .three-items-item {
-        width: 100%;
-    }
-
-    #admission .section-center {
         width: 100%;
     }
 
@@ -1561,6 +1564,48 @@ section:nth-child(even) {
     #tarifs .first-cell-large {
         max-width: 20rem;
     }
+
+    #admission .section-first.no-padding-top {
+        margin: 3rem 0 0 0;
+    }
+
+    #admission .section-text {
+        background: var(--white);
+        color: var(--black);
+        padding: 0;
+    }
+
+    #admission .section-text a {
+        color: var(--black);
+    }
+
+    #admission form label {
+        color: var(--black);
+    }
+
+    #admission button {
+        margin: 0 auto;
+    }
+
+    #admission form input,
+    #admission form select,
+    #admission form textarea {
+        background-color: var(--grey-extra-light);
+    }
+
+    #admission .form-group p {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #admission form {
+        margin-top: 2rem;
+    }
+
+    #admission .half-width {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1635,47 +1680,7 @@ section:nth-child(even) {
         width: 100%;
     }
 
-    #admission .section-first.no-padding-top {
-        margin: 3rem 0 0 0;
-    }
 
-    #admission .section-text {
-        background: var(--white);
-        color: var(--black);
-        padding: 0;
-    }
-
-    #admission .section-text a {
-        color: var(--black);
-    }
-
-    #admission form label {
-        color: var(--black);
-    }
-
-    #admission button {
-        margin: 1rem auto 0;
-    }
-
-    #admission form input,
-    #admission form select,
-    #admission form textarea {
-        background-color: var(--grey-extra-light);
-    }
-
-    #admission .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    #admission form {
-        margin-top: 2rem;
-    }
-
-    #admission .half-width {
-        width: 100%;
-    }
 
     #contacts .section-row {
         gap: 3rem;
