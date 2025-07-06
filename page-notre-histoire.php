@@ -23,11 +23,11 @@ get_header();
             <div class="section-row">
                 <div class="section-content-image">
                     <div class="frame">
-                         <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/le-spectre-de-la-rose-m-fokine-opera-national-de-bordeaux.jpg" class="popup-image"
-                            title="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev">
-                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/le-spectre-de-la-rose-m-fokine-opera-national-de-bordeaux.jpg"
-                                  alt="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
-                                  title="Le Spectre de la rose, ballet de Michel Fokine, Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
+                         <a href="<?php echo get_template_directory_uri();?>/assets/images/academy/notre-histoire1.jpg" class="popup-image"
+                            title="Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev">
+                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/academy/notre-histoire1.jpg"
+                                  alt="Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev"
+                                  title="Opéra National de Bordeaux. Danseur Etoile Roman Mikhalev" />
                          </a>
                     </div>
                 </div>

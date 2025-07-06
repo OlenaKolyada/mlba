@@ -20,7 +20,7 @@ get_header();
     <section class="section-wrap section-first no-padding-top">
         <div class="container">
             <div class="section-row">
-                <div class="section-center">
+                <div class="section-content-center">
                     <div class="section-text">
                         <h2>Studio</h2>
                         <p>Notre studio de ballet, lumineux et spacieux, offre un cadre idéal pour la danse, avec de grandes baies vitrées

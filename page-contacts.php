@@ -20,7 +20,7 @@ get_header();
     <!--	Contacts START-->
     <section class="section-wrap section-first no-padding-top">
         <div class="container">
-            <div class="section-row">
+            <div class="section-row section-split-balanced">
                 <div class="section-content-text">
                     <div class="section-text">
                         <?php if($mlba_options['contact-page-title']): ?>
@@ -76,45 +76,10 @@ get_header();
                     </div>
                 </div>
                 <div class="section-content-text">
-                    <div class="section-text">
-                        <?php if($mlba_options['contact-page-form-title']): ?>
-                        <h2 id="contact-form-title"><?php echo $mlba_options['contact-page-form-title'];?></h2>
-                        <?php endif;?>
-                        <div class="main-contacts-wrap">
-                            <form class="form-container" action="" method="post" id="contact-page-form">
-                                <fieldset class="form-group">
-                                    <label for="first_name" class="sr-only"></label>
-                                    <input type="text" class="half-width" id="first_name"
-                                           placeholder="Prénom *" name="first_name" required>
-                                    <label for="last_name" class="sr-only"></label>
-                                    <input type="text" class="half-width" id="last_name"
-                                           placeholder="Nom *" name="last_name" required>
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <label for="phone"  class="sr-only"></label>
-                                    <input type="tel" class="half-width" id="phone"
-                                           placeholder="Numéro de téléphone *" name="phone" required>
-                                    <label for="email"  class="sr-only"></label>
-                                    <input type="email" class="half-width" id="email"
-                                           placeholder="Email" name="email">
-                                </fieldset>
-                                <fieldset class="form-single-input full-width">
-                                    <label for="comment"  class="sr-only"></label>
-                                    <textarea id="comment" placeholder="Votre question" name="comment" rows="4"></textarea>
-                                </fieldset>
-                                <fieldset class="form-single-input">
-                                    <label class="checkbox-label">
-                                        <input class="checkbox" type="checkbox" name="consent" required id="consent">
-                                        J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
-                                    </label>
-                                </fieldset>
-                                <fieldset class="form-btn">
-                                    <button class="btn btn-primary-color" type="submit">Envoyer</button>
-                                </fieldset>
-                            </form>
-                        </div>
+                    <div class="form-container section">
+                        <h2><?php echo $mlba_options['contact-page-form-title'];?></h2>
+                        <?php echo do_shortcode($mlba_options['contact-form-shortcode']) ?>
                     </div>
-                    <div id="contact-form-message" class="form-message" aria-live="polite"></div>
                 </div>
             </div>
         </div>

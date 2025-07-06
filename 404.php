@@ -14,7 +14,7 @@ get_header();
                 <section class="section-wrap section-first error-404 no-padding-top not-found">
                     <div class="container">
                         <div class="section-row">
-                            <div class="section-center">
+                            <div class="section-content-center">
                                 <div class="section-text">
                                     <h1>404 Not found</h1>
                                     <a href="<?php echo get_home_url();?>">Retour à l'accueil</a>

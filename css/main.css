@@ -203,34 +203,6 @@
 /* Main Gallery END */
 
 /* Main Contacts START */
-#main-contacts {
-    background-image: url('../images/main/bg-contacts.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#main-contacts .container {
-    background-color: var(--grey);
-    color: var(--white);
-    border-radius: 3px;
-    margin: 0 2rem;
-}
-
-#main-contacts .section-row {
-    gap: 0;
-    padding: 3rem 0;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-#main-contacts .section-content-text {
-    width: 50%;
-    padding: 3rem;
-}
-
-#main-contacts .section-text {
-    width: 100%;
-}
 
 #main-contacts .main-contacts-wrap {
     width: 100%;
@@ -241,30 +213,13 @@
     height: 20rem;
 }
 
-#main-contacts a {
-    color: var(--white);
-}
+
 
 #main-contacts .three-items-wrap {
     width: 100%;
     margin-bottom: 2rem;
 }
 
-#main-contacts form label {
-    color: var(--white);
-}
-
-#main-contacts form a {
-    text-decoration: underline;
-}
-
-#main-contacts form a:hover {
-    opacity: 0.8;
-}
-
-#main-contacts button {
-    margin: 1rem auto 0;
-}
 /* Main Contacts END */
 
 /* Responsive */
@@ -326,24 +281,6 @@
         transform: translateX(6rem);
     }
 
-    #main-contacts .section-row {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0;
-    }
-
-    #main-contacts .section-content-text {
-        width: 80%;
-    }
-
-    #main-contacts .section-text {
-        width: 100%;
-    }
-
-    #main-contacts p {
-        margin-bottom: 2rem;
-    }
 
     #main-contacts .three-items-row {
         justify-content: center;
@@ -351,9 +288,6 @@
         margin-top: 1rem;
     }
 
-    #main-contacts form {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -399,65 +333,12 @@
         margin-top: 2rem;
     }
 
-    #main-contacts .section-content-text {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 992px) {
 
     #hero .hero-slogan br {
         display: inline;
-    }
-
-    #main-contacts {
-        background-image: none;
-        background-color: var(--grey);
-    }
-
-    #main-contacts .container {
-        margin: 0;
-    }
-
-    #main-contacts .section-row {
-        padding: 0;
-    }
-
-    #main-contacts .section-content-text {
-        width: 90%;
-        padding-bottom: 1rem;
-    }
-
-    #main-contacts .main-contacts-wrap {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: flex-end;
-        gap: 3rem;
-        align-items: center;
-        margin-top: 3rem;
-    }
-
-    #main-contacts .three-items-row {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        width: auto;
-    }
-
-    #main-contacts .three-items-row {
-        width: auto;
-        gap: 3rem;
-    }
-
-    #main-contacts .three-items-item {
-        width: 100%;
-        margin: 0;
-    }
-
-    #main-contacts .google-map,
-    #main-contacts .google-map iframe {
-        width: 50rem;
     }
 }
 
@@ -501,10 +382,7 @@
         aspect-ratio: 1/1;
     }
 
-    #main-contacts .section-content-text {
-        width: 100%;
-        padding: 2rem 2rem 1rem 2rem;
-    }
+
 }
 
 @media (max-width: 624px) {
@@ -535,6 +413,7 @@
         margin-top: 1rem;
     }
 
+
     #main-gallery .section-row {
         margin: 0 auto;
         max-width: 400px;
@@ -550,15 +429,14 @@
         gap: 3rem;
     }
 
-    #main-contacts .section-content-text {
-        width: 100%;
-        padding: 1rem;
-    }
-
     #main-contacts .google-map,
     #main-contacts .google-map iframe {
         width: 100%;
         height: 40vw;
+    }
+
+    #main-contacts .three-items-wrap {
+        margin-bottom: 0;
     }
 }
 
@@ -592,23 +470,15 @@
         width: 85vw;
     }
 
-    #main-contacts .section-row {
-        gap: 2rem;
-    }
-
     #main-contacts .main-contacts-wrap {
         margin-top: 1rem;
     }
 
-    #main-contacts .form-group {
-        display: flex;
-        flex-direction: column;
+    #main-contacts .three-items-row {
         gap: 2rem;
+        align-items: center;
     }
 
-    #main-contacts .half-width {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 453px) {

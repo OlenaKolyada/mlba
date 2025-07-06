@@ -39,7 +39,7 @@ get_header();
 <section class="section-wrap" id="main-inscription-dates">
     <div class="container">
         <div class="section-row">
-            <div class="section-center">
+            <div class="section-content-center">
                 <div class="main-inscription-dates">
                     <h2><span>Dates d’inscriptions en présentiel&nbsp;:</span></h2>
                     <ul>
@@ -161,7 +161,7 @@ get_header();
 	<section class="section-wrap" id="loisir">
 		<div class="container">
 			<div class="section-row">
-				<div class="section-center">
+				<div class="section-content-center">
 					<div class="section-text">
 						<h2>Section Loisir</h2>
 						<p>Que vous soyez enfant ou adulte, amateur curieux ou passionné, les cours
@@ -370,13 +370,13 @@ get_header();
 <!--	Gallery END-->
 
 <!--	Main Contacts START-->
-	<section class="section-wrap" id="main-contacts">
+	<section class="section-wrap section-background-image" id="main-contacts">
 		<div class="container">
 			<div class="section-row">
 				<div class="section-content-text">
 					<div class="section-text">
 						<h2>Besoin d'aide pour choisir&nbsp;?</h2>
-						<p>Venez nous rencontrer : nous serons ravis de vous accueillir et de vous aider à choisir votre parcours.</p>
+						<p>Venez nous rencontrer&nbsp;: nous serons ravis de vous accueillir et de vous aider à choisir votre parcours.</p>
 						<div class="main-contacts-wrap">
 							<div class="three-items-wrap">
 								<div class="three-items-row">
@@ -411,68 +411,17 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="section-content-text">
-					<div class="section-text">
-						<h2 id="main-page-form-title">Cours d'essai</h2>
-						<p id="main-page-form-text">Le cours d’essai permet à un élève désireux de pratiquer la danse,
-							de venir découvrir l’ambiance du cours et la pédagogie du professeur.</p>
-						<div class="main-contacts-wrap">
-							<form class="form-container" action="" method="post" id="main-page-form">
-								<fieldset class="form-group">
-									<label for="first_name" class="sr-only"></label>
-									<input type="text" class="half-width" id="first_name"
-										   placeholder="Prénom *" name="first_name" required>
-									<label for="last_name" class="sr-only"></label>
-									<input type="text" class="half-width" id="last_name"
-										   placeholder="Nom *" name="last_name" required>
-								</fieldset>
-								<fieldset class="form-group">
-									<label for="phone"  class="sr-only"></label>
-									<input type="tel" class="half-width" id="phone"
-										   placeholder="Numéro de téléphone *" name="phone" required>
-									<label for="email"  class="sr-only"></label>
-									<input type="email" class="half-width" id="email"
-										   placeholder="Email" name="email">
-								</fieldset>
-								<fieldset class="form-single-input full-width">
-									<label for="dance-class"  class="sr-only"></label>
-									<select id="dance-class" name="dance-class" required>
-										<option value="" disabled selected hidden>Cours d'essai *</option>
-										<option value="enfants_classique">Cours d'essai Enfants-Ado Classique</option>
-										<option value="enfants_contemporain">Cours d'essai Ado Contemporain</option>
-										<option value="adultes_classique">Cours d'essai Adultes Classique</option>
-										<option value="adultes_contemporain">Cours d'essai Adultes Contemporain</option>
-									</select>
-								</fieldset>
-								<fieldset class="form-single-input full-width">
-									<label for="comment"  class="sr-only"></label>
-									<textarea id="comment" placeholder="Commentaire" name="comment" rows="4"></textarea>
-								</fieldset>
-								<fieldset class="form-single-input">
-									<label class="checkbox-label">
-										<input class="checkbox" type="checkbox" name="consent" required>
-										J’accepte la&nbsp;<a href="<?php echo get_permalink(143); ?>" target="_blank">politique de confidentialité</a>
-									</label>
-								</fieldset>
-								<fieldset class="form-single-input">
-									<label class="checkbox-label-paragraph">
-										<input class="checkbox text-small" type="checkbox" name="consent-cour-essai" required>
-										J’ai compris que le cours d’essai est offert UNE seule fois sur une discipline choisie. Au delà il sera facturé au prix unitaire de 18€
-									</label>
-								</fieldset>
-								<fieldset class="form-btn">
-									<button class="btn btn-primary-color" type="submit">Envoyer</button>
-								</fieldset>
-							</form>
-						</div>
-                        <div id="main-page-message" class="form-message" aria-live="polite"></div>
-					</div>
-				</div>
+                <div class="section-content-text">
+                    <div class="form-container section">
+                        <h2><?php echo $mlba_options['contact-section-form-title'];?></h2>
+                        <p><?php echo $mlba_options['contact-section-form-text'];?></p>
+                        <?php echo do_shortcode($mlba_options['contact-section-form-shortcode']) ?>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</section>
 	<!--	Main Contacts END-->
-
 </main>
 
 <!--Scroll Dots Nav START-->

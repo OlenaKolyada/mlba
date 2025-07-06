@@ -86,6 +86,12 @@ get_header();
                                         <div class="tarif-cell">10 x 85€</div>
                                     </div>
                                     <div class="tarif-row">
+                                        <div class="tarif-cell first-cell">2 x 1h / semaine</div>
+                                        <div class="tarif-cell highlighted">1 x 684€</div>
+                                        <div class="tarif-cell">3 x 240€</div>
+                                        <div class="tarif-cell">10 x 72€</div>
+                                    </div>
+                                    <div class="tarif-row">
                                         <div class="tarif-cell first-cell">2 x 1h30 / semaine</div>
                                         <div class="tarif-cell highlighted">1 x 855€</div>
                                         <div class="tarif-cell">3 x 300€</div>
@@ -124,9 +130,16 @@ get_header();
                                     <div class="tarif-row">
                                         <div class="tarif-cell first-cell">1h + 1h30 / semaine</div>
                                         <div class="tarif-cell">
-                                              <span class="highlighted"><strong>1 x 80€</strong> <br>(- 5%)</span>
+                                              <span class="highlighted"><strong>1 x 807€</strong> <br>(- 5%)</span>
                                             3 x 283€<br>
                                             10 x 85€</div>
+                                    </div>
+                                    <div class="tarif-row">
+                                        <div class="tarif-cell first-cell">2 x 1h / semaine</div>
+                                        <div class="tarif-cell">
+                                            <span class="highlighted"><strong>1 x 684€</strong> <br>(- 5%)</span>
+                                            3 x 240€<br>
+                                            10 x 72€</div>
                                     </div>
                                     <div class="tarif-row">
                                         <div class="tarif-cell first-cell">2 x 1h30 / semaine</div>

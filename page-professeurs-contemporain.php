@@ -19,7 +19,7 @@ get_header();
     <!--	Alexia Sere START-->
     <section class="section-wrap section-first no-padding-top" id="alexia-sere">
         <div class="container">
-            <h1>Les Professeurs Contempoarain</h1>
+            <h1>Professeur de Contemporain</h1>
             <div class="section-row">
                 <div class="section-content-image">
                     <div class="frame">

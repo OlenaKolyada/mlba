@@ -20,7 +20,7 @@ get_header();
         <div class="container">
             <h1>Pre-inscription</h1>
             <div class="section-row">
-                <div class="section-center">
+                <div class="section-content-center">
                     <p>La pré-inscription vous permet de réserver une place sur le cours choisit dés à présent. Les inscriptions se finalisent EN PRÉSENTIEL en ayant au préalable télécharger et rempli la <a href="<?php echo get_template_directory_uri();?>/assets/pdf/inscription.pdf">fiche de renseignement</a> et celle des <a href="<?php echo get_template_directory_uri();?>/assets/pdf/authorisation.pdf">autorisations parentales</a>.</p>
 
                     <div class="inscription-dates">
@@ -34,7 +34,7 @@ get_header();
                 </div>
             </div>
             <div class="section-row">
-                <div class="section-center">
+                <div class="section-content-center">
                     <div class="section-text">
                         <div id="inscription-form-message" class="form-message" aria-live="polite"></div>
 

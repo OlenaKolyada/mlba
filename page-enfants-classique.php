@@ -33,7 +33,7 @@ get_header();
                     </div>
 
                     <div class="section-row">
-                        <div class="section-center">
+                        <div class="section-content-center">
                             <div class="cards niveaux">
                                 <div class="card-item" id="card-init">
                                     <div class="frame">

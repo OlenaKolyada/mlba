@@ -48,7 +48,7 @@ get_header();
                 </div>
 
                 <div class="section-row">
-                    <div class="section-center">
+                    <div class="section-content-center">
                         <div class="three-items-wrap">
                             <div class="three-items-row">
                                 <div class="three-items-item">
@@ -165,7 +165,7 @@ get_header();
                         </div>
                     </div>
                     <div class="section-row">
-                        <div class="section-center">
+                        <div class="section-content-center">
                             <div class="three-items-wrap">
                                 <div class="three-items-row">
                                     <div class="three-items-item">
@@ -381,7 +381,7 @@ get_header();
                     </div>
                 </div>
                 <div class="section-row">
-                    <div class="section-center">
+                    <div class="section-content-center">
                         <div class="three-items-wrap">
                             <div class="three-items-row">
                                 <div class="three-items-item">

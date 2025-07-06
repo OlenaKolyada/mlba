@@ -390,6 +390,46 @@ Redux::set_section(
 );
 // Info END
 
+// Main Page START
+Redux::set_section(
+    $opt_name,
+    array(
+        'title'            => esc_html__( 'Main Page', 'Mikhalev Lanssens Ballet Academy' ),
+        'id'               => 'mlba-main-page',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'fields'           => array(
+
+            array(
+                'id'       => 'contact-section-title',
+                'type'     => 'text',
+                'title'    => esc_html__( 'Section Contact Titre', 'Mikhalev Lanssens Ballet Academy' ),
+            ),
+            array(
+                'id'       => 'contact-section-text',
+                'type'     => 'textarea',
+                'title'    => esc_html__( 'Section Contact Texte', 'Mikhalev Lanssens Ballet Academy' ),
+            ),
+            array(
+                'id'       => 'contact-section-form-title',
+                'type'     => 'text',
+                'title'    => esc_html__( 'Section Contact Formulaire Titre', 'Mikhalev Lanssens Ballet Academy' ),
+            ),
+            array(
+                'id'       => 'contact-section-form-text',
+                'type'     => 'textarea',
+                'title'    => esc_html__( 'Section Contact Formulaire Texte', 'Mikhalev Lanssens Ballet Academy' ),
+            ),
+            array(
+                'id'       => 'contact-section-form-shortcode',
+                'type'     => 'text',
+                'title'    => esc_html__( 'Section Contact Formulaire Shortcode', 'Mikhalev Lanssens Ballet Academy' ),
+            ),
+        ),
+    )
+);
+// Main Page END
+
 // Buttons START
 Redux::set_section(
     $opt_name,
@@ -435,7 +475,7 @@ Redux::set_section(
                  'title'    => esc_html__( 'Titre Formulaire Page Contact', 'Mikhalev Lanssens Ballet Academy' ),
              ),
              array(
-                 'id'       => 'contact-page-shortcode',
+                 'id'       => 'contact-form-shortcode',
                  'type'     => 'text',
                  'title'    => esc_html__( 'Formulaire Page Contact', 'Mikhalev Lanssens Ballet Academy' ),
              ),
