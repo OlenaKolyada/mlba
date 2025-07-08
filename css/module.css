@@ -249,7 +249,7 @@ select:required:invalid {
 }
 
 .forminator-error-message {
-    color: var(--primary-color);
+    color: red;
 }
 
 .forminator-response-message.forminator-error {
@@ -257,7 +257,7 @@ select:required:invalid {
 }
 
 .forminator-response-message.forminator-show.forminator-success {
-    color: var(--white);
+    color: var(--primary-color);
     font-size: 1.3rem;
 }
 

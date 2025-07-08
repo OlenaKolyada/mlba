@@ -374,12 +374,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 method: 'POST',
                 body: formData
             })
-                .then(response => response.text())
-                .then(() => {
-                    document.getElementById('inscription-form').style.display = 'none';
-                    document.querySelector('#inscription-form-message .success').style.display = 'block';
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        document.querySelector('#inscription-form-message .success').style.display = 'block';
+                        document.getElementById('inscription-form').style.display = 'none';
+                    } else {
+                        // Показать ошибку с сервера
+                        alert(data.data.message);
+                    }
                 })
                 .catch(() => {
+                    // Сетевые ошибки, проблемы с JSON и т.д.
                     document.querySelector('#inscription-form-message .error').style.display = 'block';
                 });
         });

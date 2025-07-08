@@ -207,250 +207,375 @@ function add_menu_link_class($atts, $item, $args) {
 add_filter('nav_menu_link_attributes', 'add_menu_link_class', 10, 3);
 
 // Main Page Form
-add_action('wp_ajax_main_page_form', 'handle_main_page_form');
-add_action('wp_ajax_nopriv_main_page_form', 'handle_main_page_form');
-
-function handle_main_page_form() {
-
-    if (!wp_verify_nonce($_POST['main_page_nonce'], 'main_page_form_nonce')) {
-        wp_die('Erreur de sécurité');
-    }
-
-    $first_name = sanitize_text_field($_POST['first_name']);
-    $last_name = sanitize_text_field($_POST['last_name']);
-    $phone = sanitize_text_field($_POST['phone']);
-    $email = sanitize_email($_POST['email']);
-    $dance_class = sanitize_text_field($_POST['dance-class']);
-    $dance_classes = array(
-        'enfants_classique' => 'Enfants-Ado Classique',
-        'enfants_contemporain' => 'Ado Contemporain',
-        'adultes_classique' => 'Adultes Classique',
-        'adultes_contemporain' => 'Adultes Contemporain'
-    );
-
-    $dance_class_name = isset($dance_classes[$dance_class]) ? $dance_classes[$dance_class] : $dance_class;
-    $comment = sanitize_textarea_field($_POST['comment']);
-
-    $to = get_option('admin_email');
-    $subject = 'Demande cours d\'essai';
-
-    $message = "
-    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande cours d'essai</h3>
-        <p><strong>Prénom:</strong> $first_name</p>
-        <p><strong>Nom:</strong> $last_name</p>
-        <p><strong>Téléphone:</strong> $phone</p>
-        <p><strong>Email:</strong> $email</p>
-        <p><strong>Cours choisi:</strong> $dance_class_name</p>
-        <p><strong>Commentaire:</strong><br>$comment</p>
-    </div>
-    ";
-
-    $headers = array(
-        'From: MLBA.fr <contact@mlba.fr>',
-        'Content-Type: text/html; charset=UTF-8'
-    );
-
-    $mail_sent = wp_mail($to, $subject, $message, $headers);
-
-    if ($mail_sent) {
-        wp_die('success');
-    } else {
-        wp_die('error');
-    }
-}
+//add_action('wp_ajax_main_page_form', 'handle_main_page_form');
+//add_action('wp_ajax_nopriv_main_page_form', 'handle_main_page_form');
+//
+//function handle_main_page_form() {
+//
+//    if (!wp_verify_nonce($_POST['main_page_nonce'], 'main_page_form_nonce')) {
+//        wp_die('Erreur de sécurité');
+//    }
+//
+//    $first_name = sanitize_text_field($_POST['first_name']);
+//    $last_name = sanitize_text_field($_POST['last_name']);
+//    $phone = sanitize_text_field($_POST['phone']);
+//    $email = sanitize_email($_POST['email']);
+//    $dance_class = sanitize_text_field($_POST['dance-class']);
+//    $dance_classes = array(
+//        'enfants_classique' => 'Enfants-Ado Classique',
+//        'enfants_contemporain' => 'Ado Contemporain',
+//        'adultes_classique' => 'Adultes Classique',
+//        'adultes_contemporain' => 'Adultes Contemporain'
+//    );
+//
+//    $dance_class_name = isset($dance_classes[$dance_class]) ? $dance_classes[$dance_class] : $dance_class;
+//    $comment = sanitize_textarea_field($_POST['comment']);
+//
+//    $to = get_option('admin_email');
+//    $subject = 'Demande cours d\'essai';
+//
+//    $message = "
+//    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+//        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande cours d'essai</h3>
+//        <p><strong>Prénom:</strong> $first_name</p>
+//        <p><strong>Nom:</strong> $last_name</p>
+//        <p><strong>Téléphone:</strong> $phone</p>
+//        <p><strong>Email:</strong> $email</p>
+//        <p><strong>Cours choisi:</strong> $dance_class_name</p>
+//        <p><strong>Commentaire:</strong><br>$comment</p>
+//    </div>
+//    ";
+//
+//    $headers = array(
+//        'From: MLBA.fr <contact@mlba.fr>',
+//        'Content-Type: text/html; charset=UTF-8'
+//    );
+//
+//    $mail_sent = wp_mail($to, $subject, $message, $headers);
+//
+//    if ($mail_sent) {
+//        wp_die('success');
+//    } else {
+//        wp_die('error');
+//    }
+//}
 
 // Admission Page Form
-add_action('wp_ajax_admission_page_form', 'handle_admission_page_form');
-add_action('wp_ajax_nopriv_admission_page_form', 'handle_admission_page_form');
-
-function handle_admission_page_form() {
-    if (!wp_verify_nonce($_POST['admission_page_nonce'], 'admission_page_form_nonce')) {
-        wp_die('Erreur de sécurité');
-    }
-
-    $first_name = sanitize_text_field($_POST['first_name']);
-    $last_name = sanitize_text_field($_POST['last_name']);
-    $phone = sanitize_text_field($_POST['phone']);
-    $email = sanitize_email($_POST['email']);
-    $comment = sanitize_textarea_field($_POST['comment']);
-
-    $to = get_option('admin_email');
-    $subject = 'Demande d\'admission';
-
-    $message = "
-    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'admission</h3>
-        <p><strong>Prénom:</strong> $first_name</p>
-        <p><strong>Nom:</strong> $last_name</p>
-        <p><strong>Téléphone:</strong> $phone</p>
-        <p><strong>Email:</strong> $email</p>
-        <p><strong>Commentaire:</strong><br>$comment</p>
-    </div>
-    ";
-
-    $headers = array(
-        'From: MLBA.fr <contact@mlba.fr>',
-        'Content-Type: text/html; charset=UTF-8'
-    );
-
-    $mail_sent = wp_mail($to, $subject, $message, $headers);
-
-    if ($mail_sent) {
-        wp_die('success');
-    } else {
-        wp_die('error');
-    }
-}
+//add_action('wp_ajax_admission_page_form', 'handle_admission_page_form');
+//add_action('wp_ajax_nopriv_admission_page_form', 'handle_admission_page_form');
+//
+//function handle_admission_page_form() {
+//    if (!wp_verify_nonce($_POST['admission_page_nonce'], 'admission_page_form_nonce')) {
+//        wp_die('Erreur de sécurité');
+//    }
+//
+//    $first_name = sanitize_text_field($_POST['first_name']);
+//    $last_name = sanitize_text_field($_POST['last_name']);
+//    $phone = sanitize_text_field($_POST['phone']);
+//    $email = sanitize_email($_POST['email']);
+//    $comment = sanitize_textarea_field($_POST['comment']);
+//
+//    $to = get_option('admin_email');
+//    $subject = 'Demande d\'admission';
+//
+//    $message = "
+//    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+//        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'admission</h3>
+//        <p><strong>Prénom:</strong> $first_name</p>
+//        <p><strong>Nom:</strong> $last_name</p>
+//        <p><strong>Téléphone:</strong> $phone</p>
+//        <p><strong>Email:</strong> $email</p>
+//        <p><strong>Commentaire:</strong><br>$comment</p>
+//    </div>
+//    ";
+//
+//    $headers = array(
+//        'From: MLBA.fr <contact@mlba.fr>',
+//        'Content-Type: text/html; charset=UTF-8'
+//    );
+//
+//    $mail_sent = wp_mail($to, $subject, $message, $headers);
+//
+//    if ($mail_sent) {
+//        wp_die('success');
+//    } else {
+//        wp_die('error');
+//    }
+//}
 
 // Admission Section Form
-add_action('wp_ajax_admission_section_form', 'handle_admission_section_form');
-add_action('wp_ajax_nopriv_admission_section_form', 'handle_admission_section_form');
-
-function handle_admission_section_form() {
-    if (!wp_verify_nonce($_POST['admission_section_nonce'], 'admission_section_form_nonce')) {
-        wp_die('Erreur de sécurité');
-    }
-
-    $first_name = sanitize_text_field($_POST['first_name']);
-    $last_name = sanitize_text_field($_POST['last_name']);
-    $phone = sanitize_text_field($_POST['phone']);
-    $email = sanitize_email($_POST['email']);
-    $comment = sanitize_textarea_field($_POST['comment']);
-
-    $to = get_option('admin_email');
-    $subject = 'Demande d\'admission';
-
-    $message = "
-    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'admission</h3>
-        <p><strong>Prénom:</strong> $first_name</p>
-        <p><strong>Nom:</strong> $last_name</p>
-        <p><strong>Téléphone:</strong> $phone</p>
-        <p><strong>Email:</strong> $email</p>
-        <p><strong>Commentaire:</strong><br>$comment</p>
-    </div>
-    ";
-
-    $headers = array(
-        'From: MLBA.fr <contact@mlba.fr>',
-        'Content-Type: text/html; charset=UTF-8'
-    );
-
-    $mail_sent = wp_mail($to, $subject, $message, $headers);
-
-    if ($mail_sent) {
-        wp_die('success');
-    } else {
-        wp_die('error');
-    }
-}
+//add_action('wp_ajax_admission_section_form', 'handle_admission_section_form');
+//add_action('wp_ajax_nopriv_admission_section_form', 'handle_admission_section_form');
+//
+//function handle_admission_section_form() {
+//    if (!wp_verify_nonce($_POST['admission_section_nonce'], 'admission_section_form_nonce')) {
+//        wp_die('Erreur de sécurité');
+//    }
+//
+//    $first_name = sanitize_text_field($_POST['first_name']);
+//    $last_name = sanitize_text_field($_POST['last_name']);
+//    $phone = sanitize_text_field($_POST['phone']);
+//    $email = sanitize_email($_POST['email']);
+//    $comment = sanitize_textarea_field($_POST['comment']);
+//
+//    $to = get_option('admin_email');
+//    $subject = 'Demande d\'admission';
+//
+//    $message = "
+//    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+//        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'admission</h3>
+//        <p><strong>Prénom:</strong> $first_name</p>
+//        <p><strong>Nom:</strong> $last_name</p>
+//        <p><strong>Téléphone:</strong> $phone</p>
+//        <p><strong>Email:</strong> $email</p>
+//        <p><strong>Commentaire:</strong><br>$comment</p>
+//    </div>
+//    ";
+//
+//    $headers = array(
+//        'From: MLBA.fr <contact@mlba.fr>',
+//        'Content-Type: text/html; charset=UTF-8'
+//    );
+//
+//    $mail_sent = wp_mail($to, $subject, $message, $headers);
+//
+//    if ($mail_sent) {
+//        wp_die('success');
+//    } else {
+//        wp_die('error');
+//    }
+//}
 
 // Contact Page Form
-add_action('wp_ajax_contact_form', 'handle_contact_form');
-add_action('wp_ajax_nopriv_contact_form', 'handle_contact_form');
-
-function handle_contact_form() {
-    if (!wp_verify_nonce($_POST['contact_nonce'], 'contact_form_nonce')) {
-        wp_die('Erreur de sécurité');
-    }
-
-    $first_name = sanitize_text_field($_POST['first_name']);
-    $last_name = sanitize_text_field($_POST['last_name']);
-    $phone = sanitize_text_field($_POST['phone']);
-    $email = sanitize_email($_POST['email']);
-    $comment = sanitize_textarea_field($_POST['comment']);
-
-    $to = get_option('admin_email');
-    $subject = 'Nouveau message Contact';
-    $message = "
-    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Message de contact</h3>
-        <p><strong>Prénom:</strong> $first_name</p>
-        <p><strong>Nom:</strong> $last_name</p>
-        <p><strong>Téléphone:</strong> $phone</p>
-        <p><strong>Email:</strong> $email</p>
-        <p><strong>Message:</strong><br>$comment</p>
-    </div>
-    ";
-
-    $headers = array(
-        'From: MLBA.fr <contact@mlba.fr>',
-        'Content-Type: text/html; charset=UTF-8'
-    );
-
-    wp_mail($to, $subject, $message, $headers);
-
-    wp_die('success');
-}
+//add_action('wp_ajax_contact_form', 'handle_contact_form');
+//add_action('wp_ajax_nopriv_contact_form', 'handle_contact_form');
+//
+//function handle_contact_form() {
+//    if (!wp_verify_nonce($_POST['contact_nonce'], 'contact_form_nonce')) {
+//        wp_die('Erreur de sécurité');
+//    }
+//
+//    $first_name = sanitize_text_field($_POST['first_name']);
+//    $last_name = sanitize_text_field($_POST['last_name']);
+//    $phone = sanitize_text_field($_POST['phone']);
+//    $email = sanitize_email($_POST['email']);
+//    $comment = sanitize_textarea_field($_POST['comment']);
+//
+//    $to = get_option('admin_email');
+//    $subject = 'Nouveau message Contact';
+//    $message = "
+//    <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+//        <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Message de contact</h3>
+//        <p><strong>Prénom:</strong> $first_name</p>
+//        <p><strong>Nom:</strong> $last_name</p>
+//        <p><strong>Téléphone:</strong> $phone</p>
+//        <p><strong>Email:</strong> $email</p>
+//        <p><strong>Message:</strong><br>$comment</p>
+//    </div>
+//    ";
+//
+//    $headers = array(
+//        'From: MLBA.fr <contact@mlba.fr>',
+//        'Content-Type: text/html; charset=UTF-8'
+//    );
+//
+//    wp_mail($to, $subject, $message, $headers);
+//
+//    wp_die('success');
+//}
 
 // Inscription Form
 add_action('wp_ajax_inscription_form', 'handle_inscription_form');
 add_action('wp_ajax_nopriv_inscription_form', 'handle_inscription_form');
 
 function handle_inscription_form() {
-   if (!wp_verify_nonce($_POST['inscription_nonce'], 'inscription_form_nonce')) {
-       wp_die('Erreur de sécurité');
-   }
+    if (!wp_verify_nonce($_POST['inscription_nonce'], 'inscription_form_nonce')) {
+        wp_send_json_error(['message' => 'Erreur de sécurité']);
+    }
 
-   if (!isset($_POST['consent']) || $_POST['consent'] !== 'on') {
-       wp_die('Consent required');
-   }
+    if (!isset($_POST['consent']) || $_POST['consent'] !== 'on') {
+        wp_send_json_error(['message' => 'Consentement requis']);
+    }
 
-   $first_name = sanitize_text_field($_POST['first-name']);
-   $last_name = sanitize_text_field($_POST['last-name']);
-   $phone = sanitize_text_field($_POST['phone']);
-   $email = sanitize_email($_POST['email']);
+    $first_name = sanitize_text_field($_POST['first-name']);
+    $last_name = sanitize_text_field($_POST['last-name']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $email = sanitize_email($_POST['email']);
 
-   $message = "
-   <div style='font-family: Arial, sans-serif; max-width: 600px;'>
-       <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'inscription</h3>
-       <p><strong>Prénom:</strong> $first_name</p>
-       <p><strong>Nom:</strong> $last_name</p>
-       <p><strong>Téléphone:</strong> $phone</p>
-       <p><strong>Email:</strong> $email</p>";
+// Валидация обязательных полей
+    $errors = [];
 
-   $participant_count = 1;
-   while (true) {
-       $first_key = 'first-name-participant-' . $participant_count;
-       $last_key = 'last-name-participant-' . $participant_count;
-       $age_key = 'participant-age-' . $participant_count;
+// Контактная информация (все обязательно)
+    if (empty($first_name)) {
+        $errors[] = 'Prénom est requis';
+    }
 
-       if (!isset($_POST[$first_key]) || empty($_POST[$first_key])) break;
+    if (empty($last_name)) {
+        $errors[] = 'Nom est requis';
+    }
 
-       $participant_first = sanitize_text_field($_POST[$first_key]);
-       $participant_last = sanitize_text_field($_POST[$last_key]);
-       $participant_age = sanitize_text_field($_POST[$age_key]);
+    if (empty($phone)) {
+        $errors[] = 'Téléphone est requis';
+    }
 
-       $message .= "
-       <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information d'élève №$participant_count</h3>
-       <p><strong>Prénom:</strong> $participant_first</p>
-       <p><strong>Nom:</strong> $participant_last</p>
-       <p><strong>Âge:</strong> $participant_age</p>";
+    if (empty($email) || !is_email($email)) {
+        $errors[] = 'Email valide est requis';
+    }
 
-       $schedule_key = 'schedule_' . $participant_count;
-       $schedules = isset($_POST[$schedule_key]) ? $_POST[$schedule_key] : [];
-       if (!empty($schedules)) {
-           $message .= "<p><strong>Créneaux choisis:</strong><br>";
-           foreach ($schedules as $slot) {
-               $message .= "- " . sanitize_text_field($slot) . "<br>";
-           }
-           $message .= "</p>";
-       }
+    // Проверка формата данных
+    if (!empty($first_name)) {
+        if (strlen($first_name) > 50) {
+            $errors[] = 'Prénom trop long (max 50 caractères)';
+        }
+        if (preg_match('/\s{2,}/', $first_name)) {
+            $errors[] = 'Prénom contient des espaces multiples';
+        }
+        if (!preg_match('/^[A-Za-zÀ-ÖØ-öø-ÿ\' -]+$/u', $first_name)) {
+            $errors[] = 'Prénom contient des caractères non valides';
+        }
+    }
 
-       $participant_count++;
-   }
+    if (!empty($last_name)) {
+        if (strlen($last_name) > 50) {
+            $errors[] = 'Nom trop long (max 50 caractères)';
+        }
+        if (preg_match('/\s{2,}/', $last_name)) {
+            $errors[] = 'Nom contient des espaces multiples';
+        }
+        if (!preg_match('/^[A-Za-zÀ-ÖØ-öø-ÿ\' -]+$/u', $last_name)) {
+            $errors[] = 'Nom contient des caractères non valides';
+        }
+    }
 
-   $message .= "</div>";
+    if (!empty($phone)) {
+        $cleaned_phone = preg_replace('/[\s\-\(\)\.]/u', '', $phone);
+        if (!preg_match('/^(0[1-9]\d{8}|\+33[1-9]\d{8}|\+[1-9]\d{8,14})$/', $cleaned_phone)) {
+            $errors[] = 'Format de téléphone non valide';
+        }
+    }
 
-   $headers = array(
-       'From: MLBA.fr <contact@mlba.fr>',
-       'Content-Type: text/html; charset=UTF-8'
-   );
+    if (!empty($email)) {
+        $trimmed_email = trim($email);
+        if (!preg_match('/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/', $trimmed_email)) {
+            $errors[] = 'Format d\'email non valide';
+        }
+    }
 
-   $to = get_option('admin_email');
-   $subject = 'Demande d\'inscription';
+// Проверка участников
+    $participant_count = 1;
+    while (true) {
+        $first_key = 'first-name-participant-' . $participant_count;
+        $last_key = 'last-name-participant-' . $participant_count;
+        $schedule_key = 'schedule_' . $participant_count;
 
-   wp_mail($to, $subject, $message, $headers);
-   wp_die('success');
+        // Проверяем, есть ли хотя бы одно из полей участника
+        if (!isset($_POST[$first_key]) && !isset($_POST[$last_key])) {
+            break;
+        }
+
+        $participant_first = sanitize_text_field($_POST[$first_key] ?? '');
+        $participant_last = sanitize_text_field($_POST[$last_key] ?? '');
+
+        // Имя и фамилия обязательны для каждого участника
+        if (empty($participant_first)) {
+            $errors[] = "Prénom d'élève №$participant_count est requis";
+        }
+
+        if (empty($participant_last)) {
+            $errors[] = "Nom d'élève №$participant_count est requis";
+        }
+
+        // Проверка формата имени участника
+        if (!empty($participant_first)) {
+            if (strlen($participant_first) > 50) {
+                $errors[] = "Prénom d'élève №$participant_count trop long (max 50 caractères)";
+            }
+            if (preg_match('/\s{2,}/', $participant_first)) {
+                $errors[] = "Prénom d'élève №$participant_count contient des espaces multiples";
+            }
+            if (!preg_match('/^[A-Za-zÀ-ÖØ-öø-ÿ\' -]+$/u', $participant_first)) {
+                $errors[] = "Prénom d'élève №$participant_count contient des caractères non valides";
+            }
+        }
+
+        // Проверка формата фамилии участника
+        if (!empty($participant_last)) {
+            if (strlen($participant_last) > 50) {
+                $errors[] = "Nom d'élève №$participant_count trop long (max 50 caractères)";
+            }
+            if (preg_match('/\s{2,}/', $participant_last)) {
+                $errors[] = "Nom d'élève №$participant_count contient des espaces multiples";
+            }
+            if (!preg_match('/^[A-Za-zÀ-ÖØ-öø-ÿ\' -]+$/u', $participant_last)) {
+                $errors[] = "Nom d'élève №$participant_count contient des caractères non valides";
+            }
+        }
+
+        // Хотя бы один курс обязателен для каждого участника
+        $schedules = isset($_POST[$schedule_key]) ? $_POST[$schedule_key] : [];
+        if (empty($schedules)) {
+            $errors[] = "Au moins un créneau doit être sélectionné pour l'élève №$participant_count";
+        }
+
+        $participant_count++;
+    }
+
+    if (!empty($errors)) {
+        wp_send_json_error(['message' => implode('<br>', $errors)]);
+        return;
+    }
+
+    $message = "
+  <div style='font-family: Arial, sans-serif; max-width: 600px;'>
+      <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Demande d'inscription</h3>
+      <p><strong>Prénom:</strong> $first_name</p>
+      <p><strong>Nom:</strong> $last_name</p>
+      <p><strong>Téléphone:</strong> $phone</p>
+      <p><strong>Email:</strong> $email</p>";
+
+    $participant_count = 1;
+    while (true) {
+        $first_key = 'first-name-participant-' . $participant_count;
+        $last_key = 'last-name-participant-' . $participant_count;
+        $age_key = 'participant-age-' . $participant_count;
+
+        if (!isset($_POST[$first_key]) && !isset($_POST[$last_key])) {
+            break;
+        }
+
+        $participant_first = sanitize_text_field($_POST[$first_key] ?? '');
+        $participant_last = sanitize_text_field($_POST[$last_key] ?? '');
+        $participant_age = sanitize_text_field($_POST[$age_key] ?? '');
+
+        $message .= "
+      <h3 style='color: #333; border-top: 2px solid #00CCBD; border-bottom: 2px solid #00CCBD; padding: 10px 0; font-size: 18px;'>Information d'élève №$participant_count</h3>
+      <p><strong>Prénom:</strong> $participant_first</p>
+      <p><strong>Nom:</strong> $participant_last</p>
+      <p><strong>Âge:</strong> $participant_age</p>";
+
+        $schedule_key = 'schedule_' . $participant_count;
+        $schedules = isset($_POST[$schedule_key]) ? $_POST[$schedule_key] : [];
+        if (!empty($schedules)) {
+            $message .= "<p><strong>Créneaux choisis:</strong><br>";
+            foreach ($schedules as $slot) {
+                $message .= "- " . sanitize_text_field($slot) . "<br>";
+            }
+            $message .= "</p>";
+        }
+
+        $participant_count++;
+    }
+
+    $message .= "</div>";
+
+    $headers = array(
+        'From: MLBA.fr <contact@mlba.fr>',
+        'Content-Type: text/html; charset=UTF-8'
+    );
+
+    $to = get_option('admin_email');
+    $subject = 'Demande d\'inscription';
+
+    wp_mail($to, $subject, $message, $headers);
+    wp_send_json_success();
 }
