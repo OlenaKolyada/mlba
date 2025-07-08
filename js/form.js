@@ -1,8 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
     const wrapper = document.querySelector('.form-wrap');
 
+    function isValidName(name) {
+
+        if (name.length > 50) return false;
+        if (/\s{2,}/.test(name)) return false;
+        return /^[A-Za-zÀ-ÖØ-öø-ÿ' -]+$/.test(name);
+    }
+
+    function isValidPhone(phone) {
+        const cleaned = phone.replace(/[\s\-\(\)\.]/g, '');
+        return /^(0[1-9]\d{8}|\+33[1-9]\d{8}|\+[1-9]\d{8,14})$/.test(cleaned);
+    }
+
+    function isValidEmail(email) {
+        const trimmed = email.trim();
+        return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(trimmed);
+    }
+
     // Настройка для первого участника
-    setupParticipantToggle('.participant-1', 'participant_age_1', {
+    setupParticipantToggle('.participant-1', 'participant-age-1', {
         '6-7 ans': '#initiation-section-1',
         '8-9 ans': '#elem-1-section-1',
         '10-11 ans': '#elem-2-section-1',
@@ -12,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Настройка для второго участника
-    setupParticipantToggle('.participant-2', 'participant_age_2', {
+    setupParticipantToggle('.participant-2', 'participant-age-2', {
         '6-7 ans': '#initiation-section-2',
         '8-9 ans': '#elem-1-section-2',
         '10-11 ans': '#elem-2-section-2',
@@ -22,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Настройка для третьего участника
-    setupParticipantToggle('.participant-3', 'participant_age_3', {
+    setupParticipantToggle('.participant-3', 'participant-age-3', {
         '6-7 ans': '#initiation-section-3',
         '8-9 ans': '#elem-1-section-3',
         '10-11 ans': '#elem-2-section-3',
@@ -30,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '15-17 ans': '#ado-section-3',
         '18+ ans': '#adult-section-3'
     });
+
 
     // Функция настройки переключения секций для участника
     function setupParticipantToggle(participantSelector, radioName, sections) {
@@ -111,6 +129,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         });
+
+        // Скрытие сообщения об ошибке при выборе курса
+        const checkboxes = participant.querySelectorAll('.age-sections-container input[type="checkbox"]');
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', function () {
+                if (this.checked) {
+                    document.querySelector('#validation-message .choose-class').style.display = 'none';
+                }
+            });
+        });
     }
 
     // Настройка чекбокса "использовать то же имя"
@@ -122,12 +150,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!checkbox) return;
 
         checkbox.addEventListener('change', function () {
-            const firstName = firstParticipant.querySelector('input[name="first_name_participant_1"]');
-            const lastName = firstParticipant.querySelector('input[name="last_name_participant_1"]');
+            const firstName = firstParticipant.querySelector('input[name="first-name-participant-1"]');
+            const lastName = firstParticipant.querySelector('input[name="last-name-participant-1"]');
 
             if (this.checked) {
-                firstName.value = document.getElementById('first_name').value;
-                lastName.value = document.getElementById('last_name').value;
+                firstName.value = document.getElementById('first-name').value;
+                lastName.value = document.getElementById('last-name').value;
                 firstName.disabled = true;
                 lastName.disabled = true;
             } else {
@@ -135,20 +163,39 @@ document.addEventListener('DOMContentLoaded', function () {
                 lastName.disabled = false;
             }
         });
+        checkbox.disabled = true;
+
+        // Включаем, если заполнено имя и фамилия контакта
+        function toggleCheckboxState() {
+            const contactFirst = document.getElementById('first-name');
+            const contactLast = document.getElementById('last-name');
+
+            if (contactFirst.value.trim() && contactLast.value.trim()) {
+                checkbox.disabled = false;
+            } else {
+                checkbox.disabled = true;
+                checkbox.checked = false;
+            }
+        }
+
+        toggleCheckboxState();
+
+        document.getElementById('first-name').addEventListener('input', toggleCheckboxState);
+        document.getElementById('last-name').addEventListener('input', toggleCheckboxState);
     }
 
     // Обновление имен при изменении контактных данных
-    document.getElementById('first_name').addEventListener('input', updateParticipantNames);
-    document.getElementById('last_name').addEventListener('input', updateParticipantNames);
+    document.getElementById('first-name').addEventListener('input', updateParticipantNames);
+    document.getElementById('last-name').addEventListener('input', updateParticipantNames);
 
     function updateParticipantNames() {
         const firstParticipant = document.querySelector('.participant-1');
         const checkbox = firstParticipant?.querySelector('input[name="same-name-checkbox"]');
         if (checkbox && checkbox.checked) {
-            const first = firstParticipant.querySelector('input[name="first_name_participant_1"]');
-            const last = firstParticipant.querySelector('input[name="last_name_participant_1"]');
-            first.value = document.getElementById('first_name').value;
-            last.value = document.getElementById('last_name').value;
+            const first = firstParticipant.querySelector('input[name="first-name-participant-1"]');
+            const last = firstParticipant.querySelector('input[name="last-name-participant-1"]');
+            first.value = document.getElementById('first-name').value;
+            last.value = document.getElementById('last-name').value;
         }
     }
 
@@ -158,47 +205,48 @@ document.addEventListener('DOMContentLoaded', function () {
     const firstHeading = document.querySelector('.participant-1 .participant-identity-1 h3');
     const originalHeadingText = firstHeading.textContent;
 
+    document.querySelector('.remove-participant').style.display = 'none';
+
     // Кнопки добавления
-    document.querySelector('.add-participant-1').addEventListener('click', function () {
+    document.querySelector('.add-participant').addEventListener('click', function () {
         if (participantCount >= maxParticipants) return;
 
         participantCount++;
 
-        // Обновляем заголовок первого участника
         if (participantCount === 2) {
             firstHeading.textContent = originalHeadingText + ' №1';
             $('.participant-2').slideDown(400);
+            document.querySelector('.remove-participant').style.display = 'inline-block';
+            document.querySelector('.add-remove-participant').style.justifyContent = 'space-between';
+        } else if (participantCount === 3) {
+            $('.participant-3').slideDown(400);
+            document.querySelector('.add-participant').style.display = 'none';
+            document.querySelector('.add-remove-participant').style.justifyContent = 'right';
         }
     });
 
-    document.querySelector('.add-participant-2').addEventListener('click', function () {
-        if (participantCount >= maxParticipants) return;
-
-        participantCount++;
-        $('.participant-3').slideDown(400);
-    });
 
     // Кнопки удаления
-    document.querySelector('.remove-participant-2').addEventListener('click', function () {
-        $('.participant-2').slideUp(300, function() {
-            clearParticipantFields(document.querySelector('.participant-2'));
-        });
+    document.querySelector('.remove-participant').addEventListener('click', function () {
+        if (participantCount === 3) {
+            $('.participant-3').slideUp(300, function () {
+                clearParticipantFields(document.querySelector('.participant-3'));
+            });
+            participantCount--;
+            document.querySelector('.add-participant').style.display = 'inline-block';
+            document.querySelector('.add-remove-participant').style.justifyContent = 'space-between';
+        } else if (participantCount === 2) {
+            $('.participant-2').slideUp(300, function () {
+                clearParticipantFields(document.querySelector('.participant-2'));
+            });
+            participantCount--;
 
-        participantCount--;
-
-        // Возвращаем оригинальный заголовок если остался только один участник
-        if (participantCount === 1) {
             firstHeading.textContent = originalHeadingText;
+            document.querySelector('.remove-participant').style.display = 'none';
         }
+
     });
 
-    document.querySelector('.remove-participant-3').addEventListener('click', function () {
-        $('.participant-3').slideUp(300, function() {
-            clearParticipantFields(document.querySelector('.participant-3'));
-        });
-
-        participantCount--;
-    });
 
     // Функция очистки полей участника
     function clearParticipantFields(participant) {
@@ -235,30 +283,167 @@ document.addEventListener('DOMContentLoaded', function () {
             // Удаляем данные скрытых участников на основе счетчика
             const keysToDelete = [];
             for (let [key, value] of formData.entries()) {
-                if (key.includes('participant_2') && participantCount < 2) {
+                if (key.includes('participant-2') && participantCount < 2) {
                     keysToDelete.push(key);
                 }
-                if (key.includes('participant_3') && participantCount < 3) {
+                if (key.includes('participant-3') && participantCount < 3) {
                     keysToDelete.push(key);
                 }
             }
             keysToDelete.forEach(key => formData.delete(key));
 
+            let hasError = false;
+
+            // Проверка контактного имени и фамилии
+            const contactFirstName = document.getElementById('first-name');
+            const contactLastName = document.getElementById('last-name');
+
+            contactFirstName.value = contactFirstName.value.trim();
+            contactLastName.value = contactLastName.value.trim();
+
+            if (!isValidName(contactFirstName.value)) {
+                document.getElementById('error-contact-first-name').style.display = 'block';
+                hasError = true;
+            } else {
+                document.getElementById('error-contact-first-name').style.display = 'none';
+            }
+
+            if (!isValidName(contactLastName.value)) {
+                document.getElementById('error-contact-last-name').style.display = 'block';
+                hasError = true;
+            } else {
+                document.getElementById('error-contact-last-name').style.display = 'none';
+            }
+
+            // Проверка участников
+            for (let i = 1; i <= participantCount; i++) {
+                const firstInput = document.getElementById(`first-name-participant-${i}`);
+                const lastInput = document.getElementById(`last-name-participant-${i}`);
+
+                if (firstInput && !isValidName(firstInput.value)) {
+                    document.getElementById(`error-participant-${i}-first-name`).style.display = 'block';
+                    hasError = true;
+                } else if (firstInput) {
+                    document.getElementById(`error-participant-${i}-first-name`).style.display = 'none';
+                }
+
+                if (lastInput && !isValidName(lastInput.value)) {
+                    document.getElementById(`error-participant-${i}-last-name`).style.display = 'block';
+                    hasError = true;
+                } else if (lastInput) {
+                    document.getElementById(`error-participant-${i}-last-name`).style.display = 'none';
+                }
+            }
+
+            const phone = document.getElementById('phone');
+            if (!isValidPhone(phone.value)) {
+                document.getElementById('error-phone').style.display = 'block';
+                hasError = true;
+            } else {
+                document.getElementById('error-phone').style.display = 'none';
+            }
+
+            const email = document.getElementById('email');
+            if (!isValidEmail(email.value)) {
+                document.getElementById('error-email').style.display = 'block';
+                hasError = true;
+            } else {
+                document.getElementById('error-email').style.display = 'none';
+            }
+
+            if (hasError) return;
+
+
             // Возвращаем disabled состояние
             disabledInputs.forEach(input => input.disabled = true);
+
+            for (let i = 1; i <= participantCount; i++) {
+                const participant = document.querySelector(`.participant-${i}`);
+                const container = participant.querySelector('.age-sections-container');
+                const allCheckboxes = container.querySelectorAll(`input[name="schedule_${i}[]"]`);
+                const checkedCheckboxes = container.querySelectorAll(`input[name="schedule_${i}[]"]:checked`);
+                const hasChecked = checkedCheckboxes.length > 0;
+                if (!hasChecked) {
+                    document.querySelector('#validation-message .choose-class').style.display = 'block';
+                    return;
+                }
+            }
+
 
             fetch(ajax_object.ajax_url, {
                 method: 'POST',
                 body: formData
             })
                 .then(response => response.text())
-                .then(data => {
+                .then(() => {
                     document.getElementById('inscription-form').style.display = 'none';
-                    document.getElementById('inscription-form-message').innerHTML = '<p class="success">Demande d\'inscription envoyée avec succès !</p>';
+                    document.querySelector('#inscription-form-message .success').style.display = 'block';
                 })
-                .catch(error => {
-                    document.getElementById('inscription-form-message').innerHTML = '<p class="error">Erreur lors de l\'envoi</p>';
+                .catch(() => {
+                    document.querySelector('#inscription-form-message .error').style.display = 'block';
                 });
         });
     }
+
+    // Слушатели для проверки в реальном времени
+    document.getElementById('first-name').addEventListener('input', function () {
+        const errorBlock = document.getElementById('error-contact-first-name');
+        if (this.value === '' || isValidName(this.value)) {
+            errorBlock.style.display = 'none';
+        } else {
+            errorBlock.style.display = 'block';
+        }
+    });
+
+    document.getElementById('last-name').addEventListener('input', function () {
+        const errorBlock = document.getElementById('error-contact-last-name');
+        if (this.value.trim() === '' || isValidName(this.value)) {
+            errorBlock.style.display = 'none';
+        } else {
+            errorBlock.style.display = 'block';
+        }
+    });
+
+    for (let i = 1; i <= 3; i++) {
+        const firstInput = document.getElementById(`first-name-participant-${i}`);
+        const firstError = document.getElementById(`error-participant-${i}-first-name`);
+
+        if (firstInput && firstError) {
+            firstInput.addEventListener('input', function () {
+                firstError.style.display = (this.value.trim() === '' || isValidName(this.value)) ? 'none' : 'block';
+            });
+        }
+
+        const lastInput = document.getElementById(`last-name-participant-${i}`);
+        const lastError = document.getElementById(`error-participant-${i}-last-name`);
+
+        if (lastInput && lastError) {
+            lastInput.addEventListener('input', function () {
+                lastError.style.display = (this.value.trim() === '' || isValidName(this.value)) ? 'none' : 'block';
+            });
+        }
+    }
+
+    document.getElementById('phone').addEventListener('input', function () {
+        const errorBlock = document.getElementById('error-phone');
+        if (this.value.trim() === '' || isValidPhone(this.value)) {
+            errorBlock.style.display = 'none';
+        } else {
+            errorBlock.style.display = 'block';
+        }
+    });
+
+    document.getElementById('email').addEventListener('input', function () {
+        const errorBlock = document.getElementById('error-email');
+        if (this.value.trim() === '' || isValidEmail(this.value)) {
+            errorBlock.style.display = 'none';
+        } else {
+            errorBlock.style.display = 'block';
+        }
+    });
+
+    document.querySelector('button[type="reset"]').addEventListener('click', function () {
+        document.querySelectorAll('.error').forEach(el => el.style.display = 'none');
+    });
+
 });

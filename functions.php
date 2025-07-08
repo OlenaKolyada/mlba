@@ -397,8 +397,8 @@ function handle_inscription_form() {
        wp_die('Consent required');
    }
 
-   $first_name = sanitize_text_field($_POST['first_name']);
-   $last_name = sanitize_text_field($_POST['last_name']);
+   $first_name = sanitize_text_field($_POST['first-name']);
+   $last_name = sanitize_text_field($_POST['last-name']);
    $phone = sanitize_text_field($_POST['phone']);
    $email = sanitize_email($_POST['email']);
 
@@ -412,9 +412,9 @@ function handle_inscription_form() {
 
    $participant_count = 1;
    while (true) {
-       $first_key = 'first_name_participant_' . $participant_count;
-       $last_key = 'last_name_participant_' . $participant_count;
-       $age_key = 'participant_age_' . $participant_count;
+       $first_key = 'first-name-participant-' . $participant_count;
+       $last_key = 'last-name-participant-' . $participant_count;
+       $age_key = 'participant-age-' . $participant_count;
 
        if (!isset($_POST[$first_key]) || empty($_POST[$first_key])) break;
 

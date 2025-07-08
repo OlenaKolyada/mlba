@@ -34,6 +34,7 @@
 
 .btn-ghost:hover {
     border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .btn-primary-color {
@@ -257,7 +258,7 @@ select:required:invalid {
 
 .forminator-response-message.forminator-show.forminator-success {
     color: var(--white);
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .forminator-textarea {
