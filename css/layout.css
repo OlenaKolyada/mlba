@@ -291,6 +291,10 @@ section.longread .address {
         margin: 2rem 0 1rem;
     }
 
+    .section-row {
+        gap: 2rem;
+    }
+
 
 }
 

@@ -34,6 +34,10 @@
     background: #fef2e8;
 }
 
+#inscription .inscription-dates {
+    margin: 1rem 0 2rem 0;
+}
+
 #inscription .section-row:nth-of-type(2) .section-content-center {
     background-color: var(--grey-light);
     box-shadow: var(--shadow);
@@ -44,10 +48,6 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-#inscription .inscription-dates {
-    margin: 2rem 0 3rem;
 }
 
 #inscription label {
@@ -64,22 +64,6 @@
 #inscription h4 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-}
-
-#inscription .inscription-dates h4 span {
-    background-image: linear-gradient(var(--primary-color), var(--primary-color));
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 100% 3px;
-}
-
-#inscription .inscription-dates ul {
-    text-align: center;
-    padding: 0;
-}
-
-#inscription .inscription-dates ul li {
-    font-size: 1.2rem;
 }
 
 /* Half-width fields */
@@ -795,14 +779,6 @@
     }
 
     #inscription h4 {
-        font-size: 0.9rem;
-    }
-
-    #inscription .inscription-dates h4 {
-        font-size: 1rem;
-    }
-
-    #inscription .inscription-dates ul li {
         font-size: 0.9rem;
     }
 

@@ -289,6 +289,13 @@ section h1 {
     border-radius: 3px;
     display: block;
 }
+
+.figcaption {
+    font-size: 0.8rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-style: italic;
+}
 /* Frame END */
 
 /* Swiper START */
@@ -532,7 +539,7 @@ section h1 {
 }
 
 .cards .card-title {
-    margin: 1rem 0 0 0;
+    margin: 0.7rem 0 0 0;
     transition: all 0.5s ease;
     text-align: center;
 }
@@ -549,6 +556,21 @@ section h1 {
 }
 
 /* Cards END */
+
+/*Five Cards START*/
+.cards.five {
+    margin-top: 1.5rem;
+}
+
+.cards.five .card-thumb img {
+    width: 11rem;
+}
+
+.cards.five h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+/*Five Cards END*/
 
 /* Hidden Text START  */
 .hidden-text {
@@ -584,6 +606,29 @@ section h1 {
 
 /* Hidden Text END  */
 
+/*Inscription Dates START*/
+.inscription-dates h2 {
+    text-align: center;
+}
+
+.inscription-dates h2 span {
+    background-image: linear-gradient(var(--primary-color), var(--primary-color));
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 3px;
+}
+
+
+.inscription-dates ul {
+    text-align: center;
+    padding: 0;
+}
+
+.inscription-dates ul li {
+    font-size: 1.2rem;
+}
+/*Inscription Dates END*/
+
 /* Responsive */
 @media screen and (max-width: 1440px) {
     .section-photo {
@@ -607,6 +652,14 @@ section h1 {
 
     .two-list-item {
         width: 40%;
+    }
+
+    .cards.five {
+        gap: 1rem;
+    }
+
+    .cards.five .card-thumb img {
+        width: 10rem;
     }
 
 }
@@ -643,8 +696,17 @@ section h1 {
         gap: 1rem;
     }
 
-    .cards .card-title {
-        margin: 0.7rem 0 0 0;
+    .cards.five {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        max-width: 100%;
+    }
+
+    .cards.five h5 {
+        font-size: 0.8rem;
     }
 
     .three-list-wrap {
@@ -693,6 +755,14 @@ section h1 {
         grid-template-columns: repeat(2, 1fr);
         max-width: 50rem;
         margin: 1rem auto 0;
+    }
+
+    .cards.five {
+        margin-top: 2rem;
+    }
+
+    .cards.five .card-thumb img {
+        width: 8rem;
     }
 
     .three-list-wrap {
@@ -756,6 +826,22 @@ section h1 {
         width: 100%;
     }
 
+    .cards.five {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .cards.five h5 {
+        font-size: 1rem;
+    }
+
+    .cards.five .card-thumb img {
+        width: 15rem;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 624px) {
@@ -817,6 +903,19 @@ section h1 {
 
     .two-list-item {
         width: 100%;
+    }
+
+    .inscription-dates h2 {
+        text-align: left;
+    }
+
+    .inscription-dates ul {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .inscription-dates ul li {
+        font-size: 1rem;
     }
 
 }

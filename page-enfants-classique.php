@@ -34,7 +34,7 @@ get_header();
 
                     <div class="section-row">
                         <div class="section-content-center">
-                            <div class="cards niveaux">
+                            <div class="cards five">
                                 <div class="card-item" id="card-init">
                                     <div class="frame">
                                         <div class="card-thumb">

@@ -31,13 +31,13 @@ get_header();
     					</div>
     				</div>
                     <div class="section-content-image">
-                        <div class="frame">
+                        <figure class="frame">
                             <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
                                 <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg"
                                      alt="Mikhalev Lanssens Ballet Academy, Section Pro"
                                      title="Mikhalev Lanssens Ballet Academy, Section Pro" />
                             </a>
-                        </div>
+                        </figure>
                     </div>
                 </div>
     		</div>
@@ -49,13 +49,14 @@ get_header();
     		<div class="container">
     			<div class="section-row">
                     <div class="section-content-image">
-                        <div class="frame">
+                        <figure class="frame">
                             <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg" class="popup-image" title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg"
                                  alt="Corinne Lanssens, professeure de danse classique, MLBA Section Pro"
                                  title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro" />
                             </a>
-                        </div>
+                        </figure>
+                        <div class="figcaption">Corinne Lanssens, professeure de danse classique, MLBA Section Pro</div>
                     </div>
     				<div class="section-content-text">
     					<div class="section-text">
@@ -98,13 +99,13 @@ get_header();
     					</div>
     				</div>
                 <div class="section-content-image">
-                        <div class="frame">
+                        <figure class="frame">
                             <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
                                 <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg"
                                      alt="Mikhalev Lanssens Ballet Academy, Section Pro"
                                      title="Mikhalev Lanssens Ballet Academy, Section Pro" />
                             </a>
-                        </div>
+                        </figure>
                     </div>
     			</div>
     		</div>
@@ -116,13 +117,14 @@ get_header();
     		<div class="container">
     			<div class="section-row">
                     <div class="section-content-image">
-                        <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg" class="popup-image" title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro">
-                                <img class="section-photo horisontal" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg"
-                                     alt="Corinne Lanssens, professeure de danse classique, MLBA Section Pro"
-                                     title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro" />
+                        <figure class="frame">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg" class="popup-image" title="Roman Mikhalev et Vladimir Ippolitov, MLBA Section Pro">
+                                <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg"
+                                     alt="Roman Mikhalev et Vladimir Ippolitov, MLBA Section Pro"
+                                     title="Roman Mikhalev et Vladimir Ippolitov, MLBA Section Pro" />
                             </a>
-                        </div>
+                        </figure>
+                        <div class="figcaption">Roman Mikhalev et Vladimir Ippolitov, MLBA Section Pro</div>
                     </div>
     				<div class="section-content-text">
     					<div class="section-text">

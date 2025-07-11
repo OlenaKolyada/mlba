@@ -85,19 +85,6 @@ section:nth-child(even) {
 
 /* Enfants-Ado Classique START */
 
-#enfants-classique .cards.niveaux {
-    margin-top: 1.5rem;
-}
-
-#enfants-classique .cards .card-thumb img {
-    width: 11rem;
-}
-
-#enfants-classique .cards h5 {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
 #enfants-classique .niveau-button {
     margin-top: 2rem;
 }
@@ -552,13 +539,7 @@ section:nth-child(even) {
 }
 
 @media screen and (max-width: 1200px) {
-    #enfants-classique .cards {
-        gap: 1rem;
-    }
 
-    #enfants-classique .cards .card-thumb img {
-        width: 10rem;
-    }
 
     #planning .section-content-text,
     #planning .schedule-row {
@@ -617,20 +598,6 @@ section:nth-child(even) {
     #enfants-classique .section-content-text,
     #enfants-classique .section-content-center {
         width: 100%;
-    }
-
-    #enfants-classique .cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 1rem;
-        margin-top: 0;
-        max-width: 100%;
-    }
-
-    #enfants-classique .cards h5 {
-        font-size: 0.8rem;
     }
 
     #enfants-classique .swiper-section-small {
@@ -733,16 +700,6 @@ section:nth-child(even) {
 
 @media screen and (max-width: 992px) {
 
-    #enfants-classique .cards {
-        gap: 0.8rem;
-    }
-
-    #enfants-classique .cards .card-thumb img {
-        width: 8rem;
-    }
-
-
-
     .professeurs .cards {
         margin: 2rem 0 1rem;
     }
@@ -789,21 +746,7 @@ section:nth-child(even) {
         aspect-ratio: 1/1;
     }
 
-    #enfants-classique .cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 2rem;
-    }
 
-    #enfants-classique .cards h5 {
-        font-size: 1rem;
-    }
-
-    #enfants-classique .cards .card-thumb img {
-        width: 15rem;
-        height: auto;
-    }
 
     #planning .schedule-table {
         display: none;

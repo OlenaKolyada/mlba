@@ -41,7 +41,7 @@ get_header();
                         <div class="section-text">
                             <p><strong>Études chorégraphiques :</strong> Conservatoire national de Kazan (Tatarstan) – Ecole chorégraphique d’Almaty (Kazakhstan)</p>
                             <p><strong>Parcours chorégraphique :</strong> Soliste au Ballet de l’Opéra national du Capitole – Ballet de l’Opéra Tchaïkovski de Perm (Russie) – Opéra national du Tatarstan (Kazan) – Ballet de l’Opéra national d’Almaty (Kazakhstan)</p>
-                            <p>Rouslan Savdenov est né à Almaty (Kazakhstan). Il est reconnu comme Artiste d’honneur de la République du Tatarstan. Il a reçu de nombreux prix prestigieux, parmi lesquels le Grand Prix et la Médaille d’or au Concours international de Danse d’Astana en 2001, ainsi que la Médaille d’argent au Concours international de Danse de Perm en 2006. En 2012, il a été distingué par la République du Tatarstan avec le prix "Tantana" en tant que Meilleur Acteur de théâtre musical. En 2014, il a été lauréat du Kraï de Perm dans le domaine de la culture et des arts, récompensé pour son interprétation du rôle de Roméo dans Roméo et Juliette de Kenneth MacMillan.</p>
+                            <p>Ruslan Savdenov est né à Almaty (Kazakhstan). Il est reconnu comme Artiste d’honneur de la République du Tatarstan. Il a reçu de nombreux prix prestigieux, parmi lesquels le Grand Prix et la Médaille d’or au Concours international de Danse d’Astana en 2001, ainsi que la Médaille d’argent au Concours international de Danse de Perm en 2006. En 2012, il a été distingué par la République du Tatarstan avec le prix "Tantana" en tant que Meilleur Acteur de théâtre musical. En 2014, il a été lauréat du Kraï de Perm dans le domaine de la culture et des arts, récompensé pour son interprétation du rôle de Roméo dans Roméo et Juliette de Kenneth MacMillan.</p>
                             <p>Artiste invité à plusieurs reprises, il a dansé avec le Ballet de l’Opéra de Bordeaux en 2011 et 2012, ainsi qu’avec le Young European Ballet (UNESCO) entre 2003 et 2005. Depuis 2002, il participe régulièrement à de nombreux festivals prestigieux, dont le Festival international de Danse classique Rudolf Noureev à Kazan, le Festival "Siberian Crane" en Yakoutie, The Golden Mask à Moscou, le Mariinsky de Saint-Pétersbourg, Dance Open à Saint-Pétersbourg, et Ballet Night in Bangkok.</p>
                         </div>
                     </div>
@@ -264,7 +264,7 @@ get_header();
                 <div class="section-row section-title">
                     <h2 class="title-has-subtitle">Vladimir Ippolitov</h2>
                     <div class="subtitle">
-                        Danseur soliste et producteur d’événements artistiques internationaux
+                        Ancien soliste de l’Opéra National de Bordeaux, Ancien danseur du Grand Théâtre de Genève
                     </div>
                 </div>
 
@@ -281,9 +281,6 @@ get_header();
                     <div class="section-content-text">
                         <div class="section-text">
                             <p>Vladimir Ippolitov a étudié à l’Académie de ballet russe A. Y. Vaganova de Saint-Pétersbourg. Il a travaillé avec les compagnies de ballet internationales les plus prestigieuses, notamment au Théâtre Mariinsky de Saint-Pétersbourg, à l’Opéra National de Bordeaux et au Grand Théâtre de Genève, où il a été soliste. Vladimir produit régulièrement des événements uniques, ce qui lui permet de partager son amour pour le ballet classique et contemporain avec un large public, tant au niveau local qu’international.</p>
-
-
-
 
                             <div class="two-list-wrap">
                                 <div class="two-list-row">
@@ -361,7 +358,7 @@ get_header();
                 <div class="section-row section-title">
                     <h2 class="title-has-subtitle">Yumi Aizawa</h2>
                     <div class="subtitle">
-                        Soliste du Ballet de l'Opéra National du Capitole
+                        Danseuse du Grand Théâtre de Genève, Ancienne première soliste du Ballet de l’Opéra National de Bordeaux
                     </div>
                 </div>
                 <div class="section-row">

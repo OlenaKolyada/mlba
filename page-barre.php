@@ -39,7 +39,7 @@ get_header();
                                             <li>Toute personne désirant offrir à son corps un moment de bien-être et de recentrage</li>
                                         </ul>
                                         <p>Ce cours est accessible sans prérequis technique et s’adapte aux capacités de chacun.</p>
-                                        <p><strong>Jeudi 19h30-20h30</strong> / <strong>Samedi 11h-12h</strong></p>
+                                        <p><strong>Mardi 19h30-20h30</strong></p>
                                         <div class="niveau-button">
                                             <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                         </div>

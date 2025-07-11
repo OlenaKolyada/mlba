@@ -18,18 +18,18 @@ get_header();
 <main class="main" id="inscription">
     <section class="section-wrap section-first no-padding-top">
         <div class="container">
-            <h1>Pre-inscription</h1>
+            <h1>Pré-inscription</h1>
             <div class="section-row">
                 <div class="section-content-center">
-                        <p>La pré-inscription vous permet de réserver une place sur le cours choisit dés à présent. Les inscriptions se finalisent EN PRÉSENTIEL en ayant au préalable télécharger et rempli la <a href="<?php echo get_template_directory_uri();?>/assets/pdf/inscription.pdf">fiche de renseignement</a> et celle des <a href="<?php echo get_template_directory_uri();?>/assets/pdf/authorisation.pdf">autorisations parentales</a>.<br>
+                        <p>La pré-inscription vous permet, dès à présent, de réserver une place sur le cours choisit. Les inscriptions se finalisent EN PRÉSENTIEL en ayant au préalable télécharger et rempli la <a href="<?php echo get_template_directory_uri();?>/assets/pdf/inscription.pdf">fiche de renseignement</a> et celle des <a href="<?php echo get_template_directory_uri();?>/assets/pdf/authorisation.pdf">autorisations parentales</a>.<br>
                             Les champs indiqués par un astérisque (*) sont obligatoires et doivent être renseignés.</p>
                     <div class="inscription-dates">
-                        <h4><span>Dates d’inscriptions en présentiel&nbsp;:</span></h4>
+                        <h2><span>Dates d’inscriptions en présentiel&nbsp;:</span></h2>
                         <ul>
                             <li>Samedi 30 août 10h-13h</li>
                             <li>Mercredi 3 septembre 18h-20h</li>
                             <li>Samedi 6 septembre 10h-13h</li>
-                        <ul>
+                            <ul>
                     </div>
                 </div>
             </div>
@@ -230,12 +230,9 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="barre">
                                                         <input type="checkbox" name="schedule_1[]" value="Barre à terre / Renforcement : Jeudi 19h30-20h30">
-                                                        <span>Jeudi<br>19h30-20h30</span>
+                                                        <span>Mardi<br>19h30-20h30</span>
                                                     </label>
-                                                    <label class="barre">
-                                                        <input type="checkbox" name="schedule_1[]" value="Barre à terre / Renforcement : Samedi 11h-12h">
-                                                        <span>Samedi<br>11h-12h</span>
-                                                    </label>
+
                                                 </fieldset>
                                             </div>
                                         </div>
@@ -243,14 +240,14 @@ get_header();
                                         <!--Adult-->
                                         <div class="adult-section toggle-section" id="adult-section-1">
                                             <div class="class-option">
-                                                <h4>Classique Intermediaire-Avancé</h4>
+                                                <h4>Adultes Classique Inter/Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="adulte-avance">
-                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Lundi 18h30-21h">
+                                                        <input type="checkbox" name="schedule_1[]" value="Adultes Classique Intermediaire/Avancé : Lundi 18h30-21h">
                                                         <span>Lundi<br>18h30-21h</span>
                                                     </label>
                                                     <label class="adulte-avance">
-                                                        <input type="checkbox" name="schedule_1[]" value="Classique Intermediaire-Avancé : Jeudi 18h30-21h">
+                                                        <input type="checkbox" name="schedule_1[]" value="Adultes Classique Intermediaire/Avancé : Jeudi 18h30-21h">
                                                         <span>Jeudi<br>18h30-21h</span>
                                                     </label>
                                                 </fieldset>
@@ -271,12 +268,9 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="barre">
                                                         <input type="checkbox" name="schedule_1[]" value="Barre à terre / Renforcement : Jeudi 19h30-20h30">
-                                                        <span>Jeudi<br>19h30-20h30</span>
+                                                        <span>Mardi<br>19h30-20h30</span>
                                                     </label>
-                                                    <label class="barre">
-                                                        <input type="checkbox" name="schedule_1[]" value="Barre à terre / Renforcement : Samedi 11h-12h">
-                                                        <span>Samedi<br>11h-12h</span>
-                                                    </label>
+
                                                 </fieldset>
                                             </div>
                                         </div>
@@ -434,12 +428,9 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="barre">
                                                         <input type="checkbox" name="schedule_2[]" value="Barre à terre / Renforcement : Jeudi 19h30-20h30">
-                                                        <span>Jeudi<br>19h30-20h30</span>
+                                                        <span>Mardi<br>19h30-20h30</span>
                                                     </label>
-                                                    <label class="barre">
-                                                        <input type="checkbox" name="schedule_2[]" value="Barre à terre / Renforcement : Samedi 11h-12h">
-                                                        <span>Samedi<br>11h-12h</span>
-                                                    </label>
+
                                                 </fieldset>
                                             </div>
                                         </div>
@@ -447,14 +438,14 @@ get_header();
                                         <!--Adult-->
                                         <div class="adult-section toggle-section" id="adult-section-2">
                                             <div class="class-option">
-                                                <h4>Classique Intermediaire-Avancé</h4>
+                                                <h4>Adultes Classique Inter/Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="adulte-avance">
-                                                        <input type="checkbox" name="schedule_2[]" value="Classique Intermediaire-Avancé : Lundi 18h30-21h">
+                                                        <input type="checkbox" name="schedule_2[]" value="Adultes Classique Intermediaire/Avancé : Lundi 18h30-21h">
                                                         <span>Lundi<br>18h30-21h</span>
                                                     </label>
                                                     <label class="adulte-avance">
-                                                        <input type="checkbox" name="schedule_2[]" value="Classique Intermediaire-Avancé : Jeudi 18h30-21h">
+                                                        <input type="checkbox" name="schedule_2[]" value="Adultes Classique Intermediaire/Avancé : Jeudi 18h30-21h">
                                                         <span>Jeudi<br>18h30-21h</span>
                                                     </label>
                                                 </fieldset>
@@ -475,12 +466,9 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="barre">
                                                         <input type="checkbox" name="schedule_2[]" value="Barre à terre / Renforcement : Jeudi 19h30-20h30">
-                                                        <span>Jeudi<br>19h30-20h30</span>
+                                                        <span>Mardi<br>19h30-20h30</span>
                                                     </label>
-                                                    <<label class="barre">
-                                                        <input type="checkbox" name="schedule_2[]" value="Barre à terre / Renforcement : Samedi 11h-12h">
-                                                        <span>Samedi<br>11h-12h</span>
-                                                    </label>
+
                                                 </fieldset>
                                             </div>
                                         </div>
@@ -638,11 +626,7 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="barre">
                                                         <input type="checkbox" name="schedule_3[]" value="Barre à terre / Renforcement : Jeudi 19h30-20h30">
-                                                        <span>Jeudi<br>19h30-20h30</span>
-                                                    </label>
-                                                    <label class="barre">
-                                                        <input type="checkbox" name="schedule_3[]" value="Barre à terre / Renforcement : Samedi 11h-12h">
-                                                        <span>Samedi<br>11h-12h</span>
+                                                        <span>Mardi<br>19h30-20h30</span>
                                                     </label>
                                                 </fieldset>
                                             </div>
@@ -651,14 +635,14 @@ get_header();
                                         <!--Adult-->
                                         <div class="adult-section toggle-section" id="adult-section-3">
                                             <div class="class-option">
-                                                <h4>Classique Intermediaire-Avancé</h4>
+                                                <h4>Adultes Classique Inter/Avancé</h4>
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="adulte-avance">
-                                                        <input type="checkbox" name="schedule_3[]" value="Classique Intermediaire-Avancé : Lundi 18h30-21h">
+                                                        <input type="checkbox" name="schedule_3[]" value="Adultes Classique Intermediaire/Avancé : Lundi 18h30-21h">
                                                         <span>Lundi<br>18h30-21h</span>
                                                     </label>
                                                     <label class="adulte-avance">
-                                                        <input type="checkbox" name="schedule_3[]" value="Classique Intermediaire-Avancé : Jeudi 18h30-21h">
+                                                        <input type="checkbox" name="schedule_3[]" value="Adultes Classique Intermediaire/Avancé : Jeudi 18h30-21h">
                                                         <span>Jeudi<br>18h30-21h</span>
                                                     </label>
                                                 </fieldset>
@@ -679,12 +663,9 @@ get_header();
                                                 <fieldset class="form-single-input checkboxes">
                                                     <label class="barre">
                                                         <input type="checkbox" name="schedule_3[]" value="Barre à terre / Renforcement : Jeudi 19h30-20h30">
-                                                        <span>Jeudi<br>19h30-20h30</span>
+                                                        <span>Mardi<br>19h30-20h30</span>
                                                     </label>
-                                                    <label class="barre">
-                                                        <input type="checkbox" name="schedule_3[]" value="Barre à terre / Renforcement : Samedi 11h-12h">
-                                                        <span>Samedi<br>11h-12h</span>
-                                                    </label>
+
                                                 </fieldset>
                                             </div>
                                         </div>

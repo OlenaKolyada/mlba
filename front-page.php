@@ -40,7 +40,7 @@ get_header();
     <div class="container">
         <div class="section-row">
             <div class="section-content-center">
-                <div class="main-inscription-dates">
+                <div class="inscription-dates">
                     <h2><span>Dates d’inscriptions en présentiel&nbsp;:</span></h2>
                     <ul>
                         <li>Samedi 30 août 10h-13h</li>
@@ -60,13 +60,14 @@ get_header();
 		<div class="container">
 			<div class="section-row">
 				<div class="section-content-image">
-					<div class="frame">
+					<figure class="frame">
                         <a href="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg" class="popup-image" title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg"
                                  alt="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
                                  title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)" />
                         </a>
-					</div>
+					</figure>
+                    <div class="figcaption">Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy</div>
 				</div>
 				<div class="section-content-text">
 					<div class="section-text">
@@ -144,13 +145,13 @@ get_header();
 					</div>
 				</div>
 				<div class="section-content-image">
-					<div class="frame">
+					<figure class="frame">
                         <a href="<?php echo get_template_directory_uri();?>/assets/images/main/danse.jpg" class="popup-image" title="La Danse">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/danse.jpg"
                                  alt="La Danse"
                                  title="La Danse" />
                         </a>
-					</div>
+					</figure>
 				</div>
 			</div>
 		</div>
@@ -169,58 +170,71 @@ get_header();
 							de qualité dans un cadre bienveillant. Dansez pour le plaisir, progressez à votre
 							rythme, et vivez pleinement votre passion!</p>
 					</div>
-					<div class="cards">
+					<div class="cards five">
 						<div class="card-item">
-							<div class="frame">
+							<figure class="frame">
 								<div class="card-thumb">
 									<a href="<?php echo get_permalink(106); ?>">
 										<img src="<?php echo get_template_directory_uri();?>/assets/images/thumbs/enfants-classique.jpg" alt="Enfants-Ado Classique" />
 									</a>
 								</div>
-							</div>
+							</figure>
 							<a href="<?php echo get_permalink(106); ?>">
 								<h5 class="card-title">Enfants-Ado Classique</h5>
 							</a>
 						</div>
 
 						<div class="card-item">
-							<div class="frame">
+							<figure class="frame">
 								<div class="card-thumb">
 									<a href="<?php echo get_permalink(109); ?>">
 										<img src="<?php echo get_template_directory_uri();?>/assets/images/thumbs/ado-contempo.jpg" alt="Enfants-Ado Contemporain" />
 									</a>
 								</div>
-							</div>
+							</figure>
 							<a href="<?php echo get_permalink(109); ?>">
 								<h5 class="card-title">Ado Contemporain</h5>
 							</a>
 						</div>
 
 						<div class="card-item">
-							<div class="frame">
+							<figure class="frame">
 								<div class="card-thumb">
 									<a href="<?php echo get_permalink(112); ?>">
 										<img src="<?php echo get_template_directory_uri();?>/assets/images/thumbs/adulte-classique.jpg" alt="Adultes Classique" />
 									</a>
 								</div>
-							</div>
+							</figure>
 							<a href="<?php echo get_permalink(112); ?>">
 								<h5 class="card-title">Adultes Classique</h5>
 							</a>
 						</div>
 
 						<div class="card-item">
-							<div class="frame">
+							<figure class="frame">
 								<div class="card-thumb">
 									<a href="<?php echo get_permalink(115); ?>">
 										<img src="<?php echo get_template_directory_uri();?>/assets/images/thumbs/adulte-contempo.jpg" alt="Adultes Contemporain" />
 									</a>
 								</div>
-							</div>
+							</figure>
 							<a href="<?php echo get_permalink(115); ?>">
 								<h5 class="card-title">Adultes Contemporain</h5>
 							</a>
 						</div>
+
+                        <div class="card-item">
+                            <figure class="frame">
+                                <div class="card-thumb">
+                                    <a href="<?php echo get_permalink(208); ?>">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/thumbs/barre.jpg" alt="Barre à terre" />
+                                    </a>
+                                </div>
+                            </figure>
+                            <a href="<?php echo get_permalink(208); ?>">
+                                <h5 class="card-title">Barre à terre</h5>
+                            </a>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -246,13 +260,13 @@ get_header();
 			</div>
 			<div class="section-content-image">
 				<div class="quote-container">
-					<div class="frame">
-                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès">
+					<figure class="frame">
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg" class="popup-image" title="Corinne Lanssens. Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg"
-                                 alt="Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès"
-                                 title="Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès" />
+                                 alt="Corinne Lanssens. Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès"
+                                 title="Corinne Lanssens. Mikhalev Lanssens Ballet Academy, Section Pro. Crédit photo Sigried Colomyès" />
                         </a>
-					</div>
+					</figure>
 					<div class="decor-quote">
 						<div class="decor-quote-row">
 							<span>Devenir danseur c’est s’offrir <span class="decor-quote-white">une destinée</span></span>
@@ -263,13 +277,13 @@ get_header();
 					</div>
 				</div>
 				<div class="mobile-only">
-					<div class="frame">
+					<figure class="frame">
 						<img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg"
 							 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
 							 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
 						<div class="decor-quote-mobile">Devenir danseur c’est s’offrir une destinée liée a la
 							nécessité de danser</div>
-					</div>
+					</figure>
 				</div>
 			</div>
 		</div>
@@ -282,13 +296,13 @@ get_header();
 		<div class="container">
 			<div class="section-row">
 				<div class="section-content-image">
-					<div class="frame">
+					<figure class="frame">
                         <a href="<?php echo get_template_directory_uri();?>/assets/images/main/stages.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Stages">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/stages.jpg"
                                  alt="Mikhalev Lanssens Ballet Academy, Stages"
                                  title="Mikhalev Lanssens Ballet Academy, Stages" />
                         </a>
-					</div>
+					</figure>
 				</div>
 				<div class="section-content-text align-left">
 					<div class="section-text">

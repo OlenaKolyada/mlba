@@ -53,12 +53,7 @@ get_header();
                             <div class="schedule-cell" data-day="fri" data-time="morning"></div>
 <!--                            saturday-->
                             <div class="schedule-cell" data-day="sat" data-time="morning">
-                                <a href="#modal-barre" class="popup-schedule">
-                                    <div class="schedule-item barre magnific-schedule">
-                                        <h5>Barre&nbsp;à&nbsp;terre / Renforcement</h5>
-                                        <span>11h-12h</span>
-                                    </div>
-                                </a>
+
                             </div>
                         </div>
 
@@ -128,6 +123,12 @@ get_header();
                                         <span>18h-19h30</span>
                                     </div>
                                 </a>
+                                <a href="#modal-barre" class="popup-schedule">
+                                    <div class="schedule-item barre">
+                                        <h5>Barre&nbsp;à&nbsp;terre / Renforcement</h5>
+                                        <span>19h30-20h30</span>
+                                    </div>
+                                </a>
                             </div>
 
 <!--                            wednesday-->
@@ -154,12 +155,7 @@ get_header();
                                         <span>19h30-21h</span>
                                     </div>
                                 </a>
-                                <a href="#modal-barre" class="popup-schedule">
-                                    <div class="schedule-item barre">
-                                        <h5>Barre&nbsp;à&nbsp;terre / Renforcement</h5>
-                                        <span>19h30-20h30</span>
-                                    </div>
-                                </a>
+
                             </div>
 
 <!--                            friday-->
@@ -232,6 +228,16 @@ get_header();
                                 </a>
                             </div>
                         </div>
+                          <div class="evening">
+                              <div class="day-block-row">
+                                  <a href="#modal-barre" class="popup-schedule">
+                                      <div class="schedule-item barre">
+                                          <h5>Barre&nbsp;à&nbsp;terre / Renforcement</h5>
+                                          <span>19h30-20h30</span>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
                       </div>
 
                       <div class="day-block">
@@ -286,16 +292,7 @@ get_header();
                                 </a>
                             </div>
                         </div>
-                      <div class="evening">
-                          <div class="day-block-row">
-                              <a href="#modal-barre" class="popup-schedule">
-                                  <div class="schedule-item barre">
-                                      <h5>Barre&nbsp;à&nbsp;terre / Renforcement</h5>
-                                      <span>19h30-20h30</span>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
+
                       </div>
 
                       <div class="day-block">
@@ -320,16 +317,7 @@ get_header();
 
                     <div class="day-block">
                         <h3>Samedi</h3>
-                        <div class="morning">
-                            <div class="day-block-row">
-                                <a href="#modal-barre" class="popup-schedule">
-                                    <div class="schedule-item barre">
-                                        <h5>Barre&nbsp;à&nbsp;terre / Renforcement</h5>
-                                        <span>11h-12h</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+
                         <div class="afternoon">
                             <div class="day-block-row">
                                 <div class="schedule-item cours-particuliers">
@@ -460,13 +448,10 @@ get_header();
             <div class="modal-schedule-wrap">
                 <h3>Barre&nbsp;à&nbsp;terre / Renforcement</h3>
                 <div class="schedule-item barre">
-                    <h5>Jeudi</h5>
+                    <h5>Mardi</h5>
                     <span>19h30-20h30</span>
                 </div>
-                <div class="schedule-item barre">
-                    <h5>Samedi</h5>
-                    <span>11h-12h</span>
-                </div>
+
             </div>
         </div>
 

@@ -62,28 +62,7 @@
 }
 /* Hero END */
 
-/*Inscription Dates START*/
-#main-inscription-dates .main-inscription-dates h2 {
-    text-align: center;
-}
 
-#main-inscription-dates .main-inscription-dates h2 span {
-    background-image: linear-gradient(var(--primary-color), var(--primary-color));
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 100% 3px;
-}
-
-
-#main-inscription-dates .main-inscription-dates ul {
-    text-align: center;
-    padding: 0;
-}
-
-#main-inscription-dates .main-inscription-dates ul li {
-    font-size: 1.2rem;
-}
-/*Inscription Dates END*/
 
 /* About START */
 #about {
@@ -103,16 +82,10 @@
 /* Danse END */
 
 /* Section Loisir START */
-#loisir .cards {
-    margin-top: 2rem;
+#loisir .cards .card-title {
+    margin-top: 0;
 }
-
-#loisir .cards .card-thumb img {
-    width: 13rem;
-}
-
-
-/* Section Loisir END */
+    /* Section Loisir END */
 
 /* Section Pro START */
 
@@ -253,10 +226,6 @@
 
 @media screen and (max-width: 1200px) {
 
-    #loisir .cards .card-thumb img {
-        width: 12rem;
-    }
-
     #pro .btn {
         margin-top: 2rem;
         width: 16rem;
@@ -298,10 +267,6 @@
 
     #loisir .section-text {
         margin: 0 auto 1rem;
-    }
-
-    #loisir .cards {
-        margin-top: 1rem;
     }
 
     #pro .section-row {
@@ -374,6 +339,10 @@
         margin: 2rem 0 1rem 0;
     }
 
+    #loisir .cards.five {
+        gap: 2rem;
+    }
+
     #pro .btn {
         margin: 2rem 0 1rem 0;
     }
@@ -391,22 +360,17 @@
         right: -27vw;
     }
 
-    #main-inscription-dates .main-inscription-dates h2 {
-        text-align: left;
+
+
+    #about .three-items-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
     }
 
-    #main-inscription-dates .main-inscription-dates ul {
-        text-align: left;
-        padding-left: 1rem;
-    }
-
-    #main-inscription-dates .main-inscription-dates ul li {
-        font-size: 1rem;
-    }
-
-    #loisir .cards .card-thumb img {
-        width: 15rem;
-        height: auto;
+    #about .three-items-item {
+        width: 100%;
     }
 
     #stages .stages-social {
