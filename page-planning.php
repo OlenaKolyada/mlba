@@ -307,7 +307,7 @@ get_header();
                                 </a>
                                 <a href="#modal-ado-avance" class="popup-schedule">
                                     <div class="schedule-item ado-avance">
-                                          <h5>Ado Avancé</h5>
+                                          <h5>Avancé</h5>
                                           <span>18h45-20h15</span>
                                     </div>
                                 </a>

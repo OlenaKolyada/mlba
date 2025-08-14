@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages
- * Template name: Professeurs Contempoarain
+ * Template name: Professeure de Danse Contempoaraine
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -19,7 +19,7 @@ get_header();
     <!--	Alexia Sere START-->
     <section class="section-wrap section-first no-padding-top" id="alexia-sere">
         <div class="container">
-            <h1>Professeur de Contemporain</h1>
+            <h1>Professeure de Danse Contemporaine</h1>
             <div class="section-row">
                 <div class="section-content-image">
                     <div class="frame">
@@ -28,19 +28,19 @@ get_header();
                                 <div class="swiper-slide">
                                     <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/alexia-sere/alexia-sere1.jpg"
                                        class="popup-gallery"
-                                       title="Alexia Séré">
+                                       title="Alexia Séré, Professeure de Danse Contemporaine, MLBA Section Pro">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/alexia-sere/alexia-sere1.jpg"
-                                             alt="Alexia Séré"
-                                             title="Alexia Séré">
+                                             alt="Alexia Séré, Professeure de Danse Contemporaine, MLBA Section Pro"
+                                             title="Alexia Séré, Professeure de Danse Contemporaine, MLBA Section Pro">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/alexia-sere/alexia-sere.jpg"
                                        class="popup-gallery"
-                                       title="Alexia Séré">
+                                       title="Alexia Séré, Professeure de Danse Contemporaine, MLBA Section Pro">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/alexia-sere/alexia-sere.jpg"
-                                             alt="Alexia Séré"
-                                             title="Alexia Séré">
+                                             alt="Alexia Séré, Professeure de Danse Contemporaine, MLBA Section Pro"
+                                             title="Alexia Séré, Professeure de Danse Contemporaine, MLBA Section Pro">
                                     </a>
                                 </div>
                             </div>

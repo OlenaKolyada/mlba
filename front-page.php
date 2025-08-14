@@ -46,7 +46,8 @@ get_header();
                         <li>Samedi 30 août 10h-13h</li>
                         <li>Mercredi 3 septembre 18h-20h</li>
                         <li>Samedi 6 septembre 10h-13h</li>
-                    <ul>
+                    </ul>
+                    <p class="cursive">Reprise des cours lundi&nbsp;8&nbsp;septembre&nbsp;!</p>
                 </div>
             </div>
         </div>
@@ -318,10 +319,10 @@ get_header();
 					<div class="stages-social">
 						<h4>Surveillez nos pages pour plus d'info</h4>
 						<div class="social-icons">
-							<a href="https://www.instagram.com/jude_mikhalev_ballet_academy/" target="_blank">
+							<a href="https://www.instagram.com/ml_ballet_academy/" target="_blank">
 								<img class="social-icon instagram" src="<?php echo get_template_directory_uri();?>/assets/icons/instagram.svg" alt="">
 							</a>
-							<a href="https://www.facebook.com/Jude-Mikhalev-Ballet-Academy-110031874670706/" target="_blank">
+							<a href="https://www.facebook.com/profile.php?id=61577899906251" target="_blank">
 								<img class="social-icon facebook" src="<?php echo get_template_directory_uri();?>/assets/icons/facebook.svg" alt="">
 							</a>
 						</div>

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Настройка для первого участника
     setupParticipantToggle('.participant-1', 'participant-age-1', {
-        '6-7 ans': '#initiation-section-1',
+        '5-7 ans': '#initiation-section-1',
         '8-9 ans': '#elem-1-section-1',
         '10-11 ans': '#elem-2-section-1',
         '12-14 ans': '#elem-3-section-1',
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Настройка для второго участника
     setupParticipantToggle('.participant-2', 'participant-age-2', {
-        '6-7 ans': '#initiation-section-2',
+        '5-7 ans': '#initiation-section-2',
         '8-9 ans': '#elem-1-section-2',
         '10-11 ans': '#elem-2-section-2',
         '12-14 ans': '#elem-3-section-2',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Настройка для третьего участника
     setupParticipantToggle('.participant-3', 'participant-age-3', {
-        '6-7 ans': '#initiation-section-3',
+        '5-7 ans': '#initiation-section-3',
         '8-9 ans': '#elem-1-section-3',
         '10-11 ans': '#elem-2-section-3',
         '12-14 ans': '#elem-3-section-3',

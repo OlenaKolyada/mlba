@@ -44,15 +44,12 @@
 
 #hero .hero-slogan {
     z-index: 2;
+    font-family: 'Oooh Baby', serif;
+    font-size: 2.5rem;
 }
 
 #hero .hero-slogan br {
     display: none;
-}
-
-#hero .hero-slogan {
-    font-family: 'Oooh Baby', serif;
-    font-size: 2.5rem;
 }
 
 #hero .hero-buttons {

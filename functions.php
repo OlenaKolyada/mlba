@@ -577,5 +577,39 @@ function handle_inscription_form() {
     $subject = 'Demande d\'inscription';
 
     wp_mail($to, $subject, $message, $headers);
+
+    // Отправка письма пользователю
+    $user_subject = 'Confirmation de votre demande de pré-inscription';
+    $user_message = "
+<div style='font-family: Arial, sans-serif; max-width: 600px;'>
+    <p>Bonjour $first_name $last_name,</p>
+    <p>Nous accusons réception de votre démarche de pré-inscription et vous en remercions. Afin que votre enfant (ou vous même) soit inscrit sur le listing du/des cours choisi(s), merci de nous faire parvenir le montant de l’adhésion à :</p>
+    <p><strong><em>MIKHALEV LANSSENS BALLET ACADEMY</em></strong><br>
+    152 avenue Jean Jaurès<br>
+    33600 Pessac</p>
+    <h4>Les créneaux choisis :</h4>
+    <ul>";
+
+    $participant_count = 1;
+    while (true) {
+        $schedule_key = 'schedule_' . $participant_count;
+        if (!isset($_POST[$schedule_key])) {
+            break;
+        }
+
+        $schedules = $_POST[$schedule_key];
+        foreach ($schedules as $slot) {
+            $user_message .= '<li>' . sanitize_text_field($slot) . '</li>';
+        }
+
+        $participant_count++;
+    }
+
+    $user_message .= "</ul>
+    <p>Bien à vous,<br>L'équipe MLBA</p>
+</div>";
+
+    wp_mail($email, $user_subject, $user_message, $headers);
+
     wp_send_json_success();
 }

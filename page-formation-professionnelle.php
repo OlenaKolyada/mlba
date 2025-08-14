@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages
- * Template name: Section Pro
+ * Template name: Formation Professionnelle
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -19,23 +19,22 @@ get_header();
     <!--	Presentation START -->
     <section class="section-wrap section-first no-padding-top" id="presentation">
     		<div class="container">
-    			<h1>Formation professionnelle</h1>
+    			<h1>Formation Professionnelle</h1>
     			<div class="section-row">
     				<div class="section-content-text">
     					<div class="section-text">
     						<h2>Présentation</h2>
     						<p>Destinée aux jeunes danseurs passionnés de danse classique et souhaitant se préparer au métier de danseur professionnel,
-    							cette section propose un enseignement complet et exigeant, alliant qualité, rigueur et transmission artistique.
-    							Dirigée par Roman Mikhalev et Corinne Lanssens, tous deux issus de grandes écoles et riches de longues carrières
+    							section Formation Professionnelle propose un enseignement complet et exigeant, alliant qualité, rigueur et transmission artistique. Dirigée par Roman Mikhalev et Corinne Lanssens, tous deux issus de grandes écoles et riches de longues carrières
     							sur les scènes nationales et internationales, elle offre une formation solide, en adéquation avec les attentes du milieu professionnel.</p>
     					</div>
     				</div>
                     <div class="section-content-image">
                         <figure class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro. Formation Professionnelle">
                                 <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro1.jpg"
-                                     alt="Mikhalev Lanssens Ballet Academy, Section Pro"
-                                     title="Mikhalev Lanssens Ballet Academy, Section Pro" />
+                                     alt="Mikhalev Lanssens Ballet Academy, Section Pro. Formation Professionnelle"
+                                     title="Mikhalev Lanssens Ballet Academy, Section Pro. Formation Professionnelle" />
                             </a>
                         </figure>
                     </div>
@@ -52,7 +51,7 @@ get_header();
                         <figure class="frame">
                             <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg" class="popup-image" title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro2.jpg"
-                                 alt="Corinne Lanssens, professeure de danse classique, MLBA Section Pro"
+                                 alt="Corinne Lanssens, professeure de danse classique, MLBA Section Pro. Formation Professionnelle"
                                  title="Corinne Lanssens, professeure de danse classique, MLBA Section Pro" />
                             </a>
                         </figure>
@@ -102,7 +101,7 @@ get_header();
                         <figure class="frame">
                             <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg" class="popup-image" title="Mikhalev Lanssens Ballet Academy, Section Pro">
                                 <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro3.jpg"
-                                     alt="Mikhalev Lanssens Ballet Academy, Section Pro"
+                                     alt="Mikhalev Lanssens Ballet Academy, Section Pro. Formation Professionnelle"
                                      title="Mikhalev Lanssens Ballet Academy, Section Pro" />
                             </a>
                         </figure>
@@ -120,7 +119,7 @@ get_header();
                         <figure class="frame">
                             <a href="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg" class="popup-image" title="Roman Mikhalev et Vladimir Ippolitov, MLBA Section Pro">
                                 <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/pro/section-pro4.jpg"
-                                     alt="Roman Mikhalev et Vladimir Ippolitov, MLBA Section Pro"
+                                     alt="Roman Mikhalev et Vladimir Ippolitov, MLBA Section Pro. Formation Professionnelle"
                                      title="Roman Mikhalev et Vladimir Ippolitov, MLBA Section Pro" />
                             </a>
                         </figure>

@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages
- * Template name: Professeurs de Caractere
+ * Template name: Professeure de Danse de Caractere
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -19,14 +19,14 @@ get_header();
     <!--	Valeriya Pyestryakova START-->
     <section class="section-wrap section-first no-padding-top" id="valeriya-pyestryakova">
         <div class="container">
-            <h1>Les Professeurs de danse de Caractère</h1>
+            <h1>Professeure de Danse de Caractère</h1>
             <div class="section-row">
                 <div class="section-content-image">
                     <div class="frame">
-                        <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/valeriya-pyestryakova/valeriya-pyestryakova.jpg" class="popup-image" title="Valeriya Pyestryakova">
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/valeriya-pyestryakova/valeriya-pyestryakova.jpg" class="popup-image" title="Valeriya Pyestryakova, Professeure de Danse de Caractère, MLBA Section Pro">
                             <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/profs/valeriya-pyestryakova/valeriya-pyestryakova.jpg"
-                                 alt="Valeriya Pyestryakova"
-                                 title="Valeriya Pyestryakova" />
+                                 alt="Valeriya Pyestryakova, Professeure de Danse de Caractère, MLBA Section Pro"
+                                 title="Valeriya Pyestryakova, Professeure de Danse de Caractère, MLBA Section Pro" />
                         </a>
                     </div>
                 </div>

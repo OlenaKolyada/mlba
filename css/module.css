@@ -618,7 +618,6 @@ section h1 {
     background-size: 100% 3px;
 }
 
-
 .inscription-dates ul {
     text-align: center;
     padding: 0;
@@ -626,6 +625,13 @@ section h1 {
 
 .inscription-dates ul li {
     font-size: 1.2rem;
+}
+
+.inscription-dates .cursive {
+    font-family: 'Oooh Baby', serif;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    line-height: 3.5rem;
 }
 /*Inscription Dates END*/
 

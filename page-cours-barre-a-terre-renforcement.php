@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages
- * Template name: Barre
+ * Template name: Cours Barre a Terre Renforcement
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -18,11 +18,11 @@ get_header();
     <main class="main" id="barre">
             <section class="section-wrap section-first no-padding-top" id="intro">
                     <div class="container">
-                        <h1>Barre à terre / Renforcement musculaire</h1>
+                        <h1>Cours Barre à terre / Renforcement musculaire</h1>
                             <div class="section-row">
                                 <div class="section-content-text">
                                     <div class="section-text">
-                                        <p>Ce cours allie les principes de la barre à terre classique, inspirée directement des exercices techniques de danse classique, à des apports issus des méthodes Pilates et Yoga.</p>
+                                        <p>Le Cours Barre à terre / Renforcement allie les principes de la barre à terre classique, inspirée directement des exercices techniques de danse classique, à des apports issus des méthodes Pilates et Yoga.</p>
                                         <p>Les objectifs&nbsp;:</p>
                                         <ul>
                                             <li>Améliorer la mobilité articulaire</li>
@@ -50,17 +50,17 @@ get_header();
                                         <div class="swiper swiper-section-small">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/barre/barre1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Barre à terre / Renforcement musculaire">
+                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/barre/barre1.jpg" class="popup-gallery" title="Mikhalev Lanssens Ballet Academy, Cours Barre à terre / Renforcement musculaire">
                                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/barre/barre1.jpg"
-                                                             alt="Mikhalev Lanssens Ballet Academy, Barre à terre / Renforcement musculaire"
-                                                             title="Mikhalev Lanssens Ballet Academy, Barre à terre / Renforcement musculaire">
+                                                             alt="Mikhalev Lanssens Ballet Academy, Cours Barre à terre / Renforcement musculaire"
+                                                             title="Mikhalev Lanssens Ballet Academy, Cours Barre à terre / Renforcement musculaire">
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/barre/barre2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Barre à terre / Renforcement musculaire">
+                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/barre/barre2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours Barre à terre / Renforcement musculaire">
                                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/barre/barre2.jpg"
-                                                             alt="Mikhalev Lanssens Ballet Academy, Barre à terre / Renforcement musculaire"
-                                                             title="Mikhalev Lanssens Ballet Academy, Barre à terre / Renforcement musculaire">
+                                                             alt="Mikhalev Lanssens Ballet Academy, Cours Barre à terre / Renforcement musculaire"
+                                                             title="Mikhalev Lanssens Ballet Academy, Cours Barre à terre / Renforcement musculaire">
                                                     </a>
                                                 </div>
                                             </div>

@@ -124,6 +124,10 @@ section.longread  {
     padding: 3rem 0;
 }
 
+section.longread .section-text {
+    margin-right: auto;
+}
+
 section.no-padding-top.longread  {
     padding: 0 0 3rem 0;
 }

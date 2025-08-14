@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages
- * Template name: Admission
+ * Template name: Modalites Audition
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -15,8 +15,8 @@
 get_header();
 ?>
 
-<main class="main" id="admission">
-    <!--	Admission START-->
+<main class="main" id="audition">
+    <!--	Audition START-->
     <section class="section-wrap section-first no-padding-top">
         <div class="container">
             <div class="section-row">
@@ -30,9 +30,8 @@ get_header();
             </div>
         </div>
     </section>
-<!--    Admission END-->
+<!--    Audition END-->
     </main>
 
 <?php
-// get_sidebar();
 get_footer();

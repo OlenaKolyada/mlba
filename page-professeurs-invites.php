@@ -21,6 +21,7 @@ get_header();
         <section class="section-wrap" id="ruslan-savdenov">
             <div class="container">
                 <div class="section-row section-title">
+                    <h1>Professeurs Invités</h1>
                     <h2 class="title-has-subtitle">Ruslan Savdenov</h2>
                     <div class="subtitle">
                         Soliste de l'Opéra National du Capitole-Toulouse
@@ -30,10 +31,10 @@ get_header();
                 <div class="section-row">
                     <div class="section-content-image">
                         <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/ruslan-savdenov/ruslan-savdenov.jpg" class="popup-image" title="Ruslan Savdenov">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/ruslan-savdenov/ruslan-savdenov.jpg" class="popup-image" title="Ruslan Savdenov, Professeur Invité, MLBA Section Pro">
                                 <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/profs/ruslan-savdenov/ruslan-savdenov.jpg"
-                                     alt="Ruslan Savdenov"
-                                     title="Ruslan Savdenov" />
+                                     alt="Ruslan Savdenov, Professeur Invité, MLBA Section Pro"
+                                     title="Ruslan Savdenov, Professeur Invité, MLBA Section Pro" />
                             </a>
                         </div>
                     </div>
@@ -156,10 +157,10 @@ get_header();
                         </div>
                         <div class="section-content-image">
                             <div class="frame">
-                                <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/aleksandra-surodeev/aleksandra-surodeev.jpg" class="popup-image" title="Aleksandra Surodeev">
+                                <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/aleksandra-surodeev/aleksandra-surodeev.jpg" class="popup-image" title="Aleksandra Surodeev, Professeure Invitée, MLBA Section Pro">
                                     <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/profs/aleksandra-surodeev/aleksandra-surodeev.jpg"
-                                         alt="Aleksandra Surodeev"
-                                         title="Aleksandra Surodeev" />
+                                         alt="Aleksandra Surodeev, Professeure Invitée, MLBA Section Pro"
+                                         title="Aleksandra Surodeev, Professeure Invitée, MLBA Section Pro" />
                                 </a>
                             </div>
                         </div>
@@ -271,10 +272,10 @@ get_header();
                 <div class="section-row">
                     <div class="section-content-image">
                         <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/vladimir-ippolitov/vladimir-ippolitov.jpg" class="popup-image" title="Vladimir Ippolitov">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/vladimir-ippolitov/vladimir-ippolitov.jpg" class="popup-image" title="Vladimir Ippolitov, Professeur Invité, MLBA Section Pro">
                                 <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/profs/vladimir-ippolitov/vladimir-ippolitov.jpg"
-                                     alt="Vladimir Ippolitov"
-                                     title="Vladimir Ippolitov" />
+                                     alt="Vladimir Ippolitov, Professeur Invité, MLBA Section Pro"
+                                     title="Vladimir Ippolitov, Professeur Invité, MLBA Section Pro" />
                             </a>
                         </div>
                     </div>
@@ -370,10 +371,10 @@ get_header();
                     </div>
                     <div class="section-content-image">
                         <div class="frame">
-                            <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/yumi-aizawa/yumi-aizawa.jpg" class="popup-image" title="Yumi Aizawa">
+                            <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/yumi-aizawa/yumi-aizawa.jpg" class="popup-image" title="Yumi Aizawa, Professeure Invitée, MLBA Section Pro">
                                 <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/profs/yumi-aizawa/yumi-aizawa.jpg"
-                                     alt="Yumi Aizawa"
-                                     title="Yumi Aizawa" />
+                                     alt="Yumi Aizawa, Professeure Invitée, MLBA Section Pro"
+                                     title="Yumi Aizawa, Professeure Invitée, MLBA Section Pro" />
                             </a>
                         </div>
                     </div>
