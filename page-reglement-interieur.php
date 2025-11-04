@@ -27,20 +27,11 @@ get_header();
                 <div class="section-content-text">
                     <div class="section-text">
                         <h2><span>Article 1. Frais d'adhésion / Tarifs des cours / Participation spectacle</span></h2>
-                        <h4>1.1. Frais d'inscription</h4>
-                        <p>Les frais d’adhésion de 30€ devront être acquittés soit:
-                            <ul>
-                                <li>après la pré-inscription en ligne, avec l’envoi d’un chèque de 30€ libellé à l’ordre de la <strong>Mikhalev Lanssens Ballet Academy</strong>,</li>
-                                <li>lors de l’inscription en présentiel, sur les jours dédiés.</li>
-                            </ul>
+                        <h4>1.1. Frais d'adhésion</h4>
+                        <p>L’inscription à La Mikhalev Lanssens Ballet Academy, sous statut associatif, implique une adhésion de 30€ pour l’année scolaire en cours.</p>
                         <h4>1.2. Tarifs des cours</h4>
-                        <p>Les tarifs des cours sont basés sur un forfait tenant compte des vacances
-                            scolaires et jours fériés, sur une période de 10 mois.</p>
-                        <p>L’engagement à la <strong>Mikhalev Lanssens Ballet Academy</strong> est annuel et le règlement de la totalité des forfaits doit être effectué lors de l’inscription, soit&nbsp;:</p>
-                        <ul>
-                            <li><strong>en espèce : </strong>autorisé seulement pour un règlement en 1 fois le jour de l’inscription</li>
-                            <li><strong>par chèque(s) </strong>libellé(s) au nom de la <strong>Mikhalev Lanssens Ballet Academy</strong> (voir modalités sur <a class="underlined" href="<?php echo get_permalink(103); ?>">tarifs</a>) datés du jour de remise, et encaissés selon l’échéancier de facilité de paiement.</li>
-                        </ul>
+                        <p>Les <a href="<?php echo get_permalink(103); ?>" class="btn btn-primary-color">tarifs</a> des cours sont basés sur un forfait tenant compte des vacances scolaires et jours fériés, sur une période de 10 mois.</p>
+                        <p>L’engagement à la <strong>Mikhalev Lanssens Ballet Academy</strong> est annuel.</p>
                         <p><strong>Aucun remboursement possible durant l’année,</strong> sauf en cas de déménagement suite
                             à une mutation (sur justificatif) ou pour maladies graves (sur présentation d’un arrêt
                             maladie de plus de 31 jours). Le remboursement sera effectué au prorata des cours
@@ -61,22 +52,12 @@ get_header();
             <div class="section-row">
                 <div class="section-content-text">
                     <div class="section-text">
-                        <h2><span>Article 2. Pré-inscription et inscription</span></h2>
-                        <h4>2.1. Pré-inscription</h4>
-                        <p><strong>Pré-inscription : </strong>Réalisable en ligne via le <a class="underlined" href="<?php echo get_permalink(124); ?>">formulaire</a>. Prise en compte à réception
-                            ou à remise du coût de l’adhésion.</p>
-                            <p>Envoi du paiement au :</p>
-                            <p>MLBA<br>
-                            152 Av. Jean Jaurès<br>
-                            33600 Pessac</p>
-                        <h4>2.2. Inscription</h4>
-                        <p><strong>Inscription :</strong> En présentiel sur le lieu des cours, sur les jours annoncés via le site ou réseaux sociaux.</p>
-                        <p>Documents à fournir :</p>
-                        <ul>
-                            <li><strong>Formulaires d’inscription </strong>rempli (télécharger ici).</li>
-                            <li><strong>Un certificat médical </strong>de non contre-indication à pratique de la danse</li>
-                            <li><strong>Le(s) règlement(s) : </strong>inscription (adhésion)+ forfait annuel</li>
-                        </ul>
+                        <h2><span>Article 2. Inscription</span></h2>
+                        <h4>2.1. Inscription</h4>
+                        <p>Les inscriptions sont à réaliser en ligne sur la <strong><a href="https://www.helloasso.com/associations/mikhalev-lanssens-ballet-academy/adhesions/adhesion-et-inscription-2025-2026" target="_blank">Plateforme HelloAsso</a></strong>.</p>
+                        <p>Le <a href="<?php echo get_template_directory_uri();?>/assets/pdf/authorisation.pdf">formulaire Autorisations/Declaration</a> doit y être téléchargé, remplie et signé. Il devra être remis au professeur lors du 1er cours, ou lors des permanences de pré-rentrée.</p>
+                        <p>Chaque élève doit s’assurer auprès d’un médecin, qu’il est apte à pratiquer son activité.</p>
+                        <p>La Mikhalev Lanssens Ballet Academy ne pourra être tenue pour responsable en cas de blessure survenue lors d’un cours.</p>
                         <p>La <strong>Mikhalev Lanssens Ballet Academy</strong> se réserve le droit de refuser l’accès au studio à un élève dont
                             le dossier ne sera pas complet.</p>
                     </div>
@@ -159,8 +140,7 @@ get_header();
                             fin du cours de danse.</p>
                         <p>Les parents sont tenus de venir chercher <strong>les élèves de moins de 12 ans au sein de
                             l’école de danse.</strong></p>
-                        <p><strong>Une autorisation de sortie</strong> est à signer dans le formulaire d’inscription pour les
-                            élèves de plus de 12 ans.</p>
+                        <p><strong>Une autorisation de sortie</strong> est demandé pour les élèves de 12 et plus.</p>
                     </div>
                 </div>
             </div>
@@ -200,7 +180,7 @@ get_header();
                         <p>La <strong>Mikhalev Lanssens Ballet Academy</strong> pourra être amener à utiliser des photos ou vidéos des élèves
                             pour le site internet, les journaux, les DVD du spectacle, les photos ou vidéos prises
                             en studios ou salle de spectacle. <strong>Une autorisation des parents des élèves mineures</strong>
-                            devra être signée dans le formulaire d’inscription.</p>
+                            devra être signée dans le <a href="<?php echo get_template_directory_uri();?>/assets/pdf/authorisation.pdf">formulaire Autorisations/Declaration</a>.</p>
                     </div>
                 </div>
             </div>

@@ -599,3 +599,9 @@
     }
 }
 
+@media (width: 375px) and (height: 634px) {
+    #hero img {
+        right: -44vw;
+    }
+}
+

@@ -41,7 +41,7 @@ get_header();
         <div class="section-row">
             <div class="section-content-center">
                 <div class="inscription-dates">
-                    <h2><span>Dates d’inscriptions en présentiel&nbsp;:</span></h2>
+                    <h2><span>Dates de permanence (infos / inscriptions / rencontres)&nbsp;:</span></h2>
                     <ul>
                         <li>Samedi 30 août 10h-13h</li>
                         <li>Mercredi 3 septembre 18h-20h</li>
@@ -115,7 +115,7 @@ get_header();
 				<div class="section-content-text">
 					<div class="section-text">
 						<h2>Pourquoi pratiquer la&nbsp;Danse&nbsp;?</h2>
-						<p>La danse est bien plus qu’une activité artistique : c’est une véritable école de vie.
+						<p>La danse est bien plus qu’une activité artistique&nbsp;: c’est une véritable école de vie.
 							Elle développe la discipline, la rigueur, la confiance en soi et la gestion des émotions.
 							En favorisant l’écoute, le respect des autres et le travail en groupe, elle enseigne
 							aussi des valeurs humaines essentielles. À travers l’expression du corps et l’ouverture
@@ -169,7 +169,7 @@ get_header();
 						<p>Que vous soyez enfant ou adulte, amateur curieux ou passionné, les cours
 							Loisirs de la <strong>Mikhalev Lanssens Ballet Academy</strong> offrent un apprentissage
 							de qualité dans un cadre bienveillant. Dansez pour le plaisir, progressez à votre
-							rythme, et vivez pleinement votre passion!</p>
+							rythme, et vivez pleinement votre passion&nbsp;!</p>
 					</div>
 					<div class="cards five">
 						<div class="card-item">
@@ -282,7 +282,7 @@ get_header();
 						<img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/section-pro.jpg"
 							 alt="Mikhalev Lanssens Ballet Academy, Section Pro"
 							 title="Mikhalev Lanssens Ballet Academy, Section Pro" />
-						<div class="decor-quote-mobile">Devenir danseur c’est s’offrir une destinée liée a la
+						<div class="decor-quote-mobile">Devenir danseur c’est s’offrir une destinée liée à la
 							nécessité de danser</div>
 					</figure>
 				</div>

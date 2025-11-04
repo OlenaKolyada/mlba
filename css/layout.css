@@ -49,6 +49,9 @@ section.no-padding-top {
     padding: 0 0 6rem 0;
 }
 
+.section-center-margin-right-auto {
+    margin-right: auto;
+}
 
 .align-left {
     align-items: flex-start;
