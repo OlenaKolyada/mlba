@@ -35,25 +35,22 @@ get_header();
 	</section>
 <!--Hero END-->
 
-<!--	Inscription Dates START-->
-<section class="section-wrap" id="main-inscription-dates">
+<!--	Annonces START-->
+<section class="section-wrap" id="main-annonces">
     <div class="container">
         <div class="section-row">
             <div class="section-content-center">
-                <div class="inscription-dates">
-                    <h2><span>Dates de permanence (infos / inscriptions / rencontres)&nbsp;:</span></h2>
-                    <ul>
-                        <li>Samedi 30 août 10h-13h</li>
-                        <li>Mercredi 3 septembre 18h-20h</li>
-                        <li>Samedi 6 septembre 10h-13h</li>
-                    </ul>
-                    <p class="cursive">Reprise des cours lundi&nbsp;8&nbsp;septembre&nbsp;!</p>
+                <div class="annonces">
+                    <h2 class="title-has-subtitle"><a href="<?php echo get_permalink(278); ?>">Stage Décembre 2025</a></h2>
+                    <p class="subtitle">20–21 décembre 2025</p>
+                    <p class="annonce-body">Stage de danse classique et contemporaine à Pessac avec Roman Mikhalev, Corinne Lanssens et Yumi Aizawa. Deux jours de travail technique et artistique pour danseurs de niveaux moyen et avancé.</p>
+                    <p class="cursive"><a href="<?php echo get_permalink(278); ?>">Cliquez ici pour vous inscrire!</a></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--	Inscription Dates END-->
+<!--	Annonces END-->
 
 
 <!--	About START-->
@@ -293,7 +290,7 @@ get_header();
 <!--	Section Pro END-->
 
 <!--	Stages START-->
-	<section class="section-wrap" id="stages">
+	<section class="section-wrap" id="stages-main">
 		<div class="container">
 			<div class="section-row">
 				<div class="section-content-image">
@@ -314,7 +311,8 @@ get_header();
 							créant ainsi une émulation supplémentaire. Grâce à l’intensité des cours sur plusieurs
 							jours, l’élève donne un nouvel élan à son apprentissage.</p>
 						<p>Durant la période de Stages, la <strong>Mikhalev Lanssens Ballet Academy</strong>
-							tient à ce que chaque élève se sente considéré et puisse s’épanouir au sein de ses locaux.</p>
+                            tient à ce que chaque élève se sente considéré et puisse s’épanouir au sein de ses locaux.</p>
+                        <p>Pour consulter la liste complète des stages et leurs modalités, rendez-vous sur <a href="<?php echo site_url('/category/stages/'); ?>" title="Stages">Stages.</a></p>
 					</div>
 					<div class="stages-social">
 						<h4>Surveillez nos pages pour plus d'info</h4>

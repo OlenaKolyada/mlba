@@ -134,8 +134,9 @@ h5 {
 }
 
 .title-has-subtitle {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
+
 
 .subtitle {
     font-family: 'Roboto Flex', sans-serif;

@@ -1,8 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * Template for displaying single "stage" post — image floated right with text wrapping
  *
  * @package mlba
  */
@@ -10,31 +8,38 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+    <main class="main" id="stages-item">
+        <section class="section-wrap section-first no-padding-top">
+            <div class="container">
+                        <?php if ( have_posts() ) : the_post(); ?>
+                            <div class="stages-content">
+                                <h1 class="title-has-subtitle"><?php the_title(); ?></h1>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+                                <div class="entry-content">
+                                    <?php if ( has_post_thumbnail() ) :
+                                        $image_url = wp_get_attachment_url( get_post_thumbnail_id() );
+                                        $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
+                                        $image_title = get_the_title();
+                                        ?>
+                                        <figure class="frame stages-img">
+                                            <a href="<?php echo esc_url( $image_url ); ?>"
+                                               class="popup-image"
+                                               title="<?php echo esc_attr( $image_title ); ?>">
+                                                <img class="section-photo"
+                                                     src="<?php echo esc_url( $image_url ); ?>"
+                                                     alt="<?php echo esc_attr( $image_alt ?: $image_title ); ?>"
+                                                     title="<?php echo esc_attr( $image_title ); ?>" />
+                                            </a>
+                                        </figure>
+                                    <?php endif; ?>
 
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'mlba' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'mlba' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+                                    <?php the_content(); ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+        </section>
+    </main>
 
 <?php
-get_sidebar();
 get_footer();

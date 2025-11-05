@@ -606,7 +606,7 @@ section h1 {
 
 /* Hidden Text END  */
 
-/*Inscription Dates START*/
+/* Inscription Dates START*/
 .inscription-dates h2 {
     text-align: center;
 }
@@ -634,7 +634,9 @@ section h1 {
     line-height: 3.5rem;
     text-align: center;
 }
-/*Inscription Dates END*/
+/* Inscription Dates END*/
+
+
 
 /* Responsive */
 @media screen and (max-width: 1440px) {
@@ -928,6 +930,9 @@ section h1 {
     .inscription-dates ul li {
         font-size: 1rem;
     }
+
+
+
 
 }
 

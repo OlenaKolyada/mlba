@@ -515,6 +515,50 @@ section:nth-child(even) {
 
 /* Section Pro END */
 
+/* Stages START */
+#stages-category .stages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: start;
+}
+
+#stages-category .stage-thumb img {
+    width: 240px;
+    display: block;
+    height: auto;
+}
+
+#stages-category h5 {
+    margin-top: 10px;
+}
+
+#stages-item .stages-img {
+    float: right;
+    margin: 0 0 70px 70px;
+}
+
+#stages-item hr {
+    margin: 30px 0;
+}
+
+#stages-item .entry-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#stages-item a {
+    font-weight: bold;
+    color: var(--primary-color)
+}
+
+#stages-item a:hover {
+    text-decoration: underline;
+}
+
+/* Stages END */
+
 /* Contacts START */
 
 #contacts .main-contacts-wrap {
@@ -573,6 +617,18 @@ section:nth-child(even) {
     #tarifs .highlight {
         right: 4.4rem;
     }
+
+    #stages-category .stages-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-items: start;
+    }
+
+    #stages-category .stage-thumb img {
+        width: 240px;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -581,9 +637,6 @@ section:nth-child(even) {
         width: 450px;
         height: auto;
     }
-
-
-
 
     .section-content-text {
         order: 2;
@@ -689,8 +742,6 @@ section:nth-child(even) {
         width: 100%;
     }
 
-
-
     #section-pro #presentation .frame,
     #section-pro #scolarite .frame {
         margin-top: 0;
@@ -730,6 +781,27 @@ section:nth-child(even) {
         width: 100%;
     }
 
+    #stages-category .stages-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: start;
+    }
+
+    #stages-category .stage-thumb img {
+        width: 220px;
+        display: block;
+    }
+
+    #stages-item .stages-img {
+        float: right;
+        margin: 50px 0 50px 50px;
+    }
+
+    #stages-item .section-photo {
+        width: 300px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -745,8 +817,6 @@ section:nth-child(even) {
     #studio .swiper {
         aspect-ratio: 1/1;
     }
-
-
 
     #planning .schedule-table {
         display: none;
@@ -857,16 +927,25 @@ section:nth-child(even) {
         aspect-ratio: 1/1;
     }
 
-
     #contacts .section-text {
         width: 100%;
+    }
+
+    #stages-category .stages-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: start;
+    }
+
+    #stages-category .stage-thumb img {
+        width: 240px;
+        display: block;
     }
 
 }
 
 @media screen and (max-width: 624px) {
-
-
 
     .professeurs .swiper-section-small,
     .professeurs .frame img {
@@ -962,13 +1041,26 @@ section:nth-child(even) {
         height: 40vw;
     }
 
-
-
     #tarifs .first-cell-large {
         max-width: 20rem;
     }
 
+    #stages-category .stages-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: start;
+    }
 
+    #stages-category .stage-thumb img {
+        width: 200px;
+        height: auto;
+        display: block;
+    }
+
+    #stages-item .stages-img {
+        float: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1037,6 +1129,22 @@ section:nth-child(even) {
         margin: 2rem 0 0 0;
     }
 
+    #stages-category .stages-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    #stages-category .stage-thumb img {
+        width: 300px;
+        height: auto;
+        display: block;
+    }
+
+    #stages-item .stages-img {
+        margin: 30px 0 30px 30px;
+    }
 
 }
 
@@ -1057,6 +1165,10 @@ section:nth-child(even) {
     #contacts .three-items-row {
         gap: 2rem;
     }
+
+    #stages-item .stages-img {
+        margin: 10px 0;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1065,12 +1177,19 @@ section:nth-child(even) {
         margin-top: 0;
     }
 
+    #stages-category .stage-thumb img {
+        width: 280px;
+    }
+
+    #stages-item .section-photo {
+        width: 270px;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
     #tarifs .tarif-table.small span br {
         display: inline-block;
     }
-
 
 }

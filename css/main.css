@@ -59,7 +59,61 @@
 }
 /* Hero END */
 
+/* Annonces START*/
+.annonces {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.annonces h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
 
+.annonces h2 > a {
+    color: var(--primary-color);
+}
+
+.annonces h2 > a:hover {
+    color: var(--secondary-color);
+}
+
+.annonces h2 span {
+    background-image: linear-gradient(var(--primary-color), var(--primary-color));
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 3px;
+}
+
+.annonces .subtitle {
+    text-align: center;
+}
+
+.annonces .annonce-body {
+    width: 70%;
+}
+
+.annonces ul {
+    text-align: center;
+    padding: 0;
+}
+
+.annonces ul li {
+    font-size: 1.2rem;
+}
+
+.annonces .cursive {
+    font-family: 'Oooh Baby', serif;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.annonces a:hover {
+    color: var(--primary-color);
+}
+/* Annonces END*/
 
 /* About START */
 #about {
@@ -148,12 +202,21 @@
 /* Stages START */
 
 
-#stages .social-icons {
+#stages-main .social-icons {
     display: flex;
     gap: 1rem;
 }
 
-#stages .social-icons img {
+#stages-main a {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#stages-main a:hover {
+    text-decoration: underline;
+}
+
+#stages-main .social-icons img {
     width: 24px;
 }
 /* Stages END */
@@ -182,8 +245,6 @@
     width: 100%;
     height: 20rem;
 }
-
-
 
 #main-contacts .three-items-wrap {
     width: 100%;
@@ -288,7 +349,7 @@
         margin: 2rem 0;
     }
 
-    #stages .stages-social {
+    #stages-main .stages-social {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -348,7 +409,6 @@
         aspect-ratio: 1/1;
     }
 
-
 }
 
 @media (max-width: 624px) {
@@ -357,7 +417,26 @@
         right: -27vw;
     }
 
+    .annonces .annonce-body {
+        width: 100%;
+    }
 
+    .annonces .cursive {
+        text-align: left;
+    }
+
+    .annonces h2 {
+        text-align: left;
+    }
+
+    .annonces ul {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .annonces ul li {
+        font-size: 1rem;
+    }
 
     #about .three-items-row {
         flex-direction: column;
@@ -370,7 +449,7 @@
         width: 100%;
     }
 
-    #stages .stages-social {
+    #stages-main .stages-social {
         margin-top: 1rem;
     }
 
