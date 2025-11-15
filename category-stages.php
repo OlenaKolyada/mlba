@@ -18,7 +18,7 @@ get_header();
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <div class="stage-thumb">
                                     <a href="<?php the_permalink(); ?>">
-                                        <?php the_post_thumbnail('medium'); ?>
+                                        <?php the_post_thumbnail('stage-thumb'); ?>
                                         <h5><?php the_title(); ?></h5>
                                     </a>
                                 </div>

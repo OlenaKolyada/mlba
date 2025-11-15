@@ -36,20 +36,28 @@ get_header();
 <!--Hero END-->
 
 <!--	Annonces START-->
-<section class="section-wrap" id="main-annonces">
-    <div class="container">
-        <div class="section-row">
-            <div class="section-content-center">
-                <div class="annonces">
-                    <h2 class="title-has-subtitle"><a href="<?php echo get_permalink(278); ?>">Stage Décembre 2025</a></h2>
-                    <p class="subtitle">20–21 décembre 2025</p>
-                    <p class="annonce-body">Stage de danse classique et contemporaine à Pessac avec Roman Mikhalev, Corinne Lanssens et Yumi Aizawa. Deux jours de travail technique et artistique pour danseurs de niveaux moyen et avancé.</p>
-                    <p class="cursive"><a href="<?php echo get_permalink(278); ?>">Cliquez ici pour vous inscrire!</a></p>
+    <section class="section-wrap" id="main-annonces">
+        <div class="container">
+            <div class="section-row">
+                <div class="section-content-text">
+                    <div class="annonces">
+                        <h2 class="title-has-subtitle"><a href="<?php echo get_permalink(278); ?>">Stage Décembre 2025</a></h2>
+                        <p class="subtitle">20–21 décembre 2025</p>
+                        <p class="annonce-body">Stage de danse classique et contemporaine à Pessac avec Roman Mikhalev, Corinne Lanssens et Yumi Aizawa. Deux jours de travail technique et artistique pour danseurs de niveaux moyen et avancé.</p>
+                        <p class="cursive"><a href="<?php echo get_permalink(278); ?>">M'inscrire</a></p>
+                    </div>
+                </div>
+                <div class="section-content-text">
+                    <div class="annonces">
+                        <h2 class="title-has-subtitle"><a href="<?php echo get_permalink(364); ?>">Ateliers de Noël 2025</a></h2>
+                        <p class="subtitle">22 décembre 2025</p>
+                        <p class="annonce-body">Les ateliers de Noël sont destinés aux enfants de 6 à 8 ans, et comprennent un cours destinés danse, un atelier sur le thème de «&nbsp;Casse-Noisette&nbsp;», un atelier théâtre, et un goûter «&nbsp;magique&nbsp;»&nbsp;!</p>
+                        <p class="cursive"><a href="<?php echo get_permalink(364); ?>">M'inscrire</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <!--	Annonces END-->
 
 

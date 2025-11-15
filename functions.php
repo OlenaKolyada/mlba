@@ -31,6 +31,7 @@ function mlba_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+
 	/*
 		* Let WordPress manage the document title.
 		* By adding theme support, we declare that this theme does not use a
@@ -45,6 +46,7 @@ function mlba_setup() {
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
 	add_theme_support( 'post-thumbnails' );
+    add_image_size('stage-thumb', 240, 300, false);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
@@ -104,6 +106,13 @@ function mlba_setup() {
 	);
 }
 add_action( 'after_setup_theme', 'mlba_setup' );
+function mlba_fix_stages_title($title) {
+    if (is_category('stages')) {
+        return 'Stages - Mikhalev Lanssens Ballet Academy';
+    }
+    return $title;
+}
+add_filter('pre_get_document_title', 'mlba_fix_stages_title', 999);
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
