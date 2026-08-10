@@ -51,7 +51,7 @@ get_header();
                                         </div>
                                     </div>
                                     <h5 class="card-title">Initiation à la danse</h5>
-                                    <p class="card-subtitle">5-7 ans</p>
+                                    <p class="card-subtitle">5‑7 ans</p>
                                 </div>
 
                                 <div class="card-item" id="card-elem1">
@@ -71,7 +71,7 @@ get_header();
                                         </div>
                                     </div>
                                     <h5 class="card-title">Classique Elémentaire<br>Niveau 2</h5>
-                                    <p class="card-subtitle">10-11 ans</p>
+                                    <p class="card-subtitle">10‑11 ans</p>
                                 </div>
 
                                 <div class="card-item" id="card-elem3">
@@ -111,7 +111,7 @@ get_header();
                                 <p>Dès 4 ans, les enfants découvrent la danse à travers des cours d’Éveil spécialement adaptés à leur âge et à leur développement.</p>
                                 <p>Sous forme de jeux et d’explorations, ils développent leur motricité, leur coordination, leur équilibre, leur sens du rythme et leur conscience de l’espace, tout en découvrant le plaisir du mouvement.</p>
                                 <p>L’objectif n’est pas d’apprendre une technique, mais de stimuler leur créativité, leur expression corporelle et leur sensibilité artistique dans un cadre ludique, bienveillant et respectueux du rythme de chacun.</p>
-                                <p><strong>Mercredi 9h45-10h30</strong></p>
+                                <p><strong>Mercredi 9h45‑10h30</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -147,7 +147,7 @@ get_header();
                         <div class="section-content-text">
                             <div class="section-text">
                                 <h2 class="title-has-subtitle">Initiation à&nbsp;la&nbsp;danse classique</h2>
-                                <p class="subtitle">5-7 ans</p>
+                                <p class="subtitle">5‑7 ans</p>
                                 <p>Un cours d’une heure, qui accueille l’enfant par des rituels rassurants, dont un échauffement
                                     progressif qui développe connaissance et respect de son corps. S’y acquiert également,
                                     grâce à différents ateliers, la motricité, la créativité, la musicalité, la précision du geste,
@@ -156,7 +156,7 @@ get_header();
                                     l’encouragement d’interactions bienveillantes avec les autres. Toutes ses connaissances
                                     permettront à l’enfant, dès ses 8 ans, de s’orienter librement vers la technique de danse
                                     souhaitée.</p>
-                                <p><strong>Mercredi 10h30-11h30</strong></p>
+                                <p><strong>Mercredi 10h30‑11h30</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -219,7 +219,7 @@ get_header();
                                     seront proposés afin d’affiner leur écoute musicale, encourager leur expressivité, explorer
                                     leur propre créativité, et enrichir leur langage dansé grâce à l’acquisition de différentes
                                     combinaisons de pas.</p>
-                                <p><strong>Mercredi 11h30-12h45</strong> et / ou <strong>Mercredi 16h15-17h30</strong></p>
+                                <p><strong>Mercredi 11h30‑12h45</strong> ou <strong>Mercredi 16h15‑17h30</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -271,7 +271,7 @@ get_header();
                         <div class="section-content-text">
                             <div class="section-text">
                                 <h2 class="title-has-subtitle">Classique Elémentaire Niveau&nbsp;2</h2>
-                                <p class="subtitle">10-12 ans</p>
+                                <p class="subtitle">10‑12 ans</p>
                                 <p>Dans ce cours, grâce à une meilleure maîtrise et connaissance corporelle, le travail «&nbsp;à la
                                     barre&nbsp;» se poursuit et se complète, ainsi que les exercices et la technique de certains pas
                                     «&nbsp;au milieu&nbsp;». Le travail de la musicalité se poursuit, ainsi que l’expression artistique, par le
@@ -279,7 +279,7 @@ get_header();
                                     produites par l’élève. L’Histoire de la Danse et les ballets du répertoire sont abordés, lors
                                     d’échanges, de partages de photos, vidéos et ateliers chorégraphiques, afin de nourrir leurs
                                     connaissances et leur passion. Discipline et plaisir restent les maîtres mots du cours de danse.</p>
-                                <p><strong>Lundi 17h45-19h15</strong> et / ou <strong>Jeudi 17h45-19h15</strong></p>
+                                <p><strong>Lundi 17h45‑19h15</strong> et / ou <strong>Jeudi 17h45‑19h15</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -340,7 +340,7 @@ get_header();
                                     dépendra le bon apprentissage de cette technique. Il se fera au studio ou lors d’un rendez-
                                     vous en boutique avec la présence du professeur. Pour les garçons, la technique des «&nbsp;grands sauts&nbsp;»
                                     est abordée grâce à un travail spécifique sur la puissance musculaire nécessaire à la virtuosité de leur exécution.</p>
-                                <p><strong>Mercredi 17h45-19h15</strong> et / ou <strong>Vendredi 18h45-20h15</strong></p>
+                                <p><strong>Mercredi 17h45‑19h15</strong> et / ou <strong>Vendredi 18h45‑20h15</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>
@@ -391,7 +391,7 @@ get_header();
                                 <p>Un travail de variation du répertoire sera proposé afin de compléter les connaissances déjà
                                     acquises, et de se confronter à un travail de style, de technique, et d’expression artistique
                                     diverses.</p>
-                                <p><strong>Mardi 18h45-20h15</strong> et / ou <strong>Vendredi 18h45-20h15</strong></p>
+                                <p><strong>Mardi 18h45‑20h15</strong> et / ou <strong>Vendredi 18h45‑20h15</strong></p>
                                 <div class="niveau-button">
                                     <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                 </div>

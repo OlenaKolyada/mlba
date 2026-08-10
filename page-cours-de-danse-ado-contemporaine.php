@@ -27,9 +27,9 @@ get_header();
                                        <p>Ils apprennent à écouter l’espace, à danser avec les autres, à sentir les silences et les respirations entre les mouvements. On travaille aussi le contact, le toucher, le poids du corps, toujours dans le respect de soi et de l'autre.</p>
                                        <p>Les ateliers permettent à chaque enfant de trouver sa place, son langage corporel, et de développer une expression personnelle, sincère, qui va au-delà de l’imitation ou de la répétition.</p>
                                        <p>L’objectif est d’éveiller la créativité tout en posant les premières bases techniques qui permettront à chacun de progresser dans la conscience du corps, de l’espace, du temps… et du plaisir de danser&nbsp;!</p>
-                                    <p><strong>Débutant</strong> (8‑10 ans) : <strong>Jeudi 17h30-18h45</strong></p>
-                                    <p><strong>Intermédiaire</strong> (11‑14 ans) : <strong>Mardi 17h30-19h00</strong></p>
-                                    <p><strong>Avancé</strong> (15 ans et plus) : <strong>Jeudi 19h00-20h30</strong></p>
+                                    <p><strong>Débutant</strong> (8‑10 ans) : <strong>Jeudi 17h30‑18h45</strong></p>
+                                    <p><strong>Intermédiaire</strong> (11‑14 ans) : <strong>Mardi 17h30‑19h00</strong></p>
+                                    <p><strong>Avancé</strong> (15 ans et plus) : <strong>Jeudi 19h00‑20h30</strong></p>
                                     <div class="niveau-button">
                                         <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                     </div>
