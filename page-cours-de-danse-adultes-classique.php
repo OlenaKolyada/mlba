@@ -23,7 +23,7 @@ get_header();
                                 <div class="section-content-text">
                                     <div class="section-text">
                                         <p>Le Cours de Danse Adultes Classique s’adresse aux adultes ayant déjà pratiqué la danse classique et souhaitant poursuivre ou retrouver leur passion. L’enseignement, de qualité et rigoureux, est adapté aux besoins d’un corps adulte : posture, placement, mobilité articulaire et conscience du mouvement sont au cœur du travail. C’est un moment privilégié, pour soi, dans un cadre bienveillant, entre passionnés, alliant exigence, plaisir de danser et respect du corps.</p>
-                                        <p><strong>Lundi 19h30-21h</strong> et / ou <strong>Jeudi 19h30-21h</strong></p>
+                                        <p><strong>Lundi 19h15-20h45</strong> et / ou <strong>Jeudi 19h15-20h45</strong></p>
                                         <div class="niveau-button">
                                             <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                         </div>
