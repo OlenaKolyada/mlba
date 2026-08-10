@@ -39,7 +39,7 @@ get_header();
                                         </ul>
                                         <p>Le cours inclut également un travail physique précis&nbsp;: engagement des jambes, mobilité du haut du corps, coordination, musicalité… Tout cela se construit dans le temps, avec régularité et précision. En parallèle, nous développons la créativité et l’expressivité de chacun à travers des ateliers d’improvisation, de composition et de contact improvisation. Les élèves expérimentent le poids partagé, le toucher, la relation à l’autre, l’espace qui se danse entre les corps. Mais au-delà des outils techniques, le cœur de notre approche reste l’intention, l’émotion, l’authenticité.</p>
                                         <p>L’objectif n’est pas de produire une forme vide, mais de trouver le geste juste, habité, porteur de sens. Chaque mouvement devient alors une parole du corps, une manière de dire, de ressentir, d’être. Ce travail alterne entre liberté et structure, improvisation et cadre, pour permettre à chaque élève, quel que soit son niveau ou son âge, de trouver son épanouissement et son unicité.</p>
-                                        <p><strong>Mardi 19h15‑20h45</strong></p>
+                                        <p><strong>Mardi&nbsp;19h15‑20h45</strong></p>
                                         <div class="niveau-button">
                                             <a href="<?php echo get_permalink(124); ?>" class="btn btn-primary-color">S'inscrire</a>
                                         </div>
