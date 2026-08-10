@@ -18,16 +18,16 @@ get_header();
     <main class="main" id="adulte-contemporain">
             <section class="section-wrap section-first no-padding-top" id="intro">
                     <div class="container">
-                        <h1>Cours de Danse Adultes Contemporaine</h1>
+                        <h1>Cours de Danse Adultes Contemporain</h1>
                             <div class="section-row">
                                 <div class="section-content-text">
                                     <div class="section-text">
-                                        <p>Le Cours de Danse Adultes Contemporaine s’organisent autour de deux axes fondamentaux et complémentaires&nbsp;:</p>
+                                        <p>Le Cours de Danse Adultes Contemporain s’organisent autour de deux axes fondamentaux et complémentaires&nbsp;:</p>
                                         <ul>
                                             <li>un travail technique rigoureux,</li>
                                             <li>et une recherche artistique et expressive à travers des ateliers de création.</li>
                                         </ul>
-                                        <p>D’un point de vue technique, nous abordons les grands principes de la danse contemporaine&nbsp;:</p>
+                                        <p>D’un point de vue technique, nous abordons les grands principes de la danse contemporain&nbsp;:</p>
                                         <ul>
                                             <li>les appuis,</li>
                                             <li>la construction de la verticalité,</li>
@@ -50,31 +50,31 @@ get_header();
                                         <div class="swiper swiper-section-small">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo1.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo1.jpg"
-                                                             alt="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
-                                                             title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                                             alt="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                             title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo2.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo2.jpg"
-                                                             alt="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
-                                                             title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                                             alt="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                             title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo3.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo3.jpg"
-                                                             alt="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
-                                                             title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                                             alt="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                             title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                     </a>
                                                 </div>
                                             <div class="swiper-slide">
-                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo4.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo4.jpg" class="popup-gallery"  title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/loisir/adulte-contemporain/adulte-contempo4.jpg"
-                                                             alt="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
-                                                             title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporaine. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                                             alt="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
+                                                             title="Mikhalev Lanssens Ballet Academy, Cours de Danse Adultes Contemporain. Professeur Alexia Séré. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
                                                     </a>
                                                 </div>
 
