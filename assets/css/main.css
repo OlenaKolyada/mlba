@@ -60,6 +60,13 @@
 /* Hero END */
 
 /* Annonces START*/
+#main-annonces .section-row,
+#main-annonces .section-content-center,
+#main-annonces .section-text,
+#main-annonces .annonce-body {
+    width: 100%;
+}
+
 .annonces {
     display: flex;
     align-items: center;

@@ -36,37 +36,24 @@ get_header();
 <!--Hero END-->
 
 <!--	Annonces START-->
-<!--    <section class="section-wrap" id="main-annonces">-->
-<!--        <div class="container">-->
-<!--            <div class="section-row">-->
-<!--                <div class="section-content-center">-->
-<!--                    <div class="section-text">-->
-<!--                        <h2 class="title-has-subtitle"><a href="--><?php //echo get_permalink(389); ?><!--">Stage Mars 2026</a></h2>-->
-<!--                            <p class="subtitle">14-15 mars 2026</p>-->
-<!--                            <p class="annonce-body">La Mikhalev Lanssens Ballet Academy (MLBA) propose un workshop de danse classique et néoclassique sur deux jours à Pessac, en présence d’Emmanuel Grizot, Maîtresse de ballet, Danseuse Etoile et chorégraphe, ainsi que des deux directeurs et professeurs de la MLBA, Corinne Lanssens et Roman Mikhalev.</p>-->
-<!--                            <p class="cursive"><a href="--><?php //echo get_permalink(389); ?><!--">M'inscrire</a></p>-->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="section-content-text">-->
-<!--                    <div class="annonces">-->
-<!--                        <h2 class="title-has-subtitle"><a href="--><?php //echo get_permalink(278); ?><!--">Stage Décembre 2025</a></h2>-->
-<!--                        <p class="subtitle">20–21 décembre 2025</p>-->
-<!--                        <p class="annonce-body">Stage de danse classique et contemporaine à Pessac avec Roman Mikhalev, Corinne Lanssens et Yumi Aizawa. Deux jours de travail technique et artistique pour danseurs de niveaux moyen et avancé.</p>-->
-<!--                        <p class="cursive"><a href="--><?php //echo get_permalink(278); ?><!--">M'inscrire</a></p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="section-content-text">-->
-<!--                    <div class="annonces">-->
-<!--                        <h2 class="title-has-subtitle"><a href="--><?php //echo get_permalink(364); ?><!--">Ateliers de Noël 2025</a></h2>-->
-<!--                        <p class="subtitle">22 décembre 2025</p>-->
-<!--                        <p class="annonce-body">Les ateliers de Noël sont destinés aux enfants de 6 à 8 ans, et comprennent un cours destinés danse, un atelier sur le thème de «&nbsp;Casse-Noisette&nbsp;», un atelier théâtre, et un goûter «&nbsp;magique&nbsp;»&nbsp;!</p>-->
-<!--                        <p class="cursive"><a href="--><?php //echo get_permalink(364); ?><!--">M'inscrire</a></p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+    <section class="section-wrap" id="main-annonces">
+        <div class="container">
+            <div class="section-row">
+                <div class="section-content-center">
+                    <div class="section-text">
+                        <h2 class="title-has-subtitle">Reprise des cours Loisirs</h2>
+                            <h4>Lundi 7 septembre</h4>
+                            <p class="annonce-body">Pour les inscriptions « Famille », nous rencontrer, visiter les lieux, permanences le :<p>
+                            <p class="annonce-body"><strong>Vendredi 4 septembre</strong> de 17h30 à 19h30<br>
+                            <strong>Samedi 5 septembre</strong> de 10h30 à 12h30</p>
+                            <p class="cursive">À très bientôt !</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 <!--	Annonces END-->
 
 

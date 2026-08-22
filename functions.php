@@ -159,7 +159,7 @@ function mlba_scripts() {
     wp_enqueue_style( 'mlba-module', get_template_directory_uri() . '/assets/css/module.css', array(), _S_VERSION );
     wp_enqueue_style( 'mlba-header', get_template_directory_uri() . '/assets/css/header.css', array(), _S_VERSION );
     wp_enqueue_style( 'mlba-footer', get_template_directory_uri() . '/assets/css/footer.css', array(), _S_VERSION );
-    wp_enqueue_style( 'mlba-main', get_template_directory_uri() . '/assets/css/main.css', array(), _S_VERSION );
+    wp_enqueue_style( 'mlba-main', get_template_directory_uri() . '/assets/css/main.css', array(), filemtime( get_template_directory() . '/assets/css/main.css' ) );
 	wp_enqueue_style( 'mlba-page', get_template_directory_uri() . '/assets/css/page.css', array(), _S_VERSION );
 	wp_enqueue_style( 'mlba-form', get_template_directory_uri() . '/assets/css/form.css', array(), _S_VERSION );
 
