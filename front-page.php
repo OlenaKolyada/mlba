@@ -63,10 +63,10 @@ get_header();
 			<div class="section-row">
 				<div class="section-content-image">
 					<figure class="frame">
-                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg" class="popup-image" title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
-                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/about.jpeg"
-                                 alt="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
-                                 title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)" />
+                        <a href="<?php echo get_template_directory_uri();?>/assets/images/main/roman-mikhalev-et-corinne-lanssens.jpg" class="popup-image" title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy">
+                            <img class="section-photo" src="<?php echo get_template_directory_uri();?>/assets/images/main/roman-mikhalev-et-corinne-lanssens.png"
+                                 alt="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy"
+                                 title="Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy" />
                         </a>
 					</figure>
                     <div class="figcaption">Corinne Lanssens et Roman Mikhalev, les fondateurs de Mikhalev Lanssens Ballet Academy</div>

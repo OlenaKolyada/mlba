@@ -792,6 +792,20 @@ section:nth-child(even) {
 
 /* Stages END */
 
+/* Visite de l'académie START */
+#visite-academie .academy-video {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#visite-academie .academy-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+/* Visite de l'académie END */
+
 /* Contacts START */
 
 #contacts .main-contacts-wrap {
