@@ -195,6 +195,16 @@ img {
     border-radius: 3px;
 }
 
+@media (hover: hover) {
+    a img {
+        transition: opacity 0.3s ease;
+    }
+
+    a:hover img {
+        opacity: 0.7;
+    }
+}
+
 
 /* Scroll To Top START */
 .scroll-to-top {

@@ -708,15 +708,53 @@ section:nth-child(even) {
     height: 300px;
     object-fit: cover;
     display: block;
+    transition: opacity 0.3s ease;
+}
+
+#stages-category .stage-thumb a:hover img {
+    opacity: 0.7;
+}
+
+#stages-category .stage-thumb a:hover h5 {
+    color: var(--primary-color);
 }
 
 #stages-category h5 {
     margin-top: 10px;
+    transition: all 0.5s ease;
+}
+
+#stages-category .stage-title {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 10px 0 0;
+}
+
+#stages-category .stage-title a:hover {
+    color: var(--primary-color);
+}
+
+#stages-category .stage-thumb .actualite-card-date {
+    margin: 0.75rem 0 0;
+}
+
+#stages-category .stage-thumb .actualite-card-excerpt {
+    margin-top: 0.75rem;
+}
+
+#stages-category .stage-thumb .btn {
+    margin-top: 1.5rem;
 }
 
 #stages-item .stages-img {
     float: right;
     margin: 0 0 70px 70px;
+}
+
+#stages-item .entry-content {
+    margin-top: 2rem;
 }
 
 #stages-item hr {
@@ -736,6 +774,20 @@ section:nth-child(even) {
 
 #stages-item a:hover {
     text-decoration: underline;
+}
+
+#stages-item .video-embed iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+#stages-item .programme-download {
+    margin: 2rem 0 2.5rem;
+}
+
+#stages-item .video-embed {
+    margin: 0 0 2.5rem;
 }
 
 /* Stages END */
@@ -1341,6 +1393,13 @@ section:nth-child(even) {
 
     #stages-item .stages-img {
         float: none;
+        width: 100%;
+        margin: 0 0 2rem;
+    }
+
+    #stages-item .section-photo {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -1508,7 +1567,8 @@ section:nth-child(even) {
     }
 
     #stages-item .section-photo {
-        width: 270px;
+        width: 100%;
+        height: auto;
     }
 
 }
@@ -1519,3 +1579,127 @@ section:nth-child(even) {
     }
 
 }
+
+/* Actualités START */
+#actualites .container,
+#actualite-single .actualite-single-container {
+    max-width: 1000px;
+}
+
+.actualites-list {
+    display: grid;
+    gap: 3rem;
+}
+
+.actualite-card {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.actualite-card-image,
+.actualite-card-image img {
+    display: block;
+    width: 100%;
+}
+
+.actualite-card-image img {
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-fit: cover;
+}
+
+.actualite-card-date {
+    color: var(--grey);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.actualite-card h2 {
+    margin-bottom: 1rem;
+}
+
+.actualite-card h2 a:hover {
+    color: var(--primary-color);
+}
+
+.actualite-card-excerpt {
+    margin-bottom: 1.5rem;
+}
+
+.actualites-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 3rem;
+}
+
+.actualites-pagination .page-numbers {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.actualites-pagination .current {
+    color: var(--black);
+}
+
+.actualite-featured-image {
+    margin: 0 0 3rem;
+    text-align: center;
+}
+
+.actualite-featured-image img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 720px;
+    margin: 0 auto;
+}
+
+.actualite-single-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.actualite-single-content h2,
+.actualite-single-content h3 {
+    margin: 2.5rem 0 1rem;
+}
+
+.actualite-single-content ul,
+.actualite-single-content ol {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin: 0 0 1rem;
+}
+
+.actualite-single-content ol {
+    list-style: decimal;
+}
+
+.actualite-single-content .wp-block-video video,
+.actualite-single-content .wp-block-embed iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width: 768px) {
+    .actualite-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .actualite-card-image img {
+        max-height: 560px;
+        object-fit: contain;
+        background: var(--grey-extra-light);
+    }
+
+    .actualite-featured-image {
+        margin-bottom: 2rem;
+    }
+}
+/* Actualités END */
