@@ -26,10 +26,10 @@ get_header();
                         <div class="swiper swiper-section-small">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/roman-mikhalev.jpg" class="popup-gallery"  title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/roman-mikhalev.jpg" class="popup-gallery"  title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/roman-mikhalev/roman-mikhalev.jpg"
-                                             alt="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Professeurs de Danse Classique, MLBA Section Pro. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
-                                             title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                             alt="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux. Professeurs de Danse Classique, MLBA Section Pro"
+                                             title="Roman Mikhalev, danseur étoile de l’Opéra National de Bordeaux">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
@@ -280,10 +280,10 @@ get_header();
                         <div class="swiper swiper-section-small">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/corinne-lanssens.jpg" class="popup-gallery"  title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                    <a href="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/corinne-lanssens.jpg" class="popup-gallery"  title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/profs/corinne-lanssens/corinne-lanssens.jpg"
-                                             alt="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Professeurs de Danse Classique, MLBA Section Pro. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)"
-                                             title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Crédit photo O.R. Studio (Marina Kudryashova et Oleg Rogachev)">
+                                             alt="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux. Professeurs de Danse Classique, MLBA Section Pro"
+                                             title="Corinne Lanssens, danseuse de l’Opéra National de Bordeaux">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
